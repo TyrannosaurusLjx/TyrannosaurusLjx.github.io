@@ -26,7 +26,7 @@ theme:
   logo: assets/L.ico
   favicon: assets/L.ico
   features:
-    - navigation.instant
+    - navigation.instant  
     - navigation.instant.prefetch
     - navigation.tabs # 导航栏大目录
     - navigation.prune
@@ -87,7 +87,6 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
 
 
 
