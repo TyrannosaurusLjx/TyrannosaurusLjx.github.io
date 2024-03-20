@@ -2,7 +2,7 @@
 
 ---  
 $$  
-\int_{birth}^{death} study\; dt = life  
+\int_{birth}^{death} study\quad dt = life  
 $$  
 
 ---  
