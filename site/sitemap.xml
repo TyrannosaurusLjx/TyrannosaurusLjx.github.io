@@ -11,7 +11,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ljxpage.github.io/Notebook/Computer_Compositon/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ljxpage.github.io/Notebook/Computer_Compositon/1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ljxpage.github.io/Notebook/DataStructure/</loc>
          <lastmod>2024-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -107,6 +117,11 @@
     </url>
     <url>
          <loc>https://ljxpage.github.io/Notebook/Operating_System/note-%E7%94%A8%E6%88%B7%E6%80%81%E6%8C%87%E4%BB%A4/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ljxpage.github.io/Notebook/Random_process/</loc>
          <lastmod>2024-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
