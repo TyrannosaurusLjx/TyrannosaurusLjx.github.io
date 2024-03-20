@@ -1,0 +1,15 @@
+author1:
+  name: John Doe
+  email: john@example.com
+  website: https://example.com/john
+  bio: |
+    John is a passionate writer who loves to explore the world of technology and share his insights with others.
+  avatar: assets/authors/john-doe.jpg
+
+author2:
+  name: Jane Smith
+  email: jane@example.com
+  website: https://example.com/jane
+  bio: |
+    Jane is a photographer and nature enthusiast. She enjoys capturing the beauty of the world through her lens.
+  avatar: assets/authors/jane-smith.jpg
