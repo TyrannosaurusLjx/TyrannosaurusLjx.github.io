@@ -23,8 +23,8 @@ theme:
     scheme: slate
     primary: black  # 导航栏颜色
     accent: blue
-  logo: assets/L.ico
-  favicon: assets/L.ico
+  logo: assets/小新.jpg
+  favicon: assets/小新.jpg
   features:
     - navigation.instant  
     - navigation.instant.prefetch

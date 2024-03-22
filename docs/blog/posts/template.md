@@ -1,13 +1,12 @@
 ---
 title: "A Great Post"
-author: John Doe
+author: ljx
 date: 2024-03-20
 categories:
-  - Technology
-  - Programming
+  - essays
 tags:
   - Markdown
   - MkDocs
 ---
 
-正文内容...
+# template
