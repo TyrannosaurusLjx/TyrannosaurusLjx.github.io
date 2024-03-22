@@ -655,6 +655,111 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      数列极限
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数列极限">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2.2.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义:无穷小量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#221_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2.2.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2.2.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2.2.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2.2.4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#225" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2.2.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      无穷大量
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -915,10 +1020,14 @@
 <hr />
 <h4 id="211">定理 2.1.1</h4>
 <p><strong>确界存在原理-实数系连续性定理</strong></p>
-<p>非空有上界的数集必有上确界,非空有下界的数集必有下确界</p>
+<ul>
+<li>非空有上界的数集必有上确界,非空有下界的数集必有下确界</li>
+</ul>
 <hr />
 <h4 id="212">定理 2.1.2</h4>
-<p><strong>非空有界数集的上(下)确界唯一</strong></p>
+<ul>
+<li><strong>非空有界数集的上(下)确界唯一</strong></li>
+</ul>
 <hr />
 <p>note:Dedekind分割原理</p>
 <p>定义 1:设两个非空有理集合<span class="arithmatex">\(A,B\)</span>满足如下条件:<span class="arithmatex">\(Q=A\cup B,\forall a\in A,b\in B,a&lt;b\)</span>,则称<span class="arithmatex">\(A,B\)</span>为<span class="arithmatex">\(Q\)</span>的一个切割,记为<span class="arithmatex">\(A/B\)</span></p>
@@ -939,7 +1048,66 @@
 由 Dedekind 切割定理可以证明确界存在定理: 对非空有上界的数集 S,设 A 是 S 的上界组成的集合,B 是 A 的补,那么或者 B 有最大数,或者 A 有最小数(确界存在)
 证明 B 没有最大数:如果有b 是 B 的最大数,由于 b 不是 S 的上界,从而存在 s\in S, s&gt;b,那么 s 一定在 B 中,与 b 是 B 的最大数矛盾
 </code></pre></div>
-<h1 id="_3">数列极限</h1>
+<h2 id="_3">数列极限</h2>
+<h4 id="221">定义 2.2.1</h4>
+<ul>
+<li>设<span class="arithmatex">\(\{x_n\}\)</span>是一个数列,如果<span class="arithmatex">\(\exists a\in R,s.t.\forall \varepsilon&gt;0,\exists N&gt;0,s.t.\forall n&gt;N\)</span>
+,有<span class="arithmatex">\(|x_n-a|&lt;\varepsilon\)</span>,那么称<span class="arithmatex">\(a\)</span>是数列<span class="arithmatex">\(\{x_n\}\)</span>的极限,
+记为<span class="arithmatex">\(\lim\limits_{n\to\infty}x_n=a\)</span>,或者<span class="arithmatex">\(x_n\to a(n\to\infty)\)</span></li>
+</ul>
+<h4 id="_4">定义:无穷小量</h4>
+<ul>
+<li>称极限为 0的数列为无穷小量,,无穷小量是一个变量,<span class="arithmatex">\(\{0,0,\cdots,0\}\)</span>是一个特殊的无穷小量,
+由定义<span class="arithmatex">\(\lim\limits_{n\to\infty}x_n=a\iff \{x_n-a\}\)</span>是无穷小量</li>
+</ul>
+<h4 id="221_1">定理 2.2.1</h4>
+<ul>
+<li>收敛数列极限唯一</li>
+</ul>
+<h4 id="222">定理 2.2.2</h4>
+<ul>
+<li>
+<p>收敛数列必有界</p>
+<p>有界是指有上界和下界</p>
+</li>
+</ul>
+<h4 id="223">定理 2.2.3</h4>
+<ul>
+<li>设数列<span class="arithmatex">\(\{x_n\},\{y_n\}\)</span>分别收敛到<span class="arithmatex">\(a,b\)</span>,且<span class="arithmatex">\(a&lt;b\)</span>那么 <span class="arithmatex">\(\exists N\in N^+,\forall n&gt;N:x_n&lt;y_n\)</span></li>
+</ul>
+<h4 id="_5">推论</h4>
+<ul>
+<li>收敛数列有保号性</li>
+</ul>
+<h4 id="224">定理 2.2.4</h4>
+<ul>
+<li>
+<p>三个数列<span class="arithmatex">\(\{x_n\},\{y_n\},\{z_n\}\)</span>,如果<span class="arithmatex">\(\exists N\in N^+,s.t.\forall n&gt;N,x_n\leq y_n\leq z_n\)</span>,且<span class="arithmatex">\(\lim\limits_{n\to\infty}x_n=\lim\limits_{n\to\infty}z_n=a\)</span>,那么<span class="arithmatex">\(\lim\limits_{n\to\infty}y_n=a\)</span></p>
+<p>夹逼准则</p>
+</li>
+</ul>
+<h4 id="225">定理 2.2.5</h4>
+<ul>
+<li>
+<p>数列极限的四则运算</p>
+</li>
+<li>
+<p>设<span class="arithmatex">\(\lim\limits_{n\to\infty}x_n=a,\lim\limits_{n\to\infty}y_n=b\)</span>,则</p>
+<ul>
+<li><span class="arithmatex">\(\lim\limits_{n\to\infty}(\alpha x_n\pm \beta y_n)=\alpha a+\beta b\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{n\to\infty}x_ny_n=ab\)</span>    </li>
+<li><span class="arithmatex">\(\lim\limits_{n\to\infty}\frac{x_n}{y_n}=\frac{a}{b}(b\neq 0)\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="note">note</h4>
+<ul>
+<li><span class="arithmatex">\(\sqrt{n^2+n}=\sqrt{(n+\frac{1}{2})^2-\frac{1}{4}}&lt;n+\frac{1}{2}\)</span></li>
+<li><span class="arithmatex">\(\sqrt{n^2+n}-n&lt;\frac{1}{2}\)</span></li>
+<li><span class="arithmatex">\(\sqrt{m+n}&lt;\sqrt{m}+\sqrt{n}\)</span></li>
+<li>平均值不等式:<span class="arithmatex">\((n!a_1a_2\cdots a_n)^{\frac{1}{n}}\leq \frac{1}{n}(a_1+2a_2+\cdots na_n)\)</span></li>
+</ul>
+<h2 id="_6">无穷大量</h2>
 
 
 
