@@ -161,17 +161,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ljxpage.github.io/blog/2024/03/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%97%A5%E8%AE%B0/</loc>
+         <lastmod>2024-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ljxpage.github.io/blog/archive/2024/</loc>
          <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ljxpage.github.io/blog/category/technology/</loc>
-         <lastmod>2024-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ljxpage.github.io/blog/category/programming/</loc>
+         <loc>https://ljxpage.github.io/blog/category/essays/</loc>
          <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
