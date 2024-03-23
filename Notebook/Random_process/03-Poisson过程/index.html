@@ -12,13 +12,13 @@
         <meta name="author" content="Ljx">
       
       
-        <link rel="canonical" href="https://ljxpage.github.io/Notebook/Random_process/Poisson%E8%BF%87%E7%A8%8B/">
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/Random_process/03-Poisson%E8%BF%87%E7%A8%8B/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../02-%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
       
       
-        <link rel="next" href="../%E5%88%9D%E7%AD%89%E6%A6%82%E7%8E%87%E8%AE%BA/">
+        <link rel="next" href="../../../Tools/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
@@ -682,6 +682,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E5%88%9D%E7%AD%89%E6%A6%82%E7%8E%87%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 初等概率论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 随机过程的基本概念
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -829,48 +871,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%88%9D%E7%AD%89%E6%A6%82%E7%8E%87%E8%AE%BA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    初等概率论
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    随机过程的基本概念
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -989,9 +989,15 @@
 
 
 <h1 id="poisson">Poisson 过程</h1>
-<p>用<span class="arithmatex">\(N(t)\)</span>表示时间(0,t]中事件发生的次数,<span class="arithmatex">\(\lambda\)</span>是单位时间发生的事件数,<span class="arithmatex">\(S_i\)</span>表示第i次事件发生的时间</p>
+<ul>
+<li>用<span class="arithmatex">\(N(t)\)</span>表示时间(0,t]中事件发生的次数,<span class="arithmatex">\(\lambda\)</span>是单位时间发生的事件数,<span class="arithmatex">\(S_i\)</span>表示第i次事件发生的时间</li>
+</ul>
 <h2 id="poisson_1">Poisson分布</h2>
+<ul>
+<li>
 <div class="arithmatex">\[\forall t&gt;0,P(N(t)=k)=\frac{(\lambda t)^k}{k!}e^{-\lambda t},k\in N\]</div>
+</li>
+</ul>
 <hr />
 <h3 id="_1">特性</h3>
 <h4 id="1entlambda-t">1.<span class="arithmatex">\(E(N(t))=\lambda t\)</span></h4>
@@ -1001,53 +1007,269 @@
 <div class="highlight"><pre><span></span><code>证明也很简单
 </code></pre></div>
 <h4 id="3">3.自相关函数</h4>
-<p><span class="arithmatex">\(<span class="arithmatex">\(r_N(s,t)=E(N(s)N(t))=\lambda^2st+\lambda s\)</span>\)</span>
-&lt;这里为什么关于 s,t 不对称?&gt;</p>
+<ul>
+<li>
+<div class="arithmatex">\[r_N(s,t)=E(N(s)N(t))=\lambda^2st+\lambda s\]</div>
+<ul>
+<li>&lt;这里为什么关于 s,t 不对称?&gt;</li>
+</ul>
+</li>
+</ul>
 <h4 id="4">4.自协方差函数</h4>
-<p><span class="arithmatex">\(<span class="arithmatex">\(Cov(s,t)=E(N(s)N(t))-E(N(s))E(N(t))=\lambda s\)</span>\)</span>
-&lt;这里为什么关于 s,t 不对称?&gt;</p>
-<div class="highlight"><pre><span></span><code>事实上这也可以看做一种对称,min{s,t} = min{t,s} = s
-</code></pre></div>
+<ul>
+<li>
+<div class="arithmatex">\[Cov(s,t)=E(N(s)N(t))-E(N(s))E(N(t))=\lambda s\]</div>
+<ul>
+<li>
+<p>&lt;这里为什么关于 s,t 不对称?&gt;</p>
+</li>
+<li>
+<p>事实上这也可以看做一种对称,min{s,t} = min{t,s} = s</p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="poisson_2">Poisson流</h2>
+<ul>
+<li>
 <p><span class="arithmatex">\(N(t)\sim \mathcal{P}(\lambda t)\)</span>,则<span class="arithmatex">\(N(t)\)</span>是一个Poisson流</p>
+</li>
+<li>
 <p>考察时间发生的时间的分布,也就是<span class="arithmatex">\(S_i\)</span>的分布</p>
-<p><span class="arithmatex">\(\forall t&gt;0,S_&gt;t\iff N(t)=0\)</span>,那么 <span class="arithmatex">\(P(S_1&gt;t)=P(N(t)=0)=e^{-\lambda t}\)</span>,从而<span class="arithmatex">\(S_1\sim \mathcal{E}(\lambda)\)</span></p>
-<div class="highlight"><pre><span></span><code>第一个到达的时刻服从参数为$\lambda$的指数分布
-</code></pre></div>
+<ul>
+<li><span class="arithmatex">\(\forall t&gt;0,S_&gt;t\iff N(t)=0\)</span>,那么 <span class="arithmatex">\(P(S_1&gt;t)=P(N(t)=0)=e^{-\lambda t}\)</span>,从而<span class="arithmatex">\(S_1\sim \mathcal{E}(\lambda)\)</span></li>
+</ul>
+<p>第一个到达的时刻服从参数为<span class="arithmatex">\(\lambda\)</span>的指数分布</p>
+</li>
+<li>
 <p>对于<span class="arithmatex">\(n\geq 1\)</span>,<span class="arithmatex">\(S_n&gt;t\iff N(t)\leq n-1\)</span>,那么<span class="arithmatex">\(P(S_n&gt;t)=P(N(t)\leq n-1)=\sum\limits_{k=0}^{n-1}\frac{(\lambda t)^k}{k!}e^{-\lambda t},\)</span></p>
+</li>
+<li>
 <p>从而有<span class="arithmatex">\(P(S_n\leq t)=1-\sum\limits_{k=0}^{n-1}\frac{(\lambda t)^k}{k!}e^{-\lambda t}\)</span></p>
-<p><span class="arithmatex">\(P_{S_n}=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t},t&gt;0\)</span> (gamma 分布)</p>
+<ul>
+<li><span class="arithmatex">\(P_{S_n}=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t},t&gt;0\)</span> (gamma 分布)</li>
+</ul>
+</li>
+</ul>
 <hr />
 <h3 id="_2">时间间隔</h3>
-<p>若定义<span class="arithmatex">\(X_i=S_i-S_{i-1}\)</span>,则<span class="arithmatex">\(X_i\)</span>是独立同分布的指数分布,参数为<span class="arithmatex">\(\lambda\)</span></p>
+<ul>
+<li>若定义<span class="arithmatex">\(X_i=S_i-S_{i-1}\)</span>,则<span class="arithmatex">\(X_i\)</span>是独立同分布的指数分布,参数为<span class="arithmatex">\(\lambda\)</span></li>
+</ul>
 <hr />
 <h1 id="poisson_3">Poisson 可加性(按概念可分)</h1>
-<p><span class="arithmatex">\(N_1(t)\sim \mathcal{P}(\lambda t),N_2(t)\sim \mathcal{P}(\mu t)\)</span>,且<span class="arithmatex">\(N_1(t),N_2(t)\)</span>相互独立,则<span class="arithmatex">\(N_1(t)+N_2(t)\sim \mathcal{P}((\lambda+\mu)t)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(N_1(t)\sim \mathcal{P}(\lambda t),N_2(t)\sim \mathcal{P}(\mu t)\)</span>,且<span class="arithmatex">\(N_1(t),N_2(t)\)</span>相互独立,则<span class="arithmatex">\(N_1(t)+N_2(t)\sim \mathcal{P}((\lambda+\mu)t)\)</span></li>
+</ul>
 <hr />
-<h1 id="_3">到达时刻的条件分布</h1>
+<h2 id="_3">到达时刻的条件分布</h2>
+<ul>
+<li>
 <p>解决的问题是,已知<span class="arithmatex">\(N(t)=n\)</span>,求<span class="arithmatex">\(S_1,S_2,\cdots,S_n\)</span>的联合分布</p>
+<ul>
+<li>
 <p>1.<span class="arithmatex">\(N(t)=0\)</span>的情况是平凡的,<span class="arithmatex">\(N(t)=1\)</span>时,<span class="arithmatex">\(S_1\)</span>可以在<span class="arithmatex">\((0,t]\)</span>中任意取值,所以<span class="arithmatex">\(S_1\)</span>的分布是均匀分布</p>
+</li>
+<li>
 <p>2.<span class="arithmatex">\(N(t)=2\)</span> 的情况下,<span class="arithmatex">\(S_,S_2\)</span> 也相互独立(若不纠结顺序,也就是事件 1,2发生的时间),因此随机取值,但是(事实上我们考虑的<span class="arithmatex">\(S_1,S_2\)</span>有先后顺序,)<span class="arithmatex">\(S_1\)</span>总是优先于<span class="arithmatex">\(S_2\)</span>到达.因此不妨把<span class="arithmatex">\(S_1,S_2\)</span> 理解为时间段内两个独立同分布的均匀随机变量的最大最小值</p>
+</li>
+<li>
 <p>3.更一般的,可以认为 n 个 <span class="arithmatex">\(S_i\)</span>的分布也是 n 个独立同分布的随机变量的次序排列,换句话说</p>
+</li>
+</ul>
+</li>
+<li>
 <div class="arithmatex">\[(S_1,S_2,\cdots,S_n|N(t)=n)\overset{d}{=}(U'_1,U'_2,\cdots,U'_n)\]</div>
-<p>其中<span class="arithmatex">\(\{U'_i\}_{i=1}^n\)</span>是 n 个均匀分布随机变量<span class="arithmatex">\(\{U_i\}_{i=1}^n\)</span>的次序统计量 </p>
-<p>有:
-<span class="arithmatex">\(<span class="arithmatex">\(P_{S_1,S_2,\cdots,S_n|N(t)}(x_1,x_2,\cdots,x_n|n)=\frac{n!}{t^n},0&lt;x_1&lt;\cdots&lt;x_n\)</span>\)</span></p>
-<div class="highlight"><pre><span></span><code>其余情况是取值为 0,如果不是次序统计量那么显然没有$n!$,在 n 个 $x_i$的随机排列中只有一种是符合次序的,
-因此对应的样本空间(非0)被缩小了到原来的1/n!,相应的概念密度也就扩大了n!倍
-</code></pre></div>
+<ul>
+<li>其中<span class="arithmatex">\(\{U'_i\}_{i=1}^n\)</span>是 n 个均匀分布随机变量<span class="arithmatex">\(\{U_i\}_{i=1}^n\)</span>的次序统计量 </li>
+</ul>
+</li>
+<li>
+<p>有:</p>
+</li>
+<li>
+<div class="arithmatex">\[P_{S_1,S_2,\cdots,S_n|N(t)}(x_1,x_2,\cdots,x_n|n)=\frac{n!}{t^n},0&lt;x_1&lt;\cdots&lt;x_n\]</div>
+</li>
+<li>
+<p>其余情况是取值为 0,如果不是次序统计量那么显然没有<span class="arithmatex">\(n!\)</span>,在 n 个 <span class="arithmatex">\(x_i\)</span>的随机排列中只有一种是符合次序的,
+    因此对应的样本空间(非0)被缩小了到原来的1/n!,相应的概念密度也就扩大了n!倍</p>
+</li>
+<li>
 <p>最后有:</p>
+<ul>
+<li>
 <div class="arithmatex">\[E(\sum\limits_{i=1}^nf(S_i)|N(t)=n)=E(\sum_{i=1}^nf(U_i))=n\int_0^tf(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
 <h3 id="_4">次序统计量</h3>
+<ul>
+<li>
 <p>设<span class="arithmatex">\(X_1,X_2,\cdots,X_n\)</span>独立同分布,分布函数为F,密度函数为f,且<span class="arithmatex">\(X_{(1)},X_{(2)},\cdots,X_{(n)}\)</span>是<span class="arithmatex">\(X_1,X_2,\cdots,X_n\)</span>的次序统计量,那么有</p>
+</li>
+<li>
 <div class="arithmatex">\[ P(X_{(k)}\leq x)=\sum\limits_{j=k}^nC_n^jF(x)^j[1-F(x)]^{n-j} \]</div>
-<div class="highlight"><pre><span></span><code>也就是说大于 x 的随机变量个数至少有 k 个
-</code></pre></div>
+<ul>
+<li>也就是说大于 x 的随机变量个数至少有 k 个</li>
+</ul>
+</li>
+<li>
 <div class="arithmatex">\[ p_k(x)=C_n^1p(x)C_{n-1}^{k-1}F(x)^{k-1}[1-F(x)]^{n-k}=\frac{n!}{(k-1)!(n-k)!}F(x)^{k-1}p(x)[1-F(x)]^{n-k} \]</div>
-<div class="highlight"><pre><span></span><code>先选一个等于 x 的,然后 k-1 个小雨 x 的,剩下的大于 x
-</code></pre></div>
+</li>
+<li>
+<p>先选一个等于 x 的,然后 k-1 个小雨 x 的,剩下的大于 x</p>
+</li>
+<li>
 <p>也就是说我们在考虑次序统计量的时候,要通过分析原始随机变量来间接考察</p>
+</li>
+</ul>
 <hr />
+<h2 id="poisson_4">复合 Poisson 过程</h2>
+<ul>
+<li>
+<p>这一节主要研究<span class="arithmatex">\(Z(t)=\sum\limits_{i=1}^{N(t)}\xi_i\)</span>其中<span class="arithmatex">\(N(t)\sim P(\lambda t)\)</span>
+,<span class="arithmatex">\(\xi_i\)</span>独立同分布,且<span class="arithmatex">\(E\xi_i=\mu,Var\xi_i=\sigma^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(EZ(t)=\mu\lambda t\)</span></p>
+<ul>
+<li><span class="arithmatex">\(EZ(t) = E\sum\limits_{i=1}^{N(t)}\xi_i= \sum\limits_{n=0}^\infty E(\sum\limits_{i=1}^{N(t)}\xi_i|N(t)=n)P(N(t)=n)
+\\\qquad =\sum\limits_{n=0}^\infty E\sum\limits_{i=1}^n\xi_i P(N(t)=n)=
+\sum\limits_{n=0}^\infty n\mu P(N(t)=n)\\\qquad =\mu EN(t)=\mu\lambda t\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(VarZ(t)=(\sigma^2+\mu^2)\lambda t\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(E(Z(t)^2) = E(\sum\limits_{i=1}^{N(t)}\xi_i)^2=\sum\limits_{n=0}^\infty E((\sum\limits_{i=1}^{N(t)}\xi_i)^2|N(t)=n)P(N(t)=n)\\
+\qquad=\sum\limits_{n=0}^\infty E(\sum\limits_{i=1}^n\xi_i)^2P(N(t)=n)=\sum\limits_{n=0}^\infty (n\sigma^2+\mu^2n^2)P(N(t)=n)\\
+\qquad=\sigma^2EN(t)+\mu^2E(N(t))^2=(\mu^2+\sigma^2)\lambda t+\mu^2\lambda^2 t^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(VarZ(t)=E(Z(t)^2)-(EZ(t))^2=(\sigma^2+\mu^2)\lambda t\)</span></p>
+</li>
+<li>这里<span class="arithmatex">\(E(\sum\limits_{i=1}^n\xi_i)^2=nE\xi_i^2+(n^2-n)E\xi_i\xi_j,\quad i\neq j\)</span></li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.zhihu.com/question/346234228">独立平稳增量性</a></p>
+<ul>
+<li>不交的时间区间<span class="arithmatex">\((t_1,t_2],(t_3,t_4]\)</span>上,<span class="arithmatex">\(Z(t_2)-Z(t_1)\)</span>和<span class="arithmatex">\(Z(t_4)-Z(t_3)\)</span>是独立的)</li>
+<li>
+<p><span class="arithmatex">\(Z(t_2)-Z(t_1)= Z(t_2-t_1)\)</span></p>
+<ul>
+<li>证明<span class="arithmatex">\(Z(s)-Z(t),Z(t)\)</span>相互独立.用特征函数证明:</li>
+<li>
+<p>设<span class="arithmatex">\(\phi(t)\)</span>是<span class="arithmatex">\(\xi_i\)</span>的特征函数<span class="arithmatex">\(\\:\)</span>
+    <span class="arithmatex">\(Ee^{iu(Z(s)-Z(t))+ivZ(t)}=Ee^{iu\sum\limits_{i=N(t)+1}^{N(s)}\xi_i+iv\sum\limits_{i=1}^{N(t)}\xi_i}=\\
+\qquad=E(\phi(u)^{N(s)-N(t)})(\phi(v))^{N(t)}=E(\phi(u)^{N(s)-N(t)})E(\phi(v))^{N(t)}\\\qquad
+=Ee^{iu(Z(s)-Z(t))}Ee^{ivZ(t)}\)</span></p>
+</li>
+<li>
+<p>平稳性类似:利用 Poisson 过程的平稳性,可以证明<span class="arithmatex">\(Z(t)\)</span>是平稳的</p>
+<ul>
+<li><span class="arithmatex">\(Ee^{iu(Z(s)-Z(t))}=Ee^{iu\sum\limits_{i=N(t)+1}^{N(s)}\xi_i}=E(\phi(u))^{N(s)-N(t)}\\\qquad
+=E\phi(u)^{N(s-t)}=Ee^{iuZ(s-t)}\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="poisson_5">非齐次 Poisson 过程</h2>
+<div class="highlight"><pre><span></span><code>之前学习的 Poisson 过程只和时间段有关,换句话说系统在各个时刻的繁忙程度是一样的
+但是比如食堂就餐,很明显吃饭时间人更多,这就是非齐次的情况
+</code></pre></div>
+<ul>
+<li>
+<p>假设<span class="arithmatex">\(t&gt;0,N(t)\)</span>为<span class="arithmatex">\((0,t]\)</span>中事件发生的次数:</p>
+<ul>
+<li>独立条件:<span class="arithmatex">\(N(0)=0,N(t)\geq 0\)</span></li>
+<li>独立增量:<span class="arithmatex">\(N(t)-N(s)\)</span>与<span class="arithmatex">\(N(s)\)</span>相互独立</li>
+<li>
+<p>稀有性:<span class="arithmatex">\(\exists\)</span>非负函数<span class="arithmatex">\(\lambda(t)\)</span>,使得:</p>
+<ul>
+<li><span class="arithmatex">\(P(N(t+\Delta t)-N(t)=1)=\lambda(t)\Delta t+o(\Delta t)\)</span></li>
+<li><span class="arithmatex">\(P(N(t+\Delta t)- N(t)\geq 2)=o(\Delta t)\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>定理3.8:</p>
+<ul>
+<li>
+<p>在上述假设下,<span class="arithmatex">\(N(t)\)</span>服从参数为<span class="arithmatex">\(m(t)=\int_0^t\lambda(s)ds\)</span>的 Poisson 分布,并且<span class="arithmatex">\(\forall s&lt;t\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(P(N(t)-N(s)=k)=\frac{[m(t)-m(s)]^k}{k!}e^{-[m(t)-m(s)]},\forall k\geq 0\)</span></li>
+<li>称<span class="arithmatex">\(N=(N(t),t\geq 0)\)</span>是强度为<span class="arithmatex">\(\lambda(t)\)</span>的<strong>非齐次Poisson过程</strong></li>
+</ul>
+</li>
+<li>
+<p>证明:定义<span class="arithmatex">\(p_k(t)=P(N(t)=k)\)</span>从<span class="arithmatex">\(p_0(t)\)</span> 开始,由假设的后两条:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\begin{aligned}
+        p_0(t+\Delta t) &amp; =p_0(t) P(N(t, t+\Delta t]=0) \\
+        &amp; =p_0(t)[1-\lambda(t) \Delta t+o(\Delta t)] \\
+        &amp; =p_0(t)-p_0(t) \lambda(t) \Delta t+o(\Delta t) .
+    \end{aligned}\)</span></p>
+</li>
+<li>
+<p>令<span class="arithmatex">\(\Delta t \rightarrow 0\)</span>, 得</p>
+<ul>
+<li><span class="arithmatex">\(p_0^{\prime}(t)=-\lambda(t) p_0(t) .\)</span></li>
+</ul>
+</li>
+<li>
+<p>求解齐次常微分方程, 并利用初始条件 <span class="arithmatex">\(p_0(0)=1\)</span> 得</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(p_0(t)=\mathrm{e}^{-m(t)} .\)</span>
+        - 类似地, 由假设 (ii) 和 (iii) 得</p>
+</li>
+<li>
+<p><span class="arithmatex">\(p_k^{\prime}(t)=-\lambda(t) p_k(t)+\lambda(t) p_{k-1}(t)\)</span>
+        递推得到:</p>
+</li>
+<li>
+<p><span class="arithmatex">\(p_k(t)=\frac{[m(t)]^k}{k !} \mathrm{e}^{-m(t)}\)</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(N(t)\)</span>的特征:</p>
+<ul>
+<li><span class="arithmatex">\(E N(t)=m(t)\)</span></li>
+<li><span class="arithmatex">\(Var N(t)=m(t)\)</span></li>
+<li>自相关函数<span class="arithmatex">\(r_N(s, t)=E(N(s)N(t))=m^2(s)+m(s)+m(s)m(t-s)\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>定理 3.9:</p>
+<ul>
+<li>满足上述非齐次 Poisson 过程的概率密度函数是多少呢?</li>
+<li>
+<p>令<span class="arithmatex">\(t&gt;0,n\geq 1,\)</span>假设<span class="arithmatex">\(V_i\)</span>独立同分布,密度函数是<span class="arithmatex">\(\frac{\lambda(u)}{m(t)},0\leq u\leq t\)</span>,那么有:</p>
+<ul>
+<li><span class="arithmatex">\((S_1,S_2,\cdots,S_n|N(t)=n)\overset{d}{=}(V'_1,V'_2,\cdots,V'_n)\)</span>,这里 <span class="arithmatex">\(S_i\)</span>是第 i 个到达的时间点</li>
+<li><span class="arithmatex">\(i.e.\quad p(s_1,s_2,\cdots,s_n|n)=n!\prod\limits_{i=1}^{n}\frac{\lambda(s_i)}{m(t)},0\leq s_1&lt;s_2&lt;\cdots&lt;s_n\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="poisson_6">多维Poisson点过程</h2>
+<ul>
+<li>略过</li>
+</ul>
 
 
 
