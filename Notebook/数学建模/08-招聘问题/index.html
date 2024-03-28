@@ -691,6 +691,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    招聘问题
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -700,6 +711,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      -
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -958,6 +997,10 @@
 现求一个最好的策略.使得录取最好的求职者的概率最大
 </code></pre></div>
 <ul>
+<li><a href="https://www.bilibili.com/video/BV1uJ411D7AW/?spm_id_from=333.999.0.0&amp;vd_source=5f080a6043a40b32a88c80bbaba081b5">毕导科普</a></li>
+<li>
+<p><a href="https://baike.baidu.com/item/%E7%A7%98%E4%B9%A6%E9%97%AE%E9%A2%98">百度百科</a></p>
+</li>
 <li>
 <p>数学描述</p>
 <ul>
@@ -998,20 +1041,26 @@
 </li>
 <li>
 <p>最优策略:使得<span class="arithmatex">\(p_n(s)=\sum\limits_{k=s}^np_n^k(s)=\frac{s-1}{n}\sum\limits_{k=s-1}^{n-1}\frac{1}{k}\)</span>尽可能大</p>
-</li>
+<ul>
 <li>
 <p><span class="arithmatex">\(s^*=\min\{s|\sum\limits_{k=s}^{n-1}\frac{1}{k}&lt;1\}\)</span></p>
 <ul>
-<li>
-<p><img alt="image_2024-03-28-16-50-47" src="../img/image_2024-03-28-16-50-47.png" /> </p>
-</li>
-<li>
-<p>计算<span class="arithmatex">\(s^*,p_n(s^*)\)</span>极限</p>
-</li>
+<li><img alt="image_2024-03-28-16-50-47" src="../img/image_2024-03-28-16-50-47.png" /> </li>
 </ul>
 </li>
 <li>
-<p>如何估计出<span class="arithmatex">\(s^*=f(n)\)</span>?</p>
+<p><span class="arithmatex">\(s^*\)</span>的估计和渐进性质</p>
+<h2 id="-">-</h2>
+</li>
+<li>
+<p><span class="arithmatex">\(p_n\left(s^*\right)\)</span> 的值与渐近性质</p>
+<ul>
+<li><span class="arithmatex">\(p_n\left(s^*\right)=\frac{s^*-1}{n} \sum_{k=s^*-1}^{n-1} \frac{1}{k}\)</span></li>
+<li><span class="arithmatex">\(\ln \frac{n}{s^*-1}=\int_{s^*-1}^n \frac{1}{x} d x \leq \sum_{k=s^*-1}^{n-1} \frac{1}{k} \leq \int_{s^*-\frac{1}{2}}^{n-\frac{1}{2}} \frac{1}{x} d x=\ln \frac{2 n-1}{2 s^*-1}\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{n \rightarrow \infty} p_n\left(s^*\right)=\frac{1}{e}\)</span></li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>
