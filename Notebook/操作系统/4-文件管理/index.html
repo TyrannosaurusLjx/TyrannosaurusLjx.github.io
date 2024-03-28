@@ -12,13 +12,13 @@
         <meta name="author" content="Ljx">
       
       
-        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/4-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../3-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
       
       
-        <link rel="next" href="../2-%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/">
+        <link rel="next" href="../note-chapter1/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
@@ -29,7 +29,7 @@
     
     
       
-        <title>操作系统概述 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+        <title>文件管理 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              操作系统概述
+              文件管理
             
           </span>
         </div>
@@ -467,19 +467,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +479,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -540,10 +530,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../4-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    文件管理
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -552,6 +562,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件的属性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件的逻辑结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件目录
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -973,62 +1030,97 @@
   
 
 
-<h1 id="_1">操作系统概述</h1>
-<p><img alt="os def" src="../img/def-of-os.png" /> </p>
-<p>1.是系统资源的管理者
-<img alt="image_2024-03-03-13-31-09" src="../img/image_2024-03-03-13-31-09.png" /></p>
-<div class="highlight"><pre><span></span><code>处理机管理:是进程管理吗?
-</code></pre></div>
-<p>2.提供接口和环境
-<img alt="image_2024-03-03-13-34-51" src="../img/image_2024-03-03-13-34-51.png" /> </p>
-<div class="highlight"><pre><span></span><code>比如GUI,联机命令接口(terminal),批处理命令接口(.bat 文件,.sh 文件等等)
-程序接口等等(由操作系统提供,供程序员使用等等)
-</code></pre></div>
-<p>3.是系统软件 </p>
-<p><img alt="image_2024-03-03-13-44-31" src="../img/image_2024-03-03-13-44-31.png" /></p>
-<h1 id="_2">操作系统的四大特征</h1>
-<p><img alt="image_2024-03-03-13-45-49" src="../img/image_2024-03-03-13-45-49.png" /></p>
-<div class="highlight"><pre><span></span><code>并发:宏观上同时发生, 微观上交替发生
-并行:微观上同时发生
-</code></pre></div>
-<p><img alt="image_2024-03-03-13-49-55" src="../img/image_2024-03-03-13-49-55.png" />
-超过 4 个就需要并发性</p>
-<p>共享方式对应的也有互斥共享方式和同时共享方式(微观上可能是交替共享也可能是同时共享)</p>
-<p><img alt="image_2024-03-03-13-52-59" src="../img/image_2024-03-03-13-52-59.png" /></p>
-<div class="highlight"><pre><span></span><code>比如一块硬盘分成几个盘(D,E)
-时分复用技术:单核 cpu 系统同时运行几个引用程序
-</code></pre></div>
-<p><img alt="image_2024-03-03-13-54-23" src="../img/image_2024-03-03-13-54-23.png" /></p>
-<h2 id="_3">总结</h2>
-<p><img alt="image_2024-03-03-13-56-40" src="../img/image_2024-03-03-13-56-40.png" /></p>
-<h1 id="_4">操作系统发展</h1>
-<p><img alt="image_2024-03-03-13-57-20" src="../img/image_2024-03-03-13-57-20.png" /></p>
-<div class="highlight"><pre><span></span><code>多道批处理系统时期 OS 才出现
-分时操作系统:交互功能出现
-</code></pre></div>
-<p><img alt="image_2024-03-03-14-02-19" src="../img/image_2024-03-03-14-02-19.png" /></p>
-<h1 id="_5">总结</h1>
-<p><img alt="image_2024-03-03-14-02-46" src="../img/image_2024-03-03-14-02-46.png" /> </p>
-<h1 id="_6">操作系统的运行机制</h1>
-<p><img alt="image_2024-03-03-14-06-31" src="../img/image_2024-03-03-14-06-31.png" /></p>
-<p><img alt="image_2024-03-03-14-09-10" src="../img/image_2024-03-03-14-09-10.png" /></p>
-<h1 id="_7">总结</h1>
-<p><img alt="image_2024-03-03-14-09-34" src="../img/image_2024-03-03-14-09-34.png" /></p>
-<h1 id="_8">中断和异常</h1>
-<p>操作系统夺回cpu使用权的唯一方式就是中断</p>
-<div class="highlight"><pre><span></span><code>内中断:比如应用程序企图使用特权指令,或者数组越界需要处理(转到 OS 处理异常),
-    或者陷入指令(应用程序希望 OS 为他提供某些操作),陷入指令不是特权指令
-外中断:时钟中断(实现并发),I/O中断请求等等
-</code></pre></div>
-<p><img alt="image_2024-03-03-14-29-02" src="../img/image_2024-03-03-14-29-02.png" /></p>
-<h1 id="_9">总结</h1>
-<p><img alt="image_2024-03-03-14-30-17" src="../img/image_2024-03-03-14-30-17.png" /> </p>
-<h1 id="_10">系统调用</h1>
-<p><img alt="image_2024-03-03-14-36-44" src="../img/image_2024-03-03-14-36-44.png" /></p>
-<h1 id="_11">操作系统的体系结构</h1>
-<p><img alt="image_2024-03-03-14-50-56" src="../img/image_2024-03-03-14-50-56.png" /></p>
-<h1 id="_12">虚拟机</h1>
-<p><img alt="image_2024-03-04-13-50-52" src="../img/image_2024-03-04-13-50-52.png" /></p>
+<h1 id="_1">文件管理</h1>
+<h2 id="_2">文件的属性</h2>
+<ul>
+<li>文件名:用户最直观的感知</li>
+<li>标识符:操作系统内部用于区分各个文件的标志,对用户没有可读性</li>
+<li>类型:txt,py..</li>
+<li>
+<p>位置,大小,创建者等等</p>
+</li>
+<li>
+<p>文件内部数据组织形式</p>
+<ul>
+<li>
+<p>流式文件:无结构文件,由二进制字符流组成,如 txt 文件</p>
+</li>
+<li>
+<p>记录式文件:有结构文件.如xlsx文件</p>
+<ul>
+<li>文件之间的逻辑结构?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>操作系统向上提供文件的最基本功能</p>
+<ul>
+<li>创建文件:creat 系统调用</li>
+<li>删除文件:delete 系统调用</li>
+<li>打开文件:open 系统调用</li>
+<li>关闭文件:close 系统调用</li>
+<li>读文件:read 系统调用</li>
+<li>写文件:write 系统调用</li>
+</ul>
+</li>
+<li>
+<p>外存中文件的组织形式</p>
+<p>类似于内存分为一个个“内存块”，外存会分为一个个“块/磁盘块/物理块”。
+每个磁盘块的大小是相等的，每块一般包含2的整数幂个地址
+同样类似的是，文件的逻辑地 址也可以分为(逻辑块号，块内地址)
+操作系统同样需要将逻辑地址转 换为外存的物理地址(物理块号，块内地址)的形式。
+块内地址的位数取决于磁盘块的大小</p>
+</li>
+</ul>
+<h2 id="_3">文件的逻辑结构</h2>
+<ul>
+<li>
+<p>有结构文件的逻辑结构</p>
+<ul>
+<li>
+<p>顺序文件:</p>
+<ul>
+<li>文件中的记录是按照某种顺序(顺序表或者链表之类的)排列的,可以是定长也可以是变长</li>
+<li>串结构:记录之间的顺序与关键词无关</li>
+<li>
+<p>顺序结构:记录之间的顺序按关键词顺序排列</p>
+<ul>
+<li><img alt="image_2024-03-28-23-00-37" src="../img/image_2024-03-28-23-00-37.png" /> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>索引文件:</p>
+<ul>
+<li>顺序文件的查找效率较低,因此引入索引文件:建立一个索引表(定长记录的顺序文件),索引表中的每个记录包含一个关键字和一个指向对应数据记录的指针</li>
+</ul>
+</li>
+<li>
+<p>索引顺序文件:</p>
+<ul>
+<li>建立多级索引表以提高查找效率</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><img alt="image_2024-03-28-23-09-18" src="../img/image_2024-03-28-23-09-18.png" /></p>
+</li>
+</ul>
+<h2 id="_4">文件目录</h2>
+<ul>
+<li>
+<p>文件控制块:</p>
+</li>
+<li>
+<p>目录结构</p>
+</li>
+<li>
+<p>索引节点</p>
+</li>
+</ul>
 
 
 
