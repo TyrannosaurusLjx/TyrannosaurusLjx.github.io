@@ -12,7 +12,7 @@
 
 - [vimium-c](https://github.com/gdh1995/vimium-c)
 
-    - 在[github](github.com)上禁用了"/",避免和github搜索冲突
+    - 在github上禁用了"/",避免和github搜索冲突
     
     - [配置](extension://aibcglbfblnogfjhbcmmpobjhnomhcdo/pages/options.html)
 

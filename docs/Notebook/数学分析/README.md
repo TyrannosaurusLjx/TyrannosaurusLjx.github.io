@@ -13,12 +13,12 @@
 [吉米多维奇总卷](https://github.com/TyrannosaurusLjx/COURSES/blob/main/Mathematical_Analysis/%E5%8F%82%E8%80%83%E6%96%87%E4%BB%B6/%E5%90%89%E7%B1%B3%E5%A4%9A%E7%BB%B4%E5%A5%87%E4%B9%A0%E9%A2%98%E9%9B%86.pdf)
 
 
-## 约定:
-
-- $I\sub D_f$表示$f$在$I$上有定义
-- $A\Rightarrow B$,表示$A$蕴含$B$
-- $f\in B([a,b])$,表示$f$在$[a,b]$上有界
-- $f\in C([a,b])$,表示$f$在$[a,b]$上连续
+- 约定:
+    
+    - $I \subset D_f$表示$f$在$I$上有定义
+    - $A\Rightarrow B$,表示$A$蕴含$B$
+    - $f\in B([a,b])$,表示$f$在$[a,b]$上有界
+    - $f\in C([a,b])$,表示$f$在$[a,b]$上连续
 
 
 
