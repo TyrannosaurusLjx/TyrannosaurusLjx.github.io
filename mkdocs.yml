@@ -23,8 +23,8 @@ theme:
     scheme: slate
     primary: black  # 导航栏颜色
     accent: blue
-  logo: assets/小新.jpg
-  favicon: assets/小新.jpg
+  logo: assets/image/小新.jpg
+  favicon: assets/image/小新.jpg
   features:
     - navigation.instant  
     - navigation.instant.prefetch
@@ -40,18 +40,22 @@ theme:
 
 
 plugins:
+  # - exclude:
+  #     glob:
+  #       - ./docs/assets/*
+
   - search:
       lang: 
         - en
         - zh
-  - blog
-  - rss:
-      match_path: blog/posts/*.md
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags 
+  # - blog
+  # - rss:
+  #     match_path: blog/posts/*.md
+  #     date_from_meta:
+  #       as_creation: date
+  #     categories:
+  #       - categories
+  #       - tags 
 
 
 
