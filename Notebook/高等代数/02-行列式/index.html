@@ -18,7 +18,7 @@
         <link rel="prev" href="../01-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/">
       
       
-        <link rel="next" href="../../../Tools/">
+        <link rel="next" href="../03-%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/">
       
       
       <link rel="icon" href="../../../assets/image/小新.jpg">
@@ -972,10 +972,97 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#25-cramer" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Cramer 法则
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Cramer 法则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 行列式按 k 行展开
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 行列式按 k 行展开">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1laplace" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1(Laplace定理)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    n维度量线性空间
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1122,6 +1209,33 @@
 <h5 id="vandermoode">Vandermoode 行列式</h5>
 <ul>
 <li><span class="arithmatex">\(\begin{vmatrix}1 &amp; 1 &amp; \cdots &amp; 1\\ x_1 &amp; x_2 &amp; \cdots &amp; x_n \\\vdots &amp; \vdots &amp; \cdots &amp; \vdots  \\x_1^{n-1} &amp; x_2^{n-1} &amp; \cdots &amp; x_n^{n-1} \end{vmatrix}=\prod\limits_{1\leq i&lt;j\leq n}(x_j-x_i)\)</span></li>
+</ul>
+<h2 id="25-cramer">2.5 Cramer 法则</h2>
+<h4 id="1_4">定理 1</h4>
+<ul>
+<li>数域<span class="arithmatex">\(K\)</span>上的<span class="arithmatex">\(n\)</span>个方程<span class="arithmatex">\(n\)</span>个未知数的线性方程组<span class="arithmatex">\(AX=B\)</span>有唯一解的充要条件是<span class="arithmatex">\(\det(A)\neq 0\)</span></li>
+<li>推论 1:<span class="arithmatex">\(n\)</span>元齐次线性方程组有非零解的充要条件是<span class="arithmatex">\(\det(A)=0\)</span>,只有零解的充要条件是<span class="arithmatex">\(\det(A)\neq 0\)</span></li>
+</ul>
+<h4 id="2_2">定理 2</h4>
+<ul>
+<li><span class="arithmatex">\(AX=B\)</span>的解<span class="arithmatex">\(x_i=\frac{\det(A_i)}{\det(A)}\)</span>,其中<span class="arithmatex">\(A_i\)</span>是<span class="arithmatex">\(A\)</span>的第<span class="arithmatex">\(i\)</span>列元素换成<span class="arithmatex">\(B\)</span>的元素后得到的矩阵</li>
+<li>定理 1的充分性和定理 2 合起来称为 Cramer 法则</li>
+</ul>
+<h2 id="26-k">2.6 行列式按 k 行展开</h2>
+<h4 id="1_5">定义 1</h4>
+<ul>
+<li><span class="arithmatex">\(n\)</span>级矩阵<span class="arithmatex">\(A\)</span>中任取<span class="arithmatex">\(k\)</span>行,<span class="arithmatex">\(k\)</span>列,位于这些行和列的交点处的<span class="arithmatex">\(k^2\)</span>个元素按原来的排列方法构成<span class="arithmatex">\(A\)</span>的一个<span class="arithmatex">\(k\)</span>级子式,记作<span class="arithmatex">\(A\left(\begin{matrix}
+  i_1i_2\cdots i_k\\
+  j_1j_2\cdots j_k
+\end{matrix}\right)\)</span>,划去这<span class="arithmatex">\(k\)</span>行<span class="arithmatex">\(k\)</span>列后得到的<span class="arithmatex">\(n-k\)</span>级矩阵的行列式称为其余子式,在余子式前面乘以<span class="arithmatex">\((-1)^{i_1+i_2+\cdots+i_k+j_1+\cdots+j_k }\)</span>得到代数余子式,记作<span class="arithmatex">\(A\left(\begin{matrix}
+  i'_1i'_2\cdots i'_{n-k}\\
+  j'_1j'_2\cdots j'_{n-k}
+\end{matrix}\right)\)</span>,其中<span class="arithmatex">\((i'_1i'_2\cdots i'_{n-k})=(1,2,\cdots,n)-(i_1i_2\cdots i_k)\)</span>,<span class="arithmatex">\((j'_1j'_2\cdots j'_{n-k})=(1,2,\cdots,n)-(j_1j_2\cdots j_k)\)</span></li>
+</ul>
+<h4 id="1laplace">定理 1(Laplace定理)</h4>
+<ul>
+<li>在<span class="arithmatex">\(n\)</span>阶矩阵<span class="arithmatex">\(A\)</span>中取定<span class="arithmatex">\(i_1,i_2,\cdots,i_k\)</span>行,则这<span class="arithmatex">\(k\)</span>行元素形成的所有<span class="arithmatex">\(k\)</span>阶子式与它们的代数余子式之和等于<span class="arithmatex">\(\det(A)\)</span></li>
+<li>推论:分块矩阵行列式<span class="arithmatex">\(\begin{vmatrix}A &amp; B\\ 0 &amp; C\end{vmatrix}=\det(A)\det(C)\)</span></li>
 </ul>
 
 

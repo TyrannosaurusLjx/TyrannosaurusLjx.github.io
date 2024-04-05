@@ -747,6 +747,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      特征缩放
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      学习率
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -971,11 +989,24 @@
 </ul>
 <h4 id="_3">多变量梯度下降</h4>
 <ul>
-<li>代价函数<span class="arithmatex">\(J(\theta_0,\theta_1,\cdots,\theta_n)=\frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2\)</span></li>
+<li>代价函数<span class="arithmatex">\(J(\theta_0,\theta_1,\cdots,\theta_n)=\frac{1}{2m}\sum\limits_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2\)</span></li>
 <li>其中<span class="arithmatex">\(h_\theta= \theta^TX=\theta_0x_0+\theta_1x_1+\cdots+\theta_nx_n\)</span></li>
 <li>算法:<span class="arithmatex">\(\theta_j =\theta_j-\alpha\frac{\partial}{\partial \theta_j}J(\Theta)\)</span></li>
 <li>即:<span class="arithmatex">\(\theta_j = \theta_j-\alpha\frac{\partial}{\partial\theta_j}\frac{1}{2m}\sum\limits_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2=\theta_j-\alpha\frac{1}{m}\sum\limits_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}\)</span></li>
-<li></li>
+</ul>
+<h4 id="_4">特征缩放</h4>
+<ul>
+<li>在面对多维的问题的时候,为了保证各个特征的游动权重相同,需要对特征进行缩放</li>
+<li>一般的可以取<span class="arithmatex">\(x_j =  \frac{x_j-\mu_j}{s_j}\)</span>,其中<span class="arithmatex">\(\mu_j\)</span>是平均值,<span class="arithmatex">\(s_j\)</span>是标准差</li>
+</ul>
+<h4 id="_5">学习率</h4>
+<ul>
+<li>
+<p>学习率太大可能会无法收敛,学习率太小会导致收敛速度过慢</p>
+</li>
+<li>
+<p>画出<span class="arithmatex">\(J(\theta)\)</span>随着迭代次数的变化,可以帮助我们选择合适的学习率</p>
+</li>
 </ul>
 
 
