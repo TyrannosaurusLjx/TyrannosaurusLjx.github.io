@@ -539,6 +539,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#io_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O核心子系统
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      SPOOLing技术
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      设备的分配和回收
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1254,6 +1281,76 @@
 <p>设备驱动程序接口</p>
 </li>
 <li><img alt="驱动程序接口" src="../img/image-23.png" /></li>
+</ul>
+<h2 id="io_4">I/O核心子系统</h2>
+<ul>
+<li><img alt="I/O 核心子系统" src="../img/image-24.png" /></li>
+</ul>
+<h2 id="spooling">SPOOLing技术</h2>
+<ul>
+<li>脱机技术</li>
+<li><img alt="脱机技术" src="../img/image-25.png" /></li>
+<li>脱离主机的控制进行输入输出</li>
+<li>假脱机技术(SPOOLing 技术)</li>
+<li><img alt="SPOOLing 技术" src="../img/image-26.png" /></li>
+<li><img alt="alt text" src="../img/image-27.png" /></li>
+<li><img alt="alt text" src="../img/image-28.png" /></li>
+</ul>
+<h2 id="_3">设备的分配和回收</h2>
+<ul>
+<li>设备分配应该考虑的因素</li>
+<li>设备固有属性<ul>
+<li>独占设备:一个时间内只能分配给一个进程使用(打印机)</li>
+<li>共享设备:可同时分配给多个进程(磁盘)</li>
+<li>虚拟设备:使用 SPOOLing 技术把独占设备改进成的共享设备</li>
+</ul>
+</li>
+<li>设备分配算法<ul>
+<li>先来先服务等等</li>
+</ul>
+</li>
+<li>设备分配中的安全性<ul>
+<li>安全分配方式:为进程分配一个设备之后就把进程阻塞,直到I/O操作完成再唤醒</li>
+<li>一个时间段内一个进程只能访问一个设备</li>
+<li>优点是破坏了"请求和保持"条件,不会发生死锁</li>
+<li>缺点是对一个进程来说,CPU 和 I/O 设备只能串行工作,效率低</li>
+<li>不安全分配方式:为进程分配一个设备之后,进程可以继续执行,除非某个 I/O 操作得不到满足,进程才会被阻塞</li>
+<li>优点是cpu 和 I/O 设备可以并行工作,效率高</li>
+<li>缺点是有可能发生死锁(可以用死锁检测和解除来解决)</li>
+</ul>
+</li>
+<li>静态分配和动态分配</li>
+<li>静态分配:在进程运行之前就分配全部资源,运行结束后归还全部资源<ul>
+<li>破坏了"请求和保持"条件,不会发生死锁</li>
+</ul>
+</li>
+<li>动态分配:进程运行中动态分配资源</li>
+<li>设备分配中的数据结构</li>
+<li>一个通道控制多个控制器,一个控制器控制多个设备</li>
+<li><strong>设备控制表(DCT)</strong>,记录设备情况<ul>
+<li><img alt="DCT" src="../img/image-29.png" /></li>
+</ul>
+</li>
+<li><strong>控制器控制表(COCT)</strong>,对控制器进行管理<ul>
+<li><img alt="COCT" src="../img/image-30.png" /></li>
+</ul>
+</li>
+<li><strong>通道控制表(CHCT)</strong><ul>
+<li><img alt="CHCT" src="../img/image-31.png" /></li>
+</ul>
+</li>
+<li><strong>系统设备表(SDT)</strong>,记录全部设备的情况<ul>
+<li><img alt="SDT" src="../img/image-32.png" /></li>
+</ul>
+</li>
+<li>设备分配的步骤</li>
+<li><img alt="设备分配步骤" src="../img/image-33.png" /></li>
+<li><img alt="缺点" src="../img/image-34.png" /></li>
+<li><img alt="改进方法" src="../img/image-35.png" /></li>
+<li>设备分配的改进方法</li>
+<li><img alt="改进方法" src="../img/image-36.png" /></li>
+<li><img alt="改进方法" src="../img/image-37.png" /></li>
+<li><img alt="总结" src="../img/image-38.png" /></li>
 </ul>
 
 

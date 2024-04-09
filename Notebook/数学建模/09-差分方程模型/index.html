@@ -12,13 +12,13 @@
         <meta name="author" content="Ljx">
       
       
-        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/01-%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E6%A6%82%E8%AE%BA/">
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/09-%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../08-%E6%8B%9B%E8%81%98%E9%97%AE%E9%A2%98/">
       
       
-        <link rel="next" href="../02-PageRank/">
+        <link rel="next" href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
       
       
       <link rel="icon" href="../../../assets/image/小新.jpg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>概论 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+        <title>差分方程模型 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
       
     
     
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              概论
+              差分方程模型
             
           </span>
         </div>
@@ -532,19 +532,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01-%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E6%A6%82%E8%AE%BA/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +544,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -689,10 +679,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../09-%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    差分方程模型
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -701,6 +711,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      种群增长模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="种群增长模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      离散单种种群模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      混沌
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -996,9 +1068,64 @@
   
 
 
-<h1 id="_1">概论</h1>
-<p>没什么好说的，就是数学建模的基础知识，这里就不再赘述了。</p>
-<p><a href="https://github.com/TyrannosaurusLjx/COURSES/blob/main/Mathematical_modeling/files/01%20%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E6%A6%82%E8%AE%BA.pdf">RESOURCES</a></p>
+<h1 id="_1">差分方程模型</h1>
+<h2 id="_2">种群增长模型</h2>
+<h3 id="_3">离散单种种群模型</h3>
+<ul>
+<li>现实种群只由一个世代组成,相继世代之间没有重叠</li>
+<li>记<span class="arithmatex">\(x_n\)</span>为第<span class="arithmatex">\(n\)</span>代种群规模,则<span class="arithmatex">\(x_{n+1}=f(x_n)\)</span></li>
+<li>指数增长模型:每一代个体繁殖的个体数量与该代个体数量只比是一个常数<ul>
+<li><span class="arithmatex">\(x_{n+1}=rx_n\)</span></li>
+<li><span class="arithmatex">\(r\)</span>为增长率</li>
+</ul>
+</li>
+<li>Logistic 模型<ul>
+<li>种群增长率仅与种群数量有关,且是种群数量的递减函数</li>
+<li><span class="arithmatex">\(\frac{\delta x_n}{x_n}=r(1-\frac{x_n}{K})\)</span></li>
+<li><span class="arithmatex">\(x_{n+1}=x_n+ rx_n(1-\frac{x_n}{K})\)</span></li>
+<li><span class="arithmatex">\(r\)</span>为内禀增长率,<span class="arithmatex">\(K\)</span>为环境承载量</li>
+</ul>
+</li>
+</ul>
+<h3 id="_4">一些定义</h3>
+<ul>
+<li>平衡点: <span class="arithmatex">\(x^*\)</span>是方程<span class="arithmatex">\(x=f(x)\)</span>的解,称<span class="arithmatex">\(x^*\)</span>是平衡点</li>
+<li>渐进稳定:只要<span class="arithmatex">\(x_0\to x^*\)</span>就有<span class="arithmatex">\(x_n\to x^*\)</span>,则称平衡点<span class="arithmatex">\(x^*\)</span>是渐进稳定的</li>
+<li>
+<ol>
+<li><span class="arithmatex">\(|f'|&lt;1\Rightarrow x^*\)</span>是渐进稳定的</li>
+</ol>
+</li>
+<li>
+<ol>
+<li><span class="arithmatex">\(|f'|&gt;1\Rightarrow x^*\)</span>是不稳定的</li>
+</ol>
+</li>
+<li>
+<ol>
+<li><span class="arithmatex">\(|f'|=1\Rightarrow x^*\)</span>很多情况...</li>
+</ol>
+</li>
+<li>
+<p>周期点: <span class="arithmatex">\(x^*\)</span>是称为<span class="arithmatex">\(k-\)</span>周期点,若有<span class="arithmatex">\(f_k(x^*)=x^*,f_k=f(f_{k-1})\)</span></p>
+</li>
+<li>
+<p>Logistic 模型的 2-周期点:<span class="arithmatex">\(x_\pm=\frac{r+2\pm \sqrt{r^2-4}}{2r}\)</span></p>
+</li>
+<li><span class="arithmatex">\(f(x_)=x_+,f(x_+)=x_-\)</span></li>
+<li>当<span class="arithmatex">\(2&lt;r&lt;\sqrt{6}\)</span>时,2-周期点是稳定的</li>
+</ul>
+<h3 id="_5">混沌</h3>
+<ul>
+<li>Li-Yorke 定理:若实数轴区间有一个到自身的连续函数<span class="arithmatex">\(f\)</span>,<span class="arithmatex">\((f:[a,b]\to [a,b])\)</span>,若<span class="arithmatex">\(f\)</span>有一个 3-周期点,那么<span class="arithmatex">\(\forall k,f\)</span>有一个<span class="arithmatex">\(k-\)</span>周期点</li>
+<li>
+<p>存在不可数个初始点,函数从这些点出发得到的序列最终会变得杂乱无章,无规律可循(走向混沌)</p>
+</li>
+<li>
+<p>Sharkovsky 定理:任一正整数<span class="arithmatex">\(n\)</span>可唯一表示成<span class="arithmatex">\(n=2^s(2p+1)\)</span>,其中<span class="arithmatex">\(s,p\in \mathbb{N}\)</span>,所有正整数可以按这个顺序排成一列,称为<span class="arithmatex">\(S\)</span>型排列</p>
+</li>
+<li>若实数轴一区间到自身的连续函数<span class="arithmatex">\(f\)</span>具有<span class="arithmatex">\(k\)</span>-周期点,且正整数<span class="arithmatex">\(S\)</span>型排序中,<span class="arithmatex">\(k\)</span>先于<span class="arithmatex">\(m\)</span>,则<span class="arithmatex">\(f\)</span>必定有<span class="arithmatex">\(m\)</span>周期点</li>
+</ul>
 
 
 
