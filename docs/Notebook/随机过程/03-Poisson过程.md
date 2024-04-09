@@ -36,7 +36,7 @@
 
 - $N(t)\sim \mathcal{P}(\lambda t)$,则$N(t)$是一个Poisson流
 
-- 考察时间发生的时间的分布,也就是$S_i$的分布
+- 考察事件发生的时间的分布,也就是$S_i$的分布
 
     - $\forall t>0,S_>t\iff N(t)=0$,那么 $P(S_1>t)=P(N(t)=0)=e^{-\lambda t}$,从而$S_1\sim \mathcal{E}(\lambda)$
 
@@ -46,7 +46,7 @@
 
 - 从而有$P(S_n\leq t)=1-\sum\limits_{k=0}^{n-1}\frac{(\lambda t)^k}{k!}e^{-\lambda t}$
 
-    - $P_{S_n}=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t},t>0$ (gamma 分布)
+    - $P_{S_n}(t)=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t},t>0$ (gamma 分布)
 
 ---
 
@@ -100,6 +100,8 @@
    - 先选一个等于 x 的,然后 k-1 个小雨 x 的,剩下的大于 x
 
 - 也就是说我们在考虑次序统计量的时候,要通过分析原始随机变量来间接考察
+
+- $EU_{(k)}=\frac{k}{n+1}t$
 
 ---
 
@@ -200,7 +202,6 @@
 ## 多维Poisson点过程
 
 - 略过
-
 
 
 
