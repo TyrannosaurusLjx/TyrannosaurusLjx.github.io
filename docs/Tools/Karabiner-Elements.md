@@ -12,7 +12,7 @@
 - 使用Karabiner-Elements修改按键映射
   - ![alt text](img/image-2.png)
 
-## 个人配置
+## [个人配置](https://github.com/TyrannosaurusLjx/Configuration/tree/main/Karabiner-Elements)
 - 使用 left_command+hjkl 在微信,iterm2 中代替方向键
 
 
