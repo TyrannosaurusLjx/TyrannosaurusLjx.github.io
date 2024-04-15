@@ -1298,21 +1298,29 @@
 <ul>
 <li>
 <ol>
-<li><span class="arithmatex">\(EX_n=E(A\cos\lambda n+B\sin\lambda n)=EAE\cos\lambda n+EBE\sin\lambda n=0\)</span></li>
+<li>
+<div class="arithmatex">\[EX_n=E(A\cos\lambda n+B\sin\lambda n)=EAE\cos\lambda n+EBE\sin\lambda n=0\]</div>
+</li>
 </ol>
 </li>
 <li>
 <ol>
-<li><span class="arithmatex">\(Cov(X_n,X_m)=EX_nX_m=E(A\cos\lambda n+B\sin\lambda n)(A\cos\lambda m+B\sin\lambda m)=E( A^2\cos\lambda n\cos\lambda m+B^2\sin\lambda n\sin\lambda m + AB\cos\lambda n\sin\lambda m+AB\sin\lambda n\cos\lambda m )=\cos(\lambda(n-m))\)</span></li>
+<li>
+<div class="arithmatex">\[Cov(X_n,X_m)=EX_nX_m=E(A\cos\lambda n+B\sin\lambda n)(A\cos\lambda m+B\sin\lambda m)=E( A^2\cos\lambda n\cos\lambda m+B^2\sin\lambda n\sin\lambda m + AB\cos\lambda n\sin\lambda m+AB\sin\lambda n\cos\lambda m )=\cos(\lambda(n-m))\]</div>
+</li>
 </ol>
 </li>
 </ul>
 <h3 id="2">2.<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <ul>
-<li><span class="arithmatex">\(EZ_n=0,VarZ_n=1\Rightarrow EZ_n^2=1\)</span></li>
+<li>
+<div class="arithmatex">\[EZ_n=0,VarZ_n=1\Rightarrow EZ_n^2=1\]</div>
+</li>
 <li>
 <ol>
-<li><span class="arithmatex">\(EX_n=E\sum\limits_{i=o}^r\alpha_iZ_{n-i}=\sum\limits_{i=o}^r\alpha_iEZ_{n-i}=0\)</span></li>
+<li>
+<div class="arithmatex">\[EX_n=E\sum\limits_{i=o}^r\alpha_iZ_{n-i}=\sum\limits_{i=o}^r\alpha_iEZ_{n-i}=0\]</div>
+</li>
 </ol>
 </li>
 <li>
@@ -1336,41 +1344,57 @@
 <li>两侧求均值有<span class="arithmatex">\(EX_n=\alpha EX_{n-1}+EZ_n\Rightarrow EX_n=0\)</span></li>
 <li>两侧求方差有<span class="arithmatex">\(VarX_n=\alpha^2VarX_{n-1} + VarZ_n,\Rightarrow VarX_n=\frac{1}{1-\alpha^2}\)</span>,则<span class="arithmatex">\(m=0\)</span>时满足所需证的等式</li>
 <li>不妨设<span class="arithmatex">\(m&gt;0,\)</span>不然有<span class="arithmatex">\(Cov(X_n,X_{n+m})=Cov(X_{n+m},X_n)\overset{i=n+m,j=-m&gt;0}{=}Cov(X_i,X_{i+j})\)</span></li>
-<li>根据递推关系有<span class="arithmatex">\(X_{n+m}=\alpha^mX_n+\alpha^{m-1}Z_{n+1}+\cdots+Z_{n+m}\)</span>,从而有<span class="arithmatex">\(Cov(X_n,X_{n+m})=EX_nX_{n+m}=E\{ \alpha^mX_n^2+\alpha^{m-1}X_nZ_{n+1}+\cdots +X_nZ_{n+m}\}=\alpha^m EX_n^2=\frac{\alpha^m}{1-\alpha^2}\)</span>.得证</li>
+<li>根据递推关系有 <span class="arithmatex">\(<span class="arithmatex">\(X_{n+m}=\alpha^mX_n+\alpha^{m-1}Z_{n+1}+\cdots+Z_{n+m}\)</span>\)</span>,从而有 <span class="arithmatex">\(<span class="arithmatex">\(Cov(X_n,X_{n+m})=EX_nX_{n+m}=E\{ \alpha^mX_n^2+\alpha^{m-1}X_nZ_{n+1}+\cdots +X_nZ_{n+m}\}=\alpha^m EX_n^2=\frac{\alpha^m}{1-\alpha^2}\)</span>\)</span>.得证</li>
 </ul>
 <h3 id="4">4.<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
 <ul>
-<li><span class="arithmatex">\(X(t)\sim \mathcal{N}(0,\cos^2(\theta t)+\sin^2(\theta t))=\mathcal{N}(0,1),\forall t\in R\)</span></li>
+<li>
+<div class="arithmatex">\[X(t)\sim \mathcal{N}(0,\cos^2(\theta t)+\sin^2(\theta t))=\mathcal{N}(0,1),\forall t\in R\]</div>
+</li>
 </ul>
 <h3 id="5">5.<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
 <ul>
-<li><span class="arithmatex">\(E\xi_i=\frac{1}{2},Var\xi_i=\frac{1}{4},E\xi_i^2=\frac{1}{2}\)</span></li>
-<li><span class="arithmatex">\(EV_n=\sum\limits_{i=1}^\infty\frac{1}{2^{i+1}}=\frac{1}{2}\)</span></li>
-<li><span class="arithmatex">\(EV^2_n=E(\sum\limits_{i=1}^\infty\frac{1}{2^i})^2=\lim\limits_{m\to\infty}\{ \sum\limits_{i=1}^m\frac{E\xi_{n+i}^2}{4^i}+\sum\limits_{i=1}^{m-1}\sum\limits_{j=i+1}^m\frac{E\xi_{n+i}E\xi_{n+j}}{2^i2^j}\}=\frac{3}{4}\)</span></li>
-<li><span class="arithmatex">\(VarV_n=EV^2_n-(EV_n)^2=\frac{3}{4}-\frac{1}{4}=\frac{1}{2}\)</span></li>
+<li>
+<div class="arithmatex">\[E\xi_i=\frac{1}{2},Var\xi_i=\frac{1}{4},E\xi_i^2=\frac{1}{2}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[EV_n=\sum\limits_{i=1}^\infty\frac{1}{2^{i+1}}=\frac{1}{2}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[EV^2_n=E(\sum\limits_{i=1}^\infty\frac{1}{2^i})^2=\lim\limits_{m\to\infty}\{ \sum\limits_{i=1}^m\frac{E\xi_{n+i}^2}{4^i}+\sum\limits_{i=1}^{m-1}\sum\limits_{j=i+1}^m\frac{E\xi_{n+i}E\xi_{n+j}}{2^i2^j}\}=\frac{3}{4}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[VarV_n=EV^2_n-(EV_n)^2=\frac{3}{4}-\frac{1}{4}=\frac{1}{2}\]</div>
+</li>
 <li>
 <ol>
 <li>从而<span class="arithmatex">\(m=0\)</span>时,<span class="arithmatex">\(Cov(V_n,V_{n+m})=VarV_n=\frac{1}{2}\)</span></li>
 </ol>
 </li>
 <li>当<span class="arithmatex">\(m\neq 0\)</span>,不妨取<span class="arithmatex">\(m&gt;0\)</span>(理由类似第三题),此时有<ul>
-<li><span class="arithmatex">\(EV_nV_{n+m}=E\sum\limits_{i=1}^\infty\frac{\xi_{n+i}}{2^i}\sum\limits_{i=1}^\infty\frac{\xi_{nm+i}}{2^i}=(\sum\limits_{i=1}^m\frac{\xi_{n+i}}{2^i}+\frac{1}{2^m}\sum\limits_{i=1}^\infty\frac{\xi_{n+m+i}}{2^i})\sum\limits_{i=1}^\infty\frac{\xi_{n+m+i}}{2^i}=\frac{1}{2^m}\frac{3}{4}+\frac{1}{4}(1-\frac{1}{2^m})=\frac{1}{2^{m+1}}+\frac{1}{4}\)</span></li>
+<li>
+<div class="arithmatex">\[EV_nV_{n+m}=E\sum\limits_{i=1}^\infty\frac{\xi_{n+i}}{2^i}\sum\limits_{i=1}^\infty\frac{\xi_{nm+i}}{2^i}=(\sum\limits_{i=1}^m\frac{\xi_{n+i}}{2^i}+\frac{1}{2^m}\sum\limits_{i=1}^\infty\frac{\xi_{n+m+i}}{2^i})\sum\limits_{i=1}^\infty\frac{\xi_{n+m+i}}{2^i}=\frac{1}{2^m}\frac{3}{4}+\frac{1}{4}(1-\frac{1}{2^m})=\frac{1}{2^{m+1}}+\frac{1}{4}\]</div>
+</li>
 <li>故有<span class="arithmatex">\(Cov(V_n,V_{n+m})=\frac{1}{2^{m+1}}\)</span>,对<span class="arithmatex">\(m=0\)</span>也符合</li>
 </ul>
 </li>
 <li>综上<span class="arithmatex">\(Cov(V_n,V_{n+m})=\frac{1}{2^{m+1}}\)</span></li>
 <li>
 <ol>
-<li><span class="arithmatex">\((\xi_{n_1+n},\xi_{n_2+n},\cdots,\xi_{n_s+n})\overset{d}{=}(\xi_{n_1},\xi_{n_2},\cdots,\xi_{n_s})\)</span>,从而<span class="arithmatex">\((V_{n_1+n},V_{n_2+n},\cdots,V_{n_s+n})\overset{d}{=}(V_{n_1},V_{n_2},\cdots,V_{n_s})\)</span></li>
+<li>
+<div class="arithmatex">\[(\xi_{n_1+n},\xi_{n_2+n},\cdots,\xi_{n_s+n})\overset{d}{=}(\xi_{n_1},\xi_{n_2},\cdots,\xi_{n_s})$$从而$$(V_{n_1+n},V_{n_2+n},\cdots,V_{n_s+n})\overset{d}{=}(V_{n_1},V_{n_2},\cdots,V_{n_s})\]</div>
+</li>
 </ol>
 </li>
 </ul>
 <h3 id="6">6.<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
 <ul>
-<li><span class="arithmatex">\(p(1_{\xi_k\leq t}=1)=t,p(1_{\xi_k\leq t}=0)=1-t\)</span></li>
+<li>
+<div class="arithmatex">\[p(1_{\xi_k\leq t}=1)=t,p(1_{\xi_k\leq t}=0)=1-t\]</div>
+</li>
 <li>
 <ol>
-<li><span class="arithmatex">\(EX(t)=E\frac{1}{n}\sum\limits_{k=1}^n1_{\xi_k\leq t}=\frac{1}{n}\sum\limits_{k=1}^nE1_{\xi_k\leq 1}=\frac{1}{n}nt=t\)</span>,从而<span class="arithmatex">\(EX(t)=t\)</span>.</li>
+<li><span class="arithmatex">\(<span class="arithmatex">\(EX(t)=E\frac{1}{n}\sum\limits_{k=1}^n1_{\xi_k\leq t}=\frac{1}{n}\sum\limits_{k=1}^nE1_{\xi_k\leq 1}=\frac{1}{n}nt=t\)</span>\)</span>,从而<span class="arithmatex">\(EX(t)=t\)</span>.</li>
 </ol>
 </li>
 <li>
@@ -1378,7 +1402,7 @@
 <li><span class="arithmatex">\(Cov(X(s),X(t))=EX(s)X(t)-EX(s)EX(t)\)</span>,其中</li>
 </ol>
 </li>
-<li><span class="arithmatex">\(EX(s)X(t)=E\frac{1}{n^2}\sum\limits_{i=1}^n1_{\xi_i\leq s}\sum\limits_{j=1}^n1_{\xi_j\leq t}=\frac{1}{n}E( \sum\limits_{i=1}^n1_{\xi_i\leq s}1_{\xi_i\leq t} +\sum\limits_{i\neq j}1_{\xi_i\leq s}1_{\xi_j\leq t})=\frac{1}{n^2}( n\min\{s,t\} + (n^2-n)st )= \frac{\min\{s,t\}+(n-1)st}{n}\)</span>,</li>
+<li><span class="arithmatex">\(<span class="arithmatex">\(EX(s)X(t)=E\frac{1}{n^2}\sum\limits_{i=1}^n1_{\xi_i\leq s}\sum\limits_{j=1}^n1_{\xi_j\leq t}=\frac{1}{n}E( \sum\limits_{i=1}^n1_{\xi_i\leq s}1_{\xi_i\leq t} +\sum\limits_{i\neq j}1_{\xi_i\leq s}1_{\xi_j\leq t})=\frac{1}{n^2}( n\min\{s,t\} + (n^2-n)st )= \frac{\min\{s,t\}+(n-1)st}{n}\)</span>\)</span>,</li>
 <li>从而<span class="arithmatex">\(Cov(X(s),X(t))=\frac{\min\{s,t\}+(n-1)st}{n}-st=\frac{\min\{s,t\}-st}{n}\)</span></li>
 </ul>
 
