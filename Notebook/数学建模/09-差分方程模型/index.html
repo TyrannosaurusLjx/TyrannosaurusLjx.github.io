@@ -553,6 +553,8 @@
       
         
       
+        
+      
     
     
       
@@ -729,6 +731,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../07-%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    随机模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../08-%E6%8B%9B%E8%81%98%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
@@ -800,6 +823,24 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
+      差分方程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      蛛网模型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
       种群增长模型
     </span>
   </a>
@@ -808,7 +849,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       离散单种种群模型
     </span>
@@ -817,7 +858,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       一些定义
     </span>
@@ -826,7 +867,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       混沌
     </span>
@@ -1120,6 +1161,8 @@
       
         
       
+        
+      
     
     
       
@@ -1250,6 +1293,24 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
+      差分方程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      蛛网模型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
       种群增长模型
     </span>
   </a>
@@ -1258,7 +1319,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       离散单种种群模型
     </span>
@@ -1267,7 +1328,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       一些定义
     </span>
@@ -1276,7 +1337,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       混沌
     </span>
@@ -1308,8 +1369,62 @@
 
 
 <h1 id="_1">差分方程模型<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">种群增长模型<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">离散单种种群模型<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h2 id="_2">差分方程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>差分方程是一种描述离散时间系统的数学模型</li>
+<li><span class="arithmatex">\(\Delta y_n=y_{n+1}-y_n\)</span><ul>
+<li><span class="arithmatex">\(\Delta^2 y_n=\Delta(\Delta y_n)=\Delta y_{n+1}-\Delta y_n=y_{n+2}-2y_{n+1}+y_n\)</span></li>
+<li><span class="arithmatex">\(\Delta^m y_n=\Delta(\Delta^{m-1} y_n)=\sum\limits_{k=0}^m(-1)^{m-k}C_m^k y_{n+k}\)</span></li>
+</ul>
+</li>
+<li>含有未知函数的有限差分的方程称为差分方程<ul>
+<li><span class="arithmatex">\(F(n,y_n,\Delta y_n,\cdots,\Delta^m y_n)=0\)</span></li>
+<li><span class="arithmatex">\(F(n,y_n,y_{n+1},\cdots,y_{n+m})=0\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(m\)</span>阶线性差分方程</p>
+<ul>
+<li><span class="arithmatex">\(a_m(n)y_{n+m}+a_{m-1}(n)y_{n+m-1}+\cdots+a_0(n)y_n=f_n\)</span></li>
+<li><span class="arithmatex">\(f_n=0\)</span>时称为齐次差分方程,否则为非齐次差分方程</li>
+<li><span class="arithmatex">\(a_i(n)=a_i\)</span>为常数时,称为常系数差分方程</li>
+</ul>
+</li>
+<li>
+<p>二阶线性常系数齐次差分方程</p>
+</li>
+<li><span class="arithmatex">\(x_{n+2}+a_1x_{n+1}+a_2x_n=0\)</span><ul>
+<li>其解空间为线性空间(对加法和数乘封闭)</li>
+</ul>
+</li>
+<li>特征方程:<span class="arithmatex">\(\lambda^2+a_1\lambda+a_2=0\)</span><ul>
+<li>若特征方程有两个不同实根<span class="arithmatex">\(\lambda_1,\lambda_2\)</span>,则通解为<span class="arithmatex">\(x_n=c_1\lambda_1^n+c_2\lambda_2^n\)</span></li>
+<li>若特征方程有两个共轭复根<span class="arithmatex">\(\lambda_{1,2}=\alpha\pm i\beta\)</span>,则通解为<span class="arithmatex">\(x_n=c_1\alpha^n\cos(\beta n)+c_2\alpha^n\sin(\beta n)\)</span></li>
+<li>若特征方程有一个重根<span class="arithmatex">\(\lambda_1=\lambda_2=\lambda\)</span>,则通解为<span class="arithmatex">\(x_n=(c_1+c_2n)\lambda^n\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="_3">蛛网模型<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>研究某些生产周期较长且不宜储存的商品均衡价格的动态稳定性的模型</li>
+<li>模型内容</li>
+<li>记在周期<span class="arithmatex">\(n\)</span>某种商品的供求量为<span class="arithmatex">\(x_n\)</span>,价格为<span class="arithmatex">\(y_n\)</span></li>
+<li>需求函数<span class="arithmatex">\(x_n=f(y_n)\)</span>,需求函数反函数<span class="arithmatex">\(y_n=h(x_n)\)</span>,供给函数<span class="arithmatex">\(x_{n+1}=g(y_n)\)</span>,均衡点<span class="arithmatex">\((x_0,y_0)\)</span> 满足<span class="arithmatex">\(x_0=g(y_0),y_0=h(x_0)\)</span></li>
+<li>需求函数和供给函数为线性函数<ul>
+<li><span class="arithmatex">\(y_n-y_0=-\alpha(x_n-x_0),x_{n+1}-x_0=\beta(y_n-y_0)\)</span></li>
+<li><span class="arithmatex">\(\alpha,\)</span>为减少一个单位价格的上涨量,<span class="arithmatex">\(\frac{1}{\alpha}\)</span>为价格上涨一个单位需求的减少量</li>
+<li><span class="arithmatex">\(\beta\)</span>为商品上涨一个单位时,下一周期供给量的增加量</li>
+<li>递推关系:<span class="arithmatex">\(x_{n+1}-x_0=-\alpha\beta(x_n-x_0)\)</span></li>
+<li><span class="arithmatex">\(x_{n}-x_0=(-\alpha\beta)^{n-1}(x_1-x_0)\)</span></li>
+<li>数列<span class="arithmatex">\(\{x_n\}\)</span>收敛的充要条件是<span class="arithmatex">\(\alpha\beta&lt;1\)</span></li>
+</ul>
+</li>
+<li>均衡稳定性</li>
+<li>当一个均衡价格体系在受到干扰而偏离均衡点时，如果这个体系在市场机制的作用下能回到均衡点，则称这个均衡价格体系是稳定均衡，否则是不稳定均衡</li>
+<li>稳定均衡<span class="arithmatex">\(\iff\alpha\beta&lt;1\)</span></li>
+</ul>
+<h2 id="_4">种群增长模型<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">离散单种种群模型<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <ul>
 <li>现实种群只由一个世代组成,相继世代之间没有重叠</li>
 <li>记<span class="arithmatex">\(x_n\)</span>为第<span class="arithmatex">\(n\)</span>代种群规模,则<span class="arithmatex">\(x_{n+1}=f(x_n)\)</span></li>
@@ -1326,7 +1441,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="_4">一些定义<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_6">一些定义<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <ul>
 <li>平衡点: <span class="arithmatex">\(x^*\)</span>是方程<span class="arithmatex">\(x=f(x)\)</span>的解,称<span class="arithmatex">\(x^*\)</span>是平衡点</li>
 <li>渐进稳定:只要<span class="arithmatex">\(x_0\to x^*\)</span>就有<span class="arithmatex">\(x_n\to x^*\)</span>,则称平衡点<span class="arithmatex">\(x^*\)</span>是渐进稳定的</li>
@@ -1354,7 +1469,7 @@
 <li><span class="arithmatex">\(f(x_)=x_+,f(x_+)=x_-\)</span></li>
 <li>当<span class="arithmatex">\(2&lt;r&lt;\sqrt{6}\)</span>时,2-周期点是稳定的</li>
 </ul>
-<h3 id="_5">混沌<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_7">混沌<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Li-Yorke 定理:若实数轴区间有一个到自身的连续函数<span class="arithmatex">\(f\)</span>,<span class="arithmatex">\((f:[a,b]\to [a,b])\)</span>,若<span class="arithmatex">\(f\)</span>有一个 3-周期点,那么<span class="arithmatex">\(\forall k,f\)</span>有一个<span class="arithmatex">\(k-\)</span>周期点</li>
 <li>

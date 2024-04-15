@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/08-%E6%8B%9B%E8%81%98%E9%97%AE%E9%A2%98/">
       
       
-        <link rel="prev" href="../06-%E5%AE%89%E5%85%A8%E8%A7%82%E6%BC%94/">
+        <link rel="prev" href="../07-%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9E%8B/">
       
       
         <link rel="next" href="../09-%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
@@ -553,6 +553,8 @@
       
         
       
+        
+      
     
     
       
@@ -726,6 +728,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    随机模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -738,17 +761,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    招聘问题
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -758,36 +770,6 @@
   
 
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      -
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1087,6 +1069,8 @@
       
         
       
+        
+      
     
     
       
@@ -1208,23 +1192,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      -
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1278,12 +1245,8 @@
 <li>
 <p><span class="arithmatex">\(p_n^k(s):\)</span>采用策略<span class="arithmatex">\(s\)</span>录用<span class="arithmatex">\(A_k\)</span>,且<span class="arithmatex">\(A_k\)</span>为第一名的概率</p>
 <ul>
-<li>
-<p><img alt="image_2024-03-28-16-36-07" src="../img/image_2024-03-28-16-36-07.png" /> </p>
-</li>
-<li>
-<p>前<span class="arithmatex">\(k-1\)</span>个人,最好的人在前<span class="arithmatex">\(s-1\)</span> 中,否则会先<span class="arithmatex">\(A_k\)</span>一步被录用</p>
-</li>
+<li><img alt="image_2024-03-28-16-36-07" src="../img/image_2024-03-28-16-36-07.png" /> </li>
+<li>前<span class="arithmatex">\(k-1\)</span>个人,最好的人在前<span class="arithmatex">\(s-1\)</span> 中,否则会先<span class="arithmatex">\(A_k\)</span>一步被录用</li>
 <li><img alt="image_2024-03-28-16-38-42" src="../img/image_2024-03-28-16-38-42.png" /> </li>
 <li><span class="arithmatex">\(p_n^k(s)=\frac{C_{n-1}^{k-1}(s-1)(k-2)!(n-k)!}{n!}=\frac{s-1}{n(k-1)}\)</span>,(n个人选位置的问题)</li>
 <li><img alt="image_2024-03-28-16-41-32" src="../img/image_2024-03-28-16-41-32.png" /> </li>
@@ -1300,18 +1263,32 @@
 </li>
 <li>
 <p><span class="arithmatex">\(s^*\)</span>的估计和渐进性质</p>
-<h2 id="-">-<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+<ul>
+<li><span class="arithmatex">\(\frac{1}{e}\left(n-\frac{1}{2}\right)+\frac{1}{2}-\frac{3 e-1}{2(2 n+3 e-1)} \leq s^* \leq \frac{1}{e}\left(n-\frac{1}{2}\right)+\frac{3}{2}\)</span></li>
+<li><span class="arithmatex">\(s^*\)</span> 的上下界差距不超过 <span class="arithmatex">\(1+\frac{3 e-1}{2(2 n+3 e-1)} \approx 1+\frac{1.79}{n+1.79}\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{n \rightarrow \infty} \frac{s^*}{n}=\frac{1}{e}\)</span></li>
+</ul>
 </li>
 <li>
-<p><span class="arithmatex">\(p_n\left(s^*\right)\)</span> 的值与渐近性质</p>
+<p><span class="arithmatex">\(p_n(s^*)\)</span>的值与渐近性质</p>
 <ul>
-<li><span class="arithmatex">\(p_n\left(s^*\right)=\frac{s^*-1}{n} \sum_{k=s^*-1}^{n-1} \frac{1}{k}\)</span></li>
-<li><span class="arithmatex">\(\ln \frac{n}{s^*-1}=\int_{s^*-1}^n \frac{1}{x} d x \leq \sum_{k=s^*-1}^{n-1} \frac{1}{k} \leq \int_{s^*-\frac{1}{2}}^{n-\frac{1}{2}} \frac{1}{x} d x=\ln \frac{2 n-1}{2 s^*-1}\)</span></li>
+<li><span class="arithmatex">\(p_n(s^*)=\frac{s^*-1}{n} \sum\limits_{k=s^*-1}^{n-1}\frac{1}{k}\)</span></li>
+<li><span class="arithmatex">\(\ln \frac{n}{s^*-1}=\int_{s^*-1}^n \frac{1}{x} d x \leq \sum\limits_{k=s^*-1}^{n-1} \frac{1}{k} \leq \int_{s^*-\frac{1}{2}}^{n-\frac{1}{2}} \frac{1}{x} d x=\ln \frac{2 n-1}{2 s^*-1}\)</span></li>
 <li><span class="arithmatex">\(\lim\limits_{n \rightarrow \infty} p_n\left(s^*\right)=\frac{1}{e}\)</span></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<p>两次选择</p>
+</li>
+<li>可录用两位,要求两位中有一位是最优秀的应试者的概率最大</li>
+<li>策略:<span class="arithmatex">\((r,s),s&gt;r,\)</span><ul>
+<li>录用自<span class="arithmatex">\(A_r\)</span>起的第一位备选者,称为第一次录用</li>
+<li>若已经录用一人,录用不早于<span class="arithmatex">\(A_s\)</span>的一名备选者,称为第二次录用</li>
+<li>当<span class="arithmatex">\(n\)</span>充分大,最优策略是<span class="arithmatex">\((r^*,s^*)=(e^{-\frac{3}{2}}n,e^{-1}n)\)</span>,录用到第一名的概率大概是:0.5910</li>
 </ul>
 </li>
 </ul>
