@@ -41,6 +41,15 @@
 [my config file](https://vscode.dev/editor/profile/github/d1f873e1e6f17bd5ebd57c8896f54995)
 
 
-
+- 在使用 snippets 时,发现 markdown 中的 snippets 无法使用,需要在工作目录下的 settings.json 中添加如下配置:
+  ```json
+    "[markdown]":  {
+        "editor.quickSuggestions": {
+            "other":"on",
+            "comments": "on",
+            "strings": "on"
+        }
+    }
+  ```
 
 

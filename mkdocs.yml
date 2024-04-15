@@ -26,17 +26,21 @@ theme:
   logo: assets/image/小新.jpg
   favicon: assets/image/小新.jpg
   features:
-    - navigation.instant  
+    # - navigation.instant  
     - navigation.instant.prefetch
-    - navigation.tabs # 导航栏大目录
-    - navigation.prune
+    - navigation.tabs # 导航栏大目录  
+    - navigation.prune # 侧边栏折叠
     - toc.follow
-    - toc.integrate 
+    # - toc.integrate # 右边目录
     - navigation.top
     - search.suggest
     - search.highlight
     - search.share
     - header.autohide
+    - navigation.tracking
+    - navigation.indexes # 目录导航到 readme
+
+    - navigation.path
 
 
 plugins:
@@ -85,6 +89,11 @@ markdown_extensions:
   - pymdownx.snippets
 
   - pymdownx.superfences
+  
+  - toc:
+      permalink: true
+      title: On this page
+      
 
 
 extra_javascript:

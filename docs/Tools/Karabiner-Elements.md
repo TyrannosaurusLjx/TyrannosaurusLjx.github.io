@@ -14,7 +14,11 @@
 
 ## [个人配置](https://github.com/TyrannosaurusLjx/Configuration/tree/main/Karabiner-Elements)
 - 使用 left_command+hjkl 在微信,iterm2 中代替方向键
-
+- 在钉钉中使用 left_command+jk 代替command+方向键(钉钉需要 command+方向键才能移动)
+- 定义hyper = left_command+left_option+left_control+left_shift
+- 使用终端命令切换软件,shell 命令 open -a 'appname.app'可以打开对应的软件,用 hyper+appname 映射到这个命令实现快捷操作
+- 结合 raycast 脚本实现搜索复制内容(right_command+f)
+  - ![alt text](img/image-3.png)  
 
 
 

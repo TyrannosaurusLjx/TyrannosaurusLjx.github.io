@@ -18,6 +18,12 @@
         "**/tmp/**": true,
         "**/bower_components/**": true,
         "**/dist/**": true
+    },
+    "[markdown]":  {
+        "editor.quickSuggestions": {
+            "other":"on",
+            "comments": "on",
+            "strings": "on"
+        }
     }
-
 }

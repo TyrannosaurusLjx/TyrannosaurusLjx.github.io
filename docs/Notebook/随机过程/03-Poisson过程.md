@@ -112,18 +112,14 @@
 
 - $EZ(t)=\mu\lambda t$
 
-    - $EZ(t) = E\sum\limits_{i=1}^{N(t)}\xi_i= \sum\limits_{n=0}^\infty E(\sum\limits_{i=1}^{N(t)}\xi_i|N(t)=n)P(N(t)=n)
-    \\\qquad =\sum\limits_{n=0}^\infty E\sum\limits_{i=1}^n\xi_i P(N(t)=n)=
-    \sum\limits_{n=0}^\infty n\mu P(N(t)=n)\\\qquad =\mu EN(t)=\mu\lambda t$
+    - $EZ(t) = E\sum\limits_{i=1}^{N(t)}\xi_i= \sum\limits_{n=0}^\infty E(\sum\limits_{i=1}^{N(t)}\xi_i|N(t)=n)P(N(t)=n)=\sum\limits_{n=0}^\infty E\sum\limits_{i=1}^n\xi_i P(N(t)=n)=\sum\limits_{n=0}^\infty n\mu P(N(t)=n)=\mu EN(t)=\mu\lambda t$
 
 - $VarZ(t)=(\sigma^2+\mu^2)\lambda t$
     
-    - $E(Z(t)^2) = E(\sum\limits_{i=1}^{N(t)}\xi_i)^2=\sum\limits_{n=0}^\infty E((\sum\limits_{i=1}^{N(t)}\xi_i)^2|N(t)=n)P(N(t)=n)\\
-    \qquad=\sum\limits_{n=0}^\infty E(\sum\limits_{i=1}^n\xi_i)^2P(N(t)=n)=\sum\limits_{n=0}^\infty (n\sigma^2+\mu^2n^2)P(N(t)=n)\\
-    \qquad=\sigma^2EN(t)+\mu^2E(N(t))^2=(\mu^2+\sigma^2)\lambda t+\mu^2\lambda^2 t^2$
+    - $$E(Z(t)^2) = E(\sum\limits_{i=1}^{N(t)}\xi_i)^2=\sum\limits_{n=0}^\infty E((\sum\limits_{i=1}^{N(t)}\xi_i)^2|N(t)=n)P(N(t)=n)=\sum\limits_{n=0}^\infty E(\sum\limits_{i=1}^n\xi_i)^2P(N(t)=n)=\sum\limits_{n=0}^\infty (n\sigma^2+\mu^2n^2)P(N(t)=n)=\sigma^2EN(t)+\mu^2E(N(t))^2=(\mu^2+\sigma^2)\lambda t+\mu^2\lambda^2 t^2$$
 
     - $VarZ(t)=E(Z(t)^2)-(EZ(t))^2=(\sigma^2+\mu^2)\lambda t$
-    - 这里$E(\sum\limits_{i=1}^n\xi_i)^2=nE\xi_i^2+(n^2-n)E\xi_i\xi_j,\quad i\neq j$
+    - 这里$E(\sum\limits_{i=1}^n\xi_i)^2=nE\xi_i^2+(n^2-n)E\xi_i\xi_j,i\neq j$
 
 - [独立平稳增量性](https://www.zhihu.com/question/346234228)
     
@@ -131,15 +127,12 @@
     - $Z(t_2)-Z(t_1)= Z(t_2-t_1)$
 
         - 证明$Z(s)-Z(t),Z(t)$相互独立.用特征函数证明:
-        - 设$\phi(t)$是$\xi_i$的特征函数$\\:$
-            $Ee^{iu(Z(s)-Z(t))+ivZ(t)}=Ee^{iu\sum\limits_{i=N(t)+1}^{N(s)}\xi_i+iv\sum\limits_{i=1}^{N(t)}\xi_i}=\\
-        \qquad=E(\phi(u)^{N(s)-N(t)})(\phi(v))^{N(t)}=E(\phi(u)^{N(s)-N(t)})E(\phi(v))^{N(t)}\\\qquad
-        =Ee^{iu(Z(s)-Z(t))}Ee^{ivZ(t)}$
+        - 设$\phi(t)$是$\xi_i$的特征函数:
+          - $$Ee^{iu(Z(s)-Z(t))+ivZ(t)}=Ee^{iu\sum\limits_{i=N(t)+1}^{N(s)}\xi_i+iv\sum\limits_{i=1}^{N(t)}\xi_i}=E(\phi(u)^{N(s)-N(t)})(\phi(v))^{N(t)}=E(\phi(u)^{N(s)-N(t)})E(\phi(v))^{N(t)}=Ee^{iu(Z(s)-Z(t))}Ee^{ivZ(t)}$$
 
         - 平稳性类似:利用 Poisson 过程的平稳性,可以证明$Z(t)$是平稳的
             
-            - $Ee^{iu(Z(s)-Z(t))}=Ee^{iu\sum\limits_{i=N(t)+1}^{N(s)}\xi_i}=E(\phi(u))^{N(s)-N(t)}\\\qquad
-            =E\phi(u)^{N(s-t)}=Ee^{iuZ(s-t)}$
+            - $Ee^{iu(Z(s)-Z(t))}=Ee^{iu\sum\limits_{i=N(t)+1}^{N(s)}\xi_i}=E(\phi(u))^{N(s)-N(t)}=E\phi(u)^{N(s-t)}=Ee^{iuZ(s-t)}$
 
 ## 非齐次 Poisson 过程      
 
@@ -202,8 +195,6 @@
 ## 多维Poisson点过程
 
 - 略过
-
-
 
 
 
