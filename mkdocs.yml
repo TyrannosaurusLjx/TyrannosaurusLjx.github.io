@@ -23,8 +23,8 @@ theme:
     scheme: slate
     primary: black  # 导航栏颜色
     accent: blue
-  logo: assets/image/小新.jpg
-  favicon: assets/image/小新.jpg
+  logo: assets/image/Chivalrous.jpg
+  favicon: assets/image/Chivalrous.jpg
   features:
     # - navigation.instant  
     - navigation.instant.prefetch
@@ -47,7 +47,7 @@ plugins:
   # - exclude:
   #     glob:
   #       - ./docs/assets/*
-
+  
   - search:
       lang: 
         - en
@@ -101,3 +101,9 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
+  # - javascripts/katex.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+# extra_css:
+#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
