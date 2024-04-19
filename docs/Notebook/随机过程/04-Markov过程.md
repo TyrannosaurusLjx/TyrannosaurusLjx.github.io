@@ -7,7 +7,8 @@
 - Markov Chain是一类特殊的随机过程,时间参数空间为连续或者离散集,但是状态空间至多是可数集
 
 - $X=(X_n,n\geq 1)$是$Markov-Chain$的充要条件是
-    - $$\forall n\geq 0,\forall i,j,\forall i_0,i_1\cdots,i_{n-1}:P(X_{n+1}=j|X_n=i,X_{n-1}=i_{n-1},\cdots,X_0=i_0)=P(X_{n+1}=j|X_n=i)$$
+    - $$\forall n\geq 0,\forall i,j,\forall i_0,i_1\cdots,i_{n-1:}$$
+    - $$P(X_{n+1}=j|X_n=i,X_{n-1}=i_{n-1},\cdots,X_0=i_0)=P(X_{n+1}=j|X_n=i)$$
 
 - 令$p_{n;ij}=P(X_{n+1}=j|X_n=i)$,则$p_{n;ij}$为Markov Chain在 n 时刻存状态 i 转化到状态 j 的概率,特别的如果$p_{n;ij}$与 n 无关,那么称X 是(时间)齐次马尔科夫链
 

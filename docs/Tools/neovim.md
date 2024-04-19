@@ -1,20 +1,38 @@
-# Astronvim
+# Neovide+NvChad
 
-[官网](https://docs.astronvim.com/mappings)
 
 - 使用发行版,这样不用自己解决插件的兼容性等等
+
+
+- Structure
+-
+    ├── lua/
+    │   ├── nvchad/
+    │   │   ├── autocmds.lua
+    │   │   ├── mappings.lua
+    │   │   └── options.lua
+    │   ├── plugins/
+    │   │   ├── init.lua
+    │   │   └── ui.lua
+    │   └── configs/
+    │       ├── cmp.lua
+    │       └── more.. 
+    └── nvconfig.lua  
+
+
+<!-- 
 
 - Configuration
   - Leader key: `Space`
   - 因为使用 karabiner 在 terminal 中映射了 `command + hjkl` 为移动,所以不用再单独设置移动按键
   - Force Write: `Ctrl + s` $\to$ `command + s` 
   - New file: `Leader + n` $\to$ `command + n`
-  - Close buffer: `Leader + c` $\to$ `Leader + w`
-  - Next tab: `]t` $\to$ `Leader + }`
-  - Previous tab: `[t` $\to$ `Leader + {`
-  - Comment: `Leader + /` $\to$ `Leader + /`
-  - Previous buffer: `[b` $\to$ `Leader + [`
-  - Next buffer: `]b` $\to$ `Leader + ]`
+  - Close buffer: `Leader + c` $\to$ `Command + w`
+  - Next tab: `]t` $\to$ `Command + }`
+  - Previous tab: `[t` $\to$ `Command + {`
+  - Comment: `Command + /` $\to$ `Command + /`
+  - Previous buffer: `[b` $\to$ `Command + [`
+  - Next buffer: `]b` $\to$ `Command + ]`
   - NeoTree toggle: `Leader + e` $\to$ `Leader + e`
   - NeoTree focus: `Leader + o` $\to$ `Leader + E`
   - Session Save : `Leader + Ss` $\to$ `Leader + ss`
@@ -55,7 +73,10 @@
     - Floating terminal : `Leader + tf` or `<f7>`
     - Horizontal terminal : `Leader + th`
     - Vertical terminal : `Leader + tv`
-    - Open toggle python terminal : `Leader + tp`
+    - Open toggle python terminal : `Leader + tp` -->
+
+
+
 
 
 - keymap reference
@@ -68,7 +89,7 @@
 <D-…>		command-key or "super" key	*<D-*
 ```
 
-谁懂,在 terminal+vim 环境下, `command` 无法被识别
+在 terminal+vim 环境下, `command` 无法被识别
 
-反正 command 和 space 隔得近,将就着用先
+下载[neovide](https://neovide.dev/index.html),在 gui 环境下,`command`可以被识别
 
