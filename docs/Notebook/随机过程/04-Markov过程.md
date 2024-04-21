@@ -52,6 +52,7 @@
 
     - 状态空间中的互通类是不相交的,且互通类的并是整个状态空间
     - 如果初始状态在某个互通类中,那么以后的状态都在这个互通类中
+- **如果任意两个状态是互通的,就称这个Markov链是不可约的**
 
 ### 周期
 
@@ -62,6 +63,7 @@
 #### 定理 4.1
 
 - 如果$i \leftrightarrow j$,那么$d_i=d_j$
+  - 互通类的元素有相同的周期
 
 ### 状态空间分解
 
@@ -91,18 +93,77 @@
 
 #### 定理 4.4(状态空间的分解)
 
-- $\varepsilon = C_1+\cdots+C_m+\mathcal{N}$,其中$C_1,\cdots,C_m$是常返类,$\mathcal{N}$是瞬时状态全体,$m$可以取无穷
+- $\mathcal{E} = C_1+\cdots+C_m+\mathcal{N}$,其中$C_1,\cdots,C_m$是常返类,$\mathcal{N}$是瞬时状态全体,$m$可以取无穷
 
     不同常返状态等价类是不相交之闭
 
-
 ## 常返性与瞬时性
 
+- $T_j=\inf\{n\geq 1:X_n=j\}$,令$f_{jj}^{(n)}=P(T_j=n|X_0=j)=P(X_1\neq j,\cdots,X_{n-1}\neq j,X_n=j|X_0=j)$
+
+- $j$是常返状态$\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}=1$
+- $j$是瞬时状态$\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}<1$
+    - 常返状态$j$的平均返回时间为$\tau_j=E(T_j|X_0=j)=\sum\limits_{n=1}^{\infty}nf_{jj}^{(n)}$
+
+#### 定理4.5
+- $j$是常返状态$\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}=1$
+- $j$是瞬时状态$\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}<1$
+
+#### 定理 4.6
+- 如果$j$是瞬时状态,那么
+  - $$\lim\limits_{n\to\infty} p_{jj}^{(n)}=0$$
+- 如果$j$是零常返状态,那么
+  - $$\lim\limits_{n\to\infty} p_{jj}^{(n)}=0$$
+- 如果$j$是非周期正常返状态,那么
+  - $$\lim\limits_{n\to\infty} p_{jj}^{(n)}=\frac{1}{\tau_j}$$
+- 如果$j$是周期为$d_j$的正常返状态,那么
+  - $$\lim\limits_{n\to\infty} p_{jj}^{(n)}=\frac{d_j}{\tau_j}$$
+    - 综合来看,只要$j$是常返状态,那么$\lim\limits_{n\to\infty} p_{jj}^{(n)}=\frac{d_j}{\tau_j}$
+    - 如果对瞬时状态也定义平均返回时间$\tau_j=+\infty$,那么$\lim\limits_{n\to\infty} p_{jj}^{(n)}=\frac{d_j}{\tau_j}$,对所有的状态都成立
+
+#### 推论 4.1
+- 如果$j$是零常返或者瞬时状态,那么对任意状态$i$,有
+  - $$\lim\limits_{n\to\infty} p_{ij}^{(n)}=0$$
+- 如果$j$是非周期正常返状态,那么对任意状态$i$,有
+  - $$\lim\limits_{n\to\infty} p_{ij}^{(n)}=\frac{f_{ij}}{\tau_j}$$
+    - 其中$f_{ij}$为从$i$出发可到达$j$的概率
+
+#### 定理 4.7
+- 有限 Markov 链一定存在正常返状态
+
+#### 定义
+- $M_j=\#\{ n\geq 0:X_n=j \}$表示状态$j$的访问次数
+
+#### 定理 4.8
+- 如果$j$是常返状态,那么
+  - $$P(M_j=\infty|X_0=j)=1$$
+- 如果$j$是瞬时状态,那么
+  - $$P(M_j=\infty|X_0=j)=0,(P(M_j<\infty|X_0=j)=1)$$
+
+## 平稳 Markov 链
+
+### 极限分布
+
+- 若存在$\mathcal{E}$上的一个概率分布$\mu,s.t.,\forall j \in \mathcal{E}$
+  - $$\lim\limits_{n\to\infty} p_n(j)=\mu(j)$$
+    - 则称$\mu$为Markov Chain的极限分布
+
+- 极限分布的存在性
+  - 令$\mu_j = \sum\limits_{i=1}^{N}p_0(i)\nu_{ij},j\in\mathcal{E}$,其中$\nu_{ij}=\lim\limits_{n\to\infty}p_{ij}^{(n)}$,则$\mu=(\mu_1,\cdots,\mu_n)$是Markov Chain的一个极限分布
+    - 实际上$\mu_j=\lim\limits_{n\to\infty}p_{ij}^{(n)}$
 
 
+### 平稳分布
+- $X$是强平稳$\iff (X_m,X_{m+1},\cdots,X_{m+n})\overset{d}{=}(X_0,X_1,\cdots,X_n),\iff p_0=p_1=\cdots \iff p_0=p_0P$
+- 从而取$p_0\in \{\pi:\pi P=\pi\}$,就得到平稳$Markov$链
+  - 求解方程组
+    - $$\begin{cases} \sum\limits_{i=1}^{N}\pi_{i}p_{ij}=\pi_j&j=1,2,\cdots ,N, \\ \sum\limits_{i=1}^{N}\pi_i=1 \\ \pi_i\geq 0\end{cases}$$
 
+#### 定理 4.9
+- 假设$X$是非周期不可约(任意状态之间互通)Markov 链,转移概率矩阵为$P$,那么该 Markov 链存在平稳分布当且仅当每个状态都是正常返的,并且
+  - $$\pi_j = \frac{1}{\tau_j},j\in\mathcal{E}$$
+  - 其中$\tau_j=ET_j$为状态$j$的平均返回时间
 
-
-
-
+#### 推论 4.2
+- 假设$X$是非周期不可约Markov 链,转移概率矩阵为$P$,那么该 Markov 链存在平稳分布当且仅当存在平稳分布,且二者相等
 
