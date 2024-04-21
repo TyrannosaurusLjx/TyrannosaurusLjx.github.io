@@ -1053,6 +1053,8 @@
       
         
       
+        
+      
     
     
       
@@ -1291,17 +1293,15 @@
 <p>实际上这就是一个有向赋权图
 <img alt="image_2024-03-19-14-02-04" src="../img/image_2024-03-19-14-02-04.png" /></p>
 <hr />
-<p>如何计算呢？</p>
-<ul>
-<li>
-<div class="arithmatex">\[x_j=\frac{x_{j_1}}{q_{j_1}} + \frac{x_{j_2}}{q_{j_2}} + \cdots + \frac{x_{j_k}}{q_{j_k}}=\sum_{i=1}^{n}p_{i,j}x_i\]</div>
-</li>
-<li>
-<div class="arithmatex">\[X=\begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}\]</div>
-</li>
-<li><span class="arithmatex">\(p_{i,j}=\begin{cases} \frac{1}{q_j} &amp; \text{如果网页j链接到网页i} \\ 0 &amp; \text{其他} \end{cases},then:X=PX\)</span>
-<img alt="image_2024-03-19-14-04-58" src="../img/image_2024-03-19-14-04-58.png" /></li>
-</ul>
+<p>如何计算呢？
+$$
+x_j=\frac{x_{j_1}}{q_{j_1}} + \frac{x_{j_2}}{q_{j_2}} + \cdots + \frac{x_{j_k}}{q_{j_k}}=\sum_{i=1}^{n}p_{i,j}x_i\
+X=\begin{bmatrix} x_1 \ x_2 \ \vdots \ x_n \end{bmatrix}\
+\
+p_{i,j}=\begin{cases} \frac{1}{q_j} &amp; \text{如果网页j链接到网页i} \ 0 &amp; \text{其他} \end{cases}
+then:X=PX
+$$
+<img alt="image_2024-03-19-14-04-58" src="../img/image_2024-03-19-14-04-58.png" /></p>
 <hr />
 <p>一定有非零解吗？</p>
 <p>注意到<span class="arithmatex">\(P\)</span>的每一列元素之和为1,所以 P 是列随机矩阵</p>

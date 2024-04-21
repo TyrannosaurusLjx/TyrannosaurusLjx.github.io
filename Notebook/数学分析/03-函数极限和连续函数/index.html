@@ -1323,6 +1323,8 @@
       
         
       
+        
+      
     
     
       
@@ -1895,7 +1897,7 @@
 <h4 id="311">定义 3.1.1<a class="headerlink" href="#311" title="Permanent link">&para;</a></h4>
 <ul>
 <li>设函数 <span class="arithmatex">\(f(x)\)</span> 在点 <span class="arithmatex">\(x_0\)</span> 的某个去心邻域内有定义，如果存在常数 <span class="arithmatex">\(A\)</span>，对于任意给定的正数 <span class="arithmatex">\(\varepsilon\)</span>，总存在正数 <span class="arithmatex">\(\delta\)</span>，使得当 <span class="arithmatex">\(x\)</span> 满足不等式 <span class="arithmatex">\(0 &lt; |x - x_0| &lt; \delta\)</span> 时，对应的函数值 <span class="arithmatex">\(f(x)\)</span> 满足不等式 <span class="arithmatex">\(|f(x) - A| &lt; \varepsilon\)</span>，那么常数 <span class="arithmatex">\(A\)</span> 是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(x_0\)</span>处的极限,记作<span class="arithmatex">\(\lim\limits_{x \to x_0} f(x) = A\)</span> 或 <span class="arithmatex">\(f(x) \to A\)</span>(<span class="arithmatex">\(x \to x_0\)</span> 时)</li>
-<li><span class="arithmatex">\(\lim\limits_{x\to x_0}f(x)=A\iff \forall\epsilon&gt;0,\exists\delta&gt;0,s.t.\forall x\in O(x_0,\delta)\backslash\{x_0\}:|f(x)-A|&lt;\epsilon\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x\to x_0}f(x)=A\iff \forall\varepsilon&gt;0,\exists\delta&gt;0,s.t.\forall x\in O(x_0,\delta)\backslash\{x_0\}:|f(x)-A|&lt;\varepsilon\)</span></li>
 </ul>
 <h4 id="311_1">定理 3.1.1<a class="headerlink" href="#311_1" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1956,13 +1958,13 @@
 <h4 id="312_1">定义 3.1.2<a class="headerlink" href="#312_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(\exists B\in R,s.t.\forall\epsilon&gt;0,\exists\delta&gt;0,s.t.\forall x\in (x_0,x_0+\delta):|f(x)-B|&lt;\epsilon\)</span>,则称<span class="arithmatex">\(B\)</span>是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(x_0\)</span>的右极限,记作<span class="arithmatex">\(\lim\limits_{x\to x_0+0}f(x)=f(x_0+)=B\)</span></p>
+<p><span class="arithmatex">\(\exists B\in R,s.t.\forall\varepsilon&gt;0,\exists\delta&gt;0,s.t.\forall x\in (x_0,x_0+\delta):|f(x)-B|&lt;\varepsilon\)</span>,则称<span class="arithmatex">\(B\)</span>是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(x_0\)</span>的右极限,记作<span class="arithmatex">\(\lim\limits_{x\to x_0+0}f(x)=f(x_0+)=B\)</span></p>
 <p>同理可以定义左极限</p>
 </li>
 </ul>
 <h4 id="316">定理 3.1.6<a class="headerlink" href="#316" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\lim\limits_{x\to +\infty}f(x)\)</span>存在且有限的充要条件是:<span class="arithmatex">\(\forall\epsilon&gt;0,\exists X&gt;0,s.t.\forall x_1,x_2&gt;X:|f(x_1)-f(x_2)|&lt;\epsilon\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x\to +\infty}f(x)\)</span>存在且有限的充要条件是:<span class="arithmatex">\(\forall\varepsilon&gt;0,\exists X&gt;0,s.t.\forall x_1,x_2&gt;X:|f(x_1)-f(x_2)|&lt;\varepsilon\)</span></li>
 </ul>
 <h2 id="_3">连续函数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h4 id="321">定义 3.2.1<a class="headerlink" href="#321" title="Permanent link">&para;</a></h4>
@@ -1981,7 +1983,7 @@
 <li>
 <p>若函数<span class="arithmatex">\(\lim\limits_{x\to x_0-}f(x)=f(x_0)\)</span>,则称<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>处左连续</p>
 <ul>
-<li><span class="arithmatex">\(i.e.\forall\epsilon&gt;0,\exists\delta&gt;0,s.t.\forall x\in (x_0-\delta,x_0):|f(x)-f(x_0)|&lt;\epsilon\)</span></li>
+<li><span class="arithmatex">\(i.e.\forall\varepsilon&gt;0,\exists\delta&gt;0,s.t.\forall x\in (x_0-\delta,x_0):|f(x)-f(x_0)|&lt;\varepsilon\)</span></li>
 </ul>
 </li>
 </ul>
@@ -2087,7 +2089,7 @@
 <h4 id="341_1"><strong>定义 3.4.1(一致连续性)</strong><a class="headerlink" href="#341_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(I\sub D_f:\forall\epsilon&gt;0,\exists\delta&gt;0,s.t.\forall x_1,x_2\in I,|x_1-x_2|&lt;\delta:|f(x_1)-f(x_2)|&lt;\epsilon\)</span>,则称<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(I\)</span>上一致连续</p>
+<p><span class="arithmatex">\(I\sub D_f:\forall\varepsilon&gt;0,\exists\delta&gt;0,s.t.\forall x_1,x_2\in I,|x_1-x_2|&lt;\delta:|f(x_1)-f(x_2)|&lt;\varepsilon\)</span>,则称<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(I\)</span>上一致连续</p>
 <ul>
 <li>
 <p><span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(I\)</span>上一致连续<span class="arithmatex">\(\Rightarrow f\)</span>在<span class="arithmatex">\(I\)</span>上连续</p>

@@ -775,6 +775,8 @@
       
         
       
+        
+      
     
     
       
@@ -1164,10 +1166,22 @@
 <h1 id="_1">多项式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h4 id="1">定义 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(K\)</span>是数域,<span class="arithmatex">\(x\)</span>是符号,形如<span class="arithmatex">\(a_0+a_1x+a_2x^2+\cdots+a_nx^n\)</span>的表达式称为<span class="arithmatex">\(K\)</span>上的一元多项式,其中<span class="arithmatex">\(n\in\mathbb{N},a_0,a_1,\cdots,a_n\in K\)</span>,称为系数,<span class="arithmatex">\(x\)</span>称为不定元.</li>
+<li>
+<p>设<span class="arithmatex">\(K\)</span>是数域,<span class="arithmatex">\(x\)</span>是符号,形如<span class="arithmatex">\(a_0+a_1x+a_2x^2+\cdots+a_nx^n\)</span>的表达式称为<span class="arithmatex">\(K\)</span>上的一元多项式,其中<span class="arithmatex">\(n\in\mathbb{N},a_0,a_1,\cdots,a_n\in K\)</span>,称为系数,<span class="arithmatex">\(x\)</span>称为不定元.</p>
+<ul>
 <li><span class="arithmatex">\(f(x)=a_0+a_1x+a_2x^2+\cdots+a_nx^n\)</span>称为多项式<span class="arithmatex">\(f(x)\)</span>的表达式</li>
 <li><span class="arithmatex">\(n\)</span>称为多项式<span class="arithmatex">\(f(x)\)</span>的次数,记作<span class="arithmatex">\(\deg f(x)=n\)</span></li>
-<li>系数全为零的多项式称为零多项式,记作<span class="arithmatex">\(0\)</span></li>
+<li>0次多项式形如<span class="arithmatex">\(b\in K\)</span>,记作<span class="arithmatex">\(b\)</span></li>
+<li>系数全为零的多项式称为零多项式,记作<span class="arithmatex">\(0\)</span>,规定<span class="arithmatex">\(\deg 0=-\infty\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(K[x]:=\{\text{数域K上的一元多项式}\}\)</span></p>
+<ul>
+<li>加法:<span class="arithmatex">\(\sum\limits_{i=0}^na_ix_i+\sum\limits_{i=0}^mb_ix_i=\sum\limits_{i=0}^m(a_i+b_i)x_i\)</span>,设<span class="arithmatex">\(m\geq n,a_i=0,\forall i=n+1,\cdots,m\)</span></li>
+<li>乘法:<span class="arithmatex">\(\left(\sum\limits_{i=0}^na_ix_i\right)\left(\sum\limits_{i=0}^mb_ix_i\right)=\sum\limits_{s=0}^{m+n}\left(\sum\limits_{i+j=s}a_ib_j\right)x^s\)</span></li>
+</ul>
+</li>
 </ul>
 
 

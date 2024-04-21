@@ -26,7 +26,7 @@
     
     
       
-        <title>Neovim - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+        <title>Neovide+NvChad - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#neovidenvchad" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Neovim
+              Neovide+NvChad
             
           </span>
         </div>
@@ -498,16 +503,59 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Neovide+NvChad
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Neovim
+    Neovide+NvChad
   </span>
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Structure
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -561,6 +609,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Structure
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -578,9 +645,91 @@
   
 
 
-  <h1>Neovim</h1>
+<h1 id="neovidenvchad">Neovide+NvChad<a class="headerlink" href="#neovidenvchad" title="Permanent link">&para;</a></h1>
+<ul>
+<li>使用发行版,这样不用自己解决插件的兼容性等等</li>
+</ul>
+<h2 id="-structure">- Structure<a class="headerlink" href="#-structure" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>├── lua/
+│   ├── nvchad/
+│   │   ├── autocmds.lua
+│   │   ├── mappings.lua
+│   │   └── options.lua
+│   ├── plugins/
+│   │   ├── init.lua
+│   │   └── ui.lua
+│   └── configs/
+│       ├── cmp.lua
+│       └── more.. 
+└── nvconfig.lua
+</code></pre></div>
+<!-- 
 
+- Configuration
+  - Leader key: `Space`
+  - 因为使用 karabiner 在 terminal 中映射了 `command + hjkl` 为移动,所以不用再单独设置移动按键
+  - Force Write: `Ctrl + s` $\to$ `command + s` 
+  - New file: `Leader + n` $\to$ `command + n`
+  - Close buffer: `Leader + c` $\to$ `Command + w`
+  - Next tab: `]t` $\to$ `Command + }`
+  - Previous tab: `[t` $\to$ `Command + {`
+  - Comment: `Command + /` $\to$ `Command + /`
+  - Previous buffer: `[b` $\to$ `Command + [`
+  - Next buffer: `]b` $\to$ `Command + ]`
+  - NeoTree toggle: `Leader + e` $\to$ `Leader + e`
+  - NeoTree focus: `Leader + o` $\to$ `Leader + E`
+  - Session Save : `Leader + Ss` $\to$ `Leader + ss`
+  - Session Delete : `Leader + Sd` $\to$ `Leader + sd`
+  - Session Search : `Leader + Sf` $\to$ `Leader + sf`
+  - Add book mark : `command + m`
+  - Add jump to next mark : `command + n`
+  - Add jump to previous mark : `command + N`
+  - Add `<f8>` to run py, ect and preview markdown
+  - 
+- Usage
+  - Navigation
+    - Horizontal Split: `\`
+    - Vertical Split: `|`
+    - Navigate to buffer tab with interactive picker: `Leader + bb`
+    - Open a buffer tab in a new horizontal split with interactive picker : `Leader + b\`
+    - Open a buffer tab in a new vertical split with interactive picker: `Leader + b|`
+  - Complete
+    - Select completion : `Enter`
+    - Next snippet location : `Tab`
+  - NeoTree
+    - Neotree toggle : `Command + e`
+    - Neotree focus : `Command + E`
+  - Home
+    - Dashboard : `Leader + h`
+  - Session
+    - Save : `Leader + ss`
+    - Delete : `Leader + sd`
+    - Search : `Leader + sf`
+  - Lsp
+    - Declaration : `gD`
+    - Definition : `gd`
+  - Telescope
+    - Find mark : `Leader + f'`
+    - Find files : `Leader + ff`
+    - Find old files : `Leader + fo`
+  - Terminal
+    - Floating terminal : `Leader + tf` or `<f7>`
+    - Horizontal terminal : `Leader + th`
+    - Vertical terminal : `Leader + tv`
+    - Open toggle python terminal : `Leader + tp` -->
 
+<ul>
+<li>keymap reference
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span>S<span class="p">-</span>…<span class="p">&gt;</span>       shift<span class="p">-</span><span class="nb">key</span>           *shift* *<span class="p">&lt;</span>S<span class="p">-</span>*
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span>C<span class="p">-</span>…<span class="p">&gt;</span>       control<span class="p">-</span><span class="nb">key</span>         *control* *ctrl* *<span class="p">&lt;</span>C<span class="p">-</span>*
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span>M<span class="p">-</span>…<span class="p">&gt;</span>       alt<span class="p">-</span><span class="nb">key</span> or meta<span class="p">-</span><span class="nb">key</span>     *META* *ALT* *<span class="p">&lt;</span>M<span class="p">-</span>*
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;</span>A<span class="p">-</span>…<span class="p">&gt;</span>       same <span class="k">as</span> <span class="p">&lt;</span>M<span class="p">-</span>…<span class="p">&gt;</span>           *<span class="p">&lt;</span>A<span class="p">-</span>*
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">&lt;</span>T<span class="p">-</span>…<span class="p">&gt;</span>       meta<span class="p">-</span><span class="nb">key</span> when it&#39;s not alt  *<span class="p">&lt;</span>T<span class="p">-</span>*
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">&lt;</span>D<span class="p">-</span>…<span class="p">&gt;</span>       command<span class="p">-</span><span class="nb">key</span> or <span class="s2">&quot;super&quot;</span> <span class="nb">key</span>  *<span class="p">&lt;</span>D<span class="p">-</span>*
+</span></code></pre></div></li>
+</ul>
+<p>在 terminal+vim 环境下, <code>command</code> 无法被识别</p>
+<p>下载<a href="https://neovide.dev/index.html">neovide</a>,在 gui 环境下,<code>command</code>可以被识别</p>
 
 
 
