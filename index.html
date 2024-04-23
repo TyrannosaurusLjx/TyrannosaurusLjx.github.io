@@ -19,7 +19,7 @@
         <link rel="next" href="Notebook/">
       
       
-      <link rel="icon" href="assets/image/Chivalrous.jpg">
+      <link rel="icon" href="assets/image/Chivalrous.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
@@ -487,24 +487,25 @@
 \int_{birth}^{death} study\ dt = life  
 \]</div>
 <hr />
-<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;earth&gt;</span><span class="c1">     </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">luojunxun</span><span class="w"> </span><span class="p">{</span><span class="w">    </span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w">     </span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="n">luojunxun</span><span class="p">(){</span><span class="w">    </span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello, I&#39;m luojunxun&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w">     </span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="p">};</span><span class="w">    </span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="o">~</span><span class="n">luojunxun</span><span class="p">(){</span><span class="w">    </span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;I&#39;m not dead yet!&quot;</span><span class="p">);</span><span class="w">     </span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="p">};</span><span class="w">    </span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w">     </span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">{</span><span class="s">&quot;luojunxun&quot;</span><span class="p">};</span><span class="w">     </span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="n">Chat</span><span class="o">::</span><span class="n">email</span><span class="w"> </span><span class="n">email</span><span class="p">{</span><span class="s">&quot;junxun-luo@outlook.com&quot;</span><span class="p">};</span><span class="w">     </span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="n">Social</span><span class="o">::</span><span class="n">job</span><span class="p">{</span><span class="s">&quot;Student&quot;</span><span class="p">};</span><span class="w">     </span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="n">Education</span><span class="o">::</span><span class="n">school</span><span class="w"> </span><span class="n">University</span><span class="p">{</span><span class="s">&quot;Zhejiang University&quot;</span><span class="p">};</span><span class="w">     </span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="n">Life</span><span class="o">::</span><span class="n">hobby</span><span class="w"> </span><span class="n">hobby</span><span class="p">{</span><span class="s">&quot;coding+Math+Fitness&quot;</span><span class="p">};</span><span class="w">     </span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">};</span><span class="w">    </span>
-</span></code></pre></div>
+<!-- ```cpp -->
+<!-- #include <earth>      -->
+<!-- class luojunxun {     -->
+<!--     public:      -->
+<!--         luojunxun(){     -->
+<!--             std::cout << "Hello, I'm luojunxun" << std::endl;      -->
+<!--             };     -->
+<!--         ~luojunxun(){     -->
+<!--             throw std::runtime_error("I'm not dead yet!");      -->
+<!--             };     -->
+<!--          -->
+<!--     private:      -->
+<!--         std::string name{"luojunxun"};      -->
+<!--         Chat::email email{"junxun-luo@outlook.com"};      -->
+<!--         Social::job{"Student"};      -->
+<!--         Education::school University{"Zhejiang University"};      -->
+<!--         Life::hobby hobby{"coding+Math+Fitness"};      -->
+<!-- };     -->
+<!-- ``` -->
 
 
 
