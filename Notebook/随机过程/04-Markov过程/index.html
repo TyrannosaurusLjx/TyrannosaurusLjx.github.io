@@ -779,6 +779,8 @@
       
         
       
+        
+      
     
     
       
@@ -1017,6 +1019,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
       定理 4.1
@@ -1240,6 +1251,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../%E4%B9%A0%E9%A2%98%E4%B8%89/" class="md-nav__link">
         
   
@@ -1315,6 +1347,8 @@
       
         
           
+        
+      
         
       
         
@@ -1530,6 +1564,15 @@
   
     <nav class="md-nav" aria-label="周期">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引理 1
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
@@ -1774,7 +1817,12 @@
 <p>容易得到<span class="arithmatex">\(p_n=p_0P^n\)</span></p>
 </li>
 <li>
-<div class="arithmatex">\[P(X_0=i_0,X_1=i_1,\cdots,X_n=i_n)=P(X_0=i_0)P(X_1=i_1|X_0=i_0)\cdots P(X_n=i_n|X_{n-1}=i_{n-1})=p_0(i_0)p_{i_0i_1}p_{i_1i_2}\cdots p_{i_{n-1}i_n}\]</div>
+<div class="arithmatex">\[P(X_0=i_0,X_1=i_1,\cdots,X_n=i_n)=P(X_0=i_0)P(X_1=i_1|X_0=i_0)\cdots P(X_n=i_n|X_{n-1}=i_{n-1})\]</div>
+<ul>
+<li>
+<div class="arithmatex">\[=p_0(i_0)p_{i_0i_1}p_{i_1i_2}\cdots p_{i_{n-1}i_n}\]</div>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -1824,6 +1872,16 @@
 <p><span class="arithmatex">\(d_i=\gcd\{n\geq 1:p_{ii}^{(n)}&gt;0\}\)</span>称为状态i的周期,如果<span class="arithmatex">\(d_i=1\)</span>,则称状态i是非周期的,否则称状态i是周期的</p>
 <ul>
 <li><span class="arithmatex">\(p_{ii}^{(n)}&gt;0\)</span>表示状态i在n步之后又回到了状态 i</li>
+</ul>
+</li>
+</ul>
+<h4 id="1">引理 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(d_i=d\)</span>那么<span class="arithmatex">\(\exists N&gt;0,s.t.\forall n\geq N\)</span>:<ul>
+<li>
+<div class="arithmatex">\[p_{ii}^{(nd)}&gt; 0\]</div>
+</li>
+<li>特别的如果<span class="arithmatex">\(d=1\)</span>,那么也就是<span class="arithmatex">\(p_{ii}^{(n)}&gt;0\)</span>,换句话说,从非周期状态出发,经过充分多次后,总有可能返回该状态</li>
 </ul>
 </li>
 </ul>
@@ -1886,9 +1944,48 @@
 </ul>
 <h4 id="45">定理4.5<a class="headerlink" href="#45" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(j\)</span>是常返状态<span class="arithmatex">\(\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}=1\)</span></li>
-<li><span class="arithmatex">\(j\)</span>是瞬时状态<span class="arithmatex">\(\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}&lt;1\)</span></li>
+<li>
+<p><span class="arithmatex">\(j\)</span>是常返状态<span class="arithmatex">\(\iff\sum\limits_{n=1}^{\infty}p_{jj}^{(n)}=\infty\)</span></p>
+<ul>
+<li>
+<p>推论:<span class="arithmatex">\(j\)</span>常返时:<span class="arithmatex">\(\forall i\in\mathcal{E}\)</span>若<span class="arithmatex">\(i\to j\)</span>:</p>
+<ul>
+<li>
+<div class="arithmatex">\[\sum\limits_{n=1}^\infty p_{ij}^{(n)}=\infty\]</div>
+</li>
 </ul>
+</li>
+<li>
+<p>若<span class="arithmatex">\(i\not\to j\)</span>:</p>
+<ul>
+<li>
+<div class="arithmatex">\[\sum\limits_{n=1}^\infty p_{ij}^{(n)}=0\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(j\)</span>是瞬时状态<span class="arithmatex">\(\iff\sum\limits_{n=1}^{\infty}p_{jj}^{(n)}&lt;\infty\)</span></p>
+<ul>
+<li>而且有<span class="arithmatex">\(\sum\limits_{n=1}^{\infty}p_{jj}^{(n)}=\frac{1}{1-f_{ii}}-1\)</span><ul>
+<li><strong><span class="arithmatex">\(\sum\limits_{n=0}^{\infty}p_{jj}^{(n)}=\frac{1}{1-f_{ii}}\)</span></strong></li>
+<li><a href="https://www.math.pku.edu.cn/teachers/lidf/course/stochproc/stochprocnotes/html/_book/markovc.html#markovc-def">reference</a></li>
+</ul>
+</li>
+<li>推论:<span class="arithmatex">\(j\)</span>瞬时时:<span class="arithmatex">\(\forall i\in\mathcal{E}\)</span>:<ul>
+<li>
+<div class="arithmatex">\[\sum\limits_{n=1}^\infty p_{ij}^{(n)}&lt;\infty\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+若<span class="arithmatex">\(i\leftrightarrow j\)</span>,并且为常返状态,那么<span class="arithmatex">\(f_{ij}=1\)</span>,不然与常返性矛盾 </p>
+</blockquote>
 <h4 id="46">定理 4.6<a class="headerlink" href="#46" title="Permanent link">&para;</a></h4>
 <ul>
 <li>如果<span class="arithmatex">\(j\)</span>是瞬时状态,那么</li>
