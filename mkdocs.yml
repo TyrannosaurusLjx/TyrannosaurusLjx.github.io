@@ -24,7 +24,7 @@ theme:
     primary: black  # 导航栏颜色
     accent: blue
   logo: assets/image/Chivalrous.jpg
-  favicon: assets/image/Chivalrous.jpg
+  favicon: assets/image/Chivalrous.ico
   features:
     # - navigation.instant  
     - navigation.instant.prefetch

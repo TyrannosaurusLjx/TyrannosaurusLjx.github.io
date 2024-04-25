@@ -23,7 +23,8 @@
 
     - 容易得到$p_n=p_0P^n$
 
-    - $$P(X_0=i_0,X_1=i_1,\cdots,X_n=i_n)=P(X_0=i_0)P(X_1=i_1|X_0=i_0)\cdots P(X_n=i_n|X_{n-1}=i_{n-1})=p_0(i_0)p_{i_0i_1}p_{i_1i_2}\cdots p_{i_{n-1}i_n}$$
+    - $$P(X_0=i_0,X_1=i_1,\cdots,X_n=i_n)=P(X_0=i_0)P(X_1=i_1|X_0=i_0)\cdots P(X_n=i_n|X_{n-1}=i_{n-1})$$
+        - $$=p_0(i_0)p_{i_0i_1}p_{i_1i_2}\cdots p_{i_{n-1}i_n}$$
 
 ####  m-步转移概率
 
@@ -59,6 +60,11 @@
 - $d_i=\gcd\{n\geq 1:p_{ii}^{(n)}>0\}$称为状态i的周期,如果$d_i=1$,则称状态i是非周期的,否则称状态i是周期的
 
     - $p_{ii}^{(n)}>0$表示状态i在n步之后又回到了状态 i
+
+#### 引理 1 
+- 设$d_i=d$那么$\exists N>0,s.t.\forall n\geq N$:
+    - $$p_{ii}^{(nd)}> 0$$
+    - 特别的如果$d=1$,那么也就是$p_{ii}^{(n)}>0$,换句话说,从非周期状态出发,经过充分多次后,总有可能返回该状态
 
 #### 定理 4.1
 
@@ -106,8 +112,25 @@
     - 常返状态$j$的平均返回时间为$\tau_j=E(T_j|X_0=j)=\sum\limits_{n=1}^{\infty}nf_{jj}^{(n)}$
 
 #### 定理4.5
-- $j$是常返状态$\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}=1$
-- $j$是瞬时状态$\iff\sum\limits_{n=1}^{\infty}f_{jj}^{(n)}<1$
+- $j$是常返状态$\iff\sum\limits_{n=1}^{\infty}p_{jj}^{(n)}=\infty$
+
+    - 推论:$j$常返时:$\forall i\in\mathcal{E}$若$i\to j$:
+        - $$\sum\limits_{n=1}^\infty p_{ij}^{(n)}=\infty$$
+
+    - 若$i\not\to j$:
+        -  $$\sum\limits_{n=1}^\infty p_{ij}^{(n)}=0$$
+
+- $j$是瞬时状态$\iff\sum\limits_{n=1}^{\infty}p_{jj}^{(n)}<\infty$
+    - 而且有$\sum\limits_{n=1}^{\infty}p_{jj}^{(n)}=\frac{1}{1-f_{ii}}-1$
+        - **$\sum\limits_{n=0}^{\infty}p_{jj}^{(n)}=\frac{1}{1-f_{ii}}$**
+        - [reference](https://www.math.pku.edu.cn/teachers/lidf/course/stochproc/stochprocnotes/html/_book/markovc.html#markovc-def)
+    - 推论:$j$瞬时时:$\forall i\in\mathcal{E}$:
+        - $$\sum\limits_{n=1}^\infty p_{ij}^{(n)}<\infty$$
+
+
+> [!NOTE]
+> 若$i\leftrightarrow j$,并且为常返状态,那么$f_{ij}=1$,不然与常返性矛盾 
+
 
 #### 定理 4.6
 - 如果$j$是瞬时状态,那么
