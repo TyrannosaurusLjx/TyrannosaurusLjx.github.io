@@ -10,7 +10,7 @@
     - $$\forall n\geq 0,\forall i,j,\forall i_0,i_1\cdots,i_{n-1:}$$
     - $$P(X_{n+1}=j|X_n=i,X_{n-1}=i_{n-1},\cdots,X_0=i_0)=P(X_{n+1}=j|X_n=i)$$
 
-- 令$p_{n;ij}=P(X_{n+1}=j|X_n=i)$,则$p_{n;ij}$为Markov Chain在 n 时刻存状态 i 转化到状态 j 的概率,特别的如果$p_{n;ij}$与 n 无关,那么称X 是(时间)齐次马尔科夫链
+- 令$p_{n;ij}=P(X_{n+1}=j|X_n=i)$,则$p_{n;ij}$为Markov Chain在 n 时刻存状态 i 转化到状态 j 的概率,特别的如果$p_{n;ij}$与 n 无关,那么称$X$是(时间)齐次马尔科夫链
 
 - $P=(p_{ij})_{n\times n}$为状态转移矩阵
 
@@ -30,7 +30,7 @@
 
 - 令$p_{ij}^{(m)}=P(X_{n+m}=j|X_n=i)$,则$p_{ij}^{(m)}$为Markov Chain在$n$时刻从状态$i$经过$m$步转化到状态$j$的概率
 
-    - $P^{(m)}=(p_{ij}^{(m)})_{n\times n}$为m步转移矩阵
+    - $P^{(m)}=(p_{ij}^{(m)})_{n\times n}$为$m$步转移矩阵
     - $P^{(m)}=P^m$,左边是$m$步转移矩阵,右边是状态转移矩阵的$m$次方
     - $P^{(m+n)}=P^{(m)}P^{(n)}$,即$p_{ij}^{(m+n)}=\sum_{k=1}^np_{ik}^{(m)}p_{kj}^{(n)}$称为Chapman-Kolmogorov方程
 
@@ -47,8 +47,8 @@
 
     - 互通是等价关系,将状态空间分解为互通类.满足:
         
-        - 对称性:$i\leftrightarrow j\Rightarrow j\leftrightarrow i$
-        - 传递性:$i\leftrightarrow j,j\leftrightarrow k\Rightarrow i\leftrightarrow k$
+        - 对称性:$i\leftrightarrow j\implies j\leftrightarrow i$
+        - 传递性:$i\leftrightarrow j,j\leftrightarrow k\implies i\leftrightarrow k$
         - 自反性:$i\leftrightarrow i$
 
     - 状态空间中的互通类是不相交的,且互通类的并是整个状态空间
@@ -188,7 +188,50 @@
   - 其中$\tau_j=ET_j$为状态$j$的平均返回时间
 
 #### 推论 4.2
-- 假设$X$是非周期不可约Markov 链,转移概率矩阵为$P$,那么该 Markov 链存在平稳分布当且仅当存在平稳分布,且二者相等
+- 假设$X$是非周期不可约Markov 链,转移概率矩阵为$P$,那么该 Markov 链存在极限分布当且仅当存在平稳分布,且二者相等
+
+    - 非周期不可约 Markov 链的极限分布等同于平稳分布
+
+
+## 可逆 Markov 链
+
+#### 定义 4.10
+
+- 如果对任意的$m\geq 0,M\geq m$,有
+    - $$(X_M,X_{M-1},\cdots,X_m)\overset{d}{=}(X_0,X_1,\cdots,X_{m})$$
+    - 那么称$X$是可逆 Markov 链
+- 如果$X$是可逆 Markov 链,那么
+    - $$X_M\overset{d}{=}X_0$$
+    - 也就是说它一定是平稳的
+
+#### 定理 4.10 
+- 假设平稳分布$\pi$存在,并选择$\pi$作为初始分布,那么$X$是可逆的当且仅当
+    - $$(X_0，X_1) \overset{d}{=} (X_1,X_0)$$
+        即
+    - $$\pi_i p_{ij}=\pi_j p_{ji},\forall i,j\in\mathcal{E}$$
+
+> [!NOTE]
+> 现在验证一个Markov链是否可逆,需要验证定理4.10的条件,但是这需要计算平稳分布(这需要使用概率转移矩阵计算),有没有直接从概率转移矩阵判断的方法?
+
+#### 定理 4.11
+- 假设$X$是不可约平稳Markov链,转移概率矩阵为$P$,那么$X$是可逆的当且仅当
+    - $p_{i_0,i_1}p_{i_1,i_2}\cdots p_{i_{m-1}i_0}=p_{i_m,i_{m-1}}p_{i_{m-1},i_{m-2}}\cdots p_{i_1,i_0}$
+
+    - 例:2 状态不可约平稳Markov链一定是可逆的
+
+## 连续时间Markov链
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
