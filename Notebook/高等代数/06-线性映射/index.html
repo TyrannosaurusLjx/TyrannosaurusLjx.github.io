@@ -1,0 +1,2669 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ljx's personal page">
+      
+      
+        <meta name="author" content="Ljx">
+      
+      
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/06-%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84/">
+      
+      
+        <link rel="prev" href="../05-%E5%A4%9A%E9%A1%B9%E5%BC%8F/">
+      
+      
+        <link rel="next" href="../10-%E4%B9%A0%E9%A2%98/">
+      
+      
+      <link rel="icon" href="../../../assets/image/Chivalrous.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>线性映射 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              线性映射
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Notebook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Tools/" class="md-tabs__link">
+          
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Notebook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    操作系统
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数学分析
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数学建模
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数据结构与算法
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    机器学习
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    计算机组成原理
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    随机过程
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    高等代数
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            高等代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性方程组
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E8%A1%8C%E5%88%97%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    行列式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性空间
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵的运算
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一元多项式环
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    线性映射
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    线性映射
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      代数系统
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的秩
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射的秩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的矩阵和线性映射的矩阵
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射的矩阵和线性映射的矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性变换的矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的矩阵
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射在不同的基下的矩阵之间的关系
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射在不同的基下的矩阵之间的关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1 过渡矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 3 迹
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性变换的特征值和特征向量
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性变换的特征值和特征向量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1 特征值和特征向量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2 特征子空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 4 特征多项式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性变换可对角化的条件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性变换可对角化的条件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-%E4%B9%A0%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    习题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      代数系统
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的秩
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射的秩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的矩阵和线性映射的矩阵
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射的矩阵和线性映射的矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性变换的矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的矩阵
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射在不同的基下的矩阵之间的关系
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射在不同的基下的矩阵之间的关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1 过渡矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 3 迹
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性变换的特征值和特征向量
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性变换的特征值和特征向量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1 特征值和特征向量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2 特征子空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 4 特征多项式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性变换可对角化的条件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性变换可对角化的条件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">线性映射<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">代数系统<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>在非空集合上定义代数运算和运算法则
+</code></pre></div>
+<ul>
+<li>环<ul>
+<li>加法:4 条法则(交换律,结合律,加法零元,加法负元)</li>
+<li>乘法:2 条法则(结合律,分配律)</li>
+<li>例子:<span class="arithmatex">\(\mathbb{Z},\mathbb{Z}_7,K[x],M_n(K),K[A],KI\)</span></li>
+</ul>
+</li>
+<li>域<ul>
+<li>在环的基础上有乘法单位元(幺元),且非零元有乘法逆元</li>
+<li>例子:数域<span class="arithmatex">\(K\)</span>,(有理数域,实数域,复数域),<span class="arithmatex">\(\mathbb{Z}_p\)</span></li>
+</ul>
+</li>
+<li>域<span class="arithmatex">\(F\)</span>上的线性空间<ul>
+<li>把数域<span class="arithmatex">\(K\)</span>上线性空间的概念推广到域<span class="arithmatex">\(F\)</span>上,把对应数量乘法的运算称为纯量乘法</li>
+<li>例子:<span class="arithmatex">\(F^n := \{(x_1,x_2,\cdots,x_n)|x_i\in F\}\)</span>,<span class="arithmatex">\(M_{m\times n}(F),F[x]\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="_3">线性映射<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h4 id="1">定义 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设<span class="arithmatex">\(V,V'\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的映射,若满足</p>
+<ul>
+<li><span class="arithmatex">\(\underline{A}(x+y)=\underline{A}(x)+\underline{A}(y),\forall x,y\in V\)</span><ul>
+<li>保持加法</li>
+</ul>
+</li>
+<li><span class="arithmatex">\(\underline{A}(\lambda x)=\lambda \underline{A}(x),\forall x\in V,\lambda\in F\)</span><ul>
+<li>保持纯量乘法</li>
+</ul>
+</li>
+<li>那么称<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的<strong>线性映射</strong></li>
+<li><span class="arithmatex">\(V\)</span>到自身的线性映射称为<span class="arithmatex">\(V\)</span>上的<strong>线性变换</strong></li>
+</ul>
+</li>
+<li>
+<p>例</p>
+<ul>
+<li>任取<span class="arithmatex">\(k\in F,\underline{k}(\alpha):=k\alpha,\alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>数乘变换</strong></li>
+<li><span class="arithmatex">\(\underline{0}(\alpha):=0,\alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>零变换</strong></li>
+<li><span class="arithmatex">\(\underline{I}(\alpha):=\alpha,\alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>恒等变换</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="_4">性质<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}:V\to V'\)</span><ul>
+<li><span class="arithmatex">\(\underline{A}(\vec{0})=\vec{0}\)</span></li>
+<li><span class="arithmatex">\(\underline{A}(-\alpha)=-\underline{A}(\alpha)\)</span></li>
+<li><span class="arithmatex">\(\underline{A}(\sum\limits\limits_{i=1}^n\lambda_i\alpha_i)=\sum\limits_{i=1}^n\lambda_i\underline{A}(\alpha_i)\)</span></li>
+<li><span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>在<span class="arithmatex">\(V\)</span>中线性相关<span class="arithmatex">\(\implies \underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)\)</span>在<span class="arithmatex">\(V'\)</span>中线性相关 <ul>
+<li>线性无关不能推出像线性无关,比如零映射</li>
+</ul>
+</li>
+<li>设<span class="arithmatex">\(\dim V=n\)</span>且<span class="arithmatex">\((\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>是<span class="arithmatex">\(V\)</span>的一个基,则若<span class="arithmatex">\(\alpha = k_1\alpha_1+k_2\alpha_2+\cdots+k_n\alpha_n\)</span>,则<span class="arithmatex">\(\underline{A}(\alpha)=k_1\underline{A}(\alpha_1)+k_2\underline{A}(\alpha_2)+\cdots+k_n\underline{A}(\alpha_n)\)</span><ul>
+<li>从而<span class="arithmatex">\(\underline{A}\)</span>由<span class="arithmatex">\(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)\)</span>唯一确定</li>
+<li>即若<span class="arithmatex">\(\underline{B}(\alpha_i)=\underline{A}(\alpha_i),i=1,2,\cdots,n\)</span>,则<span class="arithmatex">\(\underline{A}=\underline{B}\)</span></li>
+</ul>
+</li>
+<li>若<span class="arithmatex">\(\underline{A}\)</span>是同构映射<span class="arithmatex">\(\iff \underline{A}\)</span>是<strong>可逆线性映射</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="1_1">定理 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(V,V'\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,且<span class="arithmatex">\(\dim V=n &lt; \infty,\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>是<span class="arithmatex">\(V\)</span>的一个基,则对<strong>任意的</strong><span class="arithmatex">\(\beta_1,\beta_2,\cdots,\beta_n\in V'\)</span>有<ul>
+<li><span class="arithmatex">\(\underline{A}:V\to V',\underline{A}(\alpha)=\underline{A}(\sum k_i\alpha_i)=\sum k_i\beta_i\)</span>是<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的线性映射<ul>
+<li>保持加法,纯量乘法</li>
+</ul>
+</li>
+<li>且<span class="arithmatex">\(\underline{A}(\alpha_i)=\beta_i,i=1,2,\cdots,n\)</span><ul>
+<li>如此定义的<span class="arithmatex">\(\underline{A}\)</span>是唯一的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+用<span class="arithmatex">\(Hom(V,V')\)</span>表示<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的线性映射全体(Homomorphism同态),同理称<span class="arithmatex">\(Hom(V,V)\)</span>为<span class="arithmatex">\(V\)</span>上的线性变换全体</p>
+</blockquote>
+<ul>
+<li>
+<p>在<span class="arithmatex">\(Hom(V,V')\)</span>上定义加法和纯量乘法</p>
+<ul>
+<li><span class="arithmatex">\((\underline{A}+\underline{B})(\alpha)=\underline{A}(\alpha)+\underline{B}(\alpha)\)</span></li>
+<li><span class="arithmatex">\((k\underline{A})(\alpha)=k\underline{A}(\alpha)\)</span><ul>
+<li><span class="arithmatex">\(\forall k\in F,\alpha\in V\)</span></li>
+<li><span class="arithmatex">\(\forall \underline{A},\underline{B}\in Hom(V,V)\)</span></li>
+</ul>
+</li>
+<li><span class="arithmatex">\(0\)</span>映射是<span class="arithmatex">\(Hom(V,V')\)</span>的加法单位元</li>
+<li>定义负元<span class="arithmatex">\(\underline{-A}(\alpha)=-\underline{A}(\alpha)\)</span></li>
+<li>则<span class="arithmatex">\(Hom(V,V')\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(Hom(V,V)\)</span>上对于加法和乘法是一个有单位元的环(不是交换的)</p>
+<ul>
+<li>而且有<span class="arithmatex">\(k(\underline{A}\underline{B})=(k\underline{A})\underline{B}=\underline{A}(k\underline{B})\)</span></li>
+<li>若<span class="arithmatex">\(\underline{A}\in Hom(V,V)\)</span>是可逆线性变换,那么<span class="arithmatex">\(\underline{A}^{-1}\)</span>也是可逆线性变换</li>
+<li>定义幂: <span class="arithmatex">\(\underline{A}^0=\underline{I},\underline{A}^n=\underline{A}\;\underline{A}^{n-1},n\in \mathbb{N}\)</span></li>
+<li>若<span class="arithmatex">\(\underline{A}\)</span>是可逆线性变换,则<span class="arithmatex">\(\underline{A}^{-n}=(\underline{A}^{-1})^n,n\in\mathbb{N}\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="1_2">定义 1<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,且有直和分解<span class="arithmatex">\(V=U\oplus W\)</span>,那么<span class="arithmatex">\(\forall \alpha\in V,\exists !\beta\in U,\gamma\in W,s.t.\;\alpha = \beta + \gamma\)</span>,那么称<ul>
+<li><span class="arithmatex">\(\underline{P}_U(\alpha)=\beta\)</span>为<span class="arithmatex">\(\alpha\)</span>在<span class="arithmatex">\(U\)</span>上的<strong>投影</strong></li>
+<li><span class="arithmatex">\(\underline{P}_U\)</span>称为<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(U\)</span>的<strong>投影映射</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="_5">性质<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\underline{P}_U\)</span>是<span class="arithmatex">\(V\)</span>上的一个线性变换</li>
+<li><span class="arithmatex">\(\underline{P}_U(\alpha)=\begin{cases} \alpha,\alpha\in U \\ 0,\alpha\in W \end{cases}\)</span></li>
+<li>若线性映射<span class="arithmatex">\(\underline{A}:V\to V\)</span>满足上一条性质,那么<span class="arithmatex">\(\underline{A}=\underline{P}_U\)</span></li>
+<li><span class="arithmatex">\(\underline{P}_U^2=\underline{P}_U\)</span>  (幂等<span class="arithmatex">\(\implies \underline{P}_U^n=\underline{P}_U\)</span>)</li>
+</ul>
+<h4 id="2">定义 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若<span class="arithmatex">\(\underline{A}\in Hom(V,V)\)</span>满足<span class="arithmatex">\(\underline{A}^2=\underline{A}\)</span>,那么称<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的<strong>幂等变换</strong></li>
+</ul>
+<h2 id="_6">线性映射的秩<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h4 id="1_3">定义 1<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射,那么称<span class="arithmatex">\(V\)</span>的<strong>子集</strong><span class="arithmatex">\(\{\alpha:\underline{A}(\alpha)=\vec{0}\}\)</span>为<span class="arithmatex">\(\underline{A}\)</span>的<strong>核</strong><ul>
+<li>记为<span class="arithmatex">\(Ker \underline{A}\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="1_4">性质 1<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(Ker \underline{A}\)</span>是<span class="arithmatex">\(V\)</span>的子空间<ul>
+<li>定义只说是子集,实际上是子空间(显然对加法和纯量乘法封闭)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!IMPORTANT]</p>
+</blockquote>
+<h4 id="2_1">性质 2<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong><span class="arithmatex">\(\underline{A}\)</span>是单射<span class="arithmatex">\(\iff Ker \underline{A}=\{\vec{0}\}\)</span></strong></li>
+</ul>
+<h4 id="2_2">定义 2<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射,那么称<span class="arithmatex">\(V'\)</span>的<strong>子集</strong><span class="arithmatex">\(\{\beta:\beta=\underline{A}(\alpha),\alpha\in V\}\)</span>为<span class="arithmatex">\(\underline{A}\)</span>的<strong>像空间</strong><ul>
+<li>记为<span class="arithmatex">\(Im \underline{A}\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="3">性质 3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(Im \underline{A}\)</span>是<span class="arithmatex">\(V'\)</span>的子空间</li>
+</ul>
+<h4 id="4">性质 4<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\underline{A}\)</span>是满射<span class="arithmatex">\(\iff Im \underline{A}=V'\)</span></li>
+</ul>
+<h4 id="1_5"><a href="https://www.bilibili.com/video/BV1jR4y1M78W/?p=90&amp;spm_id_from=pageDriver&amp;vd_source=5f080a6043a40b32a88c80bbaba081b5">定理 1</a><a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射,那么</p>
+<ul>
+<li>
+<div class="arithmatex">\[V/Ker \underline{A}\cong Im \underline{A}\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>证明</p>
+<ul>
+<li>记<span class="arithmatex">\(W=Ker \underline{A}\)</span> ,令<ul>
+<li>
+<div class="arithmatex">\[\sigma : V/W \to Im \underline{A}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\sigma(\alpha+W)=\underline{A}(\alpha)\]</div>
+</li>
+</ul>
+</li>
+<li>若<span class="arithmatex">\(\alpha + W = \beta +W\)</span>,那么<span class="arithmatex">\(\alpha-\beta\in W\)</span>,即<span class="arithmatex">\(\underline{A}(\alpha-\beta)=\vec{0}\)</span>,所以<span class="arithmatex">\(\underline{A}(\alpha)=\underline{A}(\beta)\)</span>,从而这是良定义的</li>
+<li>并且可以证明<span class="arithmatex">\(\sigma\)</span>是双射并且保持加法和纯量乘法,所以是同构映射</li>
+<li>从而<span class="arithmatex">\(V/Ker \underline{A}\cong Im \underline{A}\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="2_3">定理 2<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>若<span class="arithmatex">\(\dim V=n&lt; \infty\)</span>,设<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的线性映射,则 <strong><span class="arithmatex">\(\dim V=\dim Ker \underline{A}+\dim Im \underline{A}\)</span></strong></p>
+</li>
+<li>
+<p>把<span class="arithmatex">\(Im \underline{A}\)</span>的维数记为线性映射<span class="arithmatex">\(\underline{A}\)</span>的<strong>秩</strong>,记为<span class="arithmatex">\(rank(\underline{A})\)</span></p>
+<ul>
+<li>记<span class="arithmatex">\(\dim Ker \underline{A}\)</span>为线性映射<span class="arithmatex">\(\underline{A}\)</span>的<strong>零度</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="1_6">推论 1<a class="headerlink" href="#1_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}\in Hom(V,V')\)</span>,若<span class="arithmatex">\(\dim V=\dim V'\)</span>,则<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是单射<span class="arithmatex">\(\iff \underline{A}\)</span>是满射<span class="arithmatex">\(\iff \underline{A}\)</span>是同构映射</li>
+<li>证明:<ul>
+<li><span class="arithmatex">\(\underline{A}\)</span>是单射<span class="arithmatex">\(\iff Ker \underline{A}=\{\vec{0}\}\iff \dim Ker \underline{A}=0,\dim V=\dim Im\underline{A} \iff \underline{A}\text{是满射} \iff \underline{A}\)</span>是同构映射</li>
+</ul>
+</li>
+<li>类比有限集合到自身的映射<span class="arithmatex">\(f\)</span>为:单射<span class="arithmatex">\(\iff\)</span>满射<span class="arithmatex">\(\iff\)</span>双射</li>
+</ul>
+<h4 id="2_4">推论 2<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}\in Hom(V,V),\dim V=n&lt;\infty\)</span>,那么<span class="arithmatex">\(\underline{A}\)</span>是单射<span class="arithmatex">\(\iff \underline{A}\)</span>是满射<ul>
+<li>这样如果<span class="arithmatex">\(\underline{A}\)</span>是单射,那么<span class="arithmatex">\(\underline{A}\)</span>是双射(简化证明)</li>
+</ul>
+</li>
+</ul>
+<h2 id="_7">线性映射的矩阵和线性映射的矩阵<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">线性变换的矩阵<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的<span class="arithmatex">\(n\)</span>维线性空间,<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的一个线性变换,在<span class="arithmatex">\(V\)</span>中取一个基<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>, 则<span class="arithmatex">\(\exists !a_{ij},i,j=1,2,\cdots,n,s.t.\)</span><ul>
+<li>
+<div class="arithmatex">\[\begin{cases} \underline{A}(\alpha_1)=a_{11}\alpha_1+a_{21}\alpha_2+\cdots+a_{n1}\alpha_n \\ \underline{A}(\alpha_2)=a_{12}\alpha_1+a_{22}\alpha_2+\cdots+a_{n2}\alpha_n \\ \cdots \\ \underline{A}(\alpha_n)=a_{1n}\alpha_1+a_{2n}\alpha_2+\cdots+a_{nn}\alpha_n \end{cases}\]</div>
+</li>
+<li>记<span class="arithmatex">\(\alpha = (\alpha_1,\alpha_2,\cdots,\alpha_n),\underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n) = (\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)), A= (a_{ij})_{n\times n}\)</span>, 则上式可记为<span class="arithmatex">\(\alpha A = \underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span></li>
+<li>记<span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>下的矩阵为<span class="arithmatex">\(A\)</span>,记为<span class="arithmatex">\(A=[\underline{A}]_{\alpha}\)</span><ul>
+<li><span class="arithmatex">\(A\)</span>的第<span class="arithmatex">\(j\)</span>列是<span class="arithmatex">\(\underline{A}(\alpha_j)\)</span>在基下的坐标</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="_9">线性映射的矩阵<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}\in Hom(V,V'),\dim V=n,\dim V'=s\)</span>,取<span class="arithmatex">\(V\)</span>的基<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n,V'\)</span>的基<span class="arithmatex">\(\beta_1,\beta_2,\cdots,\beta_s\)</span>,则有:<ul>
+<li>
+<div class="arithmatex">\[(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n))=(\beta_1,\beta_2,\cdots,\beta_s) \begin{pmatrix} a_{11} &amp; a_{12} &amp;  \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ldots &amp; \vdots \\ a_{s1} &amp; a_{s2} &amp; \cdots &amp; a_{sn} \end{pmatrix}\]</div>
+</li>
+<li>记为<span class="arithmatex">\(\underline{A}(\alpha)=\beta A\)</span>,其中<span class="arithmatex">\(A\)</span>是<span class="arithmatex">\(s\times n\)</span>矩阵,称为<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(V\)</span>的基<span class="arithmatex">\(\alpha\)</span>和<span class="arithmatex">\(V'\)</span>的基<span class="arithmatex">\(\beta\)</span>下的矩阵,记为<span class="arithmatex">\(A=[\underline{A}]_{\alpha}^{\beta}\)</span></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+- 容易验证
+    - 线性映射和的矩阵等于线性映射的矩阵的和
+    - 纯量乘法也是类似的</p>
+</blockquote>
+<ul>
+<li>
+<p>令<span class="arithmatex">\(\sigma:Hom(V,V')\to M_{s\times n}(F)\)</span></p>
+<ul>
+<li>
+<div class="arithmatex">\[\sigma(\underline{A})=[\underline{A}]_{\alpha}^{\beta}\]</div>
+</li>
+<li><span class="arithmatex">\(\sigma\)</span>是一个同构映射</li>
+<li>证明: <ul>
+<li><span class="arithmatex">\(\sigma(\underline{A}+\underline{B})=[\underline{A}+\underline{B}]_{\alpha}^{\beta}=[\underline{A}]_{\alpha}^{\beta}+[\underline{B}]_{\alpha}^{\beta}=\sigma(\underline{A})+\sigma(\underline{B})\)</span><ul>
+<li><span class="arithmatex">\((\underline{A}+ \underline{B})(\alpha)=(\underline{A}(\alpha)+\underline{B}(\alpha))=\alpha A+\alpha B=\alpha (A+B)\)</span></li>
+</ul>
+</li>
+<li><span class="arithmatex">\(\sigma(k\underline{A})=[k\underline{A}]_{\alpha}^{\beta}=k[\underline{A}]_{\alpha}^{\beta}=k\sigma(\underline{A})\)</span><ul>
+<li>同理<ul>
+<li>从而<span class="arithmatex">\(\sigma\)</span>对加法和纯量乘法保持运算</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>由上文线性映射:定理1 知道,任给<span class="arithmatex">\(C \in M_{s\times n}(F)\)</span>,存在唯一的<span class="arithmatex">\(\underline{C}\in Hom(V,V')\)</span>,使得<span class="arithmatex">\(C=[\underline{C}]_{\alpha}^{\beta}\)</span>,所以<span class="arithmatex">\(\sigma\)</span>是双射(存在说明是满射,唯一说明是单射)</li>
+</ul>
+</li>
+<li>从而<span class="arithmatex">\(Hom(V,V')\cong M_{s\times n}(F)\)</span></li>
+<li>因此<span class="arithmatex">\(\dim Hom(V,V')=\dim M_{s\times n}(F)=sn=\dim V\dim V'\)</span><ul>
+<li>特别的,若<span class="arithmatex">\(V=V'\)</span>,则<span class="arithmatex">\(\dim Hom(V,V)=(\dim V)^2=n^2=\dim M_n(F)\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>令<span class="arithmatex">\(\sigma:Hom(V,V)\to M_n(F)\)</span>:</p>
+<ul>
+<li>
+<div class="arithmatex">\[\sigma(\underline{A})=[\underline{A}]_{\alpha}\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\sigma\)</span>还保持乘法,即<span class="arithmatex">\(\sigma(\underline{A}\underline{B})=\sigma(\underline{A})\sigma(\underline{B})\)</span>)</p>
+<ul>
+<li>也就是线性映射<span class="arithmatex">\(\underline{A}\;\underline{B}\)</span>的矩阵等于线性映射<span class="arithmatex">\(\underline{A}\)</span>和<span class="arithmatex">\(\underline{B}\)</span>的矩阵的乘积</li>
+</ul>
+</li>
+<li><span class="arithmatex">\(\underline{A}\)</span>可逆<span class="arithmatex">\(\iff A\)</span>可逆,且<span class="arithmatex">\([\underline{A}^{-1}]_{\alpha}=A^{-1}\)</span></li>
+<li>线性变换是幂等变换当且仅当其矩阵是幂等矩阵<span class="arithmatex">\(,i.e.\underline{A}^2=\underline{A}\iff A^2=A\)</span></li>
+<li>若<span class="arithmatex">\(\beta = (\alpha_1,\alpha_2,\cdots,\alpha_n)X\)</span>,则<span class="arithmatex">\(\underline{A}(\beta)=(\alpha_1,\alpha_2,\cdots,\alpha_n)AX\)</span><ul>
+<li>即若<span class="arithmatex">\(\beta\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标为<span class="arithmatex">\(X\)</span>,那么<span class="arithmatex">\(\underline{A}(\beta)\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标为<span class="arithmatex">\(AX\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+对向量做矩阵乘法后做线性变换可以先做线性变换再做矩阵乘法,也就是
+<span class="arithmatex">\(<span class="arithmatex">\(\underline{A}(\alpha S)=[\underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n)]S=\alpha AS\)</span>\)</span></p>
+</blockquote>
+<h2 id="_10">线性映射在不同的基下的矩阵之间的关系<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h4 id="1_7">定义 1 过渡矩阵<a class="headerlink" href="#1_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}\in Hom(V,V),\alpha,\beta\)</span>是<span class="arithmatex">\(V\)</span>的两个不同的基,并且<span class="arithmatex">\(\exists !S\in M_n(F),s.t. \beta = \alpha S\)</span>,称<span class="arithmatex">\(S\)</span>是基<span class="arithmatex">\(\alpha\)</span>到基<span class="arithmatex">\(\beta\)</span>的<strong>过渡矩阵</strong></li>
+</ul>
+<h4 id="1_8">性质 1<a class="headerlink" href="#1_8" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\det S\neq 0\)</span>,即<span class="arithmatex">\(S\)</span>可逆</li>
+<li><span class="arithmatex">\(S^{-1}\)</span>是基<span class="arithmatex">\(\beta\)</span>到基<span class="arithmatex">\(\alpha\)</span>的过渡矩阵</li>
+<li><span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha\)</span>下的矩阵<span class="arithmatex">\(A\)</span>和在基<span class="arithmatex">\(\beta\)</span>下的矩阵<span class="arithmatex">\(B\)</span>之间有关系<span class="arithmatex">\(B=S^{-1}AS\)</span></li>
+</ul>
+<h4 id="2_5">定义 2<a class="headerlink" href="#2_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(A,B\in M_n(F)\)</span>,若<span class="arithmatex">\(\exists S\in M_n(F),\text{且可逆},s.t. B=S^{-1}AS\)</span>,则称<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>是<strong>相似的</strong></li>
+<li>显然相似是等价关系,与<span class="arithmatex">\(A\)</span>相似的矩阵构成<span class="arithmatex">\(A\)</span>的<strong>相似类</strong></li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+从而线性映射在不同基下的矩阵是相似的</p>
+</blockquote>
+<h4 id="2_6">性质 2<a class="headerlink" href="#2_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(A\sim B \implies rank(A)=rank(B),\det(A)=\det(B)\)</span></li>
+</ul>
+<h4 id="3_1">定义 3 迹<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>,则<span class="arithmatex">\(A\)</span>的对角线元素之和称为<span class="arithmatex">\(A\)</span>的<strong>迹</strong>,记为<span class="arithmatex">\(tr(A)\)</span><ul>
+<li><span class="arithmatex">\(tr(A)=a_{11}+a_{22}+\cdots+a_{nn}\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="1_9">命题 1<a class="headerlink" href="#1_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(tr(A+B)=tr(A)+tr(B)\)</span></li>
+<li><span class="arithmatex">\(tr(kA)=ktr(A)\)</span></li>
+<li><span class="arithmatex">\(tr(AB)=tr(BA)\)</span></li>
+</ul>
+<h4 id="3_2">性质 3<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(A\sim B \implies tr(A)=tr(B)\)</span><ul>
+<li>证明:<span class="arithmatex">\(tr(A)=tr(S^{-1}BS)=tr(S^{-1}(BS))=tr(BS^{-1}S)=tr(B)\)</span></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!IMPORTANT]
+<span class="arithmatex">\(n\)</span>级矩阵的<strong>行列式,秩,迹</strong>是矩阵的<strong>相似不变量</strong></p>
+</blockquote>
+<h4 id="4_1">定义 4<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>把线性变换<span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha\)</span>下的矩阵<span class="arithmatex">\(A\)</span>的行列式,秩,迹称为 线性变换<span class="arithmatex">\(\underline{A}\)</span>的<strong>行列式,</strong>秩<strong>,迹</strong><ul>
+<li>我们定义过<span class="arithmatex">\(rank(\underline{A})=\dim Im \underline{A}\)</span>,需要验证<span class="arithmatex">\(\dim Im \underline{A}=rank(A)\)</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="2_7">命题 2<a class="headerlink" href="#2_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><span class="arithmatex">\(rank(\underline{A})=rank(A)\)</span><ul>
+<li><span class="arithmatex">\(Im \underline{A} = span(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n))\)</span>,而<span class="arithmatex">\(rank(A)=\dim span(A_1,\cdots,A_n)\)</span>,其中<span class="arithmatex">\(A_i\)</span>是<span class="arithmatex">\(A\)</span>的列向量<ul>
+<li>注意到<span class="arithmatex">\(\sigma:V\to F^n,\sigma(\sum a_i\alpha_i)=(a_1,a_2,\cdots,a_n)^T\)</span>是同构映射,从而<span class="arithmatex">\(span(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)) \cong span(A_1,A_2,\cdots,A_n)\)</span>(子空间同构)</li>
+<li>从而维数相等(同构的充要条件),从而<span class="arithmatex">\(rank(\underline{A})=rank(A)\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_11">线性变换的特征值和特征向量<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h4 id="1_10">定义 1 特征值和特征向量<a class="headerlink" href="#1_10" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若存在<span class="arithmatex">\(\lambda\in F,\xi\neq \vec{0},s.t.\)</span><ul>
+<li>
+<div class="arithmatex">\[\underline{A}(\xi)=\lambda \xi\]</div>
+</li>
+<li>则称<span class="arithmatex">\(\lambda\)</span>是线性变换<span class="arithmatex">\(\underline{A}\)</span>的一个<strong>特征值</strong>, <span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的对应<span class="arithmatex">\(\lambda\)</span>的<strong>特征向量</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="2_8">定义 2 特征子空间<a class="headerlink" href="#2_8" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(V_\lambda :=\{\xi\in V:\underline{A}(\xi)=\lambda \xi\}\)</span>称为<span class="arithmatex">\(\underline{A}\)</span>的属于特征值<span class="arithmatex">\(\lambda\)</span>的<strong>特征子空间</strong><ul>
+<li>可以证明<span class="arithmatex">\(V_\lambda\)</span>是<span class="arithmatex">\(V\)</span>的子空间</li>
+</ul>
+</li>
+</ul>
+<h4 id="1_11">定理 1<a class="headerlink" href="#1_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\lambda_1,\lambda_2\)</span>是不同的特征值,若在<span class="arithmatex">\(V_{\lambda_1}\)</span>中<span class="arithmatex">\(\xi_1,\xi_2,\cdots,\xi_k\)</span>线性无关,在<span class="arithmatex">\(V_{\lambda_2}\)</span>中<span class="arithmatex">\(\eta_1,\eta_2,\cdots,\eta_l\)</span>线性无关,则<span class="arithmatex">\(\xi_1,\xi_2,\cdots,\xi_k,\eta_1,\eta_2,\cdots,\eta_l\)</span>线性无关</li>
+</ul>
+<h4 id="1_12">推论 1<a class="headerlink" href="#1_12" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\lambda_1,\lambda_2,\cdots,\lambda_s\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不同特征值,则若在每个特征子空间中取线性无关的向量,这些向量和起来也是线性无关的</li>
+</ul>
+<h4 id="2_9">定理 2<a class="headerlink" href="#2_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}\)</span>是 <strong><span class="arithmatex">\(n\)</span>维</strong> 线性空间<span class="arithmatex">\(V\)</span>上的线性变换,取<span class="arithmatex">\(V\)</span>中一个基<span class="arithmatex">\(\alpha\)</span>,设<span class="arithmatex">\(A=[\underline{A}]_\alpha,\text{且非零向量}\xi\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标是<span class="arithmatex">\(X,i.e.\xi = \alpha X\)</span>则<ul>
+<li><span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的属于特征值<span class="arithmatex">\(\lambda\)</span>的特征向量</li>
+<li><span class="arithmatex">\(\iff\underline{A}(\xi)=\lambda \xi\)</span><ul>
+<li><span class="arithmatex">\(LHS = \underline{A}(\alpha X)=\underline{A}(\alpha)X=AX\)</span></li>
+</ul>
+</li>
+<li><span class="arithmatex">\(\iff AX=\lambda X\)</span></li>
+<li><span class="arithmatex">\(\iff \lambda\)</span>是矩阵<span class="arithmatex">\(A\)</span>的特征值,且<span class="arithmatex">\(X\)</span>是<span class="arithmatex">\(A\)</span>的属于<span class="arithmatex">\(\lambda\)</span>的特征向量<ul>
+<li>这里<span class="arithmatex">\(\alpha = (\alpha_1,\alpha_2,\cdots,\alpha_n),X\)</span>是列向量</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+- 矩阵特征值特征向量的定义由下面定义3给出 </p>
+</blockquote>
+<ul>
+<li><strong>这就把线性变换的特征值和特征向量的问题转化为矩阵的特征值和特征向量的问题</strong></li>
+<li>这里线性空间是有限维的</li>
+</ul>
+<h4 id="3_3">定义 3<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>,若<span class="arithmatex">\(\exists \lambda\in F,\vec{0}\neq \xi\in F^n,s.t.\)</span><ul>
+<li>
+<div class="arithmatex">\[A\xi=\lambda \xi\]</div>
+</li>
+<li>则称<span class="arithmatex">\(\lambda\)</span>是矩阵<span class="arithmatex">\(A\)</span>的一个<strong>特征值</strong>, <span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(A\)</span>的属于特征值<span class="arithmatex">\(\lambda\)</span>的一个<strong>特征向量</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="4_2">定义 4 特征多项式<a class="headerlink" href="#4_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>,则<span class="arithmatex">\(\det(\lambda I-A)\)</span>称为<span class="arithmatex">\(A\)</span>的<strong>特征多项式</strong><ul>
+<li><span class="arithmatex">\(\det(\lambda I-A)=0\)</span>的根称为<span class="arithmatex">\(A\)</span>的特征值</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]</p>
+<p>计算<span class="arithmatex">\(A\)</span>的特征值,就是求<span class="arithmatex">\(\det(\lambda I-A)=0\)</span>的根</p>
+<p>然后代入<span class="arithmatex">\(\lambda\)</span>求对应的特征向量(非零)</p>
+<p>定义:<span class="arithmatex">\(V_{\lambda_s}:=\{\xi| \underline{A}(\xi)=\lambda_s \xi\}\)</span>,可以证明这是<span class="arithmatex">\(V\)</span>的一个子空间,称为特征子空间</p>
+</blockquote>
+<h4 id="1_13">命题 1<a class="headerlink" href="#1_13" title="Permanent link">&para;</a></h4>
+<ul>
+<li>相似矩阵的特征多项式相等,从而有相同的特征值和特征向量<ul>
+<li><span class="arithmatex">\(A\sim B\implies \exists S\in M_n(F),s.t. B=S^{-1}AS\)</span></li>
+<li><span class="arithmatex">\(\det(\lambda I-B)=\det(\lambda I-S^{-1}AS)=\det(S^{-1}(\lambda I-A)S)=\det(\lambda I-A)\)</span></li>
+</ul>
+</li>
+<li>从而对同一个特征变换取不同的基得到不同的基下的矩阵得到的特征多项式是不变的</li>
+</ul>
+<h4 id="2_10">命题 2<a class="headerlink" href="#2_10" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\det(\lambda I-A)=\lambda^n - tr(A)\lambda^{n-1}+\cdots+(-1)^n\det(A)\)</span></li>
+</ul>
+<hr />
+<h2 id="_12">线性变换可对角化的条件<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h4 id="1_14">定义 1<a class="headerlink" href="#1_14" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(\underline{A}\)</span>是域<span class="arithmatex">\(F\)</span>上<span class="arithmatex">\(n\)</span>维线性空间<span class="arithmatex">\(V\)</span>上的线性变换,若存在<span class="arithmatex">\(V\)</span>的一个基<span class="arithmatex">\(\alpha\)</span>,使得<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(\alpha\)</span>下的矩阵是对角矩阵,则称<span class="arithmatex">\(\underline{A}\)</span>是<strong>可对角化的</strong></li>
+</ul>
+<h4 id="1_15">定理 1<a class="headerlink" href="#1_15" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\underline{A}\)</span>可对角化</li>
+<li><span class="arithmatex">\(\iff \exists \alpha_i,i=1,2,\cdots,n,s.t.\underline{A}(\alpha_i)=\lambda_i\alpha_i \iff V\text{中存在由}\underline{A}\text{的特征向量组成的基}\)</span></li>
+<li><span class="arithmatex">\(\iff \underline{A}\)</span>有<span class="arithmatex">\(n\)</span>个线性无关的特征向量</li>
+<li><span class="arithmatex">\(\iff\)</span>若<span class="arithmatex">\(\lambda_1,\lambda_2,\cdots,\lambda_s\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不同特征值,则<span class="arithmatex">\(\underline{A}\)</span>的特征子空间<span class="arithmatex">\(V_{\lambda_1},V_{\lambda_2},\cdots,V_{\lambda_s}\)</span>的特征向量和起来是<span class="arithmatex">\(V\)</span>的一个基</li>
+<li><span class="arithmatex">\(\iff V = V_{\lambda_1}\oplus V_{\lambda_2}\oplus\cdots\oplus V_{\lambda_s}\)</span></li>
+<li><span class="arithmatex">\(\iff \dim V_{\lambda_1}+\dim V_{\lambda_2}+\cdots+\dim V_{\lambda_s}=\dim V = n\)</span></li>
+<li><span class="arithmatex">\(\iff f(\lambda)=\det(\lambda I-A)=(\lambda-\lambda_1)^{m_1}(\lambda-\lambda_2)^{m_2}\cdots(\lambda-\lambda_s)^{m_s}\)</span>,其中<span class="arithmatex">\(m_i\)</span>是<span class="arithmatex">\(\lambda_i\)</span>的重数:<span class="arithmatex">\(m_1+m_2+\cdots+m_s=n\)</span></li>
+<li><span class="arithmatex">\(\iff\)</span>特征值<span class="arithmatex">\(\lambda_i\)</span>的<strong>代数重数</strong>(<strong>作为特征多项式根的重数</strong>)等于<strong>几何重数</strong>(<strong>特征子空间的维数</strong>)<ul>
+<li>在实数域中,特征多项式不一定能分解成一次因式的乘积,所以在实数域上一个矩阵不一定是可对角化的</li>
+<li>有理数域上任意次数的多项式都是存在的,因此也不一定可对角化</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>几何重数小于等于代数重数</strong></p>
+<p>[!NOTE]
+复数域上的矩阵也不一定能对角化,比如
+<span class="arithmatex">\(<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\)</span>\)</span>
+有特征值<span class="arithmatex">\(\lambda = 1\)</span>,但是只有一个特征向量<span class="arithmatex">\(\xi = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\)</span>,<span class="arithmatex">\(\lambda=1\)</span>的代数重数为2,但是<span class="arithmatex">\(\dim \mathbb{C}_\lambda = \dim span(\xi) = 1\)</span></p>
+</blockquote>
+<h4 id="2_11">定义 2<a class="headerlink" href="#2_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设<span class="arithmatex">\(A\in M_n(F)\)</span>,如果<span class="arithmatex">\(A\)</span>相似于一个对角矩阵,那么<span class="arithmatex">\(A\)</span>是<strong>可对角化的</strong></p>
+<ul>
+<li><span class="arithmatex">\(\iff\exists P=(\alpha_1,\alpha_2,\cdots,\alpha_n),s.t. P^{-1}AP=D\)</span>,其中<span class="arithmatex">\(D\)</span>是对角矩阵,即</li>
+<li><span class="arithmatex">\(A(\alpha_1,\alpha_2,\cdots,\alpha_n)=(\alpha_1,\alpha_2,\cdots,\alpha_n)D=(\lambda_1\alpha_1,\lambda_2\alpha_2,\cdots,\lambda_n\alpha_n)\)</span></li>
+<li>那么有<span class="arithmatex">\(A\alpha_i=\lambda_i\alpha_i,i=1,2,\cdots,n\)</span>,从而<span class="arithmatex">\(A\)</span>有<span class="arithmatex">\(n\)</span>个线性无关的特征向量<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>,而且<span class="arithmatex">\(P=(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>是由特征向量组成的矩阵恰好是可逆的并且使得<span class="arithmatex">\(P^{-1}AP=diag(\lambda_1,\cdots,\lambda_n)\)</span></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+证明出现的<span class="arithmatex">\(A(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>需要和<span class="arithmatex">\(\underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>区分开来,后者等于<span class="arithmatex">\((\alpha_1,\alpha_2,\cdots,\alpha_n)A\)</span>,前者是矩阵的分块乘法</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
