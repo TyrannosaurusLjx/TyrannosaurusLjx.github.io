@@ -2242,6 +2242,28 @@
 </li>
 </ul>
 <h2 id="markov_2">连续时间Markov链<a class="headerlink" href="#markov_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><span class="arithmatex">\(X=(X(t),t\geq 0)\)</span>是连续时间随机过程,状态空间<span class="arithmatex">\(\mathcal{E}=\{1,2,\cdots,N\}\)</span>若<span class="arithmatex">\(\forall 0\leq s&lt;t,\)</span>有</p>
+<ul>
+<li>
+<div class="arithmatex">\[P(X(t)=j|X(s)=i,X(u)=i_u,u\leq s)=P(X(t)=j|X(s)=i)\]</div>
+</li>
+<li>那么称<span class="arithmatex">\(X\)</span>是连续时间Markov链</li>
+<li>令<span class="arithmatex">\(p_{ij}(s;t)=P(X(t)=j|X(s)=i)\)</span>,若<span class="arithmatex">\(p_{ij}(s;t)\)</span>仅与时间差<span class="arithmatex">\(t-s\)</span>有关,那么称<span class="arithmatex">\(X\)</span>是齐次的<ul>
+<li>此时记<span class="arithmatex">\(p_{ij}(t)=P(X(t)=j|X(0)=i),p_t(i)=P(X(t)=i),P(t)=(p_{ij}(t))_{n\times n}\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>(<span class="arithmatex">\(H_1\)</span>)假设<span class="arithmatex">\(p_{ij}(t)\)</span>是关于<span class="arithmatex">\(t&gt;0\)</span>的连续函数,并且有</p>
+<ul>
+<li><span class="arithmatex">\(\lim\limits_{t\to 0}p_{ij}(t) = \begin{cases} 1 &amp; i=j \\ 0 &amp; i\neq j \end{cases}\)</span></li>
+</ul>
+</li>
+<li>称满足上述假设的的转移概率矩阵族<span class="arithmatex">\(\{P(t),t\geq 0\}\)</span>称为是<strong>标准的</strong></li>
+</ul>
 
 
 
