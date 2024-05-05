@@ -221,6 +221,18 @@
 
 ## 连续时间Markov链
 
+- $X=(X(t),t\geq 0)$是连续时间随机过程,状态空间$\mathcal{E}=\{1,2,\cdots,N\}$若$\forall 0\leq s<t,$有
+    - $$P(X(t)=j|X(s)=i,X(u)=i_u,u\leq s)=P(X(t)=j|X(s)=i)$$
+    - 那么称$X$是连续时间Markov链
+    - 令$p_{ij}(s;t)=P(X(t)=j|X(s)=i)$,若$p_{ij}(s;t)$仅与时间差$t-s$有关,那么称$X$是齐次的
+        - 此时记$p_{ij}(t)=P(X(t)=j|X(0)=i),p_t(i)=P(X(t)=i),P(t)=(p_{ij}(t))_{n\times n}$
+
+- ($H_1$)假设$p_{ij}(t)$是关于$t>0$的连续函数,并且有
+    - $\lim\limits_{t\to 0}p_{ij}(t) = \begin{cases} 1 & i=j \\ 0 & i\neq j \end{cases}$
+- 称满足上述假设的的转移概率矩阵族$\{P(t),t\geq 0\}$称为是**标准的**
+
+
+
 
 
 
