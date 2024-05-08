@@ -19,6 +19,6 @@
     - $A\Rightarrow B$,表示$A$蕴含$B$
     - $f\in B([a,b])$,表示$f$在$[a,b]$上有界
     - $f\in C([a,b])$,表示$f$在$[a,b]$上连续
-
+    - $f|_I < M \iff \forall x\in I,f(x)<M$
 
 
