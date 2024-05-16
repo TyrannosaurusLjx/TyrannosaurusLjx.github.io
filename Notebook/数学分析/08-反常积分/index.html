@@ -1,0 +1,2199 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ljx's personal page">
+      
+      
+        <meta name="author" content="Ljx">
+      
+      
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/08-%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/">
+      
+      
+        <link rel="prev" href="../07-%E5%AE%9A%E7%A7%AF%E5%88%86/">
+      
+      
+        <link rel="next" href="../09-%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/">
+      
+      
+      <link rel="icon" href="../../../assets/image/Chivalrous.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>反常积分 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              反常积分
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Notebook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Tools/" class="md-tabs__link">
+          
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Notebook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    操作系统
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    数学分析
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            数学分析
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E9%9B%86%E5%90%88%E4%B8%8E%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    集合与映射
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数列极限
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数极限和连续函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-%E5%BE%AE%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微分中值定理及其应用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    不定积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    定积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    反常积分
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    反常积分
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分的概念和计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分的概念和计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.1.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.1.2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#813-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.1.3 \(\text{Cauchy主值}\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分的收敛判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分的收敛判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分的\(\text{Cauchy}\)收敛原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分的\(\text{Cauchy}\)收敛原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.1 \(\text{Cauchy}\)收敛原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#821" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.2.1 绝对可积
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#821_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      非负函数反常积分的比较判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非负函数反常积分的比较判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#822" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.2 比较判别法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.2 比较判别法的极限形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.3 \(\text{Cauchy判别法}\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.3 \(\text{Cauchy判别法的极限形式}\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一般函数反常积分的收敛判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一般函数反常积分的收敛判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#824" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.4 积分第二中值定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-textabel-dirichlet" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.5 \(\text{Abel-Dirichlet判别法}\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      无界函数反常积分的收敛判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="无界函数反常积分的收敛判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-textcauchy_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.1' \(\text{Cauchy}\)收敛原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.3' \(\text{Cauchy}\)判别法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.3' \(\text{Cauchy}\)判别法的极限形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-textabel-dirichlet_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.5' \(\text{Abel-Dirichlet判别法}\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数项级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数项级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-Euclid%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    \(\text{Euclid}\) 空间上的极限和连续
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多元函数的微分学
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-%E4%B9%A0%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    习题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数学建模
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数据结构与算法
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    机器学习
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    计算机组成原理
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    随机过程
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    高等代数
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分的概念和计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分的概念和计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.1.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.1.2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#813-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.1.3 \(\text{Cauchy主值}\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分的收敛判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分的收敛判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      反常积分的\(\text{Cauchy}\)收敛原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反常积分的\(\text{Cauchy}\)收敛原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.1 \(\text{Cauchy}\)收敛原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#821" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 8.2.1 绝对可积
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#821_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      非负函数反常积分的比较判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非负函数反常积分的比较判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#822" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.2 比较判别法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.2 比较判别法的极限形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.3 \(\text{Cauchy判别法}\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.3 \(\text{Cauchy判别法的极限形式}\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一般函数反常积分的收敛判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一般函数反常积分的收敛判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#824" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.4 积分第二中值定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-textabel-dirichlet" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.5 \(\text{Abel-Dirichlet判别法}\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      无界函数反常积分的收敛判别法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="无界函数反常积分的收敛判别法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-textcauchy_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.1' \(\text{Cauchy}\)收敛原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.3' \(\text{Cauchy}\)判别法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-textcauchy_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 8.2.3' \(\text{Cauchy}\)判别法的极限形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-textabel-dirichlet_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 8.2.5' \(\text{Abel-Dirichlet判别法}\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">反常积分<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>[!NOTE]
+在定义黎曼积分的时候,我们都要求函数在闭区间上有界,但是实际上很多时候这个条件是不能被满足的,因此需要考虑无界函数或者无界区间上的积分,这样的积分称为广义积分(反常积分)</p>
+</blockquote>
+<h2 id="_2">反常积分的概念和计算<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">反常积分<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h4 id="811">定义 8.1.1<a class="headerlink" href="#811" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(f(x)\)</span>在区间<span class="arithmatex">\([a,+\infty)\)</span>上有定义,且在任意有限区间<span class="arithmatex">\([a,A]\)</span>上可积,如果极限<ul>
+<li>
+<div class="arithmatex">\[\lim_{A\to+\infty}\int_a^Af(x)dx\]</div>
+</li>
+<li>存在,则称反常积分<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>收敛(或称<span class="arithmatex">\(f(x)\)</span>在区间<span class="arithmatex">\([a,+\infty)\)</span>上可积),其积分值定义为<ul>
+<li>
+<div class="arithmatex">\[\int_a^{+\infty}f(x)dx=\lim_{A\to+\infty}\int_a^Af(x)dx\]</div>
+</li>
+</ul>
+</li>
+<li>否则称反常积分<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>发散(其他情形定义类似)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+奇点:函数<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(x_0\)</span>的任一去心邻域上都是无界的,则称<span class="arithmatex">\(x_0\)</span>是<span class="arithmatex">\(f\)</span>的奇点</p>
+</blockquote>
+<h4 id="812">定义 8.1.2<a class="headerlink" href="#812" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x=b\)</span>的左邻域无界,若对任意<span class="arithmatex">\(\eta\in (0,b-a)\)</span>,<span class="arithmatex">\(f(x)\)</span>在区间<span class="arithmatex">\([a,b-\eta]\)</span>上可积,并且极限<ul>
+<li>
+<div class="arithmatex">\[\lim_{\eta\to 0^+}\int_a^{b-\eta}f(x)dx\]</div>
+</li>
+<li>存在,则称反常积分<span class="arithmatex">\(\int_a^bf(x)dx\)</span>收敛(或称无界函数<span class="arithmatex">\(f(x)\)</span>在区间<span class="arithmatex">\([a,b)\)</span>上可积),其积分值定义为<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)dx=\lim_{\eta\to 0^+}\int_a^{b-\eta}f(x)dx\]</div>
+</li>
+</ul>
+</li>
+<li>否则称反常积分<span class="arithmatex">\(\int_a^bf(x)dx\)</span>发散(其他情形定义类似)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+积分<span class="arithmatex">\(\int_a^\infty f(x)dx\)</span>收敛和<span class="arithmatex">\(\lim\limits_{x\to\infty}f(x)=0\)</span>没有任何关系,积分收敛不代表函数在无穷远处取值为0,甚至不能要求有界,(连续函数也不行).反过来也有反例(<span class="arithmatex">\(1/x\)</span>)</p>
+</blockquote>
+<h3 id="_4">反常积分计算<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h4 id="813-textcauchy">定义 8.1.3 <span class="arithmatex">\(\text{Cauchy主值}\)</span><a class="headerlink" href="#813-textcauchy" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若<ul>
+<li>
+<div class="arithmatex">\[\lim_{A\to + \infty}\int_{-A}^Af(x)dx=\lim\limits_{A\to +\infty}[F(A)-F(-A)]\]</div>
+</li>
+<li>极限存在,则称该极限值为反常积分<span class="arithmatex">\(\int_{-\infty}^{+\infty}f(x)dx\)</span>的<span class="arithmatex">\(\text{Cauchy}\)</span>主值,记为<ul>
+<li>
+<div class="arithmatex">\[(\text{ cpv})\int_{-\infty}^{+\infty}f(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+如<span class="arithmatex">\(\frac{1}{x}\)</span>在<span class="arithmatex">\((-\infty,\infty)\)</span>上的积分,按原定义是发散的,但是<span class="arithmatex">\((\text{cpv})\int_{-\infty}^{+\infty}\frac{1}{x}dx=0\)</span></p>
+</blockquote>
+<h2 id="_5">反常积分的收敛判别法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="textcauchy">反常积分的<span class="arithmatex">\(\text{Cauchy}\)</span>收敛原理<a class="headerlink" href="#textcauchy" title="Permanent link">&para;</a></h3>
+<h4 id="821-textcauchy">定理 8.2.1 <span class="arithmatex">\(\text{Cauchy}\)</span>收敛原理<a class="headerlink" href="#821-textcauchy" title="Permanent link">&para;</a></h4>
+<ul>
+<li>反常积分<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>收敛的充要条件是:对任意<span class="arithmatex">\(\varepsilon&gt;0\)</span>,存在<span class="arithmatex">\(A&gt;a\)</span>,使得当<span class="arithmatex">\(A_1,A_2&gt;A\)</span>时,有<ul>
+<li>
+<div class="arithmatex">\[\left|\int_{A_1}^{A_2}f(x)dx\right|&lt;\varepsilon\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="821">定义 8.2.1 绝对可积<a class="headerlink" href="#821" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>若积分<span class="arithmatex">\(\int_a^{+\infty}|f(x)|dx\)</span>收敛,则称反常积分<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>绝对收敛(或称<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,\infty)\)</span>上<strong>绝对可积</strong>)</p>
+<ul>
+<li>若反常积分收敛但不绝对收敛,则称反常积分<strong>条件收敛</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="821_1">推论 8.2.1<a class="headerlink" href="#821_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>函数绝对可积则必定可积</li>
+</ul>
+<h3 id="_6">非负函数反常积分的比较判别法<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="822">定理 8.2.2 比较判别法<a class="headerlink" href="#822" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设在<span class="arithmatex">\([a,+\infty)\)</span>上<span class="arithmatex">\(0\leq f(x)\leq K\varphi(x),K\in\mathbb{R}^+\)</span>,则<ul>
+<li>若<span class="arithmatex">\(\int_a^{+\infty}\varphi(x)dx\)</span>收敛,则<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>收敛</li>
+<li>若<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>发散,则<span class="arithmatex">\(\int_a^{+\infty}\varphi(x)dx\)</span>发散</li>
+</ul>
+</li>
+</ul>
+<h4 id="822_1">推论 8.2.2 比较判别法的极限形式<a class="headerlink" href="#822_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设在<span class="arithmatex">\([a,+\infty)\)</span>上恒有<span class="arithmatex">\(f(x),\varphi(x)\geq 0,\)</span>且</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\lim_{x\to+\infty}\frac{f(x)}{\varphi(x)}=l\)</span>\)</span>
+则</p>
+</li>
+<li>
+<p>若 <strong><span class="arithmatex">\(l\in [0,\infty)\)</span></strong> ,则<span class="arithmatex">\(\int_a^{+\infty}\varphi(x)dx\)</span>收敛<span class="arithmatex">\(\implies \int_a^{+\infty}f(x)dx\)</span>收敛</p>
+</li>
+<li>若 <strong><span class="arithmatex">\(l\in (0,\infty)\cup \{\infty\}\)</span></strong> ,则<span class="arithmatex">\(\int_a^{+\infty}\varphi(x)dx\)</span>发散<span class="arithmatex">\(\implies \int_a^{+\infty}f(x)dx\)</span>发散<ul>
+<li>从而当<span class="arithmatex">\(l\in (0,\infty)\)</span>时,<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>与<span class="arithmatex">\(\int_a^{+\infty}\varphi(x)dx\)</span>同敛散</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="823-textcauchy">定理 8.2.3 <span class="arithmatex">\(\text{Cauchy判别法}\)</span><a class="headerlink" href="#823-textcauchy" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设在<span class="arithmatex">\([a,+\infty)\)</span>上恒有<span class="arithmatex">\(f(x)\geq 0,K\in\mathbb{R}^+\)</span>,则<ul>
+<li>若<span class="arithmatex">\(f(x)\leq \frac{K}{x^p},p&gt;1\)</span>,则<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>收敛</li>
+<li>若<span class="arithmatex">\(f(x)\geq \frac{K}{x^p},p\leq 1\)</span>,则<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>发散<blockquote>
+<p>[!NOTE]
+实际上就是比较判别法的特例<span class="arithmatex">\(\varphi(x)=\frac{K}{x^p}\)</span></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="823-textcauchy_1">推论 8.2.3 <span class="arithmatex">\(\text{Cauchy判别法的极限形式}\)</span><a class="headerlink" href="#823-textcauchy_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设在<span class="arithmatex">\([a,+\infty)\)</span>上恒有<span class="arithmatex">\(f(x)\geq 0\)</span>,且</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\lim_{x\to+\infty}x^pf(x)=l\)</span>\)</span>
+则</p>
+</li>
+<li>
+<p>若 <strong><span class="arithmatex">\(l\in [0,\infty)\)</span></strong> 且<span class="arithmatex">\(p&gt;1\)</span>,则<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>收敛</p>
+</li>
+<li>若 <strong><span class="arithmatex">\(l\in (0,\infty)\cup \{\infty\}\)</span></strong> 且<span class="arithmatex">\(p\leq 1\)</span> ,则<span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span>发散</li>
+</ul>
+</li>
+</ul>
+<h3 id="_7">一般函数反常积分的收敛判别法<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="824">定理 8.2.4 <strong>积分第二中值定理</strong><a class="headerlink" href="#824" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上可积,<span class="arithmatex">\(g(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上单调,则存在<span class="arithmatex">\(\xi\in [a,b]\)</span>,使得</p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)g(x)dx=g(a)\int_a^\xi f(x)dx+g(b)\int_\xi^bf(x)dx\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>在上述条件下</p>
+<ul>
+<li>若<span class="arithmatex">\(g(x)\)</span>单增,且<span class="arithmatex">\(g(a)\geq 0\)</span>则<span class="arithmatex">\(\exists \xi\in [a,b]\)</span>,使得<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)g(x)dx = g(b)\int_\xi^bf(x)dx\]</div>
+</li>
+</ul>
+</li>
+<li>若<span class="arithmatex">\(g(x)\)</span>单减,且<span class="arithmatex">\(g(b)\geq 0\)</span>则<span class="arithmatex">\(\exists \xi\in [a,b]\)</span>,使得<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)g(x)dx = g(a)\int_a^\xi f(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+后面加强的结论在条件中对<span class="arithmatex">\(g\)</span>的约束相当于要求<span class="arithmatex">\(g\geq 0\)</span></p>
+</blockquote>
+<h4 id="825-textabel-dirichlet">定理 8.2.5 <strong><span class="arithmatex">\(\text{Abel-Dirichlet判别法}\)</span></strong><a class="headerlink" href="#825-textabel-dirichlet" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若以下两个条件满足之一,则反常积分 <span class="arithmatex">\(\int_a^\infty f(x)g(x)dx\)</span> 收敛<ul>
+<li><span class="arithmatex">\(\text{Abel判别法}:\int_a^\infty f(x)dx\)</span> 收敛, <span class="arithmatex">\(g(x)\)</span> 在 <span class="arithmatex">\([a,+\infty)\)</span> 上单调有界</li>
+<li><span class="arithmatex">\(\text{Dirichlet判别法}:F(x)=\int_a^x f(t)dt\)</span> 在 <span class="arithmatex">\([a,\infty)\)</span>上有界(不要求收敛), <span class="arithmatex">\(g(x)\)</span> 在 <span class="arithmatex">\([a,+\infty)\)</span> 上单调且 <span class="arithmatex">\(\lim\limits_{x\to+\infty}g(x)=0\)</span></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+1. 看能不能找到函数的部分函数使得其积分收敛,如果可以再看剩下的部分是否是单调有界的,如果是就满足<span class="arithmatex">\(\text{Abel判别法}\)</span></p>
+<blockquote>
+<ol>
+<li>如果积分部分不收敛,看部分函数的原函数是否有界,如果有界,再看剩下的部分是否是单调趋于0的,如果是就满足<span class="arithmatex">\(\text{Dirichlet判别法}\)</span></li>
+</ol>
+</blockquote>
+<p>[!NOTE]
+实际上在<span class="arithmatex">\(\text{Dirichlet判别法}\)</span>中,<span class="arithmatex">\(g\)</span>在充分大的状态下单调就行了</p>
+</blockquote>
+<h3 id="_8">无界函数反常积分的收敛判别法<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>对在 <span class="arithmatex">\(x=b\)</span> 有奇点时</li>
+</ul>
+<h4 id="821-textcauchy_1">定理 8.2.1' <span class="arithmatex">\(\text{Cauchy}\)</span>收敛原理<a class="headerlink" href="#821-textcauchy_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>反常积分 <span class="arithmatex">\(\int_a^{+\infty}f(x)dx\)</span> 收敛 <span class="arithmatex">\(\iff \forall \varepsilon&gt;0,\exists \delta &gt; 0, s.t.\forall \eta,\eta' \in (0,\delta):\)</span><ul>
+<li>
+<div class="arithmatex">\[\left|\int_{b-\eta}^{b-\eta'}f(x)dx\right|&lt;\varepsilon\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="823-textcauchy_2">定理 8.2.3' <span class="arithmatex">\(\text{Cauchy}\)</span>判别法<a class="headerlink" href="#823-textcauchy_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(f(x)|_{[a,b)}\geq 0,\)</span> 若 <span class="arithmatex">\(\exists \eta &gt;0, s.t. \forall x\in [b-\eta,b),\exists K\in \mathbb{R}^+:\)</span><ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(f(x)\leq \frac{K}{(b-x)^p},p&lt;1\)</span>\)</span>
+则 <span class="arithmatex">\(\int_a^bf(x)dx\)</span> 收敛</li>
+<li><span class="arithmatex">\(<span class="arithmatex">\(f(x)\geq \frac{K}{(b-x)^p},p\geq 1\)</span>\)</span>
+则 <span class="arithmatex">\(\int_a^bf(x)dx\)</span> 发散</li>
+</ul>
+</li>
+</ul>
+<h4 id="823-textcauchy_3">推论 8.2.3' <span class="arithmatex">\(\text{Cauchy}\)</span>判别法的极限形式<a class="headerlink" href="#823-textcauchy_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(f(x)|_{[a,b)}\geq 0,\)</span> 且<ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(\lim_{x\to b^-}(b-x)^pf(x)=l\)</span>\)</span>
+则</li>
+<li>若 <span class="arithmatex">\(l\in [0,\infty)\)</span> 且 <span class="arithmatex">\(p&lt;1\)</span>,则 <span class="arithmatex">\(\int_a^bf(x)dx\)</span> 收敛</li>
+<li>若 <span class="arithmatex">\(l\in (0,\infty)\cup \{\infty\}\)</span> 且 <span class="arithmatex">\(p\geq 1\)</span>,则 <span class="arithmatex">\(\int_a^bf(x)dx\)</span> 发散</li>
+</ul>
+</li>
+</ul>
+<h4 id="825-textabel-dirichlet_1">定理 8.2.5' <span class="arithmatex">\(\text{Abel-Dirichlet判别法}\)</span><a class="headerlink" href="#825-textabel-dirichlet_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若以下两个条件满足之一,则反常积分 <span class="arithmatex">\(\int_a^bf(x)g(x)dx\)</span> 收敛<ul>
+<li><span class="arithmatex">\(\text{Abel判别法}:\int_a^bf(x)dx\)</span> 收敛, <span class="arithmatex">\(g(x)\)</span> 在 <span class="arithmatex">\([a,b)\)</span> 上单调有界</li>
+<li><span class="arithmatex">\(\text{Dirichlet判别法}:F(x)=\int_a^x f(t)dt\)</span> 在 <span class="arithmatex">\([a,b)\)</span> 上有界(不要求收敛), <span class="arithmatex">\(g(x)\)</span> 在 <span class="arithmatex">\([a,b)\)</span> 上单调且 <span class="arithmatex">\(\lim\limits_{x\to b^-}g(x)=0\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="_9">推论<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(\int_a^{+\infty} f(x)dx\)</span> 收敛, 且 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([a,+\infty)\)</span> 上一致连续, 则 <span class="arithmatex">\(\lim\limits_{x\to+\infty}f(x)=0\)</span></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
