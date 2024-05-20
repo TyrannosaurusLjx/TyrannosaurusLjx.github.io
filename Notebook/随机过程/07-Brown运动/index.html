@@ -26,7 +26,7 @@
     
     
       
-        <title>07 Brown运动 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+        <title>Brown运动 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#brown" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              07 Brown运动
+              Brown运动
             
           </span>
         </div>
@@ -465,6 +470,12 @@
       
         
           
+        
+      
+        
+      
+        
+      
         
       
         
@@ -957,16 +968,83 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Brown运动
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    07 Brown运动
+    Brown运动
   </span>
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brown_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brown运动及基本性质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Brown运动及基本性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brown_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brown运动定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brown_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brown运动的基本性质
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1200,6 +1278,8 @@
       
         
       
+        
+      
     
     
       
@@ -1254,6 +1334,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brown_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brown运动及基本性质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Brown运动及基本性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brown_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brown运动定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brown_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brown运动的基本性质
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1271,9 +1394,34 @@
   
 
 
-  <h1>07 Brown运动</h1>
-
-
+<h1 id="brown">Brown运动<a class="headerlink" href="#brown" title="Permanent link">&para;</a></h1>
+<h2 id="brown_1">Brown运动及基本性质<a class="headerlink" href="#brown_1" title="Permanent link">&para;</a></h2>
+<h3 id="brown_2">Brown运动定义<a class="headerlink" href="#brown_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>设 <span class="arithmatex">\(B(t)\)</span> 是实数值随机过程,如果满足<ul>
+<li>初始值: <span class="arithmatex">\(B(0)=0\)</span></li>
+<li>独立增量: <span class="arithmatex">\(0&lt;t_1&lt;\cdots&lt;t_k&lt;\cdots,\implies B(t_1),B(t_2)-B(t_1),\cdots,B(t_k)-B(t_{k-1})\)</span> 相互独立</li>
+<li>平稳增量: <span class="arithmatex">\(0\leq s&lt;t,\implies B(t)-B(s),B(t-s)\)</span> 同分布</li>
+<li>正态分布: <span class="arithmatex">\(\forall t&gt;0, B(t)\sim N(0,\sigma^2 t)\)</span>
+则称 <span class="arithmatex">\(B(t)\)</span> 为参数为 <span class="arithmatex">\(\sigma^2\)</span> 的 Brown 运动,当 <span class="arithmatex">\(\sigma^2=1\)</span> 时,称为标准 Brown 运动</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+以下若未特别说明,均指标准 Brown 运动</p>
+</blockquote>
+<h3 id="brown_3">Brown运动的基本性质<a class="headerlink" href="#brown_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><span class="arithmatex">\(\mu(t)=E(B(t))=0\)</span></li>
+<li><span class="arithmatex">\(Var(B(t))=E(B^2(t))=t\)</span></li>
+<li><span class="arithmatex">\(EB(t)^m = \begin{cases} t^k(2k-1)!! &amp; m=2k \\ 0 &amp; m=2k+1 \end{cases}\)</span></li>
+<li><span class="arithmatex">\(r_B(s,t)=E(B(s)B(t))=s,s&lt;t\)</span><blockquote>
+<p>[!NOTE]
+<span class="arithmatex">\(\forall s,t.\geq 0, r_B(s,t)=\min(s,t)\)</span></p>
+</blockquote>
+</li>
+</ul>
 
 
 
