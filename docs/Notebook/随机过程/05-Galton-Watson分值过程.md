@@ -29,7 +29,7 @@
 - 对非负整数随机变量 $\xi$, 定义: 
     - $$\phi(s) = E(s^\xi) = \sum\limits_{k=0}^{\infty}{s^kp_k},s\in [0,1]$$
     为 $\xi$ 的生成函数
-- 显然 $\phi(s) \leq \sum\limits_{k=0}^{\infty}{p_k} = 1$, 从而 $\phi(s)$ 在 $[0,1]$ 上收敛
+- 显然 $\phi(s) \leq \sum\limits_{k=0}^{\infty}{p_k} = 1$, 从而 $\phi(s)$ 在 $[0,1]$ 上一致收敛
 
 #### 定理 5.4  (生成函数的性质) 
 - $\phi(1) = 1,\; 0\leq \phi(s)\leq 1$
@@ -68,7 +68,6 @@
 - 设 $p_0>0$ (若不然肯定不会灭绝)
     - 若 $\mu\leq 1$ 则 $\tau =1$
     - 若 $\mu > 1$ 则, $\tau$ 为方程 $s=\phi(s)$ 的最小正解,且 $0<\tau<1$ 
-
 
 
 
