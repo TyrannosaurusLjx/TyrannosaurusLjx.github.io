@@ -504,6 +504,8 @@
       
         
       
+        
+      
     
     
       
@@ -1037,6 +1039,48 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#textbrown" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\text{Brown}\) 运动变化形式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\text{Brown}\) 运动变化形式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#71_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 7.1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      若干相关过程
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1371,6 +1415,48 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#textbrown" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\text{Brown}\) 运动变化形式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\text{Brown}\) 运动变化形式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#71_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 7.1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      若干相关过程
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1420,6 +1506,112 @@
 <p>[!NOTE]
 <span class="arithmatex">\(\forall s,t.\geq 0, r_B(s,t)=\min(s,t)\)</span></p>
 </blockquote>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+任意均值为0,自相关函数为 <span class="arithmatex">\(r(s,t)=\min(s,t)\)</span> 的正态过程都是 Brown 运动</p>
+</blockquote>
+<ul>
+<li>
+<p>密度函数 <span class="arithmatex">\(p(t,x) = \frac{1}{\sqrt{2\pi t}}e^{-\frac{x^2}{2t}}\)</span></p>
+</li>
+<li>
+<p>设 <span class="arithmatex">\(s&lt;t\)</span></p>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(B(s)=x\)</span>, 则 </p>
+<ul>
+<li>
+<div class="arithmatex">\[p_{t|s}(y|x) = \frac{1}{\sqrt{2\pi(t-s)}}e^{-\frac{(y-x)^2}{2(t-s)}}\quad y\in\mathbb{R}\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(B(t)=y\)</span>, 则</p>
+<ul>
+<li>
+<div class="arithmatex">\[p_{s|t}(x|y) = \frac{\sqrt{t}}{\sqrt{2\pi s(t-s)}} e^{-\frac{(tx-sy))^2}{2(t-s)}} \quad x\in\mathbb{R}\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{Brown}\)</span> 运动的曲线处处连续但处处不可微</p>
+</li>
+</ul>
+<h3 id="textbrown"><span class="arithmatex">\(\text{Brown}\)</span> 运动变化形式<a class="headerlink" href="#textbrown" title="Permanent link">&para;</a></h3>
+<h4 id="71">定理 7.1<a class="headerlink" href="#71" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(X(t)\)</span> 是实数值正态过程,若 <span class="arithmatex">\(E(X(t))=0,r(s,t)=\min(s,t)\)</span>,则 <span class="arithmatex">\(X(t)\)</span> 是 <span class="arithmatex">\(\text{Brown}\)</span> 运动</li>
+</ul>
+<h4 id="71_1">推论 7.1<a class="headerlink" href="#71_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>下列过程是 <span class="arithmatex">\(\text{Brown}\)</span> 运动</p>
+<ul>
+<li>
+<p>给定 <span class="arithmatex">\(t_0\geq 0\)</span> 定义</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(X(t) = B(t+t_0)-B(t_0)\)</span></p>
+<ul>
+<li>相当于把坐标轴的原点平移到 <span class="arithmatex">\((t_0,B(t_0))\)</span> 处</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>给定 <span class="arithmatex">\(c&gt;0\)</span> 定义</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(X(t)  = \frac{1}{\sqrt{c}}B(ct)\)</span></p>
+<ul>
+<li>压缩时间轴</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>定义</p>
+<ul>
+<li><span class="arithmatex">\(X(t) = \begin{cases} tB(t^{-1}) &amp; t&gt;0 \\ 0 &amp; t=0\end{cases}\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="_1">若干相关过程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Brown 桥</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(B^0(t)= B(t)-tB(1),0\leq t\leq 1\)</span></p>
+<ul>
+<li><span class="arithmatex">\(r(s,t)=E(B^0(s)B^0(t))=\min\{s,t\} (1-\max\{s,t\}),0\leq s,t \leq 1\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>反射 Brown 运动</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(X(t)= |B(t)|\)</span></p>
+<ul>
+<li><span class="arithmatex">\(EX(t)=\sqrt{\frac{2}{\pi}}t,EX^2(t)=t,t\geq 0\)</span></li>
+<li><span class="arithmatex">\(p(t,x)=\sqrt{\frac{2}{\pi t}}e^{-\frac{x^2}{2t}},x\geq 0\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>几何 Brown 运动,给定 <span class="arithmatex">\(\alpha,\beta\in \mathbb{R}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(X(t)=e^{\alpha t+\beta B(t)},t\geq 0\)</span></li>
+</ul>
 </li>
 </ul>
 
