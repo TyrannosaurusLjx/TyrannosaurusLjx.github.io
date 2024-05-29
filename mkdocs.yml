@@ -31,7 +31,7 @@ theme:
     - navigation.tabs # 导航栏大目录  
     - navigation.prune # 侧边栏折叠
     - toc.follow
-    # - toc.integrate # 右边目录
+    - toc.integrate # 右边目录
     - navigation.top
     - search.suggest
     - search.highlight
