@@ -811,6 +811,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1371,6 +1375,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../%E4%B9%A0%E9%A2%98%E4%BA%94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    习题五
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B9%A0%E9%A2%98%E5%85%AB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    习题八
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../%E4%B9%A0%E9%A2%98%E5%9B%9B/" class="md-nav__link">
         
   
@@ -1551,7 +1597,7 @@
 <p>算术平均值: <span class="arithmatex">\(\bar{X}_n = \frac{1}{n} \sum\limits_{i=1}^{n} X_i\)</span></p>
 </li>
 <li>
-<p>加权平均值: <span class="arithmatex">\(\bar{X}_n = \frac{1}{n} \sum\limits_{i=1}^{n} w_i X_i, \sum\limits_{i=1}^{n} w_i = 1\)</span></p>
+<p>加权平均值: <span class="arithmatex">\(\bar{X}_n = \frac{1}{n} \sum\limits_{i=1}^{n} w_i X_i\;\;     \sum\limits_{i=1}^{n} w_i = 1\)</span></p>
 </li>
 </ul>
 <h2 id="_4">时间平均<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
@@ -1564,8 +1610,7 @@
 </ul>
 </li>
 <li>若存在 <strong>随机变量</strong> <span class="arithmatex">\(\tau\)</span> 使得 <span class="arithmatex">\(\bar{X_n}\)</span> 在均方意义下收敛到 <span class="arithmatex">\(\tau\)</span>, 即:<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(\lim_{n \to \infty} E[(\bar{X_n} - \tau)^2] = 0\)</span>\)</span>
-称 <span class="arithmatex">\(\tau\)</span> 为随机过程 <span class="arithmatex">\(X(t)\)</span> 的 <strong>时间平均</strong>.,记为</li>
+<li><span class="arithmatex">\(\lim\limits_{n \to \infty} E[(\bar{X_n} - \tau)^2] = 0\)</span> 称 <span class="arithmatex">\(\tau\)</span> 为随机过程 <span class="arithmatex">\(X(t)\)</span> 的 <strong>时间平均</strong>.,记为</li>
 <li>
 <div class="arithmatex">\[\lim\limits_{n\to\infty} \bar{X_n} = \tau\]</div>
 </li>
@@ -1581,8 +1626,12 @@
 <p>若存在 <strong>随机变量</strong> <span class="arithmatex">\(\xi_T\)</span> 使得对任意划分 <span class="arithmatex">\(P:0=t_0&lt;t_1&lt;\cdots&lt;t_n=T,\forall t^*_k\in[t_{k-1},t_k]\)</span>:</p>
 <ul>
 <li>对和式 <span class="arithmatex">\(S_n = \sum_{k=1}^{n} X(t^*_k)(t_k - t_{k-1})\)</span> 成立</li>
-<li><span class="arithmatex">\(<span class="arithmatex">\(\lim_{\max\limits_{k} (t_k - t_{k-1}) \to 0} E[(S_n - \xi_T)^2] = 0\)</span>\)</span>
-则称 <span class="arithmatex">\(X(t)\)</span> 在 <span class="arithmatex">\([0,T]\)</span> 上的 <strong>均方可积</strong> ,积分值记为 <span class="arithmatex">\(\xi_T\)</span>,记为</li>
+<li>
+<div class="arithmatex">\[\lim_{\max\limits_{k} (t_k - t_{k-1}) \to 0} E[(S_n - \xi_T)^2] = 0\]</div>
+<ul>
+<li>则称 <span class="arithmatex">\(X(t)\)</span> 在 <span class="arithmatex">\([0,T]\)</span> 上的 <strong>均方可积</strong> ,积分值记为 <span class="arithmatex">\(\xi_T\)</span>,记为</li>
+</ul>
+</li>
 <li>
 <div class="arithmatex">\[\int_{0}^{T} X(T)dt = \xi_T\]</div>
 </li>
@@ -1592,10 +1641,18 @@
 <h4 id="81">定理 8.1<a class="headerlink" href="#81" title="Permanent link">&para;</a></h4>
 <ul>
 <li>设 <span class="arithmatex">\(X\)</span> 是二阶矩过程, <span class="arithmatex">\(EX(t)^2 &lt; \infty\)</span>, 给定 <span class="arithmatex">\(T&gt;0\)</span>, 若<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(\int_{0}^{T}\int_{0}^{T} r_X(t,s)dtds &lt; \infty\)</span>\)</span>
-即</li>
-<li><span class="arithmatex">\(<span class="arithmatex">\(\int_{0}^{T}\int_{0}^{T} EX(s)X(t)dtds &lt; \infty\)</span>\)</span>
-那么 <span class="arithmatex">\(X(t)\)</span> 在 <span class="arithmatex">\([0,T]\)</span> 上的均方可积</li>
+<li>
+<div class="arithmatex">\[\int_{0}^{T}\int_{0}^{T} r_X(t,s)dtds &lt; \infty\]</div>
+<ul>
+<li>即</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[\int_{0}^{T}\int_{0}^{T} EX(s)X(t)dtds &lt; \infty\]</div>
+<ul>
+<li>那么 <span class="arithmatex">\(X(t)\)</span> 在 <span class="arithmatex">\([0,T]\)</span> 上的均方可积</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1609,10 +1666,10 @@
 <ul>
 <li>
 <div class="arithmatex">\[\lim_{T \to \infty} E[(\bar{X_T} - \tau)^2] = 0\]</div>
-</li>
-</ul>
-<p>则称 <span class="arithmatex">\(\tau\)</span> 为过程 <span class="arithmatex">\(X(t)\)</span> 的 <strong>时间平均</strong>, 记为</p>
 <ul>
+<li>则称 <span class="arithmatex">\(\tau\)</span> 为过程 <span class="arithmatex">\(X(t)\)</span> 的 <strong>时间平均</strong>, 记为</li>
+</ul>
+</li>
 <li>
 <div class="arithmatex">\[\lim\limits_{T \to \infty} \bar{X_T} = \tau\]</div>
 </li>
@@ -1622,8 +1679,10 @@
 <h4 id="83">定义 8.3 均值遍历性<a class="headerlink" href="#83" title="Permanent link">&para;</a></h4>
 <ul>
 <li>若平稳随机过程 <span class="arithmatex">\(X\)</span> 时间平均等于样本平均,即<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(\mu = \tau,a.s.\)</span>\)</span>
-则称过程 <span class="arithmatex">\(X(t)\)</span> 具有 <strong>均值遍历性</strong></li>
+<li>
+<div class="arithmatex">\[\mu = \tau,a.s.\]</div>
+</li>
+<li>则称过程 <span class="arithmatex">\(X(t)\)</span> 具有 <strong>均值遍历性</strong></li>
 </ul>
 </li>
 </ul>
@@ -1633,11 +1692,16 @@
 <ul>
 <li>设 <span class="arithmatex">\(X=(X_n,n\geq 0)\)</span> 是离散时间平稳随机过程, <span class="arithmatex">\(EX_n = \mu,r_X(k) = EX_0X_k,\)</span> 那么其满足均值遍历性的充要条件是<ul>
 <li>
-<div class="arithmatex">\[\frac{1}{n} \sum_{k=1}^{n} (n-k)(r_X(k)-\mu^2) \to 0 , n\to\infty\]</div>
+<div class="arithmatex">\[\frac{1}{n^2} \sum_{k=1}^{n} (n-k)(r_X(k)-\mu^2) \to 0 , n\to\infty\]</div>
 </li>
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>[!NOTE]
+- <span class="arithmatex">\(X_n\)</span> 是平稳随机过程, <span class="arithmatex">\(EX_n=\mu\)</span> ,那么
+- <span class="arithmatex">\(<span class="arithmatex">\(\lim\limits_{n\to\infty} \frac{1}{n} \sum\limits_{k=0}^{n-1}X_k = \mu \iff \lim\limits_{n\to\infty} \frac{1}{n}\sum\limits_{k=0}^{n-1} EX_0X_k = \mu^2\)</span>\)</span></p>
+</blockquote>
 <h4 id="81_1">推论 8.1<a class="headerlink" href="#81_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>在上述定理条件下, <span class="arithmatex">\(X\)</span> 满足均值遍历性的充要条件是<ul>
@@ -1650,8 +1714,12 @@
 <h4 id="82_1">推论 8.2<a class="headerlink" href="#82_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>在上述定理条件下, 如果<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(r_X(k)\to \mu^2, k\to\infty\)</span>\)</span>
-那么 <span class="arithmatex">\(X\)</span> 满足均值遍历性</li>
+<li>
+<div class="arithmatex">\[r_X(k)\to \mu^2, k\to\infty\]</div>
+<ul>
+<li>那么 <span class="arithmatex">\(X\)</span> 满足均值遍历性</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1684,8 +1752,12 @@
 <h4 id="84_1">推论 8.4<a class="headerlink" href="#84_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>在上述定理条件下, 如果<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(r_X(t)\to \mu^2, t\to\infty\)</span>\)</span>
-那么 <span class="arithmatex">\(X\)</span> 满足均值遍历性</li>
+<li>
+<div class="arithmatex">\[r_X(t)\to \mu^2, t\to\infty\]</div>
+<ul>
+<li>那么 <span class="arithmatex">\(X\)</span> 满足均值遍历性</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
