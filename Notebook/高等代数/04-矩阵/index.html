@@ -508,6 +508,8 @@
       
         
       
+        
+      
     
     
       
@@ -1076,7 +1078,7 @@
           <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      定理 1
+      定理 1 秩不等式
     </span>
   </a>
   
@@ -1473,24 +1475,70 @@
 <p><span class="arithmatex">\(A,B\in M_{n\times n}(K)\)</span></p>
 </li>
 <li><span class="arithmatex">\(AB=(\alpha_1,\alpha_2,\cdots,\alpha_n)B=(\sum\limits_{{i=1}}^{n}b_{i1}\alpha_i,\cdots,\sum\limits_{{i=1}}^{n}b_{in}\alpha_i)\)</span><ul>
-<li>换句话说<span class="arithmatex">\(AB\)</span>可以由<span class="arithmatex">\(A\)</span>的列向量组线性表出,这说明<span class="arithmatex">\(rank(AB)\leq rank(A)\)</span></li>
-<li>取转置就可以证明<span class="arithmatex">\(rank(AB)\leq rank(B)\)</span></li>
+<li>换句话说<span class="arithmatex">\(AB\)</span>可以由<span class="arithmatex">\(A\)</span>的列向量组线性表出,这说明<span class="arithmatex">\(\text{rank}(AB)\leq \text{rank}(A)\)</span></li>
+<li>取转置就可以证明<span class="arithmatex">\(\text{rank}(AB)\leq \text{rank}(B)\)</span></li>
 </ul>
 </li>
 </ul>
-<h4 id="1">定理 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<h4 id="1">定理 1 秩不等式<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(rank(AB)\leq \min\{rank(A),rank(B)\}\)</span></li>
-<li>乘积矩阵的秩不会超过因子矩阵的秩</li>
+<li><span class="arithmatex">\(\text{rank}(AB)\leq \min\{\text{rank}(A),\text{rank}(B)\}\)</span></li>
+<li>
+<p>乘积矩阵的秩不会超过因子矩阵的秩</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{rank}(A+B)\leq \text{rank}(A)+\text{rank}(B)\)</span></p>
+</li>
+<li>
+<p>和矩阵的秩不会超过两个矩阵的秩之和</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{Sylvestor不等式}: \text{rank}(A)+\text{rank}(B) \leq \text{rank}(AB)+n\)</span></p>
+</li>
+<li>
+<p>两个矩阵的秩之和不会超过乘积矩阵的秩加上矩阵的阶数</p>
+<ul>
+<li><span class="arithmatex">\(\implies \text{rank}(A)+\text{rank}(B)-n \leq \text{rank}(AB) \leq \min\{\text{rank}(A),\text{rank}(B)\}\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{Frobenius不等式}: \text{rank}(ABC)\geq \text{rank}(AB)+\text{rank}(BC)-n\)</span></p>
+<ul>
+<li>这里 <span class="arithmatex">\(B\)</span> 取 <span class="arithmatex">\(E\)</span> 就得到 <span class="arithmatex">\(\text{Sylvestor不等式}\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{rank}(A^T)=\text{rank}(A) = \text{rank}(A^TA)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{rank}(A-ABA) = \text{rank}(A)+\text{rank}(I-BA)-n\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\left.\left[\begin{array}{cc}A&amp;\\&amp;E_n-BA\end{array}\right.\right]\to\left[\begin{array}{cc}A&amp;O\\\\BA&amp;E_n-BA\end{array}\right]\to\left[\begin{array}{cc}A&amp;A\\\\BA&amp;E_n\end{array}\right]\to\left[\begin{array}{cc}A-ABA&amp;O\\\\O&amp;E_n\end{array}\right]\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(A^2=A\iff \text{rank}(A)+\text{rank}(I-A)=n\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(A^2=E\iff \text{rank}(A+I)+\text{rank}(A-I)=n\)</span></p>
+</li>
 </ul>
 <h2 id="_3">特殊矩阵<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>基本矩阵:<span class="arithmatex">\(E_{ij}:=\text{矩阵的}i,j\text{元是1,其余的元素都是0的矩阵}\)</span></li>
 <li><span class="arithmatex">\(M_{s\times n}(K)=Span(E_{11},E_{12},\cdots,E_{1n},E_{21},\cdots,E_{sn})\)</span></li>
-<li><span class="arithmatex">\(\dim M_{s\times n}(K)=sn\)</span></li>
-<li>对角矩阵:<span class="arithmatex">\(diag(a_1,a_2,\cdots,a_n):=\begin{pmatrix}a_1&amp;0&amp;\cdots&amp;0\\0&amp;a_2&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\0&amp;0&amp;\cdots&amp;a_n\end{pmatrix}\)</span>,<span class="arithmatex">\(\{\text{数域}K\text{上的对角矩阵}\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</li>
-<li>数量矩阵:<span class="arithmatex">\(kI_n=\begin{pmatrix}k&amp;0&amp;\cdots&amp;0\\0&amp;k&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\0&amp;0&amp;\cdots&amp;k\end{pmatrix}\)</span>,定义<span class="arithmatex">\(KI_n:=\{kI_n|k\in K\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</li>
-<li>上三角矩阵:<span class="arithmatex">\(A:=\begin{pmatrix} a_{11},a_{12},\cdots,a_{1n}\\0,a_{22},\cdots,a_{2n}\\\vdots,\vdots,\ddots,\vdots\\0,0,\cdots,a_{nn}\end{pmatrix}\)</span>,<span class="arithmatex">\(\{\text{数域}K\text{上的n阶上三角矩阵}\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</li>
+<li>
+<p><span class="arithmatex">\(\dim M_{s\times n}(K)=sn\)</span></p>
+</li>
+<li>
+<p>对角矩阵:<span class="arithmatex">\(diag(a_1,a_2,\cdots,a_n):=\begin{pmatrix}a_1&amp;0&amp;\cdots&amp;0\\0&amp;a_2&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\0&amp;0&amp;\cdots&amp;a_n\end{pmatrix}\)</span>,<span class="arithmatex">\(\{\text{数域}K\text{上的对角矩阵}\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</p>
+</li>
+<li>
+<p>数量矩阵:<span class="arithmatex">\(kI_n=\begin{pmatrix}k&amp;0&amp;\cdots&amp;0\\0&amp;k&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\0&amp;0&amp;\cdots&amp;k\end{pmatrix}\)</span>,定义<span class="arithmatex">\(KI_n:=\{kI_n|k\in K\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</p>
+</li>
+<li>
+<p>上三角矩阵:<span class="arithmatex">\(A:=\begin{pmatrix} a_{11},a_{12},\cdots,a_{1n}\\0,a_{22},\cdots,a_{2n}\\\vdots,\vdots,\ddots,\vdots\\0,0,\cdots,a_{nn}\end{pmatrix}\)</span>,<span class="arithmatex">\(\{\text{数域}K\text{上的n阶上三角矩阵}\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</p>
+</li>
 <li>
 <p>下三角矩阵类似</p>
 </li>
@@ -1517,7 +1565,48 @@
 <li>
 <p>对称矩阵:<span class="arithmatex">\(A\in M_n(K)\)</span>,<span class="arithmatex">\(A^T=A\)</span>,<span class="arithmatex">\(\{\text{数域}K\text{上的n阶对称矩阵}\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</p>
 </li>
-<li>斜对称矩阵:<span class="arithmatex">\(A\in M_n(K)\)</span>,<span class="arithmatex">\(A^T=-A\)</span>,<span class="arithmatex">\(\{\text{数域}K\text{上的n阶斜对称矩阵}\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</li>
+<li>
+<p>实对称矩阵: <span class="arithmatex">\(A\in M_n(\mathbb{R})\)</span>,<span class="arithmatex">\(A^T=A\)</span>,<span class="arithmatex">\(\{\text{实数域}\mathbb{R}\text{上的n阶实对称矩阵}\}\)</span>是<span class="arithmatex">\(M_n(\mathbb{R})\)</span>的一个子空间</p>
+</li>
+<li>
+<p>斜(反)对称矩阵:<span class="arithmatex">\(A\in M_n(K)\)</span>,<span class="arithmatex">\(A^T=-A\)</span>,<span class="arithmatex">\(\{\text{数域}K\text{上的n阶斜对称矩阵}\}\)</span>是<span class="arithmatex">\(M_n(K)\)</span>的一个子空间</p>
+<ul>
+<li><span class="arithmatex">\(\forall X\in K^n,X^TAX=\vec{0}\)</span></li>
+<li>奇数阶反对称矩阵的行列式一定是 <span class="arithmatex">\(0\)</span></li>
+</ul>
+</li>
+<li>
+<p>正交矩阵: <span class="arithmatex">\(A^TA=I\)</span> 则 <span class="arithmatex">\(A\)</span> 为一个正交矩阵</p>
+<ul>
+<li>正交矩阵的特征值的模为 <span class="arithmatex">\(1\)</span></li>
+<li>若 <span class="arithmatex">\(\det  A = -1\)</span> 则 <span class="arithmatex">\(-1\)</span> 一定是 <span class="arithmatex">\(A\)</span> 的特征值</li>
+<li>若 <span class="arithmatex">\(A\)</span> 是奇数阶的且 <span class="arithmatex">\(\det A = 1\)</span>, 则 <span class="arithmatex">\(1\)</span> 一定是 <span class="arithmatex">\(A\)</span> 的特征值</li>
+</ul>
+</li>
+<li>
+<p>幂等矩阵: <span class="arithmatex">\(A^2=A\)</span></p>
+<ul>
+<li><span class="arithmatex">\(A\)</span> 是幂等矩阵 <span class="arithmatex">\(\iff \text{rank}(A) + \text{rank}(I-A) = n\)</span></li>
+<li>
+<p><span class="arithmatex">\(A\)</span> 的特征值只能是 <span class="arithmatex">\(0\)</span> 和 <span class="arithmatex">\(1\)</span></p>
+<ul>
+<li><span class="arithmatex">\(A^2X=\lambda^2X=\lambda X\implies \lambda^2=\lambda\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(A\)</span> 相似于 <span class="arithmatex">\(\text{diag}(I_r,O)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(A(A-I)=O,m(\lambda)= \lambda(\lambda-1)\)</span> 最小多项式是一次因式的乘积,从而可以对角化</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{rank}(A)=\text{tr}(A)\)</span></p>
+<ul>
+<li>秩,迹是相似不变量</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="_4">可逆矩阵<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h4 id="1_1">定义 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
@@ -1526,15 +1615,36 @@
 </ul>
 <h4 id="1_2">定理 1<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>数域<span class="arithmatex">\(K\)</span>上<span class="arithmatex">\(n\)</span>阶矩阵<span class="arithmatex">\(A\)</span>可逆<span class="arithmatex">\(\iff rank(A)=n\iff \det A\neq 0\)</span></li>
-<li><span class="arithmatex">\(n=rank(I)= rank(AA^{-1})\leq rank(A)\leq n\)</span></li>
-<li><span class="arithmatex">\(\iff rank(A)=n\iff \det A\neq 0\)</span><ul>
+<li>数域<span class="arithmatex">\(K\)</span>上<span class="arithmatex">\(n\)</span>阶矩阵<span class="arithmatex">\(A\)</span>可逆<span class="arithmatex">\(\iff \text{rank}(A)=n\iff \det A\neq 0\)</span></li>
+<li><span class="arithmatex">\(n=\text{rank}(I)= \text{rank}(AA^{-1})\leq \text{rank}(A)\leq n\)</span></li>
+<li>
+<p><span class="arithmatex">\(\iff \text{rank}(A)=n\iff \det A\neq 0\)</span></p>
+<ul>
 <li><span class="arithmatex">\(A \begin{pmatrix}
-  A_{11} &amp; A_{12} &amp; \cdots &amp; A_{1n} \\
-  A_{21} &amp; A_{22} &amp; \cdots &amp; A_{2n} \\
+  A_{11} &amp; A_{21} &amp; \cdots &amp; A_{n1} \\
+  A_{12} &amp; A_{22} &amp; \cdots &amp; A_{n2} \\
   \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-  A_{n1} &amp; A_{n2} &amp; \cdots &amp; A_{nn}
+  A_{1n} &amp; A_{2n} &amp; \cdots &amp; A_{nn}
 \end{pmatrix}=diag(|A|,|A|,\cdots,|A|)\)</span>,其中<span class="arithmatex">\(A_{ij}\)</span>是<span class="arithmatex">\(A\)</span>的余子式,组成的矩阵称为<span class="arithmatex">\(A\)</span>的伴随矩阵,记为<span class="arithmatex">\(A^*\)</span>,那么有<span class="arithmatex">\(AA^*=|A|I_n\)</span>.从而<span class="arithmatex">\(A^{-1}=|A|^{-1}A^*\)</span></li>
+</ul>
+</li>
+<li>
+<p>伴随运算的性质</p>
+<ul>
+<li><span class="arithmatex">\((A^*)^T = (A^T)^*\)</span></li>
+<li><span class="arithmatex">\((AB)^*=B^*A^*\)</span></li>
+<li><span class="arithmatex">\((A^*)^{-1}=(A^{-1})^*\)</span></li>
+<li><span class="arithmatex">\((kA)^*=k^{n-1}A^*\)</span></li>
+<li><span class="arithmatex">\((A^*)^*=|A|^{n-2}A\)</span></li>
+<li><a href="https://blog.csdn.net/qq_40671063/article/details/123164228">ref</a></li>
+</ul>
+</li>
+<li>
+<p>伴随矩阵的性质</p>
+<ul>
+<li><span class="arithmatex">\(|A^*|=|A|^{n-1}\)</span></li>
+<li><span class="arithmatex">\(\text{rank}(A^*)=\begin{cases} n &amp; \text{rank}(A)=n \\ 1 &amp; \text{rank}(A)=n-1 \\ 0 &amp; \text{rank}(A)&lt;n-1 \end{cases}\)</span></li>
+<li>设矩阵 <span class="arithmatex">\(A\)</span> 的特征值是 <span class="arithmatex">\(\lambda_1,\lambda_2,\cdots,\lambda_n\)</span>,则 <span class="arithmatex">\(A^*\)</span> 的特征值 <span class="arithmatex">\(\lambda^*_i = \prod\limits_{j\neq i}\lambda_j\)</span></li>
 </ul>
 </li>
 </ul>
@@ -1585,7 +1695,7 @@
 <ul>
 <li>设<span class="arithmatex">\(A\in M_{s\times n}(K),B\in M_{n\times s}(K)\)</span>,</li>
 <li><strong>若<span class="arithmatex">\(s&gt;n,\)</span>则<span class="arithmatex">\(\det(AB)=0\)</span></strong><ul>
-<li><span class="arithmatex">\(rank(AB)\leq rank(A)\leq n&lt;s\)</span>,则<span class="arithmatex">\(AB\)</span>不满秩</li>
+<li><span class="arithmatex">\(\text{rank}(AB)\leq \text{rank}(A)\leq n&lt;s\)</span>,则<span class="arithmatex">\(AB\)</span>不满秩</li>
 </ul>
 </li>
 <li>若<span class="arithmatex">\(s=n\)</span>,则<span class="arithmatex">\(\det(AB)=\det(A)\det(B)\)</span><ul>

@@ -508,6 +508,8 @@
       
         
       
+        
+      
     
     
       
@@ -1323,6 +1325,34 @@
 </ul>
 </li>
 </ul>
+<hr />
+<p>矩阵 <span class="arithmatex">\(AB,BA\)</span> 有相同的非零特征值,并且重数也是相同的</p>
+<div class="highlight"><pre><span></span><code>特征多项式差的倍数就是零特征值的幂差的倍数
+</code></pre></div>
+<p><a href="https://www.zhihu.com/question/30711275">ref</a></p>
+<hr />
+<p>降阶公式: </p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\det \begin{pmatrix} A &amp; B \\ C &amp; D \end{pmatrix}\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\text{若 A 可逆} =  \det A \det(D-CA^{-1}B)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{若 D 可逆} =  \det D \det(A-BD^{-1}C)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{若 A,D 都可逆}  \det A \det(D-CA^{-1}B)=\det D \det(A-BD^{-1}C)\)</span></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>计算 <span class="arithmatex">\(A^{-1}B\)</span>, 对 <span class="arithmatex">\((A|B)\to (E|A^{-1}B)\)</span> 做初等行变换</p>
+<hr />
+<p><span class="arithmatex">\(A_{m\times n},B_{n\times m}\text{,}f_{AB}(\lambda),f_{BA}(\lambda)\text{ 是 }AB,BA\text{ 的特征多项式,则}\\\lambda^nf_{AB}(\lambda)=\lambda^mf_{BA}(\lambda)\)</span></p>
+<p>也就是 <span class="arithmatex">\(\lambda^n |\lambda E_m - AB|= \lambda^m |\lambda E_n - BA|\)</span></p>
 <hr />
 
 
