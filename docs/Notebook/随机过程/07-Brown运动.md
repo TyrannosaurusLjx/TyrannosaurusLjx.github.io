@@ -80,6 +80,83 @@
 
     - $X(t)=e^{\alpha t+\beta B(t)},t\geq 0$
 
+- 积分过程
+    
+    - $X(t) = \int_0^t B(s)ds\sim N(0,\frac{t^3}{3})$
+
+        - $EX(t)=0$
+        - $r_X(s,t)=\frac{s^2t}{2}-\frac{s^3}{6},s\leq t$
+
+
+## 最大值分布
+
+#### 定义 最大值
+- $$M_t=\max\limits_{0\leq s\leq t}B(s)$$
+
+    - 即 $0$ 到 $t$ 之间 $B(s)$ 的最大值
+
+#### 定理 7.2
+- $$M_t\overset{d}{=} |B(t)|$$
+
+
+#### 定义 首中时
+- $$T_a = \begin{cases} \inf\{t\geq 0:B(t)>a\} & a>0 \\ \inf\{t\geq 0:B(t)<a\} & a<0 \end{cases}$$
+- $$T_a = \inf\{t\geq 0:B(t)=a\}$$
+
+    - 即 $B(t)$ 首次击中 $a$ 的时刻
+
+#### 定理 7.3
+- 令 $f_a(t)$ 表示 $T_a$ 的密度函数,则
+
+    - $$f_a(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{a^2}{2t}}  ,t>0$$
+    
+#### 推论 7.2
+- 给定 $a\in \mathbb{R}$ 
+    - $$P(T_a<\infty)=1,ET_a=\infty$$
+
+- 无论 $|a|$ 多大,总会在有限时间内到达,但是到达的时间期望是无穷大
+
+#### 定理 7.4
+- 令 $a<0<b$ 那么
+    
+    - $$P(T_a<T_b)=\frac{b}{b-a}$$
+    - $$P(T_a>T_b)=\frac{|a|}{b-a}$$
+
+### 推广
+- $$X(t)=B(t)-bt$$
+
+    - 是一个连续正态过程,但是不再是 $\text{Brown}$ 运动
+
+- 考虑 $X(t)$ 的最大值和首中时
+
+    - $\max\limits_{0\leq s\leq t}X(s)$
+    - $T_{a,b}=\begin{cases} \inf\{t\geq 0:X(t)\geq a\} & a>0 \\ \inf\{t\geq 0:X(t)\leq a\} & a<0 \end{cases}$
+        
+        - 实际上 $T_{a,b}$ 是 $B(t)$ 首次击中 $bt+a$ 的时刻,也就是
+
+        - $$T_{a,b} = \begin{cases} \inf\{ t\geq 0:B(t)\geq a+bt \} & a>0 \\ \inf\{ t\geq 0:B(t)\leq a+bt \} & a<0 \end{cases}$$
+
+- 有
+
+    - $$P(\max\limits_{0\leq s\leq t}X(s)\geq a) = P(T_{a,b}\leq t)$$
+
+#### 定理 7.5
+- $T_{a,b}$ 的密度函数为
+
+    - $$f_{a,b}(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{(a+bt)^2}{2t}}$$
+
+
+## Ito 积分
+- $$\int_{0}^{t} f(s) dB(s)$$
+
+    - 是一个随机变量
+
+#### 定理 7.7
+- $\text{Brown}$ 运动的曲线是无界变差函数
+
+    - $$\lim\limits_{n\to\infty}\sum\limits_{i=1}^{2^n} \left|B\left(\frac{i}{2^n}\right)-B\left(\frac{i-1}{2^n}\right)\right|^2 = \infty
+
+
 
 
 
