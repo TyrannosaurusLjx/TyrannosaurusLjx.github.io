@@ -120,6 +120,37 @@
         - $$f(\frac{x_1+x_2}{2})\leq \frac{1}{x_2-x_1}\int_{x_1}^{x_2}f(t)dt \leq \frac{f(x_1)+f(x_2)}{2}$$
 
 
+---
+
+### 无穷限反常积分的敛散性与无穷远处的极限关系
+
+- $\int_0^\infty f(x)dx$ 收敛 $\nRightarrow \lim\limits_{x\to\infty} f(x)=0$
+
+    - 例如 $\int_0^\infty \frac{\sin x^2}{x}dx=\int_0^\infty \frac{\sin t}{2\sqrt t}dt$ 收敛,但 $\sin x^2\not\to 0$
+
+- 即使 $f(x)\geq 0$ 任不能断言 $f(x)\to 0$
+
+    - 例如 $f(x)=\begin{cases} \frac{1}{1+x^2} & x\in \mathbb{R} \backslash \mathbb{Z} \\ 1 & x\in \mathbb{Z} \end{cases}$
+
+- 即使 $f(x)\geq 0$ 且连续,也不能断言 $f(x)\to 0$
+
+    - 例如 $f(x) = \begin{cases} \frac{1}{n-\frac{1}{n}}(x-(n-\frac{1}{n})) & x\in [n-\frac{1}{n},n] \\ -\frac{1}{n-\frac{1}{n}}(x-(n+\frac{1}{n})) & x\in [n,n+\frac{1}{n}] \\ 0 & \text{其他} \end{cases}$
+
+- 即使把上面的条件改成 $f(x)>0$ 也不能断言 $f(x)\to 0$
+
+    - 只需要取 $f(x)=\max \{g(x),\frac{1}{x^2}\}$ ,其中 $g(x)$ 是上面定义的函数
+
+- 只有当 $f(x)$ 是单调的,且 $\int_0^\infty f(x)dx$ 收敛,才能断言 $f(x)\to 0$
+
+- 或者 $f(x)$ 一致连续(更强一点,有有界导函数),那么可以由 $\int_0^\infty f(x)dx$ 收敛推出 $f(x)\to 0$
+
+---
+
+- 求数项级数 $\sum a_n$ 的值可以求 $S(x)=\sum a_nx^n$ 的值,然后取 $x=1$
+
+---
+
+
 
 
 
