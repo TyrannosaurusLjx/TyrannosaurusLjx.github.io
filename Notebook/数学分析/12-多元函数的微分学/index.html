@@ -512,6 +512,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1317,11 +1321,11 @@
         <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      偏导数在集合中的应用
+      偏导数在几何中的应用
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="偏导数在集合中的应用">
+    <nav class="md-nav" aria-label="偏导数在几何中的应用">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1404,6 +1408,15 @@
   <a href="#1261_1" class="md-nav__link">
     <span class="md-ellipsis">
       定理 12.6.1 必要条件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1262" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 12.6.2
     </span>
   </a>
   
@@ -1569,6 +1582,48 @@
   
   <span class="md-ellipsis">
     杂项
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用公式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-%E5%AE%9A%E7%90%86%E7%BB%93%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用定理结论习题方法
   </span>
   
 
@@ -1902,6 +1957,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2366,7 +2425,7 @@
 <ul>
 <li><span class="arithmatex">\(D\underset{open}{\subset}R^2,f'\in C(D)\exists\)</span> 若 <span class="arithmatex">\(f\)</span> 的 jacobi 行列式不等于零, 则<span class="arithmatex">\(f\)</span> 的像是开集</li>
 </ul>
-<h2 id="_20">偏导数在集合中的应用<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<h2 id="_20">偏导数在几何中的应用<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
 <h3 id="_21">空间曲线的切线和法平面<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
 <ul>
 <li>空间曲线的参数方程 <span class="arithmatex">\(\vec{r}(t)=(x(t),y(t),z(t))\)</span></li>
@@ -2433,16 +2492,22 @@
 <p>[!NOTE]
 使得 <span class="arithmatex">\(f\)</span> 的各个一阶偏导数值同时为 <span class="arithmatex">\(0\)</span> 的点称为 <span class="arithmatex">\(f\)</span> 的 <strong>驻点</strong></p>
 </blockquote>
-<p>#### 定理 12.6.2
-- 设 <span class="arithmatex">\((x_0,y_0)\)</span> 是 <span class="arithmatex">\(f\)</span> 的驻点,且<span class="arithmatex">\(f\)</span> 在其附近有连续的二阶偏导数,记
-    - <span class="arithmatex">\(A=f_{xx}(x_0,y_0),B=f_{xy}(x_0,y_0),C=f_{yy}(x_0,y_0)\)</span>
-    并记
-    - <span class="arithmatex">\(H = \det\begin{pmatrix} A &amp; B \\ B &amp; C \end{pmatrix} = AC-B^2\)</span>
-    那么
-    - 若 <span class="arithmatex">\(H&gt;0\)</span> :
-        - 若 <span class="arithmatex">\(A&gt;0\)</span> 则 <span class="arithmatex">\((x_0,y_0)\)</span> 为极小值点
-        - 若 <span class="arithmatex">\(A&lt;0\)</span> 则 <span class="arithmatex">\((x_0,y_0)\)</span> 为极大值点
-    - 若 <span class="arithmatex">\(H&lt;0\)</span> 则 <span class="arithmatex">\((x_0,y_0)\)</span> 不是极值点</p>
+<h4 id="1262">定理 12.6.2<a class="headerlink" href="#1262" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\((x_0,y_0)\)</span> 是 <span class="arithmatex">\(f\)</span> 的驻点,且<span class="arithmatex">\(f\)</span> 在其附近有连续的二阶偏导数,记<ul>
+<li><span class="arithmatex">\(A=f_{xx}(x_0,y_0),B=f_{xy}(x_0,y_0),C=f_{yy}(x_0,y_0)\)</span>
+并记</li>
+<li><span class="arithmatex">\(H = \det\begin{pmatrix} A &amp; B \\ B &amp; C \end{pmatrix} = AC-B^2\)</span>
+那么</li>
+<li>若 <span class="arithmatex">\(H&gt;0\)</span> :<ul>
+<li>若 <span class="arithmatex">\(A&gt;0\)</span> 则 <span class="arithmatex">\((x_0,y_0)\)</span> 为极小值点</li>
+<li>若 <span class="arithmatex">\(A&lt;0\)</span> 则 <span class="arithmatex">\((x_0,y_0)\)</span> 为极大值点</li>
+</ul>
+</li>
+<li>若 <span class="arithmatex">\(H&lt;0\)</span> 则 <span class="arithmatex">\((x_0,y_0)\)</span> 不是极值点</li>
+</ul>
+</li>
+</ul>
 <blockquote>
 <p>[!NOTE]
 当 <span class="arithmatex">\(H=0\)</span> 时,无法判断</p>

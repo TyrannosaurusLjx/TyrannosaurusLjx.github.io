@@ -18,7 +18,7 @@
         <link rel="prev" href="../17-%E4%B9%A0%E9%A2%98/">
       
       
-        <link rel="next" href="../../%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">
+        <link rel="next" href="../19-%E5%85%AC%E5%BC%8F/">
       
       
       <link rel="icon" href="../../../assets/image/Chivalrous.ico">
@@ -474,6 +474,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -982,12 +986,69 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="mix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      无穷限反常积分的敛散性与无穷远处的极限关系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用公式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-%E5%AE%9A%E7%90%86%E7%BB%93%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用定理结论习题方法
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1337,6 +1398,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1575,7 +1640,7 @@
 <hr />
 <ul>
 <li>
-<p>一致连续</p>
+<p>一致连续 <a href="https://zhuanlan.zhihu.com/p/468031837">Cantor 定理</a></p>
 <ul>
 <li>
 <p>闭区间上的连续函数一致连续</p>
@@ -1583,7 +1648,7 @@
 <li>
 <p>开区间上的连续函数一致连续 <span class="arithmatex">\(\iff\)</span> 函数在端点的极限存在(有限)</p>
 <ul>
-<li>这是充要条件</li>
+<li>这是充要条件(对于有限区间来说)</li>
 </ul>
 </li>
 </ul>
@@ -1615,6 +1680,63 @@
 <p>[!NOTE]
 这两个条件都是充分的,比如函数 <span class="arithmatex">\(f(x)=\sqrt{x},x\in[0,1]\)</span> 是一致连续的,但导函数无界</p>
 </blockquote>
+<hr />
+<p>中值问题:例如要证明 <span class="arithmatex">\(f'(\xi)=g(\xi)\)</span> 则构造 <span class="arithmatex">\(F(x)=f(x)-\int_0^xg(d)dt\)</span></p>
+<hr />
+<ul>
+<li>
+<p>Hadamard 定理</p>
+<ul>
+<li>
+<p>设 <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\([a,b]\)</span> 上的下凸函数.那么对于 <span class="arithmatex">\(x_1&lt;x_2\)</span></p>
+<ul>
+<li>
+<div class="arithmatex">\[f(\frac{x_1+x_2}{2})\leq \frac{1}{x_2-x_1}\int_{x_1}^{x_2}f(t)dt \leq \frac{f(x_1)+f(x_2)}{2}\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="_3">无穷限反常积分的敛散性与无穷远处的极限关系<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(\int_0^\infty f(x)dx\)</span> 收敛 <span class="arithmatex">\(\nRightarrow \lim\limits_{x\to\infty} f(x)=0\)</span></p>
+<ul>
+<li>例如 <span class="arithmatex">\(\int_0^\infty \frac{\sin x^2}{x}dx=\int_0^\infty \frac{\sin t}{2\sqrt t}dt\)</span> 收敛,但 <span class="arithmatex">\(\sin x^2\not\to 0\)</span></li>
+</ul>
+</li>
+<li>
+<p>即使 <span class="arithmatex">\(f(x)\geq 0\)</span> 任不能断言 <span class="arithmatex">\(f(x)\to 0\)</span></p>
+<ul>
+<li>例如 <span class="arithmatex">\(f(x)=\begin{cases} \frac{1}{1+x^2} &amp; x\in \mathbb{R} \backslash \mathbb{Z} \\ 1 &amp; x\in \mathbb{Z} \end{cases}\)</span></li>
+</ul>
+</li>
+<li>
+<p>即使 <span class="arithmatex">\(f(x)\geq 0\)</span> 且连续,也不能断言 <span class="arithmatex">\(f(x)\to 0\)</span></p>
+<ul>
+<li>例如 <span class="arithmatex">\(f(x) = \begin{cases} \frac{1}{n-\frac{1}{n}}(x-(n-\frac{1}{n})) &amp; x\in [n-\frac{1}{n},n] \\ -\frac{1}{n-\frac{1}{n}}(x-(n+\frac{1}{n})) &amp; x\in [n,n+\frac{1}{n}] \\ 0 &amp; \text{其他} \end{cases}\)</span></li>
+</ul>
+</li>
+<li>
+<p>即使把上面的条件改成 <span class="arithmatex">\(f(x)&gt;0\)</span> 也不能断言 <span class="arithmatex">\(f(x)\to 0\)</span></p>
+<ul>
+<li>只需要取 <span class="arithmatex">\(f(x)=\max \{g(x),\frac{1}{x^2}\}\)</span> ,其中 <span class="arithmatex">\(g(x)\)</span> 是上面定义的函数</li>
+</ul>
+</li>
+<li>
+<p>只有当 <span class="arithmatex">\(f(x)\)</span> 是单调的,且 <span class="arithmatex">\(\int_0^\infty f(x)dx\)</span> 收敛,才能断言 <span class="arithmatex">\(f(x)\to 0\)</span></p>
+</li>
+<li>
+<p>或者 <span class="arithmatex">\(f(x)\)</span> 一致连续(更强一点,有有界导函数),那么可以由 <span class="arithmatex">\(\int_0^\infty f(x)dx\)</span> 收敛推出 <span class="arithmatex">\(f(x)\to 0\)</span></p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>求数项级数 <span class="arithmatex">\(\sum a_n\)</span> 的值可以求 <span class="arithmatex">\(S(x)=\sum a_nx^n\)</span> 的值,然后取 <span class="arithmatex">\(x=1\)</span></li>
+</ul>
+<hr />
 
 
 

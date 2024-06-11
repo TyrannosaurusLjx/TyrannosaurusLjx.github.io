@@ -512,6 +512,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1299,6 +1303,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用公式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-%E5%AE%9A%E7%90%86%E7%BB%93%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用定理结论习题方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1643,6 +1689,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1792,7 +1842,7 @@
 </ul>
 <h4 id="514">定理 5.1.4<a class="headerlink" href="#514" title="Permanent link">&para;</a></h4>
 <ul>
-<li>函数<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\((a,b)\)</span>内可导,且<span class="arithmatex">\(f'(x)=0,\forall x\in (a,b) <span class="arithmatex">\(,则\)</span>f(x)\)</span>在<span class="arithmatex">\((a,b)\)</span>内是常数函数</li>
+<li>函数<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\((a,b)\)</span>内可导,且<span class="arithmatex">\(f'(x)=0,\forall x\in (a,b)\)</span>,则 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((a,b)\)</span> 内是常数函数</li>
 </ul>
 <h4 id="515">定理 5.1.5(一阶导数和单调性的关系)<a class="headerlink" href="#515" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1844,13 +1894,29 @@
 <h2 id="taylor">Taylor 公式和插值多项式<a class="headerlink" href="#taylor" title="Permanent link">&para;</a></h2>
 <h4 id="531-peano-taylor">定理 5.3.1(带 Peano 余项的 Taylor 公式)<a class="headerlink" href="#531-peano-taylor" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>的某邻域内<span class="arithmatex">\(n\)</span>阶可导,则存在<span class="arithmatex">\(x_0\)</span>的一个邻域,使得对邻域中任何一点有:<span class="arithmatex">\(<span class="arithmatex">\(f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+r_n(x)\)</span>\)</span>
-    其中<span class="arithmatex">\(r_n(x)=o((x-x_0)^n)\)</span></li>
+<li>
+<p>设函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>的某邻域内<span class="arithmatex">\(n\)</span>阶可导,则存在<span class="arithmatex">\(x_0\)</span>的一个邻域,使得对邻域中任何一点有:</p>
+<ul>
+<li>
+<div class="arithmatex">\[f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+r_n(x)\]</div>
+</li>
+<li>其中 <span class="arithmatex">\(r_n(x)=o((x-x_0)^n)\)</span></li>
+</ul>
+</li>
 </ul>
 <h4 id="532-lagrange-taylor">定理 5.3.2(带 Lagrange 余项的 Taylor 公式)<a class="headerlink" href="#532-lagrange-taylor" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上具有<span class="arithmatex">\(n\)</span>阶连续的导数,在<span class="arithmatex">\((a,b)\)</span>上有<span class="arithmatex">\(n+1\)</span>阶导数,则<span class="arithmatex">\(\forall x_0\in (a,b),\forall x\in (a,b)\)</span>:<span class="arithmatex">\(<span class="arithmatex">\(f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+r_n(x)\)</span>\)</span>
-    其中<span class="arithmatex">\(r_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1},\xi\text{在} x\text{和}x_0\text{之间}\)</span></li>
+<li>
+<p>设函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上具有<span class="arithmatex">\(n\)</span>阶连续的导数,在<span class="arithmatex">\((a,b)\)</span>上有<span class="arithmatex">\(n+1\)</span>阶导数,则<span class="arithmatex">\(\forall x_0\in (a,b),\forall x\in (a,b)\)</span>:</p>
+<ul>
+<li>
+<div class="arithmatex">\[f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+r_n(x)\]</div>
+</li>
+<li>
+<p>其中<span class="arithmatex">\(r_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1},\xi\text{在} x\text{和}x_0\text{之间}\)</span></p>
+</li>
+</ul>
+</li>
 </ul>
 <h4 id="531">定义 5.3.1<a class="headerlink" href="#531" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1858,8 +1924,17 @@
 </ul>
 <h4 id="533">定理 5.3.3(插值多项式的余项定理)<a class="headerlink" href="#533" title="Permanent link">&para;</a></h4>
 <ul>
-<li>如定义 5.3.1 满足的<span class="arithmatex">\(P,f\)</span>,其余项<span class="arithmatex">\(r_n\)</span>有估计:<span class="arithmatex">\(<span class="arithmatex">\(r_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_n(x)\)</span>\)</span>
-    其中<span class="arithmatex">\(\omega_n(x)=(x-x_0)(x-x_1)\cdots(x-x_m),\xi\in (\min{x_i},\max{x_i})\)</span></li>
+<li>
+<p>如定义 5.3.1 满足的<span class="arithmatex">\(P,f\)</span>,其余项<span class="arithmatex">\(r_n\)</span>有估计:</p>
+<ul>
+<li>
+<div class="arithmatex">\[r_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_n(x)\]</div>
+</li>
+<li>
+<p>其中<span class="arithmatex">\(\omega_n(x)=(x-x_0)(x-x_1)\cdots(x-x_m),\xi\in (\min{x_i},\max{x_i})\)</span></p>
+</li>
+</ul>
+</li>
 </ul>
 <h4 id="534">定理 5.3.4<a class="headerlink" href="#534" title="Permanent link">&para;</a></h4>
 <ul>

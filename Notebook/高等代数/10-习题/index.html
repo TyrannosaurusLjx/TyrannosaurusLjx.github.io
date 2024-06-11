@@ -18,7 +18,7 @@
         <link rel="prev" href="../07-%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0/">
       
       
-        <link rel="next" href="../../../Tools/">
+        <link rel="next" href="../%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/">
       
       
       <link rel="icon" href="../../../assets/image/Chivalrous.ico">
@@ -510,6 +510,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -884,6 +888,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1126,6 +1134,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵性质
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%A9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    秩
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1347,6 +1397,20 @@
 </li>
 </ul>
 </li>
+<li>
+<p>特别的,如果 <span class="arithmatex">\(A=uv+B\)</span>, 其中 <span class="arithmatex">\(u_{n\times 1},v_{1\times n},B_{n\times n}\)</span>, 并且 <span class="arithmatex">\(B\)</span> 可逆,那么有 </p>
+<ul>
+<li>
+<div class="arithmatex">\[\det\begin{pmatrix} 1 &amp; -v \\ u &amp; B\end{pmatrix} \overset{\text{2行-1 行右乘u}}{=}\det \begin{pmatrix} 1 &amp; -v \\ O &amp; B+uv\end{pmatrix} = \det A\]</div>
+<ul>
+<li>也就是</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[\det A = 1\cdot \det |1 + vB^{-1}u|\]</div>
+</li>
+</ul>
+</li>
 </ul>
 <hr />
 <p>计算 <span class="arithmatex">\(A^{-1}B\)</span>, 对 <span class="arithmatex">\((A|B)\to (E|A^{-1}B)\)</span> 做初等行变换</p>
@@ -1360,6 +1424,82 @@
 <hr />
 <ul>
 <li><span class="arithmatex">\(A\)</span> 的特征是是 <span class="arithmatex">\(\lambda\)</span> , 那么 <span class="arithmatex">\(f(A)\)</span> 的特征值是 <span class="arithmatex">\(f( \lambda)\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>第一圆盘定理: <span class="arithmatex">\(A\)</span> 的特征值落在 <span class="arithmatex">\(|z-a_{ii}|&lt;R_i = \sum_{j\neq i} |a_{ij}|,i=1,2,\cdots,n\)</span> 内</li>
+</ul>
+<hr />
+<ul>
+<li>相似的矩阵有相同的特征值,从而有相同的迹</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>矩阵 <span class="arithmatex">\(A\)</span> 可对角化的一些充分条件有 </p>
+<ul>
+<li><span class="arithmatex">\(A\)</span> 有 <span class="arithmatex">\(n\)</span> 个线性无关的特征向量</li>
+<li><span class="arithmatex">\(A\)</span> 有 <span class="arithmatex">\(n\)</span> 个不同的特征值</li>
+<li><span class="arithmatex">\(\mathbb{C}^n\)</span> 是 <span class="arithmatex">\(A\)</span> 特征子空间的直和</li>
+<li><span class="arithmatex">\(A\)</span> 的任意特征值的代数重数等于几何重数</li>
+<li><span class="arithmatex">\(A\)</span> 的最小多项式没有重根</li>
+<li><span class="arithmatex">\(A\)</span> 的特征多项式没有重根</li>
+<li><span class="arithmatex">\(A\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span>  块都是一阶的</li>
+<li><span class="arithmatex">\(A\)</span> 是实对称矩阵</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>一个特征值的几何重数等于 <span class="arithmatex">\(\text{Jordan}\)</span> 块的个数,代数重数等于 <span class="arithmatex">\(\text{Jordan}\)</span> 块的阶数和</li>
+</ul>
+<hr />
+<p><span class="arithmatex">\(\begin{aligned}&amp;\text{8.[ ZJU2308LA ]设 }A,B,C\in M_n(\mathbb{R}),\text{ 且 }AB-BA=CC^{\prime},\text{ 且 }A,B\text{ 均可对角化,证明:}\\&amp;A,B\text{ 可同时对角化}.\\&amp;\textbf{Proof. 注意到 }(CC^{\prime})^{\prime}=CC^{\prime}\text{ 且对任意的 }n\text{ 维列向量 }x\text{,由第四版复且高代白皮书例 2.9}\\&amp;\text{可知 }x\left(CC^{\prime}\right)x=\left(Cx\right)^{\prime}(Cx)\geq0,\text{ 故 }CC^{\prime}\text{ 是半正定实对称阵, 故其特征值均为非负数}.\\&amp;\text{再由}\operatorname{tr}(AB-BA)=0=\operatorname{tr}\left(CC^{\prime}\right),\text{得到 }CC^{\prime}\text{ 只有零特征值, 故 }CC^{\prime}=O.\text{ 即 }AB=BA,\\&amp;\text{再由第四版复旦高代白皮书例 6.41 可得 }A,B\text{ 可同时对角化。}\end{aligned}\)</span></p>
+<blockquote>
+<p>[!NOTE]
+可对角化的矩阵可同时对角化的充要条件是它们可交换</p>
+<blockquote>
+<p>证明用到了和块对角矩阵交换的矩阵一定也是块对角矩阵</p>
+<blockquote>
+<p>若是数量阵,则与之交换的一定也是数量阵</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr />
+<ul>
+<li>半正定矩阵的某个 <span class="arithmatex">\(a_{ii}=0\)</span> 的话,那么第 <span class="arithmatex">\(i\)</span> 行和第 <span class="arithmatex">\(i\)</span> 列都是 <span class="arithmatex">\(0\)</span></li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(\begin{aligned}&amp;\text{正定矩阵的对角元都不是零。这是显然的,因为}a_{ii}\text{ 代表 }v_i\text{ 的长度的平方,当然}\\&amp;\text{不能是零。}\\&amp;\text{正定矩阵中最大的元素必然出现在对角线上。这是因为内积满足 Schwatz 不等}\\&amp;\text{式 }(v_i,v_j)^2\leq(v_i,v_i)(v_j,v_j),\text{ 即 }a_{ij}^2\leq a_{ii}a_{ij},\text{ 从而 }a_{ij}\leq\max\{a_{ii},a_{jj}\}。\\&amp;\text{正定矩阵的行列式列值等于 }v_1,v_2,\ldots,v_n\text{ 张成的平行多面体的体积的平方。正定}\\&amp;\text{矩阵的主子式都大于零,这是因为主子式 }A_{i_1i_2\cdots i_m}\text{ 的值是 }v_{i_1},v_{i_2},\ldots,v_{i_m}\text{ 张成的}\\&amp;\text{平行多面体的体积的平方,所以大于零。}\end{aligned}\)</span></li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(\begin{aligned}&amp;\text{ 例 3.3 (北京大学2005). 设 }A\text{ 是数域 }F\text{ 上 }n\text{ 维向量空间上的线性变换,求证}\\&amp;A^3=I\Leftrightarrow\mathrm{r}(I-A)+\mathrm{r}(I+A+A^2)=n.\\&amp;\text{证明,注意到存在 }u(x),v(x)\text{ 使得 }u(x)(1-x)+v(x)(1+x^2+x)=1\text{。考虑大的 }2n\\&amp;\text{阶的方阵}\\&amp;\begin{pmatrix}I-A&amp;0\\0&amp;I+A+A^2\end{pmatrix}\xrightarrow{\text{第一列乘以 }u(A)\text{ 加到第二列}}\begin{pmatrix}I-A&amp;u(A)(I-A)\\0&amp;I+A+A^2\end{pmatrix}\\&amp;\xrightarrow{\text{第二方乘以 }u(A)\text{ 加到第一项}}\begin{pmatrix}I-A&amp;I\\0&amp;I+A+A^2\end{pmatrix}\\&amp;\text{用 }I\text{ 打调干持两边的矩阵}\\&amp;\begin{pmatrix}0&amp;I\\A^3-I&amp;0\end{pmatrix}.\\&amp;\text{所以这个矩阵的秩是 }n\text{ 当且仅当 }A^3-I=0\text{,这就得到了证明。}\end{aligned}\)</span></li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(\det\begin{pmatrix} A &amp; B \\ B &amp; A\end{pmatrix} = \det(A-B)\det(A+B)\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>摄动法: </p>
+<ul>
+<li>验证矩阵问题对非奇异阵成立</li>
+<li>若把题中的 <span class="arithmatex">\(A,B\)</span> 换成 <span class="arithmatex">\(t_kI+A,t_kI+B\)</span> 任然满足条件</li>
+<li>
+<p>且矩阵问题关于 <span class="arithmatex">\(t_k\)</span> 连续</p>
+<ul>
+<li>那么对一般的矩阵,矩阵问题都成立</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(A,B\)</span> 乘法可交换.那么 <span class="arithmatex">\(A\)</span> 的特征子空间是 <span class="arithmatex">\(B\)</span> 的不变子空间 </li>
 </ul>
 <hr />
 

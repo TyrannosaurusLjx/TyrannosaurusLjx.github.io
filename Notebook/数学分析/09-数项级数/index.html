@@ -512,6 +512,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1674,6 +1678,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用公式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-%E5%AE%9A%E7%90%86%E7%BB%93%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用定理结论习题方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2018,6 +2064,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -2167,8 +2217,10 @@
 <h4 id="912">定义 9.1.2<a class="headerlink" href="#912" title="Permanent link">&para;</a></h4>
 <ul>
 <li>当级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}x_n\)</span> 收敛时,可以构造齐余和数列 <span class="arithmatex">\(\{r_n\}\)</span>,其中<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(r_n=S-S_n\)</span>\)</span>
-<span class="arithmatex">\(\{r_n\}\)</span> 收敛到 <span class="arithmatex">\(0\)</span></li>
+<li>
+<div class="arithmatex">\[r_n=S-S_n\]</div>
+</li>
+<li><span class="arithmatex">\(\{r_n\}\)</span> 收敛到 <span class="arithmatex">\(0\)</span></li>
 </ul>
 </li>
 </ul>
@@ -2381,8 +2433,12 @@
 <h4 id="932">定理 9.3.2 (比较判别法)<a class="headerlink" href="#932" title="Permanent link">&para;</a></h4>
 <ul>
 <li>设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}x_n,\sum\limits_{n=1}^{\infty}y_n\)</span> 是两个正项级数,若存在正常数 <span class="arithmatex">\(A\)</span>,使得<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(x_n\leq Ay_n,\forall n\in\mathbb{N}\)</span>\)</span>
-则</li>
+<li>
+<div class="arithmatex">\[x_n\leq Ay_n,\forall n\in\mathbb{N}\]</div>
+<ul>
+<li>则</li>
+</ul>
+</li>
 <li>若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}y_n\)</span> 收敛,则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}x_n\)</span> 收敛</li>
 <li>若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}x_n\)</span> 发散,则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}y_n\)</span> 发散</li>
 </ul>
@@ -2395,8 +2451,12 @@
 <h4 id="932_1">定理 9.3.2' (比较判别法的极限形式)<a class="headerlink" href="#932_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}x_n,\sum\limits_{n=1}^{\infty}y_n\)</span> 是两个正项级数,若<ul>
-<li>$$\lim_{n\to\infty}\frac{x_n}{y_n}=l\in (0,+\infty)\cup {0,+\infty} $$
-则</li>
+<li>
+<div class="arithmatex">\[\lim_{n\to\infty}\frac{x_n}{y_n}=l\in (0,+\infty)\cup \{0,+\infty\} \]</div>
+<ul>
+<li>则</li>
+</ul>
+</li>
 <li>若 <span class="arithmatex">\(0\leq l &lt; +\infty\)</span>,则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}y_n\)</span> 收敛 <span class="arithmatex">\(\implies \sum\limits_{n=1}^{\infty}x_n\)</span> 收敛</li>
 <li>若 <span class="arithmatex">\(0&lt;l &lt; +\infty\)</span>,则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}y_n\)</span> 发散 <span class="arithmatex">\(\implies \sum\limits_{n=1}^{\infty}x_n\)</span> 发散<ul>
 <li><span class="arithmatex">\(l\in (0,+\infty)\)</span> 时, <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}x_n\)</span> 与 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}y_n\)</span> 同敛散</li>
@@ -2491,8 +2551,12 @@
 <h4 id="941-textcauchy">定理 9.4.1 (级数的 <span class="arithmatex">\(\text{Cauchy}\)</span> 收敛原理)<a class="headerlink" href="#941-textcauchy" title="Permanent link">&para;</a></h4>
 <ul>
 <li>级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} x_n\)</span> 收敛的充要条件是: 对任意 <span class="arithmatex">\(\varepsilon&gt;0\)</span>,存在 <span class="arithmatex">\(N\in\mathbb{N}\)</span>,使得<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(|x_{n+1}+x_{n+2}+\cdots+x_{n+m}| = |\sum\limits_{k=n+1}^{m} x_k|&lt;\varepsilon\)</span>\)</span>
-对任意 <span class="arithmatex">\(m&gt;n&gt;N\)</span> 成立</li>
+<li>
+<div class="arithmatex">\[|x_{n+1}+x_{n+2}+\cdots+x_{n+m}| = |\sum\limits_{k=n+1}^{m} x_k|&lt;\varepsilon\]</div>
+<ul>
+<li>对任意 <span class="arithmatex">\(m&gt;n&gt;N\)</span> 成立</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

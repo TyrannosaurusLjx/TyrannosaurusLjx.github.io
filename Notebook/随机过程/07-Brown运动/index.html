@@ -510,6 +510,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1094,6 +1098,123 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      最大值分布
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="最大值分布">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 最大值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 首中时
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 7.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      推广
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="推广">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ito 积分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ito 积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#77" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.7
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1290,6 +1411,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1560,6 +1685,148 @@
 <p>几何 Brown 运动,给定 <span class="arithmatex">\(\alpha,\beta\in \mathbb{R}\)</span></p>
 <ul>
 <li><span class="arithmatex">\(X(t)=e^{\alpha t+\beta B(t)},t\geq 0\)</span></li>
+</ul>
+</li>
+<li>
+<p>积分过程</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(X(t) = \int_0^t B(s)ds\sim N(0,\frac{t^3}{3})\)</span></p>
+<ul>
+<li><span class="arithmatex">\(EX(t)=0\)</span></li>
+<li><span class="arithmatex">\(r_X(s,t)=\frac{s^2t}{2}-\frac{s^3}{6},s\leq t\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">最大值分布<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h4 id="_3">定义 最大值<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<div class="arithmatex">\[M_t=\max\limits_{0\leq s\leq t}B(s)\]</div>
+<ul>
+<li>即 <span class="arithmatex">\(0\)</span> 到 <span class="arithmatex">\(t\)</span> 之间 <span class="arithmatex">\(B(s)\)</span> 的最大值</li>
+</ul>
+</li>
+</ul>
+<h4 id="72">定理 7.2<a class="headerlink" href="#72" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<div class="arithmatex">\[M_t\overset{d}{=} |B(t)|\]</div>
+</li>
+</ul>
+<h4 id="_4">定义 首中时<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<div class="arithmatex">\[T_a = \begin{cases} \inf\{t\geq 0:B(t)&gt;a\} &amp; a&gt;0 \\ \inf\{t\geq 0:B(t)&lt;a\} &amp; a&lt;0 \end{cases}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[T_a = \inf\{t\geq 0:B(t)=a\}\]</div>
+<ul>
+<li>即 <span class="arithmatex">\(B(t)\)</span> 首次击中 <span class="arithmatex">\(a\)</span> 的时刻</li>
+</ul>
+</li>
+</ul>
+<h4 id="73">定理 7.3<a class="headerlink" href="#73" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>令 <span class="arithmatex">\(f_a(t)\)</span> 表示 <span class="arithmatex">\(T_a\)</span> 的密度函数,则</p>
+<ul>
+<li>
+<div class="arithmatex">\[f_a(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{a^2}{2t}}  ,t&gt;0\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="72_1">推论 7.2<a class="headerlink" href="#72_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>给定 <span class="arithmatex">\(a\in \mathbb{R}\)</span> </p>
+<ul>
+<li>
+<div class="arithmatex">\[P(T_a&lt;\infty)=1,ET_a=\infty\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>无论 <span class="arithmatex">\(|a|\)</span> 多大,总会在有限时间内到达,但是到达的时间期望是无穷大</p>
+</li>
+</ul>
+<h4 id="74">定理 7.4<a class="headerlink" href="#74" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>令 <span class="arithmatex">\(a&lt;0&lt;b\)</span> 那么</p>
+<ul>
+<li>
+<div class="arithmatex">\[P(T_a&lt;T_b)=\frac{b}{b-a}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[P(T_a&gt;T_b)=\frac{|a|}{b-a}\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="_5">推广<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<div class="arithmatex">\[X(t)=B(t)-bt\]</div>
+<ul>
+<li>是一个连续正态过程,但是不再是 <span class="arithmatex">\(\text{Brown}\)</span> 运动</li>
+</ul>
+</li>
+<li>
+<p>考虑 <span class="arithmatex">\(X(t)\)</span> 的最大值和首中时</p>
+<ul>
+<li><span class="arithmatex">\(\max\limits_{0\leq s\leq t}X(s)\)</span></li>
+<li>
+<p><span class="arithmatex">\(T_{a,b}=\begin{cases} \inf\{t\geq 0:X(t)\geq a\} &amp; a&gt;0 \\ \inf\{t\geq 0:X(t)\leq a\} &amp; a&lt;0 \end{cases}\)</span></p>
+<ul>
+<li>
+<p>实际上 <span class="arithmatex">\(T_{a,b}\)</span> 是 <span class="arithmatex">\(B(t)\)</span> 首次击中 <span class="arithmatex">\(bt+a\)</span> 的时刻,也就是</p>
+</li>
+<li>
+<div class="arithmatex">\[T_{a,b} = \begin{cases} \inf\{ t\geq 0:B(t)\geq a+bt \} &amp; a&gt;0 \\ \inf\{ t\geq 0:B(t)\leq a+bt \} &amp; a&lt;0 \end{cases}\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>有</p>
+<ul>
+<li>
+<div class="arithmatex">\[P(\max\limits_{0\leq s\leq t}X(s)\geq a) = P(T_{a,b}\leq t)\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="75">定理 7.5<a class="headerlink" href="#75" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><span class="arithmatex">\(T_{a,b}\)</span> 的密度函数为</p>
+<ul>
+<li>
+<div class="arithmatex">\[f_{a,b}(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{(a+bt)^2}{2t}}\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ito">Ito 积分<a class="headerlink" href="#ito" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<div class="arithmatex">\[\int_{0}^{t} f(s) dB(s)\]</div>
+<ul>
+<li>是一个随机变量</li>
+</ul>
+</li>
+</ul>
+<h4 id="77">定理 7.7<a class="headerlink" href="#77" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><span class="arithmatex">\(\text{Brown}\)</span> 运动的曲线是无界变差函数</p>
+<ul>
+<li>$$\lim\limits_{n\to\infty}\sum\limits_{i=1}<sup>{2</sup>n} \left|B\left(\frac{i}{2<sup>n}\right)-B\left(\frac{i-1}{2</sup>n}\right)\right|^2 = \infty</li>
 </ul>
 </li>
 </ul>
