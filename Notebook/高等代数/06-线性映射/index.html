@@ -892,6 +892,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -2043,6 +2053,111 @@
   
   
     <li class="md-nav__item">
+      <a href="../Cayley-Hamilton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cayley-Hamilton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jordan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jordan 标准型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kronecker-product/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵的 Kroenecker 积
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二次型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    最小多项式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/" class="md-nav__link">
         
   
@@ -2175,19 +2290,19 @@
 </code></pre></div>
 <ul>
 <li>环<ul>
-<li>加法:4 条法则(交换律,结合律,加法零元,加法负元)</li>
-<li>乘法:2 条法则(结合律,分配律)</li>
-<li>例子:<span class="arithmatex">\(\mathbb{Z},\mathbb{Z}_7,K[x],M_n(K),K[A],KI\)</span></li>
+<li>加法:4 条法则(交换律, 结合律, 加法零元, 加法负元)</li>
+<li>乘法:2 条法则(结合律, 分配律)</li>
+<li>例子:<span class="arithmatex">\(\mathbb{Z}, \mathbb{Z}_7, K[x], M_n(K), K[A], KI\)</span></li>
 </ul>
 </li>
 <li>域<ul>
-<li>在环的基础上有乘法单位元(幺元),且非零元有乘法逆元</li>
-<li>例子:数域<span class="arithmatex">\(K\)</span>,(有理数域,实数域,复数域),<span class="arithmatex">\(\mathbb{Z}_p\)</span></li>
+<li>在环的基础上有乘法单位元(幺元), 且非零元有乘法逆元</li>
+<li>例子:数域<span class="arithmatex">\(K\)</span>, (有理数域, 实数域, 复数域), <span class="arithmatex">\(\mathbb{Z}_p\)</span></li>
 </ul>
 </li>
 <li>域<span class="arithmatex">\(F\)</span>上的线性空间<ul>
-<li>把数域<span class="arithmatex">\(K\)</span>上线性空间的概念推广到域<span class="arithmatex">\(F\)</span>上,把对应数量乘法的运算称为纯量乘法</li>
-<li>例子:<span class="arithmatex">\(F^n := \{(x_1,x_2,\cdots,x_n)|x_i\in F\}\)</span>,<span class="arithmatex">\(M_{m\times n}(F),F[x]\)</span></li>
+<li>把数域<span class="arithmatex">\(K\)</span>上线性空间的概念推广到域<span class="arithmatex">\(F\)</span>上, 把对应数量乘法的运算称为纯量乘法</li>
+<li>例子:<span class="arithmatex">\(F^n := \{(x_1, x_2, \cdots, x_n)|x_i\in F\}\)</span>, <span class="arithmatex">\(M_{m\times n}(F), F[x]\)</span></li>
 </ul>
 </li>
 </ul>
@@ -2195,13 +2310,13 @@
 <h4 id="1">定义 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(V,V'\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的映射,若满足</p>
+<p>设<span class="arithmatex">\(V, V'\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间, <span class="arithmatex">\(\underline{A}:V\to V'\)</span>是<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的映射, 若满足</p>
 <ul>
-<li><span class="arithmatex">\(\underline{A}(x+y)=\underline{A}(x)+\underline{A}(y),\forall x,y\in V\)</span><ul>
+<li><span class="arithmatex">\(\underline{A}(x+y)=\underline{A}(x)+\underline{A}(y), \forall x, y\in V\)</span><ul>
 <li>保持加法</li>
 </ul>
 </li>
-<li><span class="arithmatex">\(\underline{A}(\lambda x)=\lambda \underline{A}(x),\forall x\in V,\lambda\in F\)</span><ul>
+<li><span class="arithmatex">\(\underline{A}(\lambda x)=\lambda \underline{A}(x), \forall x\in V, \lambda\in F\)</span><ul>
 <li>保持纯量乘法</li>
 </ul>
 </li>
@@ -2212,9 +2327,9 @@
 <li>
 <p>例</p>
 <ul>
-<li>任取<span class="arithmatex">\(k\in F,\underline{k}(\alpha):=k\alpha,\alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>数乘变换</strong></li>
-<li><span class="arithmatex">\(\underline{0}(\alpha):=0,\alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>零变换</strong></li>
-<li><span class="arithmatex">\(\underline{I}(\alpha):=\alpha,\alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>恒等变换</strong></li>
+<li>任取<span class="arithmatex">\(k\in F, \underline{k}(\alpha):=k\alpha, \alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>数乘变换</strong></li>
+<li><span class="arithmatex">\(\underline{0}(\alpha):=0, \alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>零变换</strong></li>
+<li><span class="arithmatex">\(\underline{I}(\alpha):=\alpha, \alpha\in V\)</span>称为<span class="arithmatex">\(V\)</span>上的<strong>恒等变换</strong></li>
 </ul>
 </li>
 </ul>
@@ -2224,13 +2339,13 @@
 <li><span class="arithmatex">\(\underline{A}(\vec{0})=\vec{0}\)</span></li>
 <li><span class="arithmatex">\(\underline{A}(-\alpha)=-\underline{A}(\alpha)\)</span></li>
 <li><span class="arithmatex">\(\underline{A}(\sum\limits\limits_{i=1}^n\lambda_i\alpha_i)=\sum\limits_{i=1}^n\lambda_i\underline{A}(\alpha_i)\)</span></li>
-<li><span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>在<span class="arithmatex">\(V\)</span>中线性相关<span class="arithmatex">\(\implies \underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)\)</span>在<span class="arithmatex">\(V'\)</span>中线性相关 <ul>
-<li>线性无关不能推出像线性无关,比如零映射</li>
+<li><span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span>在<span class="arithmatex">\(V\)</span>中线性相关<span class="arithmatex">\(\implies \underline{A}(\alpha_1), \underline{A}(\alpha_2), \cdots, \underline{A}(\alpha_n)\)</span>在<span class="arithmatex">\(V'\)</span>中线性相关 <ul>
+<li>线性无关不能推出像线性无关, 比如零映射</li>
 </ul>
 </li>
-<li>设<span class="arithmatex">\(\dim V=n\)</span>且<span class="arithmatex">\((\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>是<span class="arithmatex">\(V\)</span>的一个基,则若<span class="arithmatex">\(\alpha = k_1\alpha_1+k_2\alpha_2+\cdots+k_n\alpha_n\)</span>,则<span class="arithmatex">\(\underline{A}(\alpha)=k_1\underline{A}(\alpha_1)+k_2\underline{A}(\alpha_2)+\cdots+k_n\underline{A}(\alpha_n)\)</span><ul>
-<li>从而<span class="arithmatex">\(\underline{A}\)</span>由<span class="arithmatex">\(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)\)</span>唯一确定</li>
-<li>即若<span class="arithmatex">\(\underline{B}(\alpha_i)=\underline{A}(\alpha_i),i=1,2,\cdots,n\)</span>,则<span class="arithmatex">\(\underline{A}=\underline{B}\)</span></li>
+<li>设<span class="arithmatex">\(\dim V=n\)</span>且<span class="arithmatex">\((\alpha_1, \alpha_2, \cdots, \alpha_n)\)</span>是<span class="arithmatex">\(V\)</span>的一个基, 则若<span class="arithmatex">\(\alpha = k_1\alpha_1+k_2\alpha_2+\cdots+k_n\alpha_n\)</span>, 则<span class="arithmatex">\(\underline{A}(\alpha)=k_1\underline{A}(\alpha_1)+k_2\underline{A}(\alpha_2)+\cdots+k_n\underline{A}(\alpha_n)\)</span><ul>
+<li>从而<span class="arithmatex">\(\underline{A}\)</span>由<span class="arithmatex">\(\underline{A}(\alpha_1), \underline{A}(\alpha_2), \cdots, \underline{A}(\alpha_n)\)</span>唯一确定</li>
+<li>即若<span class="arithmatex">\(\underline{B}(\alpha_i)=\underline{A}(\alpha_i), i=1, 2, \cdots, n\)</span>, 则<span class="arithmatex">\(\underline{A}=\underline{B}\)</span></li>
 </ul>
 </li>
 <li>若<span class="arithmatex">\(\underline{A}\)</span>是同构映射<span class="arithmatex">\(\iff \underline{A}\)</span>是<strong>可逆线性映射</strong></li>
@@ -2239,12 +2354,12 @@
 </ul>
 <h4 id="1_1">定理 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(V,V'\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,且<span class="arithmatex">\(\dim V=n &lt; \infty,\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>是<span class="arithmatex">\(V\)</span>的一个基,则对<strong>任意的</strong><span class="arithmatex">\(\beta_1,\beta_2,\cdots,\beta_n\in V'\)</span>有<ul>
-<li><span class="arithmatex">\(\underline{A}:V\to V',\underline{A}(\alpha)=\underline{A}(\sum k_i\alpha_i)=\sum k_i\beta_i\)</span>是<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的线性映射<ul>
-<li>保持加法,纯量乘法</li>
+<li>设<span class="arithmatex">\(V, V'\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间, 且<span class="arithmatex">\(\dim V=n &lt; \infty, \alpha_1, \alpha_2, \cdots, \alpha_n\)</span>是<span class="arithmatex">\(V\)</span>的一个基, 则对<strong>任意的</strong><span class="arithmatex">\(\beta_1, \beta_2, \cdots, \beta_n\in V'\)</span>有<ul>
+<li><span class="arithmatex">\(\underline{A}:V\to V', \underline{A}(\alpha)=\underline{A}(\sum k_i\alpha_i)=\sum k_i\beta_i\)</span>是<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的线性映射<ul>
+<li>保持加法, 纯量乘法</li>
 </ul>
 </li>
-<li>且<span class="arithmatex">\(\underline{A}(\alpha_i)=\beta_i,i=1,2,\cdots,n\)</span><ul>
+<li>且<span class="arithmatex">\(\underline{A}(\alpha_i)=\beta_i, i=1, 2, \cdots, n\)</span><ul>
 <li>如此定义的<span class="arithmatex">\(\underline{A}\)</span>是唯一的</li>
 </ul>
 </li>
@@ -2253,36 +2368,36 @@
 </ul>
 <blockquote>
 <p>[!NOTE]
-用<span class="arithmatex">\(\text{Hom}(V,V')\)</span>表示<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的线性映射全体(Homomorphism同态),同理称<span class="arithmatex">\(\text{Hom}(V,V)\)</span>为<span class="arithmatex">\(V\)</span>上的线性变换全体</p>
+用<span class="arithmatex">\(\text{Hom}(V, V')\)</span>表示<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(V'\)</span>的线性映射全体(Homomorphism同态), 同理称<span class="arithmatex">\(\text{Hom}(V, V)\)</span>为<span class="arithmatex">\(V\)</span>上的线性变换全体</p>
 </blockquote>
 <ul>
 <li>
-<p>在<span class="arithmatex">\(\text{Hom}(V,V')\)</span>上定义加法和纯量乘法</p>
+<p>在<span class="arithmatex">\(\text{Hom}(V, V')\)</span>上定义加法和纯量乘法</p>
 <ul>
 <li><span class="arithmatex">\((\underline{A}+\underline{B})(\alpha)=\underline{A}(\alpha)+\underline{B}(\alpha)\)</span></li>
 <li><span class="arithmatex">\((k\underline{A})(\alpha)=k\underline{A}(\alpha)\)</span><ul>
-<li><span class="arithmatex">\(\forall k\in F,\alpha\in V\)</span></li>
-<li><span class="arithmatex">\(\forall \underline{A},\underline{B}\in \text{Hom}(V,V)\)</span></li>
+<li><span class="arithmatex">\(\forall k\in F, \alpha\in V\)</span></li>
+<li><span class="arithmatex">\(\forall \underline{A}, \underline{B}\in \text{Hom}(V, V)\)</span></li>
 </ul>
 </li>
-<li><span class="arithmatex">\(0\)</span>映射是<span class="arithmatex">\(\text{Hom}(V,V')\)</span>的加法单位元</li>
+<li><span class="arithmatex">\(0\)</span>映射是<span class="arithmatex">\(\text{Hom}(V, V')\)</span>的加法单位元</li>
 <li>定义负元<span class="arithmatex">\(\underline{-A}(\alpha)=-\underline{A}(\alpha)\)</span></li>
-<li>则<span class="arithmatex">\(\text{Hom}(V,V')\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间</li>
+<li>则<span class="arithmatex">\(\text{Hom}(V, V')\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间</li>
 </ul>
 </li>
 <li>
-<p><span class="arithmatex">\(\text{Hom}(V,V)\)</span>上对于加法和乘法是一个有单位元的环(不是交换的)</p>
+<p><span class="arithmatex">\(\text{Hom}(V, V)\)</span>上对于加法和乘法是一个有单位元的环(不是交换的)</p>
 <ul>
 <li>而且有<span class="arithmatex">\(k(\underline{A}\underline{B})=(k\underline{A})\underline{B}=\underline{A}(k\underline{B})\)</span></li>
-<li>若<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V)\)</span>是可逆线性变换,那么<span class="arithmatex">\(\underline{A}^{-1}\)</span>也是可逆线性变换</li>
-<li>定义幂: <span class="arithmatex">\(\underline{A}^0=\underline{I},\underline{A}^n=\underline{A}\;\underline{A}^{n-1},n\in \mathbb{N}\)</span></li>
-<li>若<span class="arithmatex">\(\underline{A}\)</span>是可逆线性变换,则<span class="arithmatex">\(\underline{A}^{-n}=(\underline{A}^{-1})^n,n\in\mathbb{N}\)</span></li>
+<li>若<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V)\)</span>是可逆线性变换, 那么<span class="arithmatex">\(\underline{A}^{-1}\)</span>也是可逆线性变换</li>
+<li>定义幂: <span class="arithmatex">\(\underline{A}^0=\underline{I}, \underline{A}^n=\underline{A}\;\underline{A}^{n-1}, n\in \mathbb{N}\)</span></li>
+<li>若<span class="arithmatex">\(\underline{A}\)</span>是可逆线性变换, 则<span class="arithmatex">\(\underline{A}^{-n}=(\underline{A}^{-1})^n, n\in\mathbb{N}\)</span></li>
 </ul>
 </li>
 </ul>
 <h4 id="1_2">定义 1<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,且有直和分解<span class="arithmatex">\(V=U\oplus W\)</span>,那么<span class="arithmatex">\(\forall \alpha\in V,\exists !\beta\in U,\gamma\in W,s.t.\;\alpha = \beta + \gamma\)</span>,那么称<ul>
+<li>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间, 且有直和分解<span class="arithmatex">\(V=U\oplus W\)</span>, 那么<span class="arithmatex">\(\forall \alpha\in V, \exists !\beta\in U, \gamma\in W, s.t.\;\alpha = \beta + \gamma\)</span>, 那么称<ul>
 <li><span class="arithmatex">\(\underline{P}_U(\alpha)=\beta\)</span>为<span class="arithmatex">\(\alpha\)</span>在<span class="arithmatex">\(U\)</span>上的<strong>投影</strong></li>
 <li><span class="arithmatex">\(\underline{P}_U\)</span>称为<span class="arithmatex">\(V\)</span>到<span class="arithmatex">\(U\)</span>的<strong>投影映射</strong></li>
 </ul>
@@ -2291,18 +2406,18 @@
 <h4 id="_5">性质<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li><span class="arithmatex">\(\underline{P}_U\)</span>是<span class="arithmatex">\(V\)</span>上的一个线性变换</li>
-<li><span class="arithmatex">\(\underline{P}_U(\alpha)=\begin{cases} \alpha,\alpha\in U \\ 0,\alpha\in W \end{cases}\)</span></li>
-<li>若线性映射<span class="arithmatex">\(\underline{A}:V\to V\)</span>满足上一条性质,那么<span class="arithmatex">\(\underline{A}=\underline{P}_U\)</span></li>
+<li><span class="arithmatex">\(\underline{P}_U(\alpha)=\begin{cases} \alpha, \alpha\in U \\ 0, \alpha\in W \end{cases}\)</span></li>
+<li>若线性映射<span class="arithmatex">\(\underline{A}:V\to V\)</span>满足上一条性质, 那么<span class="arithmatex">\(\underline{A}=\underline{P}_U\)</span></li>
 <li><span class="arithmatex">\(\underline{P}_U^2=\underline{P}_U\)</span>  (幂等<span class="arithmatex">\(\implies \underline{P}_U^n=\underline{P}_U\)</span>)</li>
 </ul>
 <h4 id="2">定义 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V)\)</span>满足<span class="arithmatex">\(\underline{A}^2=\underline{A}\)</span>,那么称<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的<strong>幂等变换</strong></li>
+<li>若<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V)\)</span>满足<span class="arithmatex">\(\underline{A}^2=\underline{A}\)</span>, 那么称<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的<strong>幂等变换</strong></li>
 </ul>
 <h2 id="_6">线性映射的秩<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <h4 id="1_3">定义 1<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射,那么称<span class="arithmatex">\(V\)</span>的<strong>子集</strong><span class="arithmatex">\(\{\alpha:\underline{A}(\alpha)=\vec{0}\}\)</span>为<span class="arithmatex">\(\underline{A}\)</span>的<strong>核</strong><ul>
+<li>设<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射, 那么称<span class="arithmatex">\(V\)</span>的<strong>子集</strong><span class="arithmatex">\(\{\alpha:\underline{A}(\alpha)=\vec{0}\}\)</span>为<span class="arithmatex">\(\underline{A}\)</span>的<strong>核</strong><ul>
 <li>记为<span class="arithmatex">\(\text{Ker} \underline{A}\)</span></li>
 </ul>
 </li>
@@ -2310,7 +2425,7 @@
 <h4 id="1_4">性质 1<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li><span class="arithmatex">\(\text{Ker} \underline{A}\)</span>是<span class="arithmatex">\(V\)</span>的子空间<ul>
-<li>定义只说是子集,实际上是子空间(显然对加法和纯量乘法封闭)</li>
+<li>定义只说是子集, 实际上是子空间(显然对加法和纯量乘法封闭)</li>
 </ul>
 </li>
 </ul>
@@ -2323,7 +2438,7 @@
 </ul>
 <h4 id="2_2">定义 2<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射,那么称<span class="arithmatex">\(V'\)</span>的<strong>子集</strong><span class="arithmatex">\(\{\beta:\beta=\underline{A}(\alpha),\alpha\in V\}\)</span>为<span class="arithmatex">\(\underline{A}\)</span>的<strong>像空间</strong><ul>
+<li>设 <span class="arithmatex">\(\underline{A}:V\to V'\)</span> 是线性映射, 那么称 <span class="arithmatex">\(V'\)</span> 的 <strong>子集</strong> <span class="arithmatex">\(\{\beta:\beta=\underline{A}(\alpha), \alpha\in V\}\)</span>  为 <span class="arithmatex">\(\underline{A}\)</span> 的 <strong>像空间</strong><ul>
 <li>记为<span class="arithmatex">\(\text{Im} \underline{A}\)</span></li>
 </ul>
 </li>
@@ -2339,7 +2454,7 @@
 <h4 id="1_5"><a href="https://www.bilibili.com/video/BV1jR4y1M78W/?p=90&amp;spm_id_from=pageDriver&amp;vd_source=5f080a6043a40b32a88c80bbaba081b5">定理 1</a><a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间,<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射,那么</p>
+<p>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间, <span class="arithmatex">\(\underline{A}:V\to V'\)</span>是线性映射, 那么</p>
 <ul>
 <li>
 <div class="arithmatex">\[V/\text{Ker} \underline{A}\cong \text{Im} \underline{A}\]</div>
@@ -2349,7 +2464,7 @@
 <li>
 <p>证明</p>
 <ul>
-<li>记<span class="arithmatex">\(W=\text{Ker} \underline{A}\)</span> ,令<ul>
+<li>记<span class="arithmatex">\(W=\text{Ker} \underline{A}\)</span> , 令<ul>
 <li>
 <div class="arithmatex">\[\sigma : V/W \to \text{Im} \underline{A}\]</div>
 </li>
@@ -2358,8 +2473,8 @@
 </li>
 </ul>
 </li>
-<li>若<span class="arithmatex">\(\alpha + W = \beta +W\)</span>,那么<span class="arithmatex">\(\alpha-\beta\in W\)</span>,即<span class="arithmatex">\(\underline{A}(\alpha-\beta)=\vec{0}\)</span>,所以<span class="arithmatex">\(\underline{A}(\alpha)=\underline{A}(\beta)\)</span>,从而这是良定义的</li>
-<li>并且可以证明<span class="arithmatex">\(\sigma\)</span>是双射并且保持加法和纯量乘法,所以是同构映射</li>
+<li>若<span class="arithmatex">\(\alpha + W = \beta +W\)</span>, 那么<span class="arithmatex">\(\alpha-\beta\in W\)</span>, 即<span class="arithmatex">\(\underline{A}(\alpha-\beta)=\vec{0}\)</span>, 所以<span class="arithmatex">\(\underline{A}(\alpha)=\underline{A}(\beta)\)</span>, 从而这是良定义的</li>
+<li>并且可以证明<span class="arithmatex">\(\sigma\)</span>是双射并且保持加法和纯量乘法, 所以是同构映射</li>
 <li>从而<span class="arithmatex">\(V/\text{Ker} \underline{A}\cong \text{Im} \underline{A}\)</span></li>
 </ul>
 </li>
@@ -2367,10 +2482,10 @@
 <h4 id="2_3">定理 2<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>若<span class="arithmatex">\(\dim V=n&lt; \infty\)</span>,设<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的线性映射,则 <strong><span class="arithmatex">\(\dim V=\dim \text{Ker} \underline{A}+\dim \text{Im} \underline{A}\)</span></strong></p>
+<p>若<span class="arithmatex">\(\dim V=n&lt; \infty\)</span>, 设<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的线性映射, 则 <strong><span class="arithmatex">\(\dim V=\dim \text{Ker} \underline{A}+\dim \text{Im} \underline{A}\)</span></strong></p>
 </li>
 <li>
-<p>把<span class="arithmatex">\(\text{Im} \underline{A}\)</span>的维数记为线性映射<span class="arithmatex">\(\underline{A}\)</span>的<strong>秩</strong>,记为<span class="arithmatex">\(\text{rank}(\underline{A})\)</span></p>
+<p>把<span class="arithmatex">\(\text{Im} \underline{A}\)</span>的维数记为线性映射<span class="arithmatex">\(\underline{A}\)</span>的<strong>秩</strong>, 记为<span class="arithmatex">\(\text{rank}(\underline{A})\)</span></p>
 <ul>
 <li>记<span class="arithmatex">\(\dim \text{Ker} \underline{A}\)</span>为线性映射<span class="arithmatex">\(\underline{A}\)</span>的<strong>零度</strong></li>
 </ul>
@@ -2378,29 +2493,29 @@
 </ul>
 <h4 id="1_6">推论 1<a class="headerlink" href="#1_6" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V')\)</span>,若<span class="arithmatex">\(\dim V=\dim V'\)</span>,则<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是单射<span class="arithmatex">\(\iff \underline{A}\)</span>是满射<span class="arithmatex">\(\iff \underline{A}\)</span>是同构映射</li>
+<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V')\)</span>, 若<span class="arithmatex">\(\dim V=\dim V'\)</span>, 则<span class="arithmatex">\(\underline{A}:V\to V'\)</span>是单射<span class="arithmatex">\(\iff \underline{A}\)</span>是满射<span class="arithmatex">\(\iff \underline{A}\)</span>是同构映射</li>
 <li>证明:<ul>
-<li><span class="arithmatex">\(\underline{A}\)</span>是单射<span class="arithmatex">\(\iff \text{Ker} \underline{A}=\{\vec{0}\}\iff \dim \text{Ker} \underline{A}=0,\dim V=\dim \text{Im}\underline{A} \iff \underline{A}\text{是满射} \iff \underline{A}\)</span>是同构映射</li>
+<li><span class="arithmatex">\(\underline{A}\)</span>是单射<span class="arithmatex">\(\iff \text{Ker} \underline{A}=\{\vec{0}\}\iff \dim \text{Ker} \underline{A}=0, \dim V=\dim \text{Im}\underline{A} \iff \underline{A}\text{是满射} \iff \underline{A}\)</span>是同构映射</li>
 </ul>
 </li>
 <li>类比有限集合到自身的映射<span class="arithmatex">\(f\)</span>为:单射<span class="arithmatex">\(\iff\)</span>满射<span class="arithmatex">\(\iff\)</span>双射</li>
 </ul>
 <h4 id="2_4">推论 2<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V),\dim V=n&lt;\infty\)</span>,那么<span class="arithmatex">\(\underline{A}\)</span>是单射<span class="arithmatex">\(\iff \underline{A}\)</span>是满射<ul>
-<li>这样如果<span class="arithmatex">\(\underline{A}\)</span>是单射,那么<span class="arithmatex">\(\underline{A}\)</span>是双射(简化证明)</li>
+<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V), \dim V=n&lt;\infty\)</span>, 那么<span class="arithmatex">\(\underline{A}\)</span>是单射<span class="arithmatex">\(\iff \underline{A}\)</span>是满射<ul>
+<li>这样如果<span class="arithmatex">\(\underline{A}\)</span>是单射, 那么<span class="arithmatex">\(\underline{A}\)</span>是双射(简化证明)</li>
 </ul>
 </li>
 </ul>
 <h2 id="_7">线性映射的矩阵和线性映射的矩阵<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <h3 id="_8">线性变换的矩阵<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <ul>
-<li>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的<span class="arithmatex">\(n\)</span>维线性空间,<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的一个线性变换,在<span class="arithmatex">\(V\)</span>中取一个基<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>, 则<span class="arithmatex">\(\exists !a_{ij},i,j=1,2,\cdots,n,s.t.\)</span><ul>
+<li>设<span class="arithmatex">\(V\)</span>是域<span class="arithmatex">\(F\)</span>上的<span class="arithmatex">\(n\)</span>维线性空间, <span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(V\)</span>上的一个线性变换, 在<span class="arithmatex">\(V\)</span>中取一个基<span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span>,  则<span class="arithmatex">\(\exists !a_{ij}, i, j=1, 2, \cdots, n, s.t.\)</span><ul>
 <li>
 <div class="arithmatex">\[\begin{cases} \underline{A}(\alpha_1)=a_{11}\alpha_1+a_{21}\alpha_2+\cdots+a_{n1}\alpha_n \\ \underline{A}(\alpha_2)=a_{12}\alpha_1+a_{22}\alpha_2+\cdots+a_{n2}\alpha_n \\ \cdots \\ \underline{A}(\alpha_n)=a_{1n}\alpha_1+a_{2n}\alpha_2+\cdots+a_{nn}\alpha_n \end{cases}\]</div>
 </li>
-<li>记<span class="arithmatex">\(\alpha = (\alpha_1,\alpha_2,\cdots,\alpha_n),\underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n) = (\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)), A= (a_{ij})_{n\times n}\)</span>, 则上式可记为<span class="arithmatex">\(\alpha A = \underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span></li>
-<li>记<span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>下的矩阵为<span class="arithmatex">\(A\)</span>,记为<span class="arithmatex">\(A=[\underline{A}]_{\alpha}\)</span><ul>
+<li>记<span class="arithmatex">\(\alpha = (\alpha_1, \alpha_2, \cdots, \alpha_n), \underline{A}(\alpha_1, \alpha_2, \cdots, \alpha_n) = (\underline{A}(\alpha_1), \underline{A}(\alpha_2), \cdots, \underline{A}(\alpha_n)),  A= (a_{ij})_{n\times n}\)</span>,  则上式可记为<span class="arithmatex">\(\alpha A = \underline{A}(\alpha_1, \alpha_2, \cdots, \alpha_n)\)</span></li>
+<li>记<span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span>下的矩阵为<span class="arithmatex">\(A\)</span>, 记为<span class="arithmatex">\(A=[\underline{A}]_{\alpha}\)</span><ul>
 <li><span class="arithmatex">\(A\)</span>的第<span class="arithmatex">\(j\)</span>列是<span class="arithmatex">\(\underline{A}(\alpha_j)\)</span>在基下的坐标</li>
 </ul>
 </li>
@@ -2409,11 +2524,11 @@
 </ul>
 <h3 id="_9">线性映射的矩阵<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V'),\dim V=n,\dim V'=s\)</span>,取<span class="arithmatex">\(V\)</span>的基<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n,V'\)</span>的基<span class="arithmatex">\(\beta_1,\beta_2,\cdots,\beta_s\)</span>,则有:<ul>
+<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V'), \dim V=n, \dim V'=s\)</span>, 取<span class="arithmatex">\(V\)</span>的基<span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n, V'\)</span>的基<span class="arithmatex">\(\beta_1, \beta_2, \cdots, \beta_s\)</span>, 则有:<ul>
 <li>
-<div class="arithmatex">\[(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n))=(\beta_1,\beta_2,\cdots,\beta_s) \begin{pmatrix} a_{11} &amp; a_{12} &amp;  \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ldots &amp; \vdots \\ a_{s1} &amp; a_{s2} &amp; \cdots &amp; a_{sn} \end{pmatrix}\]</div>
+<div class="arithmatex">\[(\underline{A}(\alpha_1), \underline{A}(\alpha_2), \cdots, \underline{A}(\alpha_n))=(\beta_1, \beta_2, \cdots, \beta_s) \begin{pmatrix} a_{11} &amp; a_{12} &amp;  \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ldots &amp; \vdots \\ a_{s1} &amp; a_{s2} &amp; \cdots &amp; a_{sn} \end{pmatrix}\]</div>
 </li>
-<li>记为<span class="arithmatex">\(\underline{A}(\alpha)=\beta A\)</span>,其中<span class="arithmatex">\(A\)</span>是<span class="arithmatex">\(s\times n\)</span>矩阵,称为<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(V\)</span>的基<span class="arithmatex">\(\alpha\)</span>和<span class="arithmatex">\(V'\)</span>的基<span class="arithmatex">\(\beta\)</span>下的矩阵,记为<span class="arithmatex">\(A=[\underline{A}]_{\alpha}^{\beta}\)</span></li>
+<li>记为<span class="arithmatex">\(\underline{A}(\alpha)=\beta A\)</span>, 其中<span class="arithmatex">\(A\)</span>是<span class="arithmatex">\(s\times n\)</span>矩阵, 称为<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(V\)</span>的基<span class="arithmatex">\(\alpha\)</span>和<span class="arithmatex">\(V'\)</span>的基<span class="arithmatex">\(\beta\)</span>下的矩阵, 记为<span class="arithmatex">\(A=[\underline{A}]_{\alpha}^{\beta}\)</span></li>
 </ul>
 </li>
 </ul>
@@ -2425,7 +2540,7 @@
 </blockquote>
 <ul>
 <li>
-<p>令<span class="arithmatex">\(\sigma:\text{Hom}(V,V')\to M_{s\times n}(F)\)</span></p>
+<p>令<span class="arithmatex">\(\sigma:\text{Hom}(V, V')\to M_{s\times n}(F)\)</span></p>
 <ul>
 <li>
 <div class="arithmatex">\[\sigma(\underline{A})=[\underline{A}]_{\alpha}^{\beta}\]</div>
@@ -2443,32 +2558,32 @@
 </li>
 </ul>
 </li>
-<li>由上文线性映射:定理1 知道,任给<span class="arithmatex">\(C \in M_{s\times n}(F)\)</span>,存在唯一的<span class="arithmatex">\(\underline{C}\in \text{Hom}(V,V')\)</span>,使得<span class="arithmatex">\(C=[\underline{C}]_{\alpha}^{\beta}\)</span>,所以<span class="arithmatex">\(\sigma\)</span>是双射(存在说明是满射,唯一说明是单射)</li>
+<li>由上文线性映射:定理1 知道, 任给<span class="arithmatex">\(C \in M_{s\times n}(F)\)</span>, 存在唯一的<span class="arithmatex">\(\underline{C}\in \text{Hom}(V, V')\)</span>, 使得<span class="arithmatex">\(C=[\underline{C}]_{\alpha}^{\beta}\)</span>, 所以<span class="arithmatex">\(\sigma\)</span>是双射(存在说明是满射, 唯一说明是单射)</li>
 </ul>
 </li>
-<li>从而<span class="arithmatex">\(\text{Hom}(V,V')\cong M_{s\times n}(F)\)</span></li>
-<li>因此<span class="arithmatex">\(\dim \text{Hom}(V,V')=\dim M_{s\times n}(F)=sn=\dim V\dim V'\)</span><ul>
-<li>特别的,若<span class="arithmatex">\(V=V'\)</span>,则<span class="arithmatex">\(\dim \text{Hom}(V,V)=(\dim V)^2=n^2=\dim M_n(F)\)</span></li>
+<li>从而<span class="arithmatex">\(\text{Hom}(V, V')\cong M_{s\times n}(F)\)</span></li>
+<li>因此<span class="arithmatex">\(\dim \text{Hom}(V, V')=\dim M_{s\times n}(F)=sn=\dim V\dim V'\)</span><ul>
+<li>特别的, 若<span class="arithmatex">\(V=V'\)</span>, 则<span class="arithmatex">\(\dim \text{Hom}(V, V)=(\dim V)^2=n^2=\dim M_n(F)\)</span></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>令<span class="arithmatex">\(\sigma:\text{Hom}(V,V)\to M_n(F)\)</span>:</p>
+<p>令<span class="arithmatex">\(\sigma:\text{Hom}(V, V)\to M_n(F)\)</span>:</p>
 <ul>
 <li>
 <div class="arithmatex">\[\sigma(\underline{A})=[\underline{A}]_{\alpha}\]</div>
 </li>
 <li>
-<p><span class="arithmatex">\(\sigma\)</span>还保持乘法,即<span class="arithmatex">\(\sigma(\underline{A}\underline{B})=\sigma(\underline{A})\sigma(\underline{B})\)</span>)</p>
+<p><span class="arithmatex">\(\sigma\)</span>还保持乘法, 即<span class="arithmatex">\(\sigma(\underline{A}\underline{B})=\sigma(\underline{A})\sigma(\underline{B})\)</span>)</p>
 <ul>
 <li>也就是线性映射<span class="arithmatex">\(\underline{A}\;\underline{B}\)</span>的矩阵等于线性映射<span class="arithmatex">\(\underline{A}\)</span>和<span class="arithmatex">\(\underline{B}\)</span>的矩阵的乘积</li>
 </ul>
 </li>
-<li><span class="arithmatex">\(\underline{A}\)</span>可逆<span class="arithmatex">\(\iff A\)</span>可逆,且<span class="arithmatex">\([\underline{A}^{-1}]_{\alpha}=A^{-1}\)</span></li>
-<li>线性变换是幂等变换当且仅当其矩阵是幂等矩阵<span class="arithmatex">\(,i.e.\underline{A}^2=\underline{A}\iff A^2=A\)</span></li>
-<li>若<span class="arithmatex">\(\beta = (\alpha_1,\alpha_2,\cdots,\alpha_n)X\)</span>,则<span class="arithmatex">\(\underline{A}(\beta)=(\alpha_1,\alpha_2,\cdots,\alpha_n)AX\)</span><ul>
-<li>即若<span class="arithmatex">\(\beta\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标为<span class="arithmatex">\(X\)</span>,那么<span class="arithmatex">\(\underline{A}(\beta)\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标为<span class="arithmatex">\(AX\)</span></li>
+<li><span class="arithmatex">\(\underline{A}\)</span>可逆<span class="arithmatex">\(\iff A\)</span>可逆, 且<span class="arithmatex">\([\underline{A}^{-1}]_{\alpha}=A^{-1}\)</span></li>
+<li>线性变换是幂等变换当且仅当其矩阵是幂等矩阵<span class="arithmatex">\(, i.e.\underline{A}^2=\underline{A}\iff A^2=A\)</span></li>
+<li>若<span class="arithmatex">\(\beta = (\alpha_1, \alpha_2, \cdots, \alpha_n)X\)</span>, 则<span class="arithmatex">\(\underline{A}(\beta)=(\alpha_1, \alpha_2, \cdots, \alpha_n)AX\)</span><ul>
+<li>即若<span class="arithmatex">\(\beta\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标为<span class="arithmatex">\(X\)</span>, 那么<span class="arithmatex">\(\underline{A}(\beta)\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标为<span class="arithmatex">\(AX\)</span></li>
 </ul>
 </li>
 </ul>
@@ -2476,24 +2591,24 @@
 </ul>
 <blockquote>
 <p>[!NOTE]
-对向量做矩阵乘法后做线性变换可以先做线性变换再做矩阵乘法,也就是
-<span class="arithmatex">\(<span class="arithmatex">\(\underline{A}(\alpha S)=[\underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n)]S=\alpha AS\)</span>\)</span></p>
+对向量做矩阵乘法后做线性变换可以先做线性变换再做矩阵乘法, 也就是
+<span class="arithmatex">\(<span class="arithmatex">\(\underline{A}(\alpha S)=[\underline{A}(\alpha_1, \alpha_2, \cdots, \alpha_n)]S=\alpha AS\)</span>\)</span></p>
 </blockquote>
 <h2 id="_10">线性映射在不同的基下的矩阵之间的关系<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <h4 id="1_7">定义 1 过渡矩阵<a class="headerlink" href="#1_7" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V),\alpha,\beta\)</span>是<span class="arithmatex">\(V\)</span>的两个不同的基,并且<span class="arithmatex">\(\exists !S\in M_n(F),s.t. \beta = \alpha S\)</span>,称<span class="arithmatex">\(S\)</span>是基<span class="arithmatex">\(\alpha\)</span>到基<span class="arithmatex">\(\beta\)</span>的<strong>过渡矩阵</strong></li>
+<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V), \alpha, \beta\)</span>是<span class="arithmatex">\(V\)</span>的两个不同的基, 并且<span class="arithmatex">\(\exists !S\in M_n(F), s.t. \beta = \alpha S\)</span>, 称<span class="arithmatex">\(S\)</span>是基<span class="arithmatex">\(\alpha\)</span>到基<span class="arithmatex">\(\beta\)</span>的<strong>过渡矩阵</strong></li>
 </ul>
 <h4 id="1_8">性质 1<a class="headerlink" href="#1_8" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\det S\neq 0\)</span>,即<span class="arithmatex">\(S\)</span>可逆</li>
+<li><span class="arithmatex">\(\det S\neq 0\)</span>, 即<span class="arithmatex">\(S\)</span>可逆</li>
 <li><span class="arithmatex">\(S^{-1}\)</span>是基<span class="arithmatex">\(\beta\)</span>到基<span class="arithmatex">\(\alpha\)</span>的过渡矩阵</li>
 <li><span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha\)</span>下的矩阵<span class="arithmatex">\(A\)</span>和在基<span class="arithmatex">\(\beta\)</span>下的矩阵<span class="arithmatex">\(B\)</span>之间有关系<span class="arithmatex">\(B=S^{-1}AS\)</span></li>
 </ul>
 <h4 id="2_5">定义 2<a class="headerlink" href="#2_5" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(A,B\in M_n(F)\)</span>,若<span class="arithmatex">\(\exists S\in M_n(F),\text{且可逆},s.t. B=S^{-1}AS\)</span>,则称<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>是<strong>相似的</strong></li>
-<li>显然相似是等价关系,与<span class="arithmatex">\(A\)</span>相似的矩阵构成<span class="arithmatex">\(A\)</span>的<strong>相似类</strong></li>
+<li>设<span class="arithmatex">\(A, B\in M_n(F)\)</span>, 若<span class="arithmatex">\(\exists S\in M_n(F), \text{且可逆}, s.t. B=S^{-1}AS\)</span>, 则称<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>是<strong>相似的</strong></li>
+<li>显然相似是等价关系, 与<span class="arithmatex">\(A\)</span>相似的矩阵构成<span class="arithmatex">\(A\)</span>的<strong>相似类</strong></li>
 </ul>
 <blockquote>
 <p>[!NOTE]
@@ -2501,11 +2616,11 @@
 </blockquote>
 <h4 id="2_6">性质 2<a class="headerlink" href="#2_6" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(A\sim B \implies \text{rank}(A)=\text{rank}(B),\det(A)=\det(B)\)</span></li>
+<li><span class="arithmatex">\(A\sim B \implies \text{rank}(A)=\text{rank}(B), \det(A)=\det(B)\)</span></li>
 </ul>
 <h4 id="3_1">定义 3 迹<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>,则<span class="arithmatex">\(A\)</span>的对角线元素之和称为<span class="arithmatex">\(A\)</span>的<strong>迹</strong>,记为<span class="arithmatex">\(\text{tr}(A)\)</span><ul>
+<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>, 则<span class="arithmatex">\(A\)</span>的对角线元素之和称为<span class="arithmatex">\(A\)</span>的<strong>迹</strong>, 记为<span class="arithmatex">\(\text{tr}(A)\)</span><ul>
 <li><span class="arithmatex">\(\text{tr}(A)=a_{11}+a_{22}+\cdots+a_{nn}\)</span></li>
 </ul>
 </li>
@@ -2525,21 +2640,21 @@
 </ul>
 <blockquote>
 <p>[!IMPORTANT]
-<span class="arithmatex">\(n\)</span>级矩阵的<strong>行列式,秩,迹</strong>是矩阵的<strong>相似不变量</strong></p>
+<span class="arithmatex">\(n\)</span>级矩阵的<strong>行列式, 秩, 迹</strong>是矩阵的<strong>相似不变量</strong></p>
 </blockquote>
 <h4 id="4_1">定义 4<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>把线性变换<span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha\)</span>下的矩阵<span class="arithmatex">\(A\)</span>的行列式,秩,迹称为 线性变换<span class="arithmatex">\(\underline{A}\)</span>的<strong>行列式,</strong>秩<strong>,迹</strong><ul>
-<li>我们定义过<span class="arithmatex">\(\text{rank}(\underline{A})=\dim \text{Im} \underline{A}\)</span>,需要验证<span class="arithmatex">\(\dim \text{Im} \underline{A}=\text{rank}(A)\)</span></li>
+<li>把线性变换<span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\alpha\)</span>下的矩阵<span class="arithmatex">\(A\)</span>的行列式, 秩, 迹称为 线性变换<span class="arithmatex">\(\underline{A}\)</span>的<strong>行列式, **秩</strong>, 迹**<ul>
+<li>我们定义过<span class="arithmatex">\(\text{rank}(\underline{A})=\dim \text{Im} \underline{A}\)</span>, 需要验证<span class="arithmatex">\(\dim \text{Im} \underline{A}=\text{rank}(A)\)</span></li>
 </ul>
 </li>
 </ul>
 <h3 id="2_7">命题 2<a class="headerlink" href="#2_7" title="Permanent link">&para;</a></h3>
 <ul>
 <li><span class="arithmatex">\(\text{rank}(\underline{A})=\text{rank}(A)\)</span><ul>
-<li><span class="arithmatex">\(\text{Im} \underline{A} = span(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n))\)</span>,而<span class="arithmatex">\(\text{rank}(A)=\dim span(A_1,\cdots,A_n)\)</span>,其中<span class="arithmatex">\(A_i\)</span>是<span class="arithmatex">\(A\)</span>的列向量<ul>
-<li>注意到<span class="arithmatex">\(\sigma:V\to F^n,\sigma(\sum a_i\alpha_i)=(a_1,a_2,\cdots,a_n)^T\)</span>是同构映射,从而<span class="arithmatex">\(span(\underline{A}(\alpha_1),\underline{A}(\alpha_2),\cdots,\underline{A}(\alpha_n)) \cong span(A_1,A_2,\cdots,A_n)\)</span>(子空间同构)</li>
-<li>从而维数相等(同构的充要条件),从而<span class="arithmatex">\(\text{rank}(\underline{A})=\text{rank}(A)\)</span></li>
+<li><span class="arithmatex">\(\text{Im} \underline{A} = span(\underline{A}(\alpha_1), \underline{A}(\alpha_2), \cdots, \underline{A}(\alpha_n))\)</span>, 而<span class="arithmatex">\(\text{rank}(A)=\dim span(A_1, \cdots, A_n)\)</span>, 其中<span class="arithmatex">\(A_i\)</span>是<span class="arithmatex">\(A\)</span>的列向量<ul>
+<li>注意到<span class="arithmatex">\(\sigma:V\to F^n, \sigma(\sum a_i\alpha_i)=(a_1, a_2, \cdots, a_n)^T\)</span>是同构映射, 从而<span class="arithmatex">\(span(\underline{A}(\alpha_1), \underline{A}(\alpha_2), \cdots, \underline{A}(\alpha_n)) \cong span(A_1, A_2, \cdots, A_n)\)</span>(子空间同构)</li>
+<li>从而维数相等(同构的充要条件), 从而<span class="arithmatex">\(\text{rank}(\underline{A})=\text{rank}(A)\)</span></li>
 </ul>
 </li>
 </ul>
@@ -2548,11 +2663,11 @@
 <h2 id="_11">线性变换的特征值和特征向量<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <h4 id="1_10">定义 1 特征值和特征向量<a class="headerlink" href="#1_10" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若存在<span class="arithmatex">\(\lambda\in F,\xi\neq \vec{0},s.t.\)</span><ul>
+<li>若存在<span class="arithmatex">\(\lambda\in F, \xi\neq \vec{0}, s.t.\)</span><ul>
 <li>
 <div class="arithmatex">\[\underline{A}(\xi)=\lambda \xi\]</div>
 </li>
-<li>则称<span class="arithmatex">\(\lambda\)</span>是线性变换<span class="arithmatex">\(\underline{A}\)</span>的一个<strong>特征值</strong>, <span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的对应<span class="arithmatex">\(\lambda\)</span>的<strong>特征向量</strong></li>
+<li>则称<span class="arithmatex">\(\lambda\)</span>是线性变换<span class="arithmatex">\(\underline{A}\)</span>的一个<strong>特征值</strong>,  <span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的对应<span class="arithmatex">\(\lambda\)</span>的<strong>特征向量</strong></li>
 </ul>
 </li>
 </ul>
@@ -2565,23 +2680,23 @@
 </ul>
 <h4 id="1_11">定理 1<a class="headerlink" href="#1_11" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\lambda_1,\lambda_2\)</span>是不同的特征值,若在<span class="arithmatex">\(V_{\lambda_1}\)</span>中<span class="arithmatex">\(\xi_1,\xi_2,\cdots,\xi_k\)</span>线性无关,在<span class="arithmatex">\(V_{\lambda_2}\)</span>中<span class="arithmatex">\(\eta_1,\eta_2,\cdots,\eta_l\)</span>线性无关,则<span class="arithmatex">\(\xi_1,\xi_2,\cdots,\xi_k,\eta_1,\eta_2,\cdots,\eta_l\)</span>线性无关</li>
+<li>设<span class="arithmatex">\(\lambda_1, \lambda_2\)</span>是不同的特征值, 若在<span class="arithmatex">\(V_{\lambda_1}\)</span>中<span class="arithmatex">\(\xi_1, \xi_2, \cdots, \xi_k\)</span>线性无关, 在<span class="arithmatex">\(V_{\lambda_2}\)</span>中<span class="arithmatex">\(\eta_1, \eta_2, \cdots, \eta_l\)</span>线性无关, 则<span class="arithmatex">\(\xi_1, \xi_2, \cdots, \xi_k, \eta_1, \eta_2, \cdots, \eta_l\)</span>线性无关</li>
 </ul>
 <h4 id="1_12">推论 1<a class="headerlink" href="#1_12" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\lambda_1,\lambda_2,\cdots,\lambda_s\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不同特征值,则若在每个特征子空间中取线性无关的向量,这些向量和起来也是线性无关的</li>
+<li>设<span class="arithmatex">\(\lambda_1, \lambda_2, \cdots, \lambda_s\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不同特征值, 则若在每个特征子空间中取线性无关的向量, 这些向量和起来也是线性无关的</li>
 </ul>
 <h4 id="2_9">定理 2<a class="headerlink" href="#2_9" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\)</span>是 <strong><span class="arithmatex">\(n\)</span>维</strong> 线性空间<span class="arithmatex">\(V\)</span>上的线性变换,取<span class="arithmatex">\(V\)</span>中一个基<span class="arithmatex">\(\alpha\)</span>,设<span class="arithmatex">\(A=[\underline{A}]_\alpha,\text{且非零向量}\xi\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标是<span class="arithmatex">\(X,i.e.\xi = \alpha X\)</span>则<ul>
+<li>设<span class="arithmatex">\(\underline{A}\)</span>是 <strong><span class="arithmatex">\(n\)</span>维</strong> 线性空间<span class="arithmatex">\(V\)</span>上的线性变换, 取<span class="arithmatex">\(V\)</span>中一个基<span class="arithmatex">\(\alpha\)</span>, 设<span class="arithmatex">\(A=[\underline{A}]_\alpha, \text{且非零向量}\xi\)</span>在<span class="arithmatex">\(\alpha\)</span>下的坐标是<span class="arithmatex">\(X, i.e.\xi = \alpha X\)</span>则<ul>
 <li><span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的属于特征值<span class="arithmatex">\(\lambda\)</span>的特征向量</li>
 <li><span class="arithmatex">\(\iff\underline{A}(\xi)=\lambda \xi\)</span><ul>
 <li><span class="arithmatex">\(LHS = \underline{A}(\alpha X)=\underline{A}(\alpha)X=AX\)</span></li>
 </ul>
 </li>
 <li><span class="arithmatex">\(\iff AX=\lambda X\)</span></li>
-<li><span class="arithmatex">\(\iff \lambda\)</span>是矩阵<span class="arithmatex">\(A\)</span>的特征值,且<span class="arithmatex">\(X\)</span>是<span class="arithmatex">\(A\)</span>的属于<span class="arithmatex">\(\lambda\)</span>的特征向量<ul>
-<li>这里<span class="arithmatex">\(\alpha = (\alpha_1,\alpha_2,\cdots,\alpha_n),X\)</span>是列向量</li>
+<li><span class="arithmatex">\(\iff \lambda\)</span>是矩阵<span class="arithmatex">\(A\)</span>的特征值, 且<span class="arithmatex">\(X\)</span>是<span class="arithmatex">\(A\)</span>的属于<span class="arithmatex">\(\lambda\)</span>的特征向量<ul>
+<li>这里<span class="arithmatex">\(\alpha = (\alpha_1, \alpha_2, \cdots, \alpha_n), X\)</span>是列向量</li>
 </ul>
 </li>
 </ul>
@@ -2597,31 +2712,31 @@
 </ul>
 <h4 id="3_3">定义 3<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>,若<span class="arithmatex">\(\exists \lambda\in F,\vec{0}\neq \xi\in F^n,s.t.\)</span><ul>
+<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>, 若<span class="arithmatex">\(\exists \lambda\in F, \vec{0}\neq \xi\in F^n, s.t.\)</span><ul>
 <li>
 <div class="arithmatex">\[A\xi=\lambda \xi\]</div>
 </li>
-<li>则称<span class="arithmatex">\(\lambda\)</span>是矩阵<span class="arithmatex">\(A\)</span>的一个<strong>特征值</strong>, <span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(A\)</span>的属于特征值<span class="arithmatex">\(\lambda\)</span>的一个<strong>特征向量</strong></li>
+<li>则称<span class="arithmatex">\(\lambda\)</span>是矩阵<span class="arithmatex">\(A\)</span>的一个<strong>特征值</strong>,  <span class="arithmatex">\(\xi\)</span>是<span class="arithmatex">\(A\)</span>的属于特征值<span class="arithmatex">\(\lambda\)</span>的一个<strong>特征向量</strong></li>
 </ul>
 </li>
 </ul>
 <h4 id="4_2">定义 4 特征多项式<a class="headerlink" href="#4_2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>,则<span class="arithmatex">\(\det(\lambda I-A)\)</span>称为<span class="arithmatex">\(A\)</span>的<strong>特征多项式</strong><ul>
+<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>, 则<span class="arithmatex">\(\det(\lambda I-A)\)</span>称为<span class="arithmatex">\(A\)</span>的<strong>特征多项式</strong><ul>
 <li><span class="arithmatex">\(\det(\lambda I-A)=0\)</span>的根称为<span class="arithmatex">\(A\)</span>的特征值</li>
 </ul>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]</p>
-<p>计算<span class="arithmatex">\(A\)</span>的特征值,就是求<span class="arithmatex">\(\det(\lambda I-A)=0\)</span>的根</p>
+<p>计算<span class="arithmatex">\(A\)</span>的特征值, 就是求<span class="arithmatex">\(\det(\lambda I-A)=0\)</span>的根</p>
 <p>然后代入<span class="arithmatex">\(\lambda\)</span>求对应的特征向量(非零)</p>
-<p>定义:<span class="arithmatex">\(V_{\lambda_s}:=\{\xi| \underline{A}(\xi)=\lambda_s \xi\}\)</span>,可以证明这是<span class="arithmatex">\(V\)</span>的一个子空间,称为特征子空间</p>
+<p>定义:<span class="arithmatex">\(V_{\lambda_s}:=\{\xi| \underline{A}(\xi)=\lambda_s \xi\}\)</span>, 可以证明这是<span class="arithmatex">\(V\)</span>的一个子空间, 称为特征子空间</p>
 </blockquote>
 <h4 id="1_13">命题 1<a class="headerlink" href="#1_13" title="Permanent link">&para;</a></h4>
 <ul>
-<li>相似矩阵的特征多项式相等,从而有相同的特征值和特征向量<ul>
-<li><span class="arithmatex">\(A\sim B\implies \exists S\in M_n(F),s.t. B=S^{-1}AS\)</span></li>
+<li>相似矩阵的特征多项式相等, 从而有相同的特征值和特征向量<ul>
+<li><span class="arithmatex">\(A\sim B\implies \exists S\in M_n(F), s.t. B=S^{-1}AS\)</span></li>
 <li><span class="arithmatex">\(\det(\lambda I-B)=\det(\lambda I-S^{-1}AS)=\det(S^{-1}(\lambda I-A)S)=\det(\lambda I-A)\)</span></li>
 </ul>
 </li>
@@ -2635,20 +2750,20 @@
 <h2 id="_12">线性变换可对角化的条件<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
 <h4 id="1_14">定义 1<a class="headerlink" href="#1_14" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\)</span>是域<span class="arithmatex">\(F\)</span>上<span class="arithmatex">\(n\)</span>维线性空间<span class="arithmatex">\(V\)</span>上的线性变换,若存在<span class="arithmatex">\(V\)</span>的一个基<span class="arithmatex">\(\alpha\)</span>,使得<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(\alpha\)</span>下的矩阵是对角矩阵,则称<span class="arithmatex">\(\underline{A}\)</span>是<strong>可对角化的</strong></li>
+<li>设<span class="arithmatex">\(\underline{A}\)</span>是域<span class="arithmatex">\(F\)</span>上<span class="arithmatex">\(n\)</span>维线性空间<span class="arithmatex">\(V\)</span>上的线性变换, 若存在<span class="arithmatex">\(V\)</span>的一个基<span class="arithmatex">\(\alpha\)</span>, 使得<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(\alpha\)</span>下的矩阵是对角矩阵, 则称<span class="arithmatex">\(\underline{A}\)</span>是<strong>可对角化的</strong></li>
 </ul>
 <h4 id="1_15">定理 1<a class="headerlink" href="#1_15" title="Permanent link">&para;</a></h4>
 <ul>
 <li><span class="arithmatex">\(\underline{A}\)</span>可对角化</li>
-<li><span class="arithmatex">\(\iff \exists \alpha_i,i=1,2,\cdots,n,s.t.\underline{A}(\alpha_i)=\lambda_i\alpha_i \iff V\text{中存在由}\underline{A}\text{的特征向量组成的基}\)</span></li>
+<li><span class="arithmatex">\(\iff \exists \alpha_i, i=1, 2, \cdots, n, s.t.\underline{A}(\alpha_i)=\lambda_i\alpha_i \iff V\text{中存在由}\underline{A}\text{的特征向量组成的基}\)</span></li>
 <li><span class="arithmatex">\(\iff \underline{A}\)</span>有<span class="arithmatex">\(n\)</span>个线性无关的特征向量</li>
-<li><span class="arithmatex">\(\iff\)</span>若<span class="arithmatex">\(\lambda_1,\lambda_2,\cdots,\lambda_s\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不同特征值,则<span class="arithmatex">\(\underline{A}\)</span>的特征子空间<span class="arithmatex">\(V_{\lambda_1},V_{\lambda_2},\cdots,V_{\lambda_s}\)</span>的特征向量和起来是<span class="arithmatex">\(V\)</span>的一个基</li>
+<li><span class="arithmatex">\(\iff\)</span>若<span class="arithmatex">\(\lambda_1, \lambda_2, \cdots, \lambda_s\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不同特征值, 则<span class="arithmatex">\(\underline{A}\)</span>的特征子空间<span class="arithmatex">\(V_{\lambda_1}, V_{\lambda_2}, \cdots, V_{\lambda_s}\)</span>的特征向量和起来是<span class="arithmatex">\(V\)</span>的一个基</li>
 <li><span class="arithmatex">\(\iff V = V_{\lambda_1}\oplus V_{\lambda_2}\oplus\cdots\oplus V_{\lambda_s}\)</span></li>
 <li><span class="arithmatex">\(\iff \dim V_{\lambda_1}+\dim V_{\lambda_2}+\cdots+\dim V_{\lambda_s}=\dim V = n\)</span></li>
-<li><span class="arithmatex">\(\iff f(\lambda)=\det(\lambda I-A)=(\lambda-\lambda_1)^{m_1}(\lambda-\lambda_2)^{m_2}\cdots(\lambda-\lambda_s)^{m_s}\)</span>,其中<span class="arithmatex">\(m_i\)</span>是<span class="arithmatex">\(\lambda_i\)</span>的重数:<span class="arithmatex">\(m_1+m_2+\cdots+m_s=n\)</span></li>
+<li><span class="arithmatex">\(\iff f(\lambda)=\det(\lambda I-A)=(\lambda-\lambda_1)^{m_1}(\lambda-\lambda_2)^{m_2}\cdots(\lambda-\lambda_s)^{m_s}\)</span>, 其中<span class="arithmatex">\(m_i\)</span>是<span class="arithmatex">\(\lambda_i\)</span>的重数:<span class="arithmatex">\(m_1+m_2+\cdots+m_s=n\)</span></li>
 <li><span class="arithmatex">\(\iff\)</span>特征值<span class="arithmatex">\(\lambda_i\)</span>的<strong>代数重数</strong>(<strong>作为特征多项式根的重数</strong>)等于<strong>几何重数</strong>(<strong>特征子空间的维数</strong>)<ul>
-<li>在实数域中,特征多项式不一定能分解成一次因式的乘积,所以在实数域上一个矩阵不一定是可对角化的</li>
-<li>有理数域上任意次数的多项式都是存在的,因此也不一定可对角化</li>
+<li>在实数域中, 特征多项式不一定能分解成一次因式的乘积, 所以在实数域上一个矩阵不一定是可对角化的</li>
+<li>有理数域上任意次数的多项式都是存在的, 因此也不一定可对角化</li>
 </ul>
 </li>
 </ul>
@@ -2656,30 +2771,30 @@
 <p>[!IMPORTANT]
 <strong>几何重数小于等于代数重数</strong></p>
 <p>[!NOTE]
-复数域上的矩阵也不一定能对角化,比如
+复数域上的矩阵也不一定能对角化, 比如
 <span class="arithmatex">\(<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\)</span>\)</span>
-有特征值<span class="arithmatex">\(\lambda = 1\)</span>,但是只有一个特征向量<span class="arithmatex">\(\xi = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\)</span>,<span class="arithmatex">\(\lambda=1\)</span>的代数重数为2,但是<span class="arithmatex">\(\dim \mathbb{C}_\lambda = \dim span(\xi) = 1\)</span></p>
+有特征值<span class="arithmatex">\(\lambda = 1\)</span>, 但是只有一个特征向量<span class="arithmatex">\(\xi = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\)</span>, <span class="arithmatex">\(\lambda=1\)</span>的代数重数为2, 但是<span class="arithmatex">\(\dim \mathbb{C}_\lambda = \dim span(\xi) = 1\)</span></p>
 </blockquote>
 <h4 id="2_11">定义 2<a class="headerlink" href="#2_11" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(A\in M_n(F)\)</span>,如果<span class="arithmatex">\(A\)</span>相似于一个对角矩阵,那么<span class="arithmatex">\(A\)</span>是<strong>可对角化的</strong></p>
+<p>设<span class="arithmatex">\(A\in M_n(F)\)</span>, 如果<span class="arithmatex">\(A\)</span>相似于一个对角矩阵, 那么<span class="arithmatex">\(A\)</span>是<strong>可对角化的</strong></p>
 <ul>
-<li><span class="arithmatex">\(\iff\exists P=(\alpha_1,\alpha_2,\cdots,\alpha_n),s.t. P^{-1}AP=D\)</span>,其中<span class="arithmatex">\(D\)</span>是对角矩阵,即</li>
-<li><span class="arithmatex">\(A(\alpha_1,\alpha_2,\cdots,\alpha_n)=(\alpha_1,\alpha_2,\cdots,\alpha_n)D=(\lambda_1\alpha_1,\lambda_2\alpha_2,\cdots,\lambda_n\alpha_n)\)</span></li>
-<li>那么有<span class="arithmatex">\(A\alpha_i=\lambda_i\alpha_i,i=1,2,\cdots,n\)</span>,从而<span class="arithmatex">\(A\)</span>有<span class="arithmatex">\(n\)</span>个线性无关的特征向量<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>,而且<span class="arithmatex">\(P=(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>是由特征向量组成的矩阵恰好是可逆的并且使得<span class="arithmatex">\(P^{-1}AP=\text{diag}(\lambda_1,\cdots,\lambda_n)\)</span></li>
+<li><span class="arithmatex">\(\iff\exists P=(\alpha_1, \alpha_2, \cdots, \alpha_n), s.t. P^{-1}AP=D\)</span>, 其中<span class="arithmatex">\(D\)</span>是对角矩阵, 即</li>
+<li><span class="arithmatex">\(A(\alpha_1, \alpha_2, \cdots, \alpha_n)=(\alpha_1, \alpha_2, \cdots, \alpha_n)D=(\lambda_1\alpha_1, \lambda_2\alpha_2, \cdots, \lambda_n\alpha_n)\)</span></li>
+<li>那么有<span class="arithmatex">\(A\alpha_i=\lambda_i\alpha_i, i=1, 2, \cdots, n\)</span>, 从而<span class="arithmatex">\(A\)</span>有<span class="arithmatex">\(n\)</span>个线性无关的特征向量<span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span>, 而且<span class="arithmatex">\(P=(\alpha_1, \alpha_2, \cdots, \alpha_n)\)</span>是由特征向量组成的矩阵恰好是可逆的并且使得<span class="arithmatex">\(P^{-1}AP=\text{diag}(\lambda_1, \cdots, \lambda_n)\)</span></li>
 </ul>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-证明出现的<span class="arithmatex">\(A(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>需要和<span class="arithmatex">\(\underline{A}(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>区分开来,后者等于<span class="arithmatex">\((\alpha_1,\alpha_2,\cdots,\alpha_n)A\)</span>,前者是矩阵的分块乘法</p>
+证明出现的<span class="arithmatex">\(A(\alpha_1, \alpha_2, \cdots, \alpha_n)\)</span>需要和<span class="arithmatex">\(\underline{A}(\alpha_1, \alpha_2, \cdots, \alpha_n)\)</span>区分开来, 后者等于<span class="arithmatex">\((\alpha_1, \alpha_2, \cdots, \alpha_n)A\)</span>, 前者是矩阵的分块乘法</p>
 </blockquote>
 <h2 id="_13">线性变换的不变子空间<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
 <h4 id="1_16">定义 1<a class="headerlink" href="#1_16" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V),W\in \text{subspace}(V)\)</span>,若<span class="arithmatex">\(\forall \alpha\in W,\underline{A}(\alpha)\in W\)</span>,则称<span class="arithmatex">\(W\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的<strong>不变子空间</strong></p>
+<p><span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V), W\in \text{subspace}(V)\)</span>, 若<span class="arithmatex">\(\forall \alpha\in W, \underline{A}(\alpha)\in W\)</span>, 则称<span class="arithmatex">\(W\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的<strong>不变子空间</strong></p>
 <ul>
 <li>显然特征子空间<span class="arithmatex">\(V_{\lambda}\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
 <li><span class="arithmatex">\(V\)</span>和<span class="arithmatex">\(\{\vec{0}\}\)</span>也是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间(平凡的)</li>
@@ -2688,58 +2803,58 @@
 </ul>
 <h4 id="1_17">命题 1<a class="headerlink" href="#1_17" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\underline{A}\)</span>的不变子空间,<span class="arithmatex">\(\text{Ker}\underline{A},\text{Im}\underline{A}\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
+<li><span class="arithmatex">\(\underline{A}\)</span>的不变子空间, <span class="arithmatex">\(\text{Ker}\underline{A}, \text{Im}\underline{A}\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
 </ul>
 <h4 id="2_12">命题 2<a class="headerlink" href="#2_12" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\underline{A},\underline{B}\in \text{Hom}(V,V)\)</span>,若<span class="arithmatex">\(\underline{A}\underline{B}=\underline{B}\underline{A}\)</span>,则<span class="arithmatex">\(\text{Ker}\underline{B},\text{Im}\underline{B},\underline{B}\)</span>的特征子空间 是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
+<li><span class="arithmatex">\(\underline{A}, \underline{B}\in \text{Hom}(V, V)\)</span>, 若<span class="arithmatex">\(\underline{A}\underline{B}=\underline{B}\underline{A}\)</span>, 则<span class="arithmatex">\(\text{Ker}\underline{B}, \text{Im}\underline{B}, \underline{B}\)</span>的特征子空间 是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
 </ul>
 <h4 id="3_4">命题 3<a class="headerlink" href="#3_4" title="Permanent link">&para;</a></h4>
 <ul>
-<li>不变子空间的交,和依旧是不变子空间</li>
+<li>不变子空间的交, 和依旧是不变子空间</li>
 </ul>
 <h4 id="4_3">命题 4<a class="headerlink" href="#4_3" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(W=span(\alpha_1,\alpha_2,\cdots,\alpha_s)\)</span><ul>
-<li><span class="arithmatex">\(W\)</span>是不变子空间<span class="arithmatex">\(\iff \forall \alpha_i,\underline{A}(\alpha_i)\in W\)</span></li>
+<li>设<span class="arithmatex">\(W=span(\alpha_1, \alpha_2, \cdots, \alpha_s)\)</span><ul>
+<li><span class="arithmatex">\(W\)</span>是不变子空间<span class="arithmatex">\(\iff \forall \alpha_i, \underline{A}(\alpha_i)\in W\)</span></li>
 </ul>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-定义限制映射<span class="arithmatex">\(\underline{A}|_W:W\to W\)</span>,是一个线性映射,称为<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(W\)</span>上的<strong>限制</strong></p>
+定义限制映射<span class="arithmatex">\(\underline{A}|_W:W\to W\)</span>, 是一个线性映射, 称为<span class="arithmatex">\(\underline{A}\)</span>在<span class="arithmatex">\(W\)</span>上的<strong>限制</strong></p>
 </blockquote>
 <h4 id="1_18">定理 1<a class="headerlink" href="#1_18" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(n\)</span>维线性空间<span class="arithmatex">\(V\)</span>上的线性变换,则</p>
+<p>设<span class="arithmatex">\(\underline{A}\)</span>是<span class="arithmatex">\(n\)</span>维线性空间<span class="arithmatex">\(V\)</span>上的线性变换, 则</p>
 <ul>
-<li>存在<span class="arithmatex">\(V\)</span>的一组基,使得<span class="arithmatex">\(\underline{A}\)</span>在这组基下的矩阵是块对角矩阵,换句话说<ul>
-<li><span class="arithmatex">\(\underline{A}(\alpha_{11},\alpha_{12},\cdots,\alpha_{1r_1},\alpha_{21},\alpha_{22},\cdots,\alpha_{2r_2},\cdots,\alpha_{s1},\alpha_{s2},\cdots,\alpha_{sr_s})=(\alpha_{11},\alpha_{12},\cdots,\alpha_{1r_1},\alpha_{21},\alpha_{22},\cdots,\alpha_{2r_2},\cdots,\alpha_{s1},\alpha_{s2},\cdots,\alpha_{sr_s}) \text{diag}(A_1,A_2,\cdots,A_s)\)</span></li>
+<li>存在<span class="arithmatex">\(V\)</span>的一组基, 使得<span class="arithmatex">\(\underline{A}\)</span>在这组基下的矩阵是块对角矩阵, 换句话说<ul>
+<li><span class="arithmatex">\(\underline{A}(\alpha_{11}, \alpha_{12}, \cdots, \alpha_{1r_1}, \alpha_{21}, \alpha_{22}, \cdots, \alpha_{2r_2}, \cdots, \alpha_{s1}, \alpha_{s2}, \cdots, \alpha_{sr_s})=(\alpha_{11}, \alpha_{12}, \cdots, \alpha_{1r_1}, \alpha_{21}, \alpha_{22}, \cdots, \alpha_{2r_2}, \cdots, \alpha_{s1}, \alpha_{s2}, \cdots, \alpha_{sr_s}) \text{diag}(A_1, A_2, \cdots, A_s)\)</span></li>
 <li>其中<span class="arithmatex">\(A_i\)</span>是<span class="arithmatex">\(r_i\)</span>级矩阵</li>
 </ul>
 </li>
-<li><span class="arithmatex">\(\iff W_i=span(\alpha_{i1},\alpha_{i2},\cdots,\alpha_{ir_i})\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的非平凡不变子空间,且<span class="arithmatex">\(V = \oplus_{i=1}^s W_i\)</span></li>
+<li><span class="arithmatex">\(\iff W_i=span(\alpha_{i1}, \alpha_{i2}, \cdots, \alpha_{ir_i})\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的非平凡不变子空间, 且<span class="arithmatex">\(V = \oplus_{i=1}^s W_i\)</span></li>
 </ul>
 </li>
 <li>
-<p>也就是说如果找到一组<span class="arithmatex">\(V\)</span>的不变子空间,使得<span class="arithmatex">\(V\)</span>是这些不变子空间的直和,那就能对<span class="arithmatex">\(\underline{A}\)</span>做块对角化</p>
+<p>也就是说如果找到一组<span class="arithmatex">\(V\)</span>的不变子空间, 使得<span class="arithmatex">\(V\)</span>是这些不变子空间的直和, 那就能对<span class="arithmatex">\(\underline{A}\)</span>做块对角化</p>
 <ul>
-<li>由上述命题2 启发,先研究和<span class="arithmatex">\(\underline{A}\)</span>可交换的线性变换</li>
+<li>由上述命题2 启发, 先研究和<span class="arithmatex">\(\underline{A}\)</span>可交换的线性变换</li>
 </ul>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-任意<span class="arithmatex">\(\underline{A}\)</span>的多项式<span class="arithmatex">\(f(\underline{A})\)</span>和<span class="arithmatex">\(\underline{A}\)</span>可交换,并且可以验证<span class="arithmatex">\(F[\underline{A}]:=\{\underline{A}\text{的多项式}\}\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间</p>
+任意<span class="arithmatex">\(\underline{A}\)</span>的多项式<span class="arithmatex">\(f(\underline{A})\)</span>和<span class="arithmatex">\(\underline{A}\)</span>可交换, 并且可以验证<span class="arithmatex">\(F[\underline{A}]:=\{\underline{A}\text{的多项式}\}\)</span>是域<span class="arithmatex">\(F\)</span>上的线性空间</p>
 <blockquote>
-<p>这样我们可以得到很多不变子空间<span class="arithmatex">\(\text{Ker} f(\underline{A})\)</span>,下面研究直和的问题</p>
+<p>这样我们可以得到很多不变子空间<span class="arithmatex">\(\text{Ker} f(\underline{A})\)</span>, 下面研究直和的问题</p>
 </blockquote>
 </blockquote>
 <h4 id="2_13">定理 2<a class="headerlink" href="#2_13" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(\underline{A}\)</span>是域<span class="arithmatex">\(F\)</span>上线性空间<span class="arithmatex">\(V\)</span>上的线性变换,在<span class="arithmatex">\(F[x]\)</span>中,若<span class="arithmatex">\(f(x)=f_1(x)f_2(x),\gcd (f_1(x),f_2(x))=1\)</span>,那么有</p>
+<p>设<span class="arithmatex">\(\underline{A}\)</span>是域<span class="arithmatex">\(F\)</span>上线性空间<span class="arithmatex">\(V\)</span>上的线性变换, 在<span class="arithmatex">\(F[x]\)</span>中, 若<span class="arithmatex">\(f(x)=f_1(x)f_2(x), \gcd (f_1(x), f_2(x))=1\)</span>, 那么有</p>
 <ul>
 <li>
 <div class="arithmatex">\[\text{Ker} f(\underline{A})=\text{Ker} f_1(\underline{A})\oplus \text{Ker} f_2(\underline{A})\]</div>
@@ -2747,9 +2862,9 @@
 </ul>
 </li>
 <li>
-<p>证明:注意到<span class="arithmatex">\(\exists !u,v\in F[x],s.t. u(x)f_1(x)+v(x)f_2(x)=1\)</span>,用<span class="arithmatex">\(\underline{A}\)</span>代入并作用到<span class="arithmatex">\(\alpha\in \text{Ker}f(\underline{A})\)</span>上就有</p>
+<p>证明:注意到<span class="arithmatex">\(\exists !u, v\in F[x], s.t. u(x)f_1(x)+v(x)f_2(x)=1\)</span>, 用<span class="arithmatex">\(\underline{A}\)</span>代入并作用到<span class="arithmatex">\(\alpha\in \text{Ker}f(\underline{A})\)</span>上就有</p>
 <ul>
-<li><span class="arithmatex">\(\alpha = u(\underline{A})f_1(\underline{A})(\alpha)+v(\underline{A})f_2(\underline{A})(\alpha)\)</span>,令<span class="arithmatex">\(\alpha_1 = v(\underline{A})f_2(\underline{A})(\alpha),\alpha_2 = u(\underline{A})f_1(\underline{A})(\alpha)\)</span>,可以验证<span class="arithmatex">\(\alpha_1\in \text{Ker} f_1(\underline{A}),\alpha_2\in \text{Ker} f_2(\underline{A})\)</span>,且容易证明<span class="arithmatex">\(\text{Ker} f_1(\underline{A})\cap \text{Ker} f_2(\underline{A})=\{\vec{0}\}\)</span></li>
+<li><span class="arithmatex">\(\alpha = u(\underline{A})f_1(\underline{A})(\alpha)+v(\underline{A})f_2(\underline{A})(\alpha)\)</span>, 令<span class="arithmatex">\(\alpha_1 = v(\underline{A})f_2(\underline{A})(\alpha), \alpha_2 = u(\underline{A})f_1(\underline{A})(\alpha)\)</span>, 可以验证<span class="arithmatex">\(\alpha_1\in \text{Ker} f_1(\underline{A}), \alpha_2\in \text{Ker} f_2(\underline{A})\)</span>, 且容易证明<span class="arithmatex">\(\text{Ker} f_1(\underline{A})\cap \text{Ker} f_2(\underline{A})=\{\vec{0}\}\)</span></li>
 <li>实际上这就对<span class="arithmatex">\(\alpha\)</span>做了唯一分解</li>
 </ul>
 </li>
@@ -2759,7 +2874,7 @@
 </ul>
 <h4 id="1_19">推论 1<a class="headerlink" href="#1_19" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若<span class="arithmatex">\(f(x)=\prod_{i=1}^s f_i(x)\)</span>,其中<span class="arithmatex">\(f_i(x)\)</span>两两互素,那么<ul>
+<li>若<span class="arithmatex">\(f(x)=\prod_{i=1}^s f_i(x)\)</span>, 其中<span class="arithmatex">\(f_i(x)\)</span>两两互素, 那么<ul>
 <li>
 <div class="arithmatex">\[\text{Ker} f(\underline{A})=\text{Ker} f_1(\underline{A})\oplus \text{Ker} f_2(\underline{A})\oplus\cdots\oplus \text{Ker} f_s(\underline{A})\]</div>
 </li>
@@ -2771,11 +2886,11 @@
 </blockquote>
 <h4 id="2_14">定义 2 零化多项式(线性变换)<a class="headerlink" href="#2_14" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V),f(x)\in F[x],\)</span>若<span class="arithmatex">\(f(\underline{A})=\underline{0}\)</span>,则称<span class="arithmatex">\(f(x)\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的一个<strong>零化多项式</strong></li>
+<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V), f(x)\in F[x], <span class="arithmatex">\(若\)</span>f(\underline{A})=\underline{0}\)</span>, 则称<span class="arithmatex">\(f(x)\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的一个<strong>零化多项式</strong></li>
 </ul>
 <h4 id="3_5">定义 3 零化多项式(矩阵)<a class="headerlink" href="#3_5" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(A\in M_n(F),f(x)\in F[x],s.t. f(A)=0\)</span>,则称<span class="arithmatex">\(f(x)\)</span>是<span class="arithmatex">\(A\)</span>的一个<strong>零化多项式</strong></li>
+<li><span class="arithmatex">\(A\in M_n(F), f(x)\in F[x], s.t. f(A)=0\)</span>, 则称<span class="arithmatex">\(f(x)\)</span>是<span class="arithmatex">\(A\)</span>的一个<strong>零化多项式</strong></li>
 </ul>
 <blockquote>
 <p>[!NOTE]
@@ -2783,20 +2898,20 @@
 </blockquote>
 <h4 id="3-hamilton-cayley">定理 3 Hamilton-Cayley定理<a class="headerlink" href="#3-hamilton-cayley" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>,则<span class="arithmatex">\(A\)</span>的特征多项式是<span class="arithmatex">\(A\)</span>的零化多项式</li>
+<li>设<span class="arithmatex">\(A\in M_n(F)\)</span>, 则<span class="arithmatex">\(A\)</span>的特征多项式是<span class="arithmatex">\(A\)</span>的零化多项式</li>
 </ul>
 <h4 id="4-hamilton-cayley">定理 4 Hamilton-Cayley定理‘<a class="headerlink" href="#4-hamilton-cayley" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V,V)\)</span>,则<span class="arithmatex">\(\underline{A}\)</span>的特征多项式是<span class="arithmatex">\(\underline{A}\)</span>的零化多项式</li>
+<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V)\)</span>, 则<span class="arithmatex">\(\underline{A}\)</span>的特征多项式是<span class="arithmatex">\(\underline{A}\)</span>的零化多项式</li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-由唯一因式分解定理:<span class="arithmatex">\(f(\lambda) = \prod\limits_{i=1}^s p_i^{r_i}(\lambda)\)</span>,那么<span class="arithmatex">\(V=\text{Ker} f(\underline{A})= \oplus_{i=1}^s \text{Ker} p_i^{r_i}(\underline{A})=\oplus_{i=1}^s \text{Ker} (\underline{A}-\lambda_i I)^{r_i}\)</span>,称这些空间为根子空间</p>
+由唯一因式分解定理:<span class="arithmatex">\(f(\lambda) = \prod\limits_{i=1}^s p_i^{r_i}(\lambda)\)</span>, 那么<span class="arithmatex">\(V=\text{Ker} f(\underline{A})= \oplus_{i=1}^s \text{Ker} p_i^{r_i}(\underline{A})=\oplus_{i=1}^s \text{Ker} (\underline{A}-\lambda_i I)^{r_i}\)</span>, 称这些空间为根子空间</p>
 </blockquote>
 <h2 id="_14">线性变换的最小多项式<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <h4 id="1_20">定义 1<a class="headerlink" href="#1_20" title="Permanent link">&para;</a></h4>
 <ul>
-<li>在<span class="arithmatex">\(\underline{A}\)</span>的零化多项式中次数最低的首一多项式称为<span class="arithmatex">\(\underline{A}\)</span>的<strong>最小多项式</strong>,记为<span class="arithmatex">\(m(\lambda)\)</span></li>
+<li>在<span class="arithmatex">\(\underline{A}\)</span>的零化多项式中次数最低的首一多项式称为<span class="arithmatex">\(\underline{A}\)</span>的<strong>最小多项式</strong>, 记为<span class="arithmatex">\(m(\lambda)\)</span></li>
 </ul>
 <h4 id="1_21">命题 1<a class="headerlink" href="#1_21" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2816,8 +2931,8 @@
 <li>
 <p>特征多项式<span class="arithmatex">\(f(\lambda)\)</span>和最小多项式<span class="arithmatex">\(m(\lambda)\)</span>有相同的根(重数不一定相同)</p>
 <ul>
-<li>任取<span class="arithmatex">\(m(\lambda)\)</span>的一个根<span class="arithmatex">\(\lambda_0\)</span>,显然<span class="arithmatex">\(f(\lambda_0)=0\)</span></li>
-<li>反过来设<span class="arithmatex">\(m(\lambda)=c_0+c_1\lambda+\cdots+c_{r-1}\lambda^{r-1}+\lambda^r\)</span>,任取<span class="arithmatex">\(\lambda_0\)</span>是<span class="arithmatex">\(f(\lambda)\)</span>的一个根,则<span class="arithmatex">\(\exists \xi,s.t.\underline{A}(\xi)=\lambda_0\xi\)</span>那么<span class="arithmatex">\(\vec{0}=\underline{0}(\xi) = m(\underline{A})(\xi) = (c_0\underline{I}+\cdots \underline{A}^r)(\xi)=m(\lambda_0)\xi\)</span>,从而<span class="arithmatex">\(\lambda_0\)</span>也是<span class="arithmatex">\(f(\lambda)\)</span>的根</li>
+<li>任取<span class="arithmatex">\(m(\lambda)\)</span>的一个根<span class="arithmatex">\(\lambda_0\)</span>, 显然<span class="arithmatex">\(f(\lambda_0)=0\)</span></li>
+<li>反过来设<span class="arithmatex">\(m(\lambda)=c_0+c_1\lambda+\cdots+c_{r-1}\lambda^{r-1}+\lambda^r\)</span>, 任取<span class="arithmatex">\(\lambda_0\)</span>是<span class="arithmatex">\(f(\lambda)\)</span>的一个根, 则<span class="arithmatex">\(\exists \xi, s.t.\underline{A}(\xi)=\lambda_0\xi\)</span>那么<span class="arithmatex">\(\vec{0}=\underline{0}(\xi) = m(\underline{A})(\xi) = (c_0\underline{I}+\cdots \underline{A}^r)(\xi)=m(\lambda_0)\xi\)</span>, 从而<span class="arithmatex">\(\lambda_0\)</span>也是<span class="arithmatex">\(f(\lambda)\)</span>的根</li>
 </ul>
 </li>
 </ul>
@@ -2835,22 +2950,22 @@
 </ul>
 <h4 id="1_23">定理 1<a class="headerlink" href="#1_23" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若<span class="arithmatex">\(V = \oplus_{i=1}^s W_i\)</span>,其中<span class="arithmatex">\(W_i\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间,则<span class="arithmatex">\(\underline{A}\)</span>的最小多项式是<span class="arithmatex">\(W_i\)</span>的最小多项式的最小公倍式</li>
+<li>若<span class="arithmatex">\(V = \oplus_{i=1}^s W_i\)</span>, 其中<span class="arithmatex">\(W_i\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间, 则<span class="arithmatex">\(\underline{A}\)</span>的最小多项式是<span class="arithmatex">\(W_i\)</span>的最小多项式的最小公倍式</li>
 </ul>
 <h4 id="2_18">推论 2<a class="headerlink" href="#2_18" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(A=\text{diag}(A_1,A_2,\cdots,A_s)\)</span>是分块对角矩阵,每个子矩阵<span class="arithmatex">\(A_j\)</span>的最小多项式是<span class="arithmatex">\(m_j(\lambda)\)</span>,则<span class="arithmatex">\(A\)</span>的最小多项式是<span class="arithmatex">\(m(\lambda)=\text{lcm}(m_1(\lambda),m_2(\lambda),\cdots,m_s(\lambda))\)</span></li>
+<li>设<span class="arithmatex">\(A=\text{diag}(A_1, A_2, \cdots, A_s)\)</span>是分块对角矩阵, 每个子矩阵<span class="arithmatex">\(A_j\)</span>的最小多项式是<span class="arithmatex">\(m_j(\lambda)\)</span>, 则<span class="arithmatex">\(A\)</span>的最小多项式是<span class="arithmatex">\(m(\lambda)=\text{lcm}(m_1(\lambda), m_2(\lambda), \cdots, m_s(\lambda))\)</span></li>
 </ul>
 <h4 id="3_7">定义 3 幂零变换<a class="headerlink" href="#3_7" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若<span class="arithmatex">\(\exists k\in \mathbb{N},s.t.\underline{A}^k=\underline{0}\)</span>,则称<span class="arithmatex">\(\underline{A}\)</span>是<strong>幂零变换</strong><ul>
+<li>若<span class="arithmatex">\(\exists k\in \mathbb{N}, s.t.\underline{A}^k=\underline{0}\)</span>, 则称<span class="arithmatex">\(\underline{A}\)</span>是<strong>幂零变换</strong><ul>
 <li>使得<span class="arithmatex">\(\underline{A}^k=\underline{0}\)</span>的最小正整数<span class="arithmatex">\(k\)</span>称为<span class="arithmatex">\(\underline{A}\)</span>的<strong>幂零指数</strong></li>
 </ul>
 </li>
 </ul>
 <h4 id="4_4">命题 4<a class="headerlink" href="#4_4" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\)</span>是幂零指数为<span class="arithmatex">\(l\)</span>的幂零变换,则<span class="arithmatex">\(\underline{A}^l\)</span>的最小多项式<span class="arithmatex">\(m(\lambda)=\lambda^l\)</span></li>
+<li>设<span class="arithmatex">\(\underline{A}\)</span>是幂零指数为<span class="arithmatex">\(l\)</span>的幂零变换, 则<span class="arithmatex">\(\underline{A}^l\)</span>的最小多项式<span class="arithmatex">\(m(\lambda)=\lambda^l\)</span></li>
 </ul>
 <blockquote>
 <p>[!NOTE]
@@ -2862,6 +2977,7 @@
 <p><span class="arithmatex">\(\underline{A}\)</span>可对角化<span class="arithmatex">\(\iff m(\lambda)\)</span>在<span class="arithmatex">\(F[x]\)</span>上可以分解为不同的一次因式的乘积</p>
 <ul>
 <li>可对角化的又一充要条件</li>
+<li>只要存在一个零化多项式可以分解成不同的一次因式的乘积即可, 这样因为最小多项式整除零化多项式, 那么最小多项式一定可以分解成不同的一次因式的乘积</li>
 </ul>
 </li>
 </ul>
@@ -2882,15 +2998,15 @@
 <h2 id="textjordan">幂零变换的<span class="arithmatex">\(\text{Jordan}\)</span>标准型<a class="headerlink" href="#textjordan" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>[!NOTE]
-若<span class="arithmatex">\(\underline{A}\)</span>是幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换,则存在<span class="arithmatex">\(\xi,s.t.\underline{A}^{l-1}(\xi) \neq 0,\underline{A}^l(\xi)=0\)</span>,那么向量组<span class="arithmatex">\(\xi,\underline{A}(\xi),\cdots,\underline{A}^{l-1}(\xi)\)</span>线性无关<span class="arithmatex">\(\\\)</span>
-从而<span class="arithmatex">\(\text{span}(\xi,\underline{A}(\xi),\cdots,\underline{A}^{l-1}(\xi))\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的一个不变子空间,在这个空间中,<span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\xi,\underline{A}(\xi),\cdots,\underline{A}^{l-1}(\xi)\)</span>下的矩阵恰好是</p>
+若<span class="arithmatex">\(\underline{A}\)</span>是幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换, 则存在<span class="arithmatex">\(\xi, s.t.\underline{A}^{l-1}(\xi) \neq 0, \underline{A}^l(\xi)=0\)</span>, 那么向量组<span class="arithmatex">\(\xi, \underline{A}(\xi), \cdots, \underline{A}^{l-1}(\xi)\)</span>线性无关<span class="arithmatex">\(\\\)</span>
+从而<span class="arithmatex">\(\text{span}(\xi, \underline{A}(\xi), \cdots, \underline{A}^{l-1}(\xi))\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的一个不变子空间, 在这个空间中, <span class="arithmatex">\(\underline{A}\)</span>在基<span class="arithmatex">\(\xi, \underline{A}(\xi), \cdots, \underline{A}^{l-1}(\xi)\)</span>下的矩阵恰好是</p>
 <blockquote>
 <div class="arithmatex">\[\begin{pmatrix} 0 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; \cdots &amp; 0 \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix}\]</div>
 </blockquote>
 </blockquote>
 <h4 id="1-textjordan">定义 1 <span class="arithmatex">\(\text{Jordan}\)</span>块<a class="headerlink" href="#1-textjordan" title="Permanent link">&para;</a></h4>
 <ul>
-<li>形如 <span class="arithmatex">\(\begin{pmatrix} a &amp; 1 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; a &amp; 1 &amp; \cdots &amp; 0 \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; a \end{pmatrix}\)</span> 的<span class="arithmatex">\(k\)</span>阶矩阵称为一个 <span class="arithmatex">\(k\)</span> 级<span class="arithmatex">\(\text{Jordan}\)</span>块,记为<span class="arithmatex">\(J_k(a)\)</span></li>
+<li>形如 <span class="arithmatex">\(\begin{pmatrix} a &amp; 1 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; a &amp; 1 &amp; \cdots &amp; 0 \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; a \end{pmatrix}\)</span> 的<span class="arithmatex">\(k\)</span>阶矩阵称为一个 <span class="arithmatex">\(k\)</span> 级<span class="arithmatex">\(\text{Jordan}\)</span>块, 记为<span class="arithmatex">\(J_k(a)\)</span></li>
 </ul>
 <h4 id="2_20">定义 2<a class="headerlink" href="#2_20" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2898,21 +3014,21 @@
 </ul>
 <h4 id="3_9">定义 3<a class="headerlink" href="#3_9" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若存在<span class="arithmatex">\(\alpha\in V,s.t.(\alpha,\underline{A}(\alpha),\cdots,\underline{A}^{l-1}(\alpha))\)</span>线性无关, 且<span class="arithmatex">\(\forall r,\underline{A}^r(\alpha)\in \text{span}(\alpha,\underline{A}(\alpha),\cdots,\underline{A}^{l-1}(\alpha))\)</span> ( 或 <span class="arithmatex">\(\underline{A}^l(\alpha)=\vec{0}\)</span> ),则称 <span class="arithmatex">\(\text{span}(\alpha,\underline{A}(\alpha),\cdots,\underline{A}^{l-1}(\alpha))\)</span> 是一个 <span class="arithmatex">\(\underline{A}\)</span>-循环子空间( 或 <span class="arithmatex">\(\underline{A}\)</span>-强循环子空间 )</li>
+<li>若存在<span class="arithmatex">\(\alpha\in V, s.t.(\alpha, \underline{A}(\alpha), \cdots, \underline{A}^{l-1}(\alpha))\)</span>线性无关,  且<span class="arithmatex">\(\forall r, \underline{A}^r(\alpha)\in \text{span}(\alpha, \underline{A}(\alpha), \cdots, \underline{A}^{l-1}(\alpha))\)</span> ( 或 <span class="arithmatex">\(\underline{A}^l(\alpha)=\vec{0}\)</span> ), 则称 <span class="arithmatex">\(\text{span}(\alpha, \underline{A}(\alpha), \cdots, \underline{A}^{l-1}(\alpha))\)</span> 是一个 <span class="arithmatex">\(\underline{A}\)</span>-循环子空间( 或 <span class="arithmatex">\(\underline{A}\)</span>-强循环子空间 )</li>
 </ul>
 <h4 id="1_24">命题 1<a class="headerlink" href="#1_24" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\underline{A}\)</span> 是幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换,则 <span class="arithmatex">\(\text{span}(\alpha,\underline{A}(\alpha),\cdots,\underline{A}^{l-1}(\alpha))\)</span> 是一个 <span class="arithmatex">\(\underline{A}\)</span>- 强循环子空间</li>
-<li>且 <span class="arithmatex">\(\underline{A}\)</span> 在基 <span class="arithmatex">\(\alpha,\underline{A}(\alpha),\cdots,\underline{A}^{l-1}(\alpha)\)</span> 下的矩阵是 <span class="arithmatex">\(J_l(0)\)</span></li>
+<li><span class="arithmatex">\(\underline{A}\)</span> 是幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换, 则 <span class="arithmatex">\(\text{span}(\alpha, \underline{A}(\alpha), \cdots, \underline{A}^{l-1}(\alpha))\)</span> 是一个 <span class="arithmatex">\(\underline{A}\)</span>- 强循环子空间</li>
+<li>且 <span class="arithmatex">\(\underline{A}\)</span> 在基 <span class="arithmatex">\(\alpha, \underline{A}(\alpha), \cdots, \underline{A}^{l-1}(\alpha)\)</span> 下的矩阵是 <span class="arithmatex">\(J_l(0)\)</span></li>
 </ul>
 <h4 id="1_25">定理 1<a class="headerlink" href="#1_25" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设 <span class="arithmatex">\(\underline{A}\)</span> 是域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(r\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换,则 <span class="arithmatex">\(V\)</span> 可以分解为 <span class="arithmatex">\(\dim W_0\)</span> 个 <span class="arithmatex">\(\underline{A}\)</span>-强循环子空间的直和,其中 <span class="arithmatex">\(W_0\)</span> 是 <span class="arithmatex">\(\underline{A}\)</span> 的属于特征值 0 的特征子空间</li>
+<li>设 <span class="arithmatex">\(\underline{A}\)</span> 是域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(r\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换, 则 <span class="arithmatex">\(V\)</span> 可以分解为 <span class="arithmatex">\(\dim W_0\)</span> 个 <span class="arithmatex">\(\underline{A}\)</span>-强循环子空间的直和, 其中 <span class="arithmatex">\(W_0\)</span> 是 <span class="arithmatex">\(\underline{A}\)</span> 的属于特征值 0 的特征子空间</li>
 </ul>
 <h4 id="2_21">定理 2<a class="headerlink" href="#2_21" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(\underline{A}\)</span> 是域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(r\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换,则 <span class="arithmatex">\(V\)</span> 存在一组基,使得 <span class="arithmatex">\(\underline{A}\)</span> 在这组基下的矩阵是 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵,且 <span class="arithmatex">\(\text{Jordan}\)</span> 块的总数为 <span class="arithmatex">\(\dim W_0=\dim \text{Ke}r(\underline{A})=\dim V-\text{rank}(\underline{A}) = r-\text{rank}(\underline{A})\)</span> ,且每个 <span class="arithmatex">\(\text{Jordan}\)</span> 块的主对角元为 <span class="arithmatex">\(0\)</span> , 级数不大于 <span class="arithmatex">\(r\)</span></p>
+<p>设 <span class="arithmatex">\(\underline{A}\)</span> 是域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(r\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零变换, 则 <span class="arithmatex">\(V\)</span> 存在一组基, 使得 <span class="arithmatex">\(\underline{A}\)</span> 在这组基下的矩阵是 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵, 且 <span class="arithmatex">\(\text{Jordan}\)</span> 块的总数为 <span class="arithmatex">\(\dim W_0=\dim \text{Ke}r(\underline{A})=\dim V-\text{rank}(\underline{A}) = r-\text{rank}(\underline{A})\)</span> , 且每个 <span class="arithmatex">\(\text{Jordan}\)</span> 块的主对角元为 <span class="arithmatex">\(0\)</span> ,  级数不大于 <span class="arithmatex">\(r\)</span></p>
 </li>
 <li>
 <p><span class="arithmatex">\(t\)</span> 级 <span class="arithmatex">\(\text{Jordan}\)</span> 块的个数 <span class="arithmatex">\(N(t) = \text{rank}(\underline{A}^{t-1}) + \text{rank}(\underline{A}^{t+1}) - 2\text{rank}(\underline{A}^t)\)</span></p>
@@ -2920,14 +3036,14 @@
 <li>
 <p>这个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵称为 <span class="arithmatex">\(\underline{A}\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 标准型</p>
 <ul>
-<li>在不考虑 <span class="arithmatex">\(\text{Jordan}\)</span> 块的顺序的情况下, <span class="arithmatex">\(\text{Jordan}\)</span> 标准型是唯一的</li>
+<li>在不考虑 <span class="arithmatex">\(\text{Jordan}\)</span> 块的顺序的情况下,  <span class="arithmatex">\(\text{Jordan}\)</span> 标准型是唯一的</li>
 </ul>
 </li>
 </ul>
 <h4 id="1_26">推论 1<a class="headerlink" href="#1_26" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(A\)</span> 是域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(r\)</span> 级幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零矩阵,则 <span class="arithmatex">\(A\)</span> 相似于一个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵, <span class="arithmatex">\(\text{Jordan}\)</span> 块总数等于 <span class="arithmatex">\(r-\text{rank}(A)\)</span>,且每个 <span class="arithmatex">\(\text{Jordan}\)</span> 块的主对角元为 <span class="arithmatex">\(0\)</span> , 级数不大于 <span class="arithmatex">\(r\)</span></p>
+<p>设 <span class="arithmatex">\(A\)</span> 是域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(r\)</span> 级幂零指数为 <span class="arithmatex">\(l\)</span> 的幂零矩阵, 则 <span class="arithmatex">\(A\)</span> 相似于一个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵,  <span class="arithmatex">\(\text{Jordan}\)</span> 块总数等于 <span class="arithmatex">\(r-\text{rank}(A)\)</span>, 且每个 <span class="arithmatex">\(\text{Jordan}\)</span> 块的主对角元为 <span class="arithmatex">\(0\)</span> ,  级数不大于 <span class="arithmatex">\(r\)</span></p>
 </li>
 <li>
 <p><span class="arithmatex">\(t\)</span> 级 <span class="arithmatex">\(\text{Jordan}\)</span> 块的个数 <span class="arithmatex">\(N(t) = \text{rank}(A^{t-1}) + \text{rank}(A^{t+1}) - 2\text{rank}(A^t)\)</span></p>
@@ -2935,36 +3051,36 @@
 <li>
 <p>这个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵称为矩阵 <span class="arithmatex">\(A\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 标准型</p>
 <ul>
-<li>在不考虑 <span class="arithmatex">\(\text{Jordan}\)</span> 块的顺序的情况下, <span class="arithmatex">\(\text{Jordan}\)</span> 标准型是唯一的</li>
+<li>在不考虑 <span class="arithmatex">\(\text{Jordan}\)</span> 块的顺序的情况下,  <span class="arithmatex">\(\text{Jordan}\)</span> 标准型是唯一的</li>
 </ul>
 </li>
 </ul>
 <h2 id="textjordan_1">线性变换的<span class="arithmatex">\(\text{Jordan}\)</span>标准型<a class="headerlink" href="#textjordan_1" title="Permanent link">&para;</a></h2>
 <h4 id="1_27">定理 1<a class="headerlink" href="#1_27" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若 <span class="arithmatex">\(\underline{A}\)</span> 的最小多项式 <span class="arithmatex">\(m(\lambda)= (\lambda-\lambda_1)^{r_1}(\lambda-\lambda_2)^{r_2}\cdots(\lambda-\lambda_s)^{r_s}\)</span> , 则 <span class="arithmatex">\(V\)</span> 中存在一个基,使得 <span class="arithmatex">\(\underline{A}\)</span> 在这个基下的矩阵是 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵,其全部主对角元是 <span class="arithmatex">\(\underline{A}\)</span> 的全部特征值;特征值 <span class="arithmatex">\(\lambda_j\)</span>在主对角线上出现的次数等于 <span class="arithmatex">\(\lambda_j\)</span> 的 <strong>代数重数</strong> ,主对角元为 <span class="arithmatex">\(\lambda_j\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 块的总数 <span class="arithmatex">\(N_j\)</span> 为<ul>
+<li>若 <span class="arithmatex">\(\underline{A}\)</span> 的最小多项式 <span class="arithmatex">\(m(\lambda)= (\lambda-\lambda_1)^{r_1}(\lambda-\lambda_2)^{r_2}\cdots(\lambda-\lambda_s)^{r_s}\)</span> ,  则 <span class="arithmatex">\(V\)</span> 中存在一个基, 使得 <span class="arithmatex">\(\underline{A}\)</span> 在这个基下的矩阵是 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵, 其全部主对角元是 <span class="arithmatex">\(\underline{A}\)</span> 的全部特征值;特征值 <span class="arithmatex">\(\lambda_j\)</span>在主对角线上出现的次数等于 <span class="arithmatex">\(\lambda_j\)</span> 的 <strong>代数重数</strong> , 主对角元为 <span class="arithmatex">\(\lambda_j\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 块的总数 <span class="arithmatex">\(N_j\)</span> 为<ul>
 <li><span class="arithmatex">\(<span class="arithmatex">\(N_j=n-\text{rank}(\underline{A}-\lambda_j\underline{I})\)</span>\)</span>
 其中 <span class="arithmatex">\(t\)</span> 级 <span class="arithmatex">\(\text{Jordan}\)</span> 块 <span class="arithmatex">\(J_t(\lambda_j)\)</span> 的个数 <span class="arithmatex">\(N_j(t)\)</span> 为</li>
 <li><span class="arithmatex">\(<span class="arithmatex">\(N_j(t)= \text{rank}{(\underline{A}-\lambda_j\underline{I})^{t+1}} + \text{rank}{(\underline{A}-\lambda_j\underline{I})^{t-1}}- 2\text{rank}{(\underline{A}-\lambda_j\underline{I})^{t}}\)</span>\)</span>
-其中 <span class="arithmatex">\(1\leq t\leq r_j;j=1,2\cdots,s\)</span>, 这个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵 <span class="arithmatex">\(A\)</span> 称为 线性变换 <span class="arithmatex">\(\underline{A}\)</span> 的 <strong><span class="arithmatex">\(\text{Jordan 标准形}\)</span></strong></li>
-<li>除去 <span class="arithmatex">\(\text{Jordan}\)</span> 块的排列次序,线性变换的标准形是唯一的</li>
+其中 <span class="arithmatex">\(1\leq t\leq r_j;j=1, 2\cdots, s\)</span>,  这个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵 <span class="arithmatex">\(A\)</span> 称为 线性变换 <span class="arithmatex">\(\underline{A}\)</span> 的 <strong><span class="arithmatex">\(\text{Jordan 标准形}\)</span></strong></li>
+<li>除去 <span class="arithmatex">\(\text{Jordan}\)</span> 块的排列次序, 线性变换的标准形是唯一的</li>
 </ul>
 </li>
 </ul>
 <h4 id="1_28">推论 1<a class="headerlink" href="#1_28" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设 <span class="arithmatex">\(A\)</span> 是域 <span class="arithmatex">\(F\)</span> 上的 <span class="arithmatex">\(n\)</span> 级矩阵,如果 <span class="arithmatex">\(A\)</span> 的最小多项式为 <span class="arithmatex">\(m(\lambda) = (\lambda-\lambda_1)^{r_1}(\lambda-\lambda_2)^{r_2}\cdots(\lambda-\lambda_s)^{r_s}\)</span>, 那么 <span class="arithmatex">\(A\)</span> 相似于一个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵,其全部主对角元是 <span class="arithmatex">\(A\)</span> 的全部特征值;特征值 <span class="arithmatex">\(\lambda_j\)</span>在主对角线上出现的次数等于 <span class="arithmatex">\(\lambda_j\)</span> 的 <strong>代数重数</strong> ,主对角元为 <span class="arithmatex">\(\lambda_j\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 块的总数 <span class="arithmatex">\(N_j\)</span> 为 <ul>
+<li>设 <span class="arithmatex">\(A\)</span> 是域 <span class="arithmatex">\(F\)</span> 上的 <span class="arithmatex">\(n\)</span> 级矩阵, 如果 <span class="arithmatex">\(A\)</span> 的最小多项式为 <span class="arithmatex">\(m(\lambda) = (\lambda-\lambda_1)^{r_1}(\lambda-\lambda_2)^{r_2}\cdots(\lambda-\lambda_s)^{r_s}\)</span>,  那么 <span class="arithmatex">\(A\)</span> 相似于一个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵, 其全部主对角元是 <span class="arithmatex">\(A\)</span> 的全部特征值;特征值 <span class="arithmatex">\(\lambda_j\)</span>在主对角线上出现的次数等于 <span class="arithmatex">\(\lambda_j\)</span> 的 <strong>代数重数</strong> , 主对角元为 <span class="arithmatex">\(\lambda_j\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 块的总数 <span class="arithmatex">\(N_j\)</span> 为 <ul>
 <li><span class="arithmatex">\(<span class="arithmatex">\(N_j=n-\text{rank}(A-\lambda_jI)\)</span>\)</span>
 其中 <span class="arithmatex">\(t\)</span> 级 <span class="arithmatex">\(\text{Jordan}\)</span> 块 <span class="arithmatex">\(J_t(\lambda_j)\)</span> 的个数 <span class="arithmatex">\(N_j(t)\)</span> 为</li>
 <li><span class="arithmatex">\(<span class="arithmatex">\(N_j(t)= \text{rank}{(A-\lambda_jI)^{t+1}} + \text{rank}{(A-\lambda_jI)^{t-1}}- 2\text{rank}{(A-\lambda_jI)^{t}}\)</span>\)</span>
-其中 <span class="arithmatex">\(1\leq t\leq r_j;j=1,2\cdots,s\)</span>, 这个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵 <span class="arithmatex">\(J\)</span> 称为 矩阵 <span class="arithmatex">\(A\)</span> 的 <strong><span class="arithmatex">\(\text{Jordan 标准形}\)</span></strong></li>
-<li>除去 <span class="arithmatex">\(\text{Jordan}\)</span> 块的排列次序,矩阵的标准形是唯一的</li>
+其中 <span class="arithmatex">\(1\leq t\leq r_j;j=1, 2\cdots, s\)</span>,  这个 <span class="arithmatex">\(\text{Jordan}\)</span> 形矩阵 <span class="arithmatex">\(J\)</span> 称为 矩阵 <span class="arithmatex">\(A\)</span> 的 <strong><span class="arithmatex">\(\text{Jordan 标准形}\)</span></strong></li>
+<li>除去 <span class="arithmatex">\(\text{Jordan}\)</span> 块的排列次序, 矩阵的标准形是唯一的</li>
 </ul>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-由于复数域上的一元多项式都可以分解为一次因式的乘积,所以复数域上有限维线性空间上的线性变换都有 <span class="arithmatex">\(\text{Jordan}\)</span> 标准形,从而复数域上的每个方阵都有 <span class="arithmatex">\(\text{Jordan}\)</span> 标准形</p>
+由于复数域上的一元多项式都可以分解为一次因式的乘积, 所以复数域上有限维线性空间上的线性变换都有 <span class="arithmatex">\(\text{Jordan}\)</span> 标准形, 从而复数域上的每个方阵都有 <span class="arithmatex">\(\text{Jordan}\)</span> 标准形</p>
 </blockquote>
 <h4 id="2_22">推论 2<a class="headerlink" href="#2_22" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2980,8 +3096,8 @@
 </ul>
 <h4 id="5">推论 5<a class="headerlink" href="#5" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设 <span class="arithmatex">\(A,B\in M_n(F)\)</span>, 如果它们的 <strong>最小多项式(或特征多项式)</strong> 在 <span class="arithmatex">\(F[\lambda]\)</span> 上可以分解为一次因式的乘积, 那么:<ul>
-<li><span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 相似 <span class="arithmatex">\(\iff A,B\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 标准形相同</li>
+<li>设 <span class="arithmatex">\(A, B\in M_n(F)\)</span>,  如果它们的 <strong>最小多项式(或特征多项式)</strong> 在 <span class="arithmatex">\(F[\lambda]\)</span> 上可以分解为一次因式的乘积,  那么:<ul>
+<li><span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 相似 <span class="arithmatex">\(\iff A, B\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span> 标准形相同</li>
 </ul>
 </li>
 </ul>

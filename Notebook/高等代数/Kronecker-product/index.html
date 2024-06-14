@@ -12,13 +12,13 @@
         <meta name="author" content="Ljx">
       
       
-        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/04-%E5%BE%AE%E5%88%86/">
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/Kronecker-product/">
       
       
-        <link rel="prev" href="../03-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0/">
+        <link rel="prev" href="../Jordan/">
       
       
-        <link rel="next" href="../05-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/">
+        <link rel="next" href="../%E4%BA%8C%E6%AC%A1%E5%9E%8B/">
       
       
       <link rel="icon" href="../../../assets/image/Chivalrous.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>微分 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+        <title>矩阵的 Kroenecker 积 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#kroenecker" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              微分
+              矩阵的 Kroenecker 积
             
           </span>
         </div>
@@ -465,8 +465,6 @@
                 
   
   
-    
-  
   
   
     
@@ -523,692 +521,29 @@
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+  
+  
+    <a href="../../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     数学分析
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            数学分析
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01-%E9%9B%86%E5%90%88%E4%B8%8E%E6%98%A0%E5%B0%84/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    集合与映射
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02-%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    数列极限
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    函数极限和连续函数
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        <span class="md-nav__icon md-icon"></span>
       
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    微分
-  </span>
+    </a>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    微分
-  </span>
-  
-
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      微分和导数
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="微分和导数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#411" class="md-nav__link">
-    <span class="md-ellipsis">
-      定义 4.1.1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#412" class="md-nav__link">
-    <span class="md-ellipsis">
-      定义 4.1.2
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#411_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      定理 4.1.1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#412_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      定理 4.1.2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      导数的意义和性质
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      导数四则运算和反函数求导法则
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="导数四则运算和反函数求导法则">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#431-433" class="md-nav__link">
-    <span class="md-ellipsis">
-      定理 4.3.1-4.3.3
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#434" class="md-nav__link">
-    <span class="md-ellipsis">
-      定理 4.3.4(反函数求导法则)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      复合函数求导法则及其应用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="复合函数求导法则及其应用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#441" class="md-nav__link">
-    <span class="md-ellipsis">
-      定理 4.4.1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      一阶微分形式不变性
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数方程求导
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      高阶导数和高阶微分
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="高阶导数和高阶微分">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#451" class="md-nav__link">
-    <span class="md-ellipsis">
-      定义 4.5.1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#451_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      定理 4.5.1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#452leibniz" class="md-nav__link">
-    <span class="md-ellipsis">
-      定理 4.5.2(Leibniz公式)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      高阶微分
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../05-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    微分中值定理及其应用
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../06-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    不定积分
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../07-%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    定积分
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../08-%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    反常积分
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../09-%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    数项级数
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../10-%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    函数项级数
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../11-Euclid%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    \(\text{Euclid}\) 空间上的极限和连续
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../12-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    多元函数的微分学
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../13-%E9%87%8D%E7%A7%AF%E5%88%86/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    重积分
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../14-%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%2C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E5%92%8C%E5%9C%BA%E8%AE%BA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    曲线积分,曲面积分和场论
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../15-%E5%90%AB%E5%8F%82%E5%8F%98%E9%87%8F%E7%A7%AF%E5%88%86/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    含参变量积分
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../16-Fourier%E7%BA%A7%E6%95%B0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fourier级数
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../17-%E4%B9%A0%E9%A2%98/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    习题
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../18-mix/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    杂项
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../19-%E5%85%AC%E5%BC%8F/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    常用公式
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../20-%E5%AE%9A%E7%90%86%E7%BB%93%E8%AE%BA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    常用定理结论习题方法
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1524,6 +859,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1572,29 +909,390 @@
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-    <a href="../../%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     高等代数
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            高等代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E8%AE%B2%E4%B9%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    高等代数与解析几何
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性方程组
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E8%A1%8C%E5%88%97%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    行列式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性空间
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵的运算
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一元多项式环
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性映射
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-%E4%B9%A0%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    习题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cayley-Hamilton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cayley-Hamilton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jordan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jordan 标准型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    矩阵的 Kroenecker 积
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二次型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    最小多项式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵性质
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%A9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    秩
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1684,93 +1382,17 @@
   
 
 
-<h1 id="_1">微分<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">微分和导数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h4 id="411">定义 4.1.1<a class="headerlink" href="#411" title="Permanent link">&para;</a></h4>
-<ul>
-<li>对函数 <span class="arithmatex">\(y=f(x)\)</span>定义域中的一点 <span class="arithmatex">\(x_0\)</span>,如果存在一个只与 <span class="arithmatex">\(x_0\)</span>有关而与<span class="arithmatex">\(\Delta x_0\)</span>无关的数 <span class="arithmatex">\(g(x_0)\)</span>,使得
-<span class="arithmatex">\(\Delta x_0\to 0\)</span> 时有<span class="arithmatex">\(\Delta y=g(x_0)\Delta x+o(\Delta x )\)</span>.则称 <span class="arithmatex">\(f(x)\)</span>在 <span class="arithmatex">\(x_0\)</span>处的微分存在,或称<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>处可微</li>
-</ul>
-<h4 id="412">定义 4.1.2<a class="headerlink" href="#412" title="Permanent link">&para;</a></h4>
-<ul>
-<li>若函数<span class="arithmatex">\(f(x)\)</span>在其定义域中一点<span class="arithmatex">\(x_0\)</span>处极限 <span class="arithmatex">\(\lim\limits_{\Delta x\to 0 } \frac{\Delta y}{\Delta x}=\lim\limits_{\Delta x\to 0 }\frac{f(x_0+\Delta x)}{\Delta x}\)</span>存在,则称
-<span class="arithmatex">\(f(x)\)</span>在 <span class="arithmatex">\(x_0\)</span>处可导,并称这个极限值为 <span class="arithmatex">\(f(x)\)</span>在 <span class="arithmatex">\(x_0\)</span> 处的导数,记为<span class="arithmatex">\(f'(x_0)\)</span></li>
-</ul>
-<h4 id="411_1">定理 4.1.1<a class="headerlink" href="#411_1" title="Permanent link">&para;</a></h4>
-<ul>
-<li>函数<span class="arithmatex">\(y=f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>处可导的充分必要条件是函数<span class="arithmatex">\(y=f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>处可微</li>
-</ul>
-<h4 id="412_1">定理 4.1.2<a class="headerlink" href="#412_1" title="Permanent link">&para;</a></h4>
-<h2 id="_3">导数的意义和性质<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h1 id="kroenecker">矩阵的 Kroenecker 积<a class="headerlink" href="#kroenecker" title="Permanent link">&para;</a></h1>
 <ul>
 <li>
-<p>导数的几何意义:斜率</p>
-</li>
-<li>
-<p>左导数和右导数</p>
-</li>
-<li>
-<p><span class="arithmatex">\(\lim\limits_{x\to x_0 } f(x)=\infty\)</span>和<span class="arithmatex">\(\lim\limits_{x\to x_0 } f'(x)=\infty\)</span>没有必然关系</p>
-<ul>
-<li><span class="arithmatex">\(f(x)=\sqrt{x}\)</span>和<span class="arithmatex">\(f(x)=\frac{1}{x}+\frac{1}{x}\cos(\frac{1}{x}\)</span></li>
-</ul>
-</li>
-</ul>
-<h2 id="_4">导数四则运算和反函数求导法则<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h4 id="431-433">定理 4.3.1-4.3.3<a class="headerlink" href="#431-433" title="Permanent link">&para;</a></h4>
+<p>矩阵 <span class="arithmatex">\(A=(a_{ij})_{m\times n},B=(b_{ij})_{k\times l}\)</span> 的 Kroenecker 积定义为</p>
 <ul>
 <li>
-<p>设函数<span class="arithmatex">\(u(x)\)</span>和<span class="arithmatex">\(v(x)\)</span>在区间<span class="arithmatex">\(I\)</span>上可导:</p>
-<ul>
-<li><span class="arithmatex">\(\forall \alpha,\beta,(\alpha f+\beta f)'=\alpha f'+\beta g'\)</span></li>
-<li><span class="arithmatex">\((fg)'=f'g+fg'\)</span></li>
-<li><span class="arithmatex">\(\frac{f}{g}'=\frac{f'g-fg'}{g^2}\)</span></li>
+<div class="arithmatex">\[A\otimes B = \begin{pmatrix} a_{11}B &amp; a_{12}B &amp; \cdots &amp; a_{1n}B \\ a_{21}B &amp; a_{22}B &amp; \cdots &amp;  a_{2n}B \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ a_{m1}B &amp; a_{m2} B &amp; \cdots &amp;ma_{mn}B\end{pmatrix}\]</div>
+</li>
 </ul>
 </li>
 </ul>
-<h4 id="434">定理 4.3.4(反函数求导法则)<a class="headerlink" href="#434" title="Permanent link">&para;</a></h4>
-<ul>
-<li>若函数<span class="arithmatex">\(y=f(x)\)</span>在区间<span class="arithmatex">\((a,b)\)</span>上连续,且严格单调(考虑增),可导,并且<span class="arithmatex">\(f(x)\neq 0\)</span>,则其反函数<span class="arithmatex">\(x=f^{-}(y)\)</span>在对应区间<span class="arithmatex">\((f(a),f(b))\)</span>上也可导,且有<span class="arithmatex">\([f^{-1}(y)]'=\frac{1}{f'(x)}\)</span></li>
-</ul>
-<h2 id="_5">复合函数求导法则及其应用<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h4 id="441">定理 4.4.1<a class="headerlink" href="#441" title="Permanent link">&para;</a></h4>
-<ul>
-<li>设函数<span class="arithmatex">\(y=f(u)\)</span>和<span class="arithmatex">\(u=g(x)\)</span>可导,则复合函数<span class="arithmatex">\(y=f[g(x)]\)</span>在区间<span class="arithmatex">\(I\)</span>上可导,且有<span class="arithmatex">\((f[g(x)])'=f'(g(x))g'(x)\)</span></li>
-</ul>
-<h3 id="_6">一阶微分形式不变性<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<ul>
-<li>不管<span class="arithmatex">\(u\)</span>是自变量还是中间变量,函数<span class="arithmatex">\(y=f(u)\)</span>的微分形式都是<span class="arithmatex">\(dy=f'(u)du\)</span></li>
-</ul>
-<h3 id="_7">参数方程求导<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p><span class="arithmatex">\(y=f(t),x=g(t),\frac{dy}{dx}=\frac{dy}{dt}\frac{dt}{dx}=\frac{df}{dt}\frac{dg^{-1}}{dx}=\frac{f'}{g'}(t)\)</span></p>
-<ul>
-<li>最后一步是隐函数求导</li>
-</ul>
-</li>
-</ul>
-<h2 id="_8">高阶导数和高阶微分<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h4 id="451">定义 4.5.1<a class="headerlink" href="#451" title="Permanent link">&para;</a></h4>
-<ul>
-<li>函数的<span class="arithmatex">\(n-1\)</span>阶导数可导,那么称其导数为原函数的<span class="arithmatex">\(n\)</span>阶导数,记为<span class="arithmatex">\(f^{(n)}(x)\)</span></li>
-</ul>
-<h4 id="451_1">定理 4.5.1<a class="headerlink" href="#451_1" title="Permanent link">&para;</a></h4>
-<ul>
-<li><span class="arithmatex">\(f,g\)</span>都是<span class="arithmatex">\(n\)</span>阶可导的函数,则<span class="arithmatex">\([\alpha f+\beta g]^{(n)}=\alpha f^{(n)}+\beta g^{(n)}\)</span>,<span class="arithmatex">\(\alpha,\beta\)</span>为常数</li>
-</ul>
-<h4 id="452leibniz">定理 4.5.2(Leibniz公式)<a class="headerlink" href="#452leibniz" title="Permanent link">&para;</a></h4>
-<ul>
-<li><span class="arithmatex">\(f,g\text{都是} n\text{阶可导的函数,则他们的积函数也} n\text{阶可导,且有公式}:\)</span><ul>
-<li><span class="arithmatex">\((fg)^{(n)}=\sum_{k=0}^{n}C_n^kf^{(k)}g^{(n-k)}\)</span></li>
-</ul>
-</li>
-</ul>
-<h3 id="_9">高阶微分<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<ul>
-<li><span class="arithmatex">\(y\)</span>的<span class="arithmatex">\(n\)</span>阶微分等于他的<span class="arithmatex">\(n\)</span>阶导数与自变量微分的<span class="arithmatex">\(n\)</span>次方的乘积</li>
-</ul>
-<p><a href="https://zhuanlan.zhihu.com/p/690962257">知乎</a></p>
 
 
 

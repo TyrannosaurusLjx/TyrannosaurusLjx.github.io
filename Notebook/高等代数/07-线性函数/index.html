@@ -892,6 +892,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1476,6 +1486,111 @@
   
   
     <li class="md-nav__item">
+      <a href="../Cayley-Hamilton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cayley-Hamilton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jordan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jordan 标准型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kronecker-product/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵的 Kroenecker 积
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二次型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    最小多项式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/" class="md-nav__link">
         
   
@@ -1611,9 +1726,9 @@
 <h4 id="811">定义 8.1.1<a class="headerlink" href="#811" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间, <span class="arithmatex">\(f:V\to F\)</span>,若</p>
+<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间, <span class="arithmatex">\(f:V\to F\)</span>, 若</p>
 <ul>
-<li><span class="arithmatex">\(\forall \alpha,\beta\in V,k\in F\)</span><ul>
+<li><span class="arithmatex">\(\forall \alpha, \beta\in V, k\in F\)</span><ul>
 <li><span class="arithmatex">\(f(\alpha+\beta)=f(\alpha)+f(\beta)\)</span></li>
 <li><span class="arithmatex">\(f(k\alpha)=kf(\alpha)\)</span></li>
 </ul>
@@ -1622,27 +1737,27 @@
 </ul>
 </li>
 <li>
-<p>将所有 <span class="arithmatex">\(V\)</span> 上的线性函数组成的集合表成 <span class="arithmatex">\(L(V,F)\)</span> 或 <span class="arithmatex">\(\text{Hom}_F(V,F)\)</span>,称为 <span class="arithmatex">\(V\)</span> 上的 <strong>线性函数空间</strong></p>
+<p>将所有 <span class="arithmatex">\(V\)</span> 上的线性函数组成的集合表成 <span class="arithmatex">\(L(V, F)\)</span> 或 <span class="arithmatex">\(\text{Hom}_F(V, F)\)</span>, 称为 <span class="arithmatex">\(V\)</span> 上的 <strong>线性函数空间</strong></p>
 </li>
 </ul>
 <p>#### 定理 8.1.1
-- 设 <span class="arithmatex">\(F\)</span> 上线性空间 <span class="arithmatex">\(V\)</span> 的一组基为 <span class="arithmatex">\(\alpha_i,i\in \Lambda\)</span>, 则映射 <span class="arithmatex">\(f:V\to F\)</span> 是线性函数当且仅当 <span class="arithmatex">\(\exists \{a_i\}_{i\in \Lambda}\subset F\)</span>,使得<span class="arithmatex">\(\forall \alpha = \sum\limits_{i\in \Lambda}k_i\alpha_i\)</span>:
+- 设 <span class="arithmatex">\(F\)</span> 上线性空间 <span class="arithmatex">\(V\)</span> 的一组基为 <span class="arithmatex">\(\alpha_i, i\in \Lambda\)</span>, 则映射 <span class="arithmatex">\(f:V\to F\)</span> 是线性函数当且仅当 <span class="arithmatex">\(\exists \{a_i\}_{i\in \Lambda}\subset F\)</span>, 使得<span class="arithmatex">\(\forall \alpha = \sum\limits_{i\in \Lambda}k_i\alpha_i\)</span>:
     - <span class="arithmatex">\(<span class="arithmatex">\(f(\alpha)=\sum\limits_{i\in \Lambda}k_ia_i\)</span>\)</span></p>
 <ul>
 <li>
-<p>此外 <span class="arithmatex">\(L(V,F)\)</span> 与 <span class="arithmatex">\(F^{\Lambda}\)</span> 同构</p>
+<p>此外 <span class="arithmatex">\(L(V, F)\)</span> 与 <span class="arithmatex">\(F^{\Lambda}\)</span> 同构</p>
 <ul>
-<li><span class="arithmatex">\(\pi:L(V,F)\to F^{\Lambda}\)</span>,其中 <span class="arithmatex">\(\pi(f)=(f(\alpha_1),f(\alpha_2),\cdots,f(\alpha_i),\cdots),i\in \Lambda\)</span></li>
+<li><span class="arithmatex">\(\pi:L(V, F)\to F^{\Lambda}\)</span>, 其中 <span class="arithmatex">\(\pi(f)=(f(\alpha_1), f(\alpha_2), \cdots, f(\alpha_i), \cdots), i\in \Lambda\)</span></li>
 </ul>
 </li>
 </ul>
 <h4 id="_3">定义 对偶空间<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间, <span class="arithmatex">\(V^*:=L(V,F)\)</span> 称为 <span class="arithmatex">\(V\)</span> 的 <strong>对偶空间</strong></p>
+<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间, <span class="arithmatex">\(V^*:=L(V, F)\)</span> 称为 <span class="arithmatex">\(V\)</span> 的 <strong>对偶空间</strong></p>
 </li>
 <li>
-<p>定义线性函数组 <span class="arithmatex">\(\{f_i\}_{i\in \Lambda}\)</span>,其中 <span class="arithmatex">\(f_i(\alpha_j)=\delta_{ij}\)</span>,称为 <span class="arithmatex">\(V,(\dim V&lt;\infty)\)</span> 的基 <span class="arithmatex">\(\{\alpha_i\}_{i\in \Lambda}\)</span> 下的 <strong>对偶基</strong></p>
+<p>定义线性函数组 <span class="arithmatex">\(\{f_i\}_{i\in \Lambda}\)</span>, 其中 <span class="arithmatex">\(f_i(\alpha_j)=\delta_{ij}\)</span>, 称为 <span class="arithmatex">\(V, (\dim V&lt;\infty)\)</span> 的基 <span class="arithmatex">\(\{\alpha_i\}_{i\in \Lambda}\)</span> 下的 <strong>对偶基</strong></p>
 <ul>
 <li><span class="arithmatex">\(f_i(\alpha)\)</span> 实际上就是 <span class="arithmatex">\(\alpha\)</span> 在基 <span class="arithmatex">\(\{\alpha_i\}_{i\in \Lambda}\)</span> 下的第 <span class="arithmatex">\(i\)</span> 个坐标</li>
 </ul>
@@ -1654,23 +1769,23 @@
 <li><span class="arithmatex">\(\{f_i\}_{i\in \Lambda}\)</span> 在 <span class="arithmatex">\(V^*\)</span> 中线性无关</li>
 <li><span class="arithmatex">\(\dim V  &lt; \infty\)</span> 时<ul>
 <li><span class="arithmatex">\(\forall f\in V^*:f=\sum\limits_{i\in \Lambda}f(\alpha_i)f_i\)</span></li>
-<li><span class="arithmatex">\(\{f_i\}_{i\in \Lambda}\)</span> 是 <span class="arithmatex">\(V^*\)</span> 的一组基,从而 <span class="arithmatex">\(\dim V^* = \dim V\)</span></li>
+<li><span class="arithmatex">\(\{f_i\}_{i\in \Lambda}\)</span> 是 <span class="arithmatex">\(V^*\)</span> 的一组基, 从而 <span class="arithmatex">\(\dim V^* = \dim V\)</span></li>
 </ul>
 </li>
 </ul>
 <h4 id="815">定理 8.1.5<a class="headerlink" href="#815" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n.\beta_1,\beta_2,\cdots,\beta_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的两组基,且 <span class="arithmatex">\(f_1,f_2,\cdots,f_n\)</span> 和 <span class="arithmatex">\(g_1,g_2,\cdots,g_n\)</span> 分别是它们的对偶基,若从<span class="arithmatex">\(\vec{\alpha}\)</span> 到 <span class="arithmatex">\(\vec{\beta}\)</span> 的过渡矩阵是 <span class="arithmatex">\(A,i.e.:\)</span></p>
+<p>设 <span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n.\beta_1, \beta_2, \cdots, \beta_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的两组基, 且 <span class="arithmatex">\(f_1, f_2, \cdots, f_n\)</span> 和 <span class="arithmatex">\(g_1, g_2, \cdots, g_n\)</span> 分别是它们的对偶基, 若从<span class="arithmatex">\(\vec{\alpha}\)</span> 到 <span class="arithmatex">\(\vec{\beta}\)</span> 的过渡矩阵是 <span class="arithmatex">\(A, i.e.:\)</span></p>
 <ul>
 <li>
-<div class="arithmatex">\[(\beta_1,\beta_2,\cdots,\beta_n)=(\alpha_1,\alpha_2,\cdots,\alpha_n)A\]</div>
+<div class="arithmatex">\[(\beta_1, \beta_2, \cdots, \beta_n)=(\alpha_1, \alpha_2, \cdots, \alpha_n)A\]</div>
 </li>
 <li>
-<p>那么 <span class="arithmatex">\(f_1,f_2,\cdots,f_n\)</span> 到 <span class="arithmatex">\(g_1,g_2,\cdots,g_n\)</span> 的过渡矩阵是 <span class="arithmatex">\((A^T)^{-1},i.e.:\)</span></p>
+<p>那么 <span class="arithmatex">\(f_1, f_2, \cdots, f_n\)</span> 到 <span class="arithmatex">\(g_1, g_2, \cdots, g_n\)</span> 的过渡矩阵是 <span class="arithmatex">\((A^T)^{-1}, i.e.:\)</span></p>
 <ul>
 <li>
-<div class="arithmatex">\[(g_1,g_2,\cdots,g_n)=(f_1,f_2,\cdots,f_n)(A^T)^{-1}\]</div>
+<div class="arithmatex">\[(g_1, g_2, \cdots, g_n)=(f_1, f_2, \cdots, f_n)(A^T)^{-1}\]</div>
 </li>
 </ul>
 </li>
@@ -1680,17 +1795,17 @@
 <h4 id="_4">定义 对偶映射<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(U,V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间,且 <span class="arithmatex">\(\varphi : U\to V\)</span> 是线性映射,任取 <span class="arithmatex">\(f\in V^*,\)</span> 则 <span class="arithmatex">\(f\varphi: U\to V \to F \implies f\varphi\in U^*\)</span>,称 <span class="arithmatex">\(\varphi^*(f) = f\varphi\)</span> 为 <span class="arithmatex">\(\varphi\)</span> 的 <strong>对偶映射</strong></p>
+<p>设 <span class="arithmatex">\(U, V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间, 且 <span class="arithmatex">\(\varphi : U\to V\)</span> 是线性映射, 任取 $f\in V^<em>, $ 则 <span class="arithmatex">\(f\varphi: U\to V \to F \implies f\varphi\in U^*\)</span>, 称 <span class="arithmatex">\(\varphi^*(f) = f\varphi\)</span> 为 <span class="arithmatex">\(\varphi\)</span> 的 *</em>对偶映射**</p>
 </li>
 <li>
-<div class="arithmatex">\[\varphi^*:V^*\to U^* ,\varphi^*(f)=f\varphi\]</div>
+<div class="arithmatex">\[\varphi^*:V^*\to U^*, \varphi^*(f)=f\varphi\]</div>
 </li>
 </ul>
 <div class="arithmatex">\[\begin{pmatrix} U\overset{\varphi} \rightarrow V  \\ U \overset{\varphi^*}\leftarrow V^* \\ \end{pmatrix}\]</div>
 <h4 id="_5">性质<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(U \overset{\varphi}{\to} V \overset{\psi}{\to} W\)</span> ,则</p>
+<p><span class="arithmatex">\(U \overset{\varphi}{\to} V \overset{\psi}{\to} W\)</span>, 则</p>
 <ul>
 <li><span class="arithmatex">\((\psi\varphi)^* = \varphi^*\psi^*\)</span></li>
 <li><span class="arithmatex">\(I_V^* = I_{V^*}\)</span></li>
@@ -1700,23 +1815,23 @@
 <h4 id="_6">定义 双对偶空间<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(V^{**}:=L(V^*,F)\)</span> 称为 <span class="arithmatex">\(V\)</span> 的 <strong>双对偶空间</strong></p>
+<p><span class="arithmatex">\(V^{**}:=L(V^*, F)\)</span> 称为 <span class="arithmatex">\(V\)</span> 的 <strong>双对偶空间</strong></p>
 </li>
 <li>
-<p><span class="arithmatex">\(l:V\to V^{**}  ,\; s.t\;.l(\alpha) = \alpha^{**}\)</span> 其中 <span class="arithmatex">\(\alpha^{**}: V^*\to F,\;s.t.\; \alpha^{**}(f) = f(\alpha)\)</span></p>
+<p><span class="arithmatex">\(l:V\to V^{**} , \; s.t\;.l(\alpha) = \alpha^{**}\)</span> 其中 <span class="arithmatex">\(\alpha^{**}: V^*\to F, \;s.t.\; \alpha^{**}(f) = f(\alpha)\)</span></p>
 </li>
 </ul>
 <h2 id="_7">双线性函数<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <h4 id="821">定义 8.2.1<a class="headerlink" href="#821" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间,若映射 <span class="arithmatex">\(f:V\times V\to F\)</span> 满足</p>
+<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间, 若映射 <span class="arithmatex">\(f:V\times V\to F\)</span> 满足</p>
 <ul>
 <li>
-<p><span class="arithmatex">\(f(\alpha,k\beta_1 + l\beta_2) = k f(\alpha,\beta_1) + l f(\alpha,\beta_2)\)</span></p>
+<p><span class="arithmatex">\(f(\alpha, k\beta_1 + l\beta_2) = k f(\alpha, \beta_1) + l f(\alpha, \beta_2)\)</span></p>
 </li>
 <li>
-<p><span class="arithmatex">\(f(k\alpha_1+l\alpha_2,\beta) = k f(\alpha_1,\beta) + l f(\alpha_2,\beta)\)</span></p>
+<p><span class="arithmatex">\(f(k\alpha_1+l\alpha_2, \beta) = k f(\alpha_1, \beta) + l f(\alpha_2, \beta)\)</span></p>
 <ul>
 <li>则称 <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上的一个 <strong>双线性函数</strong></li>
 </ul>
@@ -1727,15 +1842,15 @@
 <h4 id="822">定义 8.2.2 度量矩阵<a class="headerlink" href="#822" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>类比欧式空间中内积在不同基下的度量矩阵,定义双线性函数 <span class="arithmatex">\(f\)</span> 在基 <span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 下的 <strong>度量矩阵</strong> 为</p>
+<p>类比欧式空间中内积在不同基下的度量矩阵, 定义双线性函数 <span class="arithmatex">\(f\)</span> 在基 <span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span> 下的 <strong>度量矩阵</strong> 为</p>
 <ul>
 <li>
-<div class="arithmatex">\[M_\alpha (f) = (f(\alpha_i,\alpha_j))_{n\times n}\]</div>
+<div class="arithmatex">\[M_\alpha (f) = (f(\alpha_i, \alpha_j))_{n\times n}\]</div>
 </li>
 </ul>
 </li>
 <li>
-<p>若 <span class="arithmatex">\(\beta,\gamma\)</span> 在基下的坐标是 <span class="arithmatex">\(X,Y\)</span> 则 <span class="arithmatex">\(f(\beta,\gamma) = X^T M_\alpha(f) Y\)</span></p>
+<p>若 <span class="arithmatex">\(\beta, \gamma\)</span> 在基下的坐标是 <span class="arithmatex">\(X, Y\)</span> 则 <span class="arithmatex">\(f(\beta, \gamma) = X^T M_\alpha(f) Y\)</span></p>
 </li>
 </ul>
 <h4 id="821_1">定理 8.2.1<a class="headerlink" href="#821_1" title="Permanent link">&para;</a></h4>
@@ -1743,14 +1858,14 @@
 <li>
 <p><span class="arithmatex">\(V\)</span> 上的双线性函数集与 <span class="arithmatex">\(F^{n\times n}\)</span> 通过度量矩阵建立一一对应关系</p>
 <ul>
-<li><span class="arithmatex">\(\pi: L(V\times V,F)\to F^{n\times n}\)</span>,其中 <span class="arithmatex">\(\pi(f) = M(f)\)</span> (取定一组基的情况下)</li>
+<li><span class="arithmatex">\(\pi: L(V\times V, F)\to F^{n\times n}\)</span>, 其中 <span class="arithmatex">\(\pi(f) = M(f)\)</span> (取定一组基的情况下)</li>
 </ul>
 </li>
 </ul>
 <h4 id="822_1">定理 8.2.2<a class="headerlink" href="#822_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>若基 <span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 到 <span class="arithmatex">\(\beta_1,\beta_2,\cdots,\beta_n\)</span> 的过渡矩阵是 <span class="arithmatex">\(P\)</span> ,即</p>
+<p>若基 <span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span> 到 <span class="arithmatex">\(\beta_1, \beta_2, \cdots, \beta_n\)</span> 的过渡矩阵是 <span class="arithmatex">\(P\)</span>, 即</p>
 <ul>
 <li>
 <div class="arithmatex">\[\beta = \alpha P\]</div>
@@ -1766,39 +1881,39 @@
 </ul>
 <h4 id="823">定义 8.2.3<a class="headerlink" href="#823" title="Permanent link">&para;</a></h4>
 <ul>
-<li>双线性函数 <span class="arithmatex">\(f\)</span> 的秩定义为 <span class="arithmatex">\(f\)</span> 的度量矩阵的秩(不依赖基的选取,秩是合同不变量)</li>
+<li>双线性函数 <span class="arithmatex">\(f\)</span> 的秩定义为 <span class="arithmatex">\(f\)</span> 的度量矩阵的秩(不依赖基的选取, 秩是合同不变量)</li>
 </ul>
 <h4 id="824">定义 8.2.4<a class="headerlink" href="#824" title="Permanent link">&para;</a></h4>
 <ul>
-<li>称 <span class="arithmatex">\(V\)</span> 上的双线性函数 <span class="arithmatex">\(f\)</span> 是 <strong>非退化</strong> 的,若取 <span class="arithmatex">\(\alpha\in V,\forall \beta\in V,f(\alpha,\beta) = 0 \implies \alpha = \vec{0}\)</span></li>
+<li>称 <span class="arithmatex">\(V\)</span> 上的双线性函数 <span class="arithmatex">\(f\)</span> 是 <strong>非退化</strong> 的, 若取 <span class="arithmatex">\(\alpha\in V, \forall \beta\in V, f(\alpha, \beta) = 0 \implies \alpha = \vec{0}\)</span></li>
 </ul>
 <h4 id="823_1">定理 8.2.3<a class="headerlink" href="#823_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(f\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的双线性函数,则以下命题等价</p>
+<p>设 <span class="arithmatex">\(f\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的双线性函数, 则以下命题等价</p>
 <ul>
 <li><span class="arithmatex">\(f\)</span> 是非退化的</li>
 <li><span class="arithmatex">\(f\)</span> 的度量矩阵是满秩的</li>
-<li>取 <span class="arithmatex">\(\beta\in V\)</span> 若 <span class="arithmatex">\(\forall \alpha\in V,f(\alpha,\beta) = 0 \implies \beta = \vec{0}\)</span></li>
+<li>取 <span class="arithmatex">\(\beta\in V\)</span> 若 <span class="arithmatex">\(\forall \alpha\in V, f(\alpha, \beta) = 0 \implies \beta = \vec{0}\)</span></li>
 </ul>
 </li>
 </ul>
 <h4 id="825">定义 8.2.5<a class="headerlink" href="#825" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>若 <span class="arithmatex">\(f(\alpha,\beta) = f(\beta,\alpha)\)</span>,则称 <span class="arithmatex">\(f\)</span> 是 <strong>对称双线性函数</strong></p>
+<p>若 <span class="arithmatex">\(f(\alpha, \beta) = f(\beta, \alpha)\)</span>, 则称 <span class="arithmatex">\(f\)</span> 是 <strong>对称双线性函数</strong></p>
 </li>
 <li>
-<p>若 <span class="arithmatex">\(f(\alpha,\beta) = -f(\beta,\alpha)\)</span>,则称 <span class="arithmatex">\(f\)</span> 是 <strong>反对称双线性函数</strong></p>
+<p>若 <span class="arithmatex">\(f(\alpha, \beta) = -f(\beta, \alpha)\)</span>, 则称 <span class="arithmatex">\(f\)</span> 是 <strong>反对称双线性函数</strong></p>
 <ul>
-<li><span class="arithmatex">\(\iff \forall\alpha, f(\alpha,\alpha) = 0\)</span></li>
+<li><span class="arithmatex">\(\iff \forall\alpha, f(\alpha, \alpha) = 0\)</span></li>
 </ul>
 </li>
 </ul>
 <h4 id="821_2">命题 8.2.1<a class="headerlink" href="#821_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上的双线性函数, <span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的一组基</p>
+<p>设 <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上的双线性函数, <span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的一组基</p>
 <ul>
 <li><span class="arithmatex">\(f\)</span> 对称 <span class="arithmatex">\(\iff M_\alpha(f)\)</span> 对称</li>
 <li><span class="arithmatex">\(f\)</span> 反对称 <span class="arithmatex">\(\iff M_\alpha(f)\)</span> 反对称</li>
@@ -1808,20 +1923,20 @@
 <h4 id="824_1">定理 8.2.4<a class="headerlink" href="#824_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上的对称双线性函数,则存在一组基 <span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 使得 <span class="arithmatex">\(M_\alpha(f)\)</span> 是对角矩阵</p>
+<p>设 <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上的对称双线性函数, 则存在一组基 <span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span> 使得 <span class="arithmatex">\(M_\alpha(f)\)</span> 是对角矩阵</p>
 <ul>
-<li>因为任取一组基 <span class="arithmatex">\(\beta,M_\beta(f)\)</span> 是对称的,从而合同于一个对角矩阵,则通过基变换即可</li>
+<li>因为任取一组基 <span class="arithmatex">\(\beta, M_\beta(f)\)</span> 是对称的, 从而合同于一个对角矩阵, 则通过基变换即可</li>
 </ul>
 </li>
 </ul>
 <h4 id="825_1">定理 8.2.5<a class="headerlink" href="#825_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>若 <span class="arithmatex">\(f\)</span> 是复数域上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的对称双线性函数,则存在一组基 <span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 使得 <span class="arithmatex">\(M_\alpha(f)\)</span> 形如</p>
+<p>若 <span class="arithmatex">\(f\)</span> 是复数域上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的对称双线性函数, 则存在一组基 <span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span> 使得 <span class="arithmatex">\(M_\alpha(f)\)</span> 形如</p>
 <div class="arithmatex">\[\begin{pmatrix} E_r &amp; \\ &amp; O \end{pmatrix}\]</div>
 </li>
 <li>
-<p>若 <span class="arithmatex">\(f\)</span> 是实数域上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的对称双线性函数,则存在一组基 <span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 使得 <span class="arithmatex">\(M_\alpha(f)\)</span> 形如</p>
+<p>若 <span class="arithmatex">\(f\)</span> 是实数域上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的对称双线性函数, 则存在一组基 <span class="arithmatex">\(\alpha_1, \alpha_2, \cdots, \alpha_n\)</span> 使得 <span class="arithmatex">\(M_\alpha(f)\)</span> 形如</p>
 <div class="arithmatex">\[\begin{pmatrix} E_r &amp; \\ &amp; -E_s \end{pmatrix}\]</div>
 <ul>
 <li>其中 <span class="arithmatex">\(r\)</span> 是 <span class="arithmatex">\(M_\alpha(f)\)</span>  的正惯性指数, <span class="arithmatex">\(s\)</span> 是负惯性指数</li>
@@ -1830,47 +1945,47 @@
 </ul>
 <blockquote>
 <p>[!NOTE]
-对称双线性函数和二次型是一一对应的(因为每一个二次型和一个对称矩阵对应,而后者对应一个对称双线性函数)</p>
+对称双线性函数和二次型是一一对应的(因为每一个二次型和一个对称矩阵对应, 而后者对应一个对称双线性函数)</p>
 </blockquote>
 <h4 id="826">定理 8.2.6<a class="headerlink" href="#826" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(f\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的反对称双线性函数,则存在整数 <span class="arithmatex">\(r\geq 0,s.t. n = 2r + s\)</span>,且存在一组基 <span class="arithmatex">\(\alpha_1,\alpha_{-1},\cdots,\alpha_r,\alpha_{-r},\beta_1,\cdots,\beta_s,s.t.\)</span></p>
+<p>设 <span class="arithmatex">\(f\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(n\)</span> 维线性空间 <span class="arithmatex">\(V\)</span> 上的反对称双线性函数, 则存在整数 <span class="arithmatex">\(r\geq 0, s.t. n = 2r + s\)</span>, 且存在一组基 <span class="arithmatex">\(\alpha_1, \alpha_{-1}, \cdots, \alpha_r, \alpha_{-r}, \beta_1, \cdots, \beta_s, s.t.\)</span></p>
 <ul>
 <li>
 <div class="arithmatex">\[M(f) = \begin{pmatrix} 0 &amp; 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ -1 &amp; 0 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; \ddots &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  &amp; 0 &amp; 1 &amp; &amp; &amp; \\ &amp; &amp; &amp; -1 &amp; 0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; \ddots &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; 0 &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; 0 \end{pmatrix}\]</div>
 </li>
 <li>
-<p>其中 <span class="arithmatex">\(r\)</span> 表示 <span class="arithmatex">\(\begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix}\)</span> 的个数, <span class="arithmatex">\(s\)</span> 表示 <span class="arithmatex">\(0\)</span> 的个数,故 <span class="arithmatex">\(\text{rank}(f) = 2r\)</span> 为偶数</p>
+<p>其中 <span class="arithmatex">\(r\)</span> 表示 <span class="arithmatex">\(\begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix}\)</span> 的个数, <span class="arithmatex">\(s\)</span> 表示 <span class="arithmatex">\(0\)</span> 的个数, 故 <span class="arithmatex">\(\text{rank}(f) = 2r\)</span> 为偶数</p>
 </li>
 </ul>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-<span class="arithmatex">\(\begin{cases} f(\alpha_i,\alpha_{-i}) = 1 &amp; i = 1,\cdots,r \\ f(\alpha_i,\alpha_j) = 0  &amp; i+j\neq 0 \\ f(\alpha,\beta_k) = 0 &amp; \forall \alpha\in V,k = 1,2,\cdots,s \end{cases}\)</span></p>
+<span class="arithmatex">\(\begin{cases} f(\alpha_i, \alpha_{-i}) = 1 &amp; i = 1, \cdots, r \\ f(\alpha_i, \alpha_j) = 0  &amp; i+j\neq 0 \\ f(\alpha, \beta_k) = 0 &amp; \forall \alpha\in V, k = 1, 2, \cdots, s \end{cases}\)</span></p>
 </blockquote>
 <h4 id="821_3">推论 8.2.1<a class="headerlink" href="#821_3" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若 <span class="arithmatex">\(f\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(n\)</span> 维线性空降上非退化的反对称双线性函数,则 <span class="arithmatex">\(n\)</span> 为偶数</li>
+<li>若 <span class="arithmatex">\(f\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上 <span class="arithmatex">\(n\)</span> 维线性空降上非退化的反对称双线性函数, 则 <span class="arithmatex">\(n\)</span> 为偶数</li>
 </ul>
 <h2 id="_8">欧式空间的推广<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <h4 id="831">定义 8.3.1<a class="headerlink" href="#831" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间,<span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上双线性函数,记为 <span class="arithmatex">\((V,f)\)</span></p>
+<p>设 <span class="arithmatex">\(V\)</span> 是数域 <span class="arithmatex">\(F\)</span> 上的线性空间, <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上双线性函数, 记为 <span class="arithmatex">\((V, f)\)</span></p>
 <ul>
 <li>
-<p>当 <span class="arithmatex">\(f\)</span> 是非退化的,则称 <span class="arithmatex">\(V\)</span> 是 <strong>双线性度量空间</strong></p>
+<p>当 <span class="arithmatex">\(f\)</span> 是非退化的, 则称 <span class="arithmatex">\(V\)</span> 是 <strong>双线性度量空间</strong></p>
 </li>
 <li>
-<p>当 <span class="arithmatex">\(f\)</span> 是非退化且对称的,则称 <span class="arithmatex">\(V\)</span> 是 <strong>正交空间</strong></p>
+<p>当 <span class="arithmatex">\(f\)</span> 是非退化且对称的, 则称 <span class="arithmatex">\(V\)</span> 是 <strong>正交空间</strong></p>
 </li>
 <li>
-<p>当 <span class="arithmatex">\(V\)</span> 是正交空间并且 <span class="arithmatex">\(F=\mathbb{R}\)</span>,则称 <span class="arithmatex">\(V\)</span> 是 <strong>准欧式空间</strong></p>
+<p>当 <span class="arithmatex">\(V\)</span> 是正交空间并且 <span class="arithmatex">\(F=\mathbb{R}\)</span>, 则称 <span class="arithmatex">\(V\)</span> 是 <strong>准欧式空间</strong></p>
 </li>
 <li>
-<p>当 <span class="arithmatex">\(f\)</span> 是非退化且反对称的,则称 <span class="arithmatex">\(V\)</span> 是 <strong>辛空间</strong></p>
+<p>当 <span class="arithmatex">\(f\)</span> 是非退化且反对称的, 则称 <span class="arithmatex">\(V\)</span> 是 <strong>辛空间</strong></p>
 </li>
 </ul>
 </li>
@@ -1888,8 +2003,8 @@
 <h2 id="_9">线性函数<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <h4 id="1">定义 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设 <span class="arithmatex">\(V\)</span> 是域 <span class="arithmatex">\(F\)</span> 上线性空间,若映射 <span class="arithmatex">\(f:V\to F\)</span> 满足<ul>
-<li><span class="arithmatex">\(\forall \alpha,\beta\in V,k\in F\)</span><ul>
+<li>设 <span class="arithmatex">\(V\)</span> 是域 <span class="arithmatex">\(F\)</span> 上线性空间, 若映射 <span class="arithmatex">\(f:V\to F\)</span> 满足<ul>
+<li><span class="arithmatex">\(\forall \alpha, \beta\in V, k\in F\)</span><ul>
 <li><span class="arithmatex">\(f(\alpha+\beta)=f(\alpha)+f(\beta)\)</span></li>
 <li><span class="arithmatex">\(f(k\alpha)=kf(\alpha)\)</span></li>
 </ul>
@@ -1897,49 +2012,49 @@
 <li>则称 <span class="arithmatex">\(f\)</span> 是 <span class="arithmatex">\(V\)</span> 上的一个 <strong>线性函数</strong> </li>
 </ul>
 </li>
-<li>若 <span class="arithmatex">\(\dim V=n, \alpha_1,\cdots ,\alpha_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的一个基,则 <span class="arithmatex">\(\forall \alpha\in V,\exists !a_1,\cdots,a_n\in F,s.t.\alpha=a_1\alpha_1+\cdots+a_n\alpha_n,\)</span> 从而<ul>
+<li>若 <span class="arithmatex">\(\dim V=n, \alpha_1, \cdots, \alpha_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的一个基, 则 $\forall \alpha\in V, \exists !a_1, \cdots, a_n\in F, s.t.\alpha=a_1\alpha_1+\cdots+a_n\alpha_n, $ 从而<ul>
 <li><span class="arithmatex">\(<span class="arithmatex">\(f(\alpha)=a_1f(\alpha_1)+\cdots+a_nf(\alpha_n)\)</span>\)</span>
-这称为 <span class="arithmatex">\(f\)</span> 在基 <span class="arithmatex">\(\alpha_1,\cdots,\alpha_n\)</span> 下的 <strong>表达式</strong></li>
+这称为 <span class="arithmatex">\(f\)</span> 在基 <span class="arithmatex">\(\alpha_1, \cdots, \alpha_n\)</span> 下的 <strong>表达式</strong></li>
 </ul>
 </li>
 <li>
-<p><span class="arithmatex">\(\text{Hom}(V,F)\)</span> 是 <span class="arithmatex">\(V\)</span> 上的所有线性函数的集合,称为 <span class="arithmatex">\(V\)</span> 上的 <strong>线性函数空间</strong></p>
+<p><span class="arithmatex">\(\text{Hom}(V, F)\)</span> 是 <span class="arithmatex">\(V\)</span> 上的所有线性函数的集合, 称为 <span class="arithmatex">\(V\)</span> 上的 <strong>线性函数空间</strong></p>
 <ul>
-<li>以下设 <span class="arithmatex">\(V\)</span> 是 <span class="arithmatex">\(n\)</span> 维的,则 <span class="arithmatex">\(\text{Hom}(V,F)\)</span> 也记为 <span class="arithmatex">\(V^*\)</span>,称为 <span class="arithmatex">\(V\)</span> 的 <strong>对偶空间</strong></li>
+<li>以下设 <span class="arithmatex">\(V\)</span> 是 <span class="arithmatex">\(n\)</span> 维的, 则 <span class="arithmatex">\(\text{Hom}(V, F)\)</span> 也记为 <span class="arithmatex">\(V^*\)</span>, 称为 <span class="arithmatex">\(V\)</span> 的 <strong>对偶空间</strong></li>
 <li><span class="arithmatex">\(\dim V^* = \dim V\times \dim F = n\)</span></li>
 </ul>
 </li>
 <li>
-<p>取<span class="arithmatex">\(V^*\ni f_i: V\to F ,s.t.f_i(\alpha_j)=\delta_{ij}=\begin{cases} 1 &amp; j=i \\ 0 &amp; j\neq i \end{cases}\)</span>,则 <span class="arithmatex">\(f_1,f_2,\cdots,f_n\)</span> 是 <span class="arithmatex">\(V^*\)</span> 的一组基,称为 <span class="arithmatex">\(V\)</span> 的基 <span class="arithmatex">\(\alpha_1,\cdots ,\alpha_n\)</span> 的 <strong>对偶基</strong></p>
+<p>取<span class="arithmatex">\(V^*\ni f_i: V\to F, s.t.f_i(\alpha_j)=\delta_{ij}=\begin{cases} 1 &amp; j=i \\ 0 &amp; j\neq i \end{cases}\)</span>, 则 <span class="arithmatex">\(f_1, f_2, \cdots, f_n\)</span> 是 <span class="arithmatex">\(V^*\)</span> 的一组基, 称为 <span class="arithmatex">\(V\)</span> 的基 <span class="arithmatex">\(\alpha_1, \cdots, \alpha_n\)</span> 的 <strong>对偶基</strong></p>
 </li>
 </ul>
 <h4 id="1_1">定理 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(\forall \alpha\in V,s.t. \alpha = \sum\limits_{i=1}^n x_i\alpha_i\)</span>, 则 <span class="arithmatex">\(\alpha=\sum\limits_{i=1}^n f_i(\alpha)\alpha_i\)</span></p>
+<p><span class="arithmatex">\(\forall \alpha\in V, s.t. \alpha = \sum\limits_{i=1}^n x_i\alpha_i\)</span>, 则 <span class="arithmatex">\(\alpha=\sum\limits_{i=1}^n f_i(\alpha)\alpha_i\)</span></p>
 </li>
 <li>
-<p><span class="arithmatex">\(\forall f\in V^*,s.t. f=\sum\limits_{i=1}^n y_if_i\)</span>, 则 <span class="arithmatex">\(f=\sum\limits_{i=1}^n f(\alpha_i)f_i\)</span></p>
+<p><span class="arithmatex">\(\forall f\in V^*, s.t. f=\sum\limits_{i=1}^n y_if_i\)</span>, 则 <span class="arithmatex">\(f=\sum\limits_{i=1}^n f(\alpha_i)f_i\)</span></p>
 </li>
 </ul>
 <h4 id="2">定理 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设 <span class="arithmatex">\(f\in V^*,\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 和 <span class="arithmatex">\(\beta_1,\beta_2,\cdots,\beta_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的两组基,且满足 <ul>
+<li>设 <span class="arithmatex">\(f\in V^*, \alpha_1, \alpha_2, \cdots, \alpha_n\)</span> 和 <span class="arithmatex">\(\beta_1, \beta_2, \cdots, \beta_n\)</span> 是 <span class="arithmatex">\(V\)</span> 的两组基, 且满足 <ul>
 <li>
-<div class="arithmatex">\[(\beta_1,\beta_2,\cdots,\beta_n)=(\alpha_1,\alpha_2,\cdots,\alpha_n)P\]</div>
+<div class="arithmatex">\[(\beta_1, \beta_2, \cdots, \beta_n)=(\alpha_1, \alpha_2, \cdots, \alpha_n)P\]</div>
 </li>
 <li>若设<ul>
 <li>
-<div class="arithmatex">\[f_1,f_2,\cdots,f_n\text{是}\alpha_1,\alpha_2,\cdots,\alpha_n\text{的对偶基}\]</div>
+<div class="arithmatex">\[f_1, f_2, \cdots, f_n\text{是}\alpha_1, \alpha_2, \cdots, \alpha_n\text{的对偶基}\]</div>
 </li>
 <li>
-<div class="arithmatex">\[g_1,g_2,\cdots,g_n\text{是}\beta_1,\beta_2,\cdots,\beta_n\text{的对偶基}\]</div>
+<div class="arithmatex">\[g_1, g_2, \cdots, g_n\text{是}\beta_1, \beta_2, \cdots, \beta_n\text{的对偶基}\]</div>
 </li>
 </ul>
 </li>
 <li>则<ul>
 <li>
-<div class="arithmatex">\[(g_1,g_2,\cdots,g_n)=(f_1,f_2,\cdots,f_n)(P^{-1})^T\]</div>
+<div class="arithmatex">\[(g_1, g_2, \cdots, g_n)=(f_1, f_2, \cdots, f_n)(P^{-1})^T\]</div>
 </li>
 </ul>
 </li>
@@ -1948,7 +2063,7 @@
 </ul>
 <h4 id="2_1">定义 2<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>记 <span class="arithmatex">\(V^*\)</span> 的对偶空间为 <span class="arithmatex">\(V^{**}\)</span>,称为 <span class="arithmatex">\(V\)</span> 的 <strong>双重对偶空间</strong></li>
+<li>记 <span class="arithmatex">\(V^*\)</span> 的对偶空间为 <span class="arithmatex">\(V^{**}\)</span>, 称为 <span class="arithmatex">\(V\)</span> 的 <strong>双重对偶空间</strong></li>
 </ul>
 <h4 id="3">定理 3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1962,9 +2077,9 @@
 <h4 id="4">定理 4<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(V\)</span> 到 <span class="arithmatex">\(V^{**}\)</span> 的映射 <span class="arithmatex">\(\tau\circ\sigma:V\to V^{**}\)</span> 不依赖基的选取,且是 <span class="arithmatex">\(V\)</span> 到 <span class="arithmatex">\(V^{**}\)</span> 的一个同构映射,这样同构映射称为 <strong>自然同构</strong></p>
+<p><span class="arithmatex">\(V\)</span> 到 <span class="arithmatex">\(V^{**}\)</span> 的映射 <span class="arithmatex">\(\tau\circ\sigma:V\to V^{**}\)</span> 不依赖基的选取, 且是 <span class="arithmatex">\(V\)</span> 到 <span class="arithmatex">\(V^{**}\)</span> 的一个同构映射, 这样同构映射称为 <strong>自然同构</strong></p>
 <ul>
-<li>于是可以把 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\alpha^{**}\)</span> 等同起来(也就是 <span class="arithmatex">\(V\)</span> 和 <span class="arithmatex">\(V^{**}\)</span> 等同),这样可以吧 <span class="arithmatex">\(V\)</span> 看作 <span class="arithmatex">\(V^*\)</span> 的对偶空间,这样 <span class="arithmatex">\(V,V^*\)</span> 互为对偶空间</li>
+<li>于是可以把 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\alpha^{**}\)</span> 等同起来(也就是 <span class="arithmatex">\(V\)</span> 和 <span class="arithmatex">\(V^{**}\)</span> 等同), 这样可以吧 <span class="arithmatex">\(V\)</span> 看作 <span class="arithmatex">\(V^*\)</span> 的对偶空间, 这样 <span class="arithmatex">\(V, V^*\)</span> 互为对偶空间</li>
 </ul>
 </li>
 </ul>
