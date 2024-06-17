@@ -21,8 +21,10 @@
 ---
 > [!NOTE]
 > 调和级数不等式
->> $$\frac{1}{n+1} \leq \ln\frac{n+1}{n} \leq \frac{1}{n}$$
->>> $$1+\frac{1}{2}+\cdots+\frac{1}{n} \geq \ln (n + 1)$$
+
+>> $\frac{1}{n+1} \leq \ln\frac{n+1}{n} \leq \frac{1}{n}$
+
+>>> $1+\frac{1}{2}+\cdots+\frac{1}{n} \geq \ln (n + 1)$
 
 - $$\lim\limits_{n\to\infty} \sum\limits_{k=1}^n \frac{1}{k} = \ln  n + \gamma$$ 
 
@@ -60,7 +62,7 @@
 
 > [!NOTE]
 > 极限压缩定理
->> 若 $\exists r\in (0,1),s.t. |X_{n+1}-a|leq r |X_n-a|$, 则 $\lim\limits_{n\to\infty} X_n = a$
+>> 若 $\exists r\in (0,1),s.t. |X_{n+1}-a|\leq r |X_n-a|$, 则 $\lim\limits_{n\to\infty} X_n = a$
 
 > [!EXAMPLE]
 > 设 $x_{n+1}=\cos x_n,x_1\in[0,\frac\pi3]$,证明$\lim_n\to\infty x_n$ 存在且极限为$\cos x-x=0$ 的根
