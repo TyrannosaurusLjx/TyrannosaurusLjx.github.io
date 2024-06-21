@@ -1026,11 +1026,11 @@
         <li class="md-nav__item">
   <a href="#brown_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Brown运动及基本性质
+      Brown 运动及基本性质
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Brown运动及基本性质">
+    <nav class="md-nav" aria-label="Brown 运动及基本性质">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1205,6 +1205,42 @@
   <a href="#77" class="md-nav__link">
     <span class="md-ellipsis">
       定理 7.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ito_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ito积分定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ito_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ito 积分计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用结论
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ito_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ito 公式
     </span>
   </a>
   
@@ -1565,40 +1601,40 @@
 
 
 <h1 id="brown">Brown运动<a class="headerlink" href="#brown" title="Permanent link">&para;</a></h1>
-<h2 id="brown_1">Brown运动及基本性质<a class="headerlink" href="#brown_1" title="Permanent link">&para;</a></h2>
+<h2 id="brown_1">Brown 运动及基本性质<a class="headerlink" href="#brown_1" title="Permanent link">&para;</a></h2>
 <h3 id="brown_2">Brown运动定义<a class="headerlink" href="#brown_2" title="Permanent link">&para;</a></h3>
 <ul>
-<li>设 <span class="arithmatex">\(B(t)\)</span> 是实数值随机过程,如果满足<ul>
+<li>设 <span class="arithmatex">\(B(t)\)</span> 是实数值随机过程, 如果满足<ul>
 <li>初始值: <span class="arithmatex">\(B(0)=0\)</span></li>
-<li>独立增量: <span class="arithmatex">\(0&lt;t_1&lt;\cdots&lt;t_k&lt;\cdots,\implies B(t_1),B(t_2)-B(t_1),\cdots,B(t_k)-B(t_{k-1})\)</span> 相互独立</li>
-<li>平稳增量: <span class="arithmatex">\(0\leq s&lt;t,\implies B(t)-B(s),B(t-s)\)</span> 同分布</li>
-<li>正态分布: <span class="arithmatex">\(\forall t&gt;0, B(t)\sim N(0,\sigma^2 t)\)</span>
-则称 <span class="arithmatex">\(B(t)\)</span> 为参数为 <span class="arithmatex">\(\sigma^2\)</span> 的 Brown 运动,当 <span class="arithmatex">\(\sigma^2=1\)</span> 时,称为标准 Brown 运动</li>
+<li>独立增量: <span class="arithmatex">\(0&lt;t_1&lt;\cdots&lt;t_k&lt;\cdots, \implies B(t_1), B(t_2)-B(t_1), \cdots, B(t_k)-B(t_{k-1})\)</span> 相互独立</li>
+<li>平稳增量: <span class="arithmatex">\(0\leq s&lt;t, \implies B(t)-B(s), B(t-s)\)</span> 同分布</li>
+<li>正态分布: <span class="arithmatex">\(\forall t&gt;0, B(t)\sim N(0, \sigma^2 t)\)</span>
+则称 <span class="arithmatex">\(B(t)\)</span> 为参数为 <span class="arithmatex">\(\sigma^2\)</span> 的 Brown 运动, 当 <span class="arithmatex">\(\sigma^2=1\)</span> 时, 称为标准 Brown 运动</li>
 </ul>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-以下若未特别说明,均指标准 Brown 运动</p>
+以下若未特别说明, 均指标准 Brown 运动</p>
 </blockquote>
 <h3 id="brown_3">Brown运动的基本性质<a class="headerlink" href="#brown_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li><span class="arithmatex">\(\mu(t)=E(B(t))=0\)</span></li>
 <li><span class="arithmatex">\(Var(B(t))=E(B^2(t))=t\)</span></li>
 <li><span class="arithmatex">\(EB(t)^m = \begin{cases} t^k(2k-1)!! &amp; m=2k \\ 0 &amp; m=2k+1 \end{cases}\)</span></li>
-<li><span class="arithmatex">\(r_B(s,t)=E(B(s)B(t))=s,s&lt;t\)</span><blockquote>
+<li><span class="arithmatex">\(r_B(s, t)=E(B(s)B(t))=s, s&lt;t\)</span><blockquote>
 <p>[!NOTE]
-<span class="arithmatex">\(\forall s,t.\geq 0, r_B(s,t)=\min(s,t)\)</span></p>
+<span class="arithmatex">\(\forall s, t.\geq 0, r_B(s, t)=\min(s, t)\)</span></p>
 </blockquote>
 </li>
 </ul>
 <blockquote>
 <p>[!NOTE]
-任意均值为0,自相关函数为 <span class="arithmatex">\(r(s,t)=\min(s,t)\)</span> 的正态过程都是 Brown 运动</p>
+任意均值为0, 自相关函数为 <span class="arithmatex">\(r(s, t)=\min(s, t)\)</span> 的正态过程都是 Brown 运动</p>
 </blockquote>
 <ul>
 <li>
-<p>密度函数 <span class="arithmatex">\(p(t,x) = \frac{1}{\sqrt{2\pi t}}e^{-\frac{x^2}{2t}}\)</span></p>
+<p>密度函数 <span class="arithmatex">\(p(t, x) = \frac{1}{\sqrt{2\pi t}}e^{-\frac{x^2}{2t}}\)</span></p>
 </li>
 <li>
 <p>设 <span class="arithmatex">\(s&lt;t\)</span></p>
@@ -1628,7 +1664,7 @@
 <h3 id="textbrown"><span class="arithmatex">\(\text{Brown}\)</span> 运动变化形式<a class="headerlink" href="#textbrown" title="Permanent link">&para;</a></h3>
 <h4 id="71">定理 7.1<a class="headerlink" href="#71" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设 <span class="arithmatex">\(X(t)\)</span> 是实数值正态过程,若 <span class="arithmatex">\(E(X(t))=0,r(s,t)=\min(s,t)\)</span>,则 <span class="arithmatex">\(X(t)\)</span> 是 <span class="arithmatex">\(\text{Brown}\)</span> 运动</li>
+<li>设 <span class="arithmatex">\(X(t)\)</span> 是实数值正态过程, 若 <span class="arithmatex">\(E(X(t))=0, r(s, t)=\min(s, t)\)</span>, 则 <span class="arithmatex">\(X(t)\)</span> 是 <span class="arithmatex">\(\text{Brown}\)</span> 运动</li>
 </ul>
 <h4 id="71_1">推论 7.1<a class="headerlink" href="#71_1" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1641,7 +1677,7 @@
 <li>
 <p><span class="arithmatex">\(X(t) = B(t+t_0)-B(t_0)\)</span></p>
 <ul>
-<li>相当于把坐标轴的原点平移到 <span class="arithmatex">\((t_0,B(t_0))\)</span> 处</li>
+<li>相当于把坐标轴的原点平移到 <span class="arithmatex">\((t_0, B(t_0))\)</span> 处</li>
 </ul>
 </li>
 </ul>
@@ -1672,9 +1708,9 @@
 <p>Brown 桥</p>
 <ul>
 <li>
-<p><span class="arithmatex">\(B^0(t)= B(t)-tB(1),0\leq t\leq 1\)</span></p>
+<p><span class="arithmatex">\(B^0(t)= B(t)-tB(1), 0\leq t\leq 1\)</span></p>
 <ul>
-<li><span class="arithmatex">\(r(s,t)=E(B^0(s)B^0(t))=\min\{s,t\} (1-\max\{s,t\}),0\leq s,t \leq 1\)</span></li>
+<li><span class="arithmatex">\(r(s, t)=E(B^0(s)B^0(t))=\min\{s, t\} (1-\max\{s, t\}), 0\leq s, t \leq 1\)</span></li>
 </ul>
 </li>
 </ul>
@@ -1685,26 +1721,26 @@
 <li>
 <p><span class="arithmatex">\(X(t)= |B(t)|\)</span></p>
 <ul>
-<li><span class="arithmatex">\(EX(t)=\sqrt{\frac{2}{\pi}}t,EX^2(t)=t,t\geq 0\)</span></li>
-<li><span class="arithmatex">\(p(t,x)=\sqrt{\frac{2}{\pi t}}e^{-\frac{x^2}{2t}},x\geq 0\)</span></li>
+<li><span class="arithmatex">\(EX(t)=\sqrt{\frac{2}{\pi}}t, EX^2(t)=t, t\geq 0\)</span></li>
+<li><span class="arithmatex">\(p(t, x)=\sqrt{\frac{2}{\pi t}}e^{-\frac{x^2}{2t}}, x\geq 0\)</span></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>几何 Brown 运动,给定 <span class="arithmatex">\(\alpha,\beta\in \mathbb{R}\)</span></p>
+<p>几何 Brown 运动, 给定 <span class="arithmatex">\(\alpha, \beta\in \mathbb{R}\)</span></p>
 <ul>
-<li><span class="arithmatex">\(X(t)=e^{\alpha t+\beta B(t)},t\geq 0\)</span></li>
+<li><span class="arithmatex">\(X(t)=e^{\alpha t+\beta B(t)}, t\geq 0\)</span></li>
 </ul>
 </li>
 <li>
 <p>积分过程</p>
 <ul>
 <li>
-<p><span class="arithmatex">\(X(t) = \int_0^t B(s)ds\sim N(0,\frac{t^3}{3})\)</span></p>
+<p><span class="arithmatex">\(X(t) = \int_0^t B(s)ds\sim N(0, \frac{t^3}{3})\)</span></p>
 <ul>
 <li><span class="arithmatex">\(EX(t)=0\)</span></li>
-<li><span class="arithmatex">\(r_X(s,t)=\frac{s^2t}{2}-\frac{s^3}{6},s\leq t\)</span></li>
+<li><span class="arithmatex">\(r_X(s, t)=\frac{s^2t}{2}-\frac{s^3}{6}, s\leq t\)</span></li>
 </ul>
 </li>
 </ul>
@@ -1741,10 +1777,10 @@
 <h4 id="73">定理 7.3<a class="headerlink" href="#73" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>令 <span class="arithmatex">\(f_a(t)\)</span> 表示 <span class="arithmatex">\(T_a\)</span> 的密度函数,则</p>
+<p>令 <span class="arithmatex">\(f_a(t)\)</span> 表示 <span class="arithmatex">\(T_a\)</span> 的密度函数, 则</p>
 <ul>
 <li>
-<div class="arithmatex">\[f_a(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{a^2}{2t}}  ,t&gt;0\]</div>
+<div class="arithmatex">\[f_a(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{a^2}{2t}} , t&gt;0\]</div>
 </li>
 </ul>
 </li>
@@ -1755,12 +1791,12 @@
 <p>给定 <span class="arithmatex">\(a\in \mathbb{R}\)</span> </p>
 <ul>
 <li>
-<div class="arithmatex">\[P(T_a&lt;\infty)=1,ET_a=\infty\]</div>
+<div class="arithmatex">\[P(T_a&lt;\infty)=1, ET_a=\infty\]</div>
 </li>
 </ul>
 </li>
 <li>
-<p>无论 <span class="arithmatex">\(|a|\)</span> 多大,总会在有限时间内到达,但是到达的时间期望是无穷大</p>
+<p>无论 <span class="arithmatex">\(|a|\)</span> 多大, 总会在有限时间内到达, 但是到达的时间期望是无穷大</p>
 </li>
 </ul>
 <h4 id="74">定理 7.4<a class="headerlink" href="#74" title="Permanent link">&para;</a></h4>
@@ -1782,7 +1818,7 @@
 <li>
 <div class="arithmatex">\[X(t)=B(t)-bt\]</div>
 <ul>
-<li>是一个连续正态过程,但是不再是 <span class="arithmatex">\(\text{Brown}\)</span> 运动</li>
+<li>是一个连续正态过程, 但是不再是 <span class="arithmatex">\(\text{Brown}\)</span> 运动</li>
 </ul>
 </li>
 <li>
@@ -1790,13 +1826,13 @@
 <ul>
 <li><span class="arithmatex">\(\max\limits_{0\leq s\leq t}X(s)\)</span></li>
 <li>
-<p><span class="arithmatex">\(T_{a,b}=\begin{cases} \inf\{t\geq 0:X(t)\geq a\} &amp; a&gt;0 \\ \inf\{t\geq 0:X(t)\leq a\} &amp; a&lt;0 \end{cases}\)</span></p>
+<p><span class="arithmatex">\(T_{a, b}=\begin{cases} \inf\{t\geq 0:X(t)\geq a\} &amp; a&gt;0 \\ \inf\{t\geq 0:X(t)\leq a\} &amp; a&lt;0 \end{cases}\)</span></p>
 <ul>
 <li>
-<p>实际上 <span class="arithmatex">\(T_{a,b}\)</span> 是 <span class="arithmatex">\(B(t)\)</span> 首次击中 <span class="arithmatex">\(bt+a\)</span> 的时刻,也就是</p>
+<p>实际上 <span class="arithmatex">\(T_{a, b}\)</span> 是 <span class="arithmatex">\(B(t)\)</span> 首次击中 <span class="arithmatex">\(bt+a\)</span> 的时刻, 也就是</p>
 </li>
 <li>
-<div class="arithmatex">\[T_{a,b} = \begin{cases} \inf\{ t\geq 0:B(t)\geq a+bt \} &amp; a&gt;0 \\ \inf\{ t\geq 0:B(t)\leq a+bt \} &amp; a&lt;0 \end{cases}\]</div>
+<div class="arithmatex">\[T_{a, b} = \begin{cases} \inf\{ t\geq 0:B(t)\geq a+bt \} &amp; a&gt;0 \\ \inf\{ t\geq 0:B(t)\leq a+bt \} &amp; a&lt;0 \end{cases}\]</div>
 </li>
 </ul>
 </li>
@@ -1806,7 +1842,7 @@
 <p>有</p>
 <ul>
 <li>
-<div class="arithmatex">\[P(\max\limits_{0\leq s\leq t}X(s)\geq a) = P(T_{a,b}\leq t)\]</div>
+<div class="arithmatex">\[P(\max\limits_{0\leq s\leq t}X(s)\geq a) = P(T_{a, b}\leq t)\]</div>
 </li>
 </ul>
 </li>
@@ -1814,10 +1850,10 @@
 <h4 id="75">定理 7.5<a class="headerlink" href="#75" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(T_{a,b}\)</span> 的密度函数为</p>
+<p><span class="arithmatex">\(T_{a, b}\)</span> 的密度函数为</p>
 <ul>
 <li>
-<div class="arithmatex">\[f_{a,b}(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{(a+bt)^2}{2t}}\]</div>
+<div class="arithmatex">\[f_{a, b}(t) = \frac{|a|}{\sqrt{2\pi}t^{\frac{3}{2}}}e^{-\frac{(a+bt)^2}{2t}}\]</div>
 </li>
 </ul>
 </li>
@@ -1836,7 +1872,115 @@
 <li>
 <p><span class="arithmatex">\(\text{Brown}\)</span> 运动的曲线是无界变差函数</p>
 <ul>
-<li>$$\lim\limits_{n\to\infty}\sum\limits_{i=1}<sup>{2</sup>n} \left|B\left(\frac{i}{2<sup>n}\right)-B\left(\frac{i-1}{2</sup>n}\right)\right|^2 = \infty</li>
+<li>
+<div class="arithmatex">\[\lim\limits_{n\to\infty}\sum\limits_{i=1}^{2^n} \left|B\left(\frac{i}{2^n}\right)-B\left(\frac{i-1}{2^n}\right)\right|^2 = \infty\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="ito_1">Ito积分定义<a class="headerlink" href="#ito_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(f\)</span> 是非随机有界变差函数</p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_0^tf(s)dB(s)=B(t)f(t)-\int_0^tB(s)df(s)\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>以下讨论 <span class="arithmatex">\(f\)</span> 是随机过程,且做假设</p>
+<ul>
+<li><span class="arithmatex">\(f\)</span> 可测</li>
+<li><span class="arithmatex">\(f\)</span> 关于 <span class="arithmatex">\(B\)</span> 适应</li>
+<li>
+<p><span class="arithmatex">\(f\)</span> 是二阶矩过程且</p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_0^T E[f^2(t)]dt&lt;\infty\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>若存在 <span class="arithmatex">\(m\geq 1, s.t.0=t_0&lt;t_1&lt;\cdots&lt;t_m=T,\xi_0, \cdots, \xi_{m-1}\)</span> 使得 <span class="arithmatex">\(E\xi^2_i&lt;\infty\)</span></p>
+<ul>
+<li>
+<div class="arithmatex">\[f(t)=\sum\limits_{i=0}^{m-1}\xi 1_{(t_i, t_{i+1}]}\]</div>
+</li>
+<li>
+<p>则称 <span class="arithmatex">\(f\)</span> 是初等随机过程</p>
+</li>
+<li>
+<p>对初等随机过程定义</p>
+<ul>
+<li><span class="arithmatex">\(I(f)=\sum\limits_{i=0}^{m-1}\xi_i(B(t_{i+1})-B(t_i))\)</span></li>
+</ul>
+</li>
+<li>
+<p>则其有以下性质</p>
+<ul>
+<li>可加性 <span class="arithmatex">\(I(f+g)=I(f)+I(g)\)</span></li>
+<li>零均值 <span class="arithmatex">\(EI(f)=0\)</span></li>
+<li>等距性 <span class="arithmatex">\(E[I(f)^2]=\int_0^T E[f^2(t)]dt\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+略过,直接看怎么算</p>
+</blockquote>
+<h4 id="ito_2">Ito 积分计算<a class="headerlink" href="#ito_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设 <span class="arithmatex">\(f\)</span> 是非随机连续函数</p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_0^t f(s)dB(s)=\lim\limits_{n\to\infty}\sum\limits_{i=1}^{n}f(B(t_{i-1}))(B(t_i)-B(t_{i-1}))\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\int_0^t f(s)dB(s)=\lim\limits_{n\to\infty}\sum\limits_{i=1}^{n}f(t^*_i)(B(t_i)-B(t_{i-1}))\]</div>
+<ul>
+<li><span class="arithmatex">\(t^*_i\in [t_{i-1}, t_i]\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="_6">常用结论<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<div class="arithmatex">\[\int_0^t B(s)dB(s)=\frac{1}{2}B^2(t)-\frac{1}{2}t\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\int_{0}^{b} B(s)^2dB(s)=\frac{1}{3}B(t)^3-\int_{0}^{t}B(s)ds\]</div>
+</li>
+</ul>
+<h3 id="ito_3">Ito 公式<a class="headerlink" href="#ito_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>设 <span class="arithmatex">\(F : \mathbb{R}\to \mathbb{R}\)</span> 二阶可微, 则</p>
+<ul>
+<li>
+<div class="arithmatex">\[F(B(t))=F(0)+\int_{0}^{t}F'(B(s))dB(s)+\frac{1}{2}\int_{0}^{t}F''(B(s))ds\]</div>
+<ul>
+<li>也就是</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[dF(B(t))=F'(B(t))dB(t)+\frac{1}{2}F''(B(t))dt\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>于是</p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_{0}^{t}F'(B(s))dB(s)=F(B(t))-F(0)-\frac{1}{2}\int_{0}^{t}F''(B(s))ds\]</div>
+</li>
 </ul>
 </li>
 </ul>

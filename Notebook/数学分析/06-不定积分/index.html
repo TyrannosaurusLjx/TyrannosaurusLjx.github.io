@@ -1056,7 +1056,7 @@
         
   
   <span class="md-ellipsis">
-    曲线积分,曲面积分和场论
+    曲线积分, 曲面积分和场论
   </span>
   
 
@@ -1725,14 +1725,20 @@
 \end{aligned}\)</span></p>
 <ul>
 <li>一些证明:</li>
-<li><span class="arithmatex">\(\int \sec(x)dx = \int \frac{1}{\cos(x)}dx = \int \frac{1}{\cos^2(x)}d\sin(x) \overset{t=\sin(x)}{=} \int \frac{1}{2}\ln(|\frac{t+1}{t-1}|) = \ln(|\frac{1+\sin(x)}{\cos(x)}|) = \ln(|\sec(x)+\tan(x)|) +C\)</span></li>
-<li><span class="arithmatex">\(\int \frac{dx}{\sqrt{a^2-x^2}} =  \int \frac{dx}{\sqrt{a^2(1-\frac{x^2}{a^2})}} = \int \frac{dx}{a\sqrt{1-(\frac{x}{a})^2}} \overset{t=\frac{x}{a}}{=} \int \frac{dt}{\sqrt{1-t^2}} = \arcsin(t)+C = \arcsin(\frac{x}{a}) + C\)</span></li>
-<li><span class="arithmatex">\(\int\frac{dx}{\sqrt{x^2\pm a^2}} = \int\frac{dx}{\sqrt{a^2(1\pm\frac{x^2}{a^2})}} = \int\frac{dx}{a\sqrt{1\pm(\frac{x}{a})^2}} \overset{t=\frac{x}{a}}{=} \int\frac{dt}{\sqrt{1\pm t^2}} = \ln(|t+\sqrt{1+t^2}|) = \ln(|\frac{x}{a}+\sqrt{1+(\frac{x}{a})^2}|) + C = \ln(|x+\sqrt{x^2\pm a^2}|) + C\)</span></li>
 <li>
-<p><span class="arithmatex">\(\int\sqrt{a^2-x^2}dx\overset{x = a\cos(\theta)}{=} -\int |a^2\sin^2(\theta)d\theta = -a^2\int \frac{1-2\cos(2\theta)}{2}d\theta = -\frac{1}{2}a^2\theta+\frac{1}{2}\sin(\theta)\cos(\theta)+C = -\frac{1}{2}a^2\cos(\frac{x}{a})+\frac{1}{2}\frac{x}{a}\sin(\frac{x}{a}) + C= \frac{1}{2}x\sqrt{a^2-x^2}+\frac{a^2}{2}\arcsin(\frac{x}{a})+C\)</span></p>
+<div class="arithmatex">\[\int \sec(x)dx = \int \frac{1}{\cos(x)}dx = \int \frac{1}{\cos^2(x)}d\sin(x) \overset{t=\sin(x)}{=} \int \frac{1}{2}\ln(|\frac{t+1}{t-1}|) = \ln(|\frac{1+\sin(x)}{\cos(x)}|) = \ln(|\sec(x)+\tan(x)|) +C\]</div>
 </li>
 <li>
-<p><span class="arithmatex">\(\begin{aligned}  
+<div class="arithmatex">\[\int \frac{dx}{\sqrt{a^2-x^2}} =  \int \frac{dx}{\sqrt{a^2(1-\frac{x^2}{a^2})}} = \int \frac{dx}{a\sqrt{1-(\frac{x}{a})^2}} \overset{t=\frac{x}{a}}{=} \int \frac{dt}{\sqrt{1-t^2}} = \arcsin(t)+C = \arcsin(\frac{x}{a}) + C\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\int\frac{dx}{\sqrt{x^2\pm a^2}} = \int\frac{dx}{\sqrt{a^2(1\pm\frac{x^2}{a^2})}} = \int\frac{dx}{a\sqrt{1\pm(\frac{x}{a})^2}} \overset{t=\frac{x}{a}}{=} \int\frac{dt}{\sqrt{1\pm t^2}} = \ln(|t+\sqrt{1+t^2}|) = \ln(|\frac{x}{a}+\sqrt{1+(\frac{x}{a})^2}|) + C = \ln(|x+\sqrt{x^2\pm a^2}|) + C\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\int\sqrt{a^2-x^2}dx\overset{x = a\cos(\theta)}{=} -\int |a^2\sin^2(\theta)d\theta = -a^2\int \frac{1-2\cos(2\theta)}{2}d\theta = -\frac{1}{2}a^2\theta+\frac{1}{2}\sin(\theta)\cos(\theta)+C = -\frac{1}{2}a^2\cos(\frac{x}{a})+\frac{1}{2}\frac{x}{a}\sin(\frac{x}{a}) + C= \frac{1}{2}x\sqrt{a^2-x^2}+\frac{a^2}{2}\arcsin(\frac{x}{a})+C\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\begin{aligned}  
 &amp; \sqrt{x^2-a^2}=a \tan t, \Rightarrow d x=a \sec t \tan t d t , \\  
 &amp; \int \sqrt{x^2-a^2} d x=a^2 \int \sec t \tan ^2 t d t=a^2 \int \sec t\left(\sec ^2 t-1\right) d t \\  
 &amp; =a^2 \int \sec ^3 t d t-a^2 \int \sec t d t \\  
@@ -1744,7 +1750,7 @@
 &amp; \int \sqrt{x^2-a^2} d x=\frac{a^2}{2} \tan t \sec t+\frac{a^2}{2} \ln |\sec t+\tan t|-a^2 \ln |\sec t+\tan t|+C \\  
 &amp; =\frac{a^2}{2} \tan t \sec t-\frac{a^2}{2} \ln |\sec t+\tan t|+C \\  
 &amp; =\frac{x}{2} \sqrt{x^2-a^2}-\frac{a^2}{2} \ln \left|\frac{x}{a}+\frac{\sqrt{x^2-a^2}}{a}\right|+C  
-\end{aligned}\)</span></p>
+\end{aligned}\]</div>
 </li>
 <li>
 <p><span class="arithmatex">\(\int\sqrt{x^2+a^2}dx\)</span>同理</p>

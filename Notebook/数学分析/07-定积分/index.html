@@ -1076,7 +1076,7 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      求某些特殊几何体的体积,旋转曲面的面积,曲线的曲率
+      求某些特殊几何体的体积, 旋转曲面的面积, 曲线的曲率
     </span>
   </a>
   
@@ -1251,7 +1251,7 @@
         
   
   <span class="md-ellipsis">
-    曲线积分,曲面积分和场论
+    曲线积分, 曲面积分和场论
   </span>
   
 
@@ -1869,39 +1869,39 @@
 <p>[!NOTE]
 定义定积分时, 要求函数在闭区间上有界</p>
 <p>[!NOTE]
-- 符号表示<span class="arithmatex">\(f\in\mathscr{R}(I)\)</span>,表示<span class="arithmatex">\(f\)</span>在区间<span class="arithmatex">\(I\)</span>上Riemann可积</p>
+- 符号表示<span class="arithmatex">\(f\in\mathscr{R}(I)\)</span>, 表示<span class="arithmatex">\(f\)</span>在区间<span class="arithmatex">\(I\)</span>上Riemann可积</p>
 </blockquote>
 <h4 id="711">定义 7.1.1<a class="headerlink" href="#711" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(f(x)\)</span>是闭区间<span class="arithmatex">\([a,b]\)</span>上的有界函数,在区间上任意取分点<span class="arithmatex">\(\{x_k\}_{k=0}^n\)</span>做成划分<span class="arithmatex">\(P\)</span>:</p>
+<p>设<span class="arithmatex">\(f(x)\)</span>是闭区间<span class="arithmatex">\([a, b]\)</span>上的有界函数, 在区间上任意取分点<span class="arithmatex">\(\{x_k\}_{k=0}^n\)</span>做成划分<span class="arithmatex">\(P\)</span>:</p>
 <ul>
 <li>
 <div class="arithmatex">\[P:a=x_0&lt;x_1&lt;\cdots &lt;x_n=b\]</div>
 </li>
-<li>并任意取<span class="arithmatex">\(\xi_i\in [x_{i-1},x_i]\)</span>,记<span class="arithmatex">\(\Delta x_i=x_i-x_{i-1},\lambda = \max\{\Delta x_i\}\)</span>,若极限<ul>
+<li>并任意取<span class="arithmatex">\(\xi_i\in [x_{i-1}, x_i]\)</span>, 记<span class="arithmatex">\(\Delta x_i=x_i-x_{i-1}, \lambda = \max\{\Delta x_i\}\)</span>, 若极限<ul>
 <li>
 <div class="arithmatex">\[\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^nf(\xi_i)\Delta x_i\]</div>
 </li>
 </ul>
 </li>
-<li>存在,且极限既与划分<span class="arithmatex">\(P\)</span>无关,又与<span class="arithmatex">\(\xi_i\)</span>的选取无关,则称<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a,b]\)</span>上Riemann可积,并称和式<ul>
+<li>存在, 且极限既与划分<span class="arithmatex">\(P\)</span>无关, 又与<span class="arithmatex">\(\xi_i\)</span>的选取无关, 则称<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积, 并称和式<ul>
 <li>
 <div class="arithmatex">\[S_n = \sum\limits_{i=1}^nf(\xi_i)\Delta x_i\]</div>
 </li>
 </ul>
 </li>
-<li>为 Riemann 和,其极限值称为<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a,b]\)</span>上的定积分,记作<ul>
+<li>为 Riemann 和, 其极限值称为<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上的定积分, 记作<ul>
 <li>
 <div class="arithmatex">\[\int_a^bf(x)dx\]</div>
 </li>
-<li><span class="arithmatex">\(a,b\)</span>称为积分的上下限</li>
+<li><span class="arithmatex">\(a, b\)</span>称为积分的上下限</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p><span class="arithmatex">\(f\in \mathscr{R}(I)  \iff \exists I\in R,s.t.\forall \varepsilon&gt;0,\exists \delta&gt;0,s.t.\forall P:x_0=a&lt;x_1&lt;\cdots&lt;x_n=b,\forall \xi_i\in [x_{i-1},x_i],\forall \lambda=\max\{\Delta x_i\}&lt;\delta\)</span>:</p>
+<p><span class="arithmatex">\(f\in \mathscr{R}(I)  \iff \exists I\in R, s.t.\forall \varepsilon&gt;0, \exists \delta&gt;0, s.t.\forall P:x_0=a&lt;x_1&lt;\cdots&lt;x_n=b, \forall \xi_i\in [x_{i-1}, x_i], \forall \lambda=\max\{\Delta x_i\}&lt;\delta\)</span>:</p>
 <ul>
 <li>
 <div class="arithmatex">\[\left |\sum\limits_{i=1}^nf(\xi_i)\Delta x_i-I\right |&lt;\varepsilon\]</div>
@@ -1911,14 +1911,14 @@
 </ul>
 <h3 id="darboux">Darboux和<a class="headerlink" href="#darboux" title="Permanent link">&para;</a></h3>
 <ul>
-<li>考虑闭区间<span class="arithmatex">\(I=[a,b]\)</span><ul>
-<li>定义<span class="arithmatex">\(M=\sup\limits_I f(x),m=\inf\limits_I f(x),M_i=\sup\limits_{[x_{i-1},x_i]}f(x),m_i=\inf\limits_{[x_{i-1},x_i]}f(x)\)</span></li>
+<li>考虑闭区间<span class="arithmatex">\(I=[a, b]\)</span><ul>
+<li>定义<span class="arithmatex">\(M=\sup\limits_I f(x), m=\inf\limits_I f(x), M_i=\sup\limits_{[x_{i-1}, x_i]}f(x), m_i=\inf\limits_{[x_{i-1}, x_i]}f(x)\)</span></li>
 <li>给定划分<span class="arithmatex">\(P:a=x_0&lt;x_1&lt;\cdots&lt;x_n=b\)</span><ul>
-<li>定义<span class="arithmatex">\(\overline{S}(P)=\sum\limits_{i=1}^nM_i\Delta x_i,\underline{S}(P)=\sum\limits_{i=1}^nm_i\Delta x_i\)</span></li>
-<li>称<span class="arithmatex">\(\overline{S}(P),\underline{S}(P)\)</span>为Darboux大和,小和</li>
+<li>定义<span class="arithmatex">\(\overline{S}(P)=\sum\limits_{i=1}^nM_i\Delta x_i, \underline{S}(P)=\sum\limits_{i=1}^nm_i\Delta x_i\)</span></li>
+<li>称<span class="arithmatex">\(\overline{S}(P), \underline{S}(P)\)</span>为Darboux大和, 小和</li>
 </ul>
 </li>
-<li>则<span class="arithmatex">\(\forall S_n(P)\)</span>,有<ul>
+<li>则<span class="arithmatex">\(\forall S_n(P)\)</span>, 有<ul>
 <li>
 <div class="arithmatex">\[\underline{S}(P)\leq S_n(P)\leq \overline{S}(P)\]</div>
 </li>
@@ -1930,7 +1930,7 @@
 <h4 id="711_1">引理 7.1.1<a class="headerlink" href="#711_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>在原有划分中添加分点形成新划分,则大和不增,小和不减</p>
+<p>在原有划分中添加分点形成新划分, 则大和不增, 小和不减</p>
 </li>
 <li>
 <p>定义<span class="arithmatex">\(\overline{S}\)</span>为一切划分得到的 Darboux 大和的集合, <span class="arithmatex">\(\underline{S}\)</span>为一切划分得到的 Darboux 小和的集合</p>
@@ -1938,7 +1938,7 @@
 </ul>
 <h4 id="712">引理 7.1.2<a class="headerlink" href="#712" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\forall \overline{S}(P_1)\overline{S},\underline{S}(P_2)\in\underline{S}\)</span>,有<ul>
+<li><span class="arithmatex">\(\forall \overline{S}(P_1)\overline{S}, \underline{S}(P_2)\in\underline{S}\)</span>, 有<ul>
 <li>
 <div class="arithmatex">\[m(b-a)\leq \underline{S}(P_1)\leq \overline{S}(P_2)\leq M(b-a)\]</div>
 </li>
@@ -1947,9 +1947,9 @@
 </ul>
 <h4 id="713-darboux">引理 7.1.3 Darboux 定理<a class="headerlink" href="#713-darboux" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\forall f\in B([a,b])\)</span>:<ul>
+<li><span class="arithmatex">\(\forall f\in B([a, b])\)</span>:<ul>
 <li>
-<div class="arithmatex">\[\lim\limits_{\lambda\to 0}\overline{S}(P)=\inf \overline{S},\lim\limits_{\lambda\to 0}\underline{S}(P)=\sup \underline{S}\]</div>
+<div class="arithmatex">\[\lim\limits_{\lambda\to 0}\overline{S}(P)=\inf \overline{S}, \lim\limits_{\lambda\to 0}\underline{S}(P)=\sup \underline{S}\]</div>
 </li>
 </ul>
 </li>
@@ -1957,7 +1957,7 @@
 <h4 id="711_2">定理 7.1.1<a class="headerlink" href="#711_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a,b]\)</span>上Riemann可积的充要条件是,对于任意的划分<span class="arithmatex">\(P\)</span>,当<span class="arithmatex">\(\lambda\to 0\)</span>时,Darboux 大和和 Darboux 小和的极限相等,也就是</p>
+<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积的充要条件是, 对于任意的划分<span class="arithmatex">\(P\)</span>, 当<span class="arithmatex">\(\lambda\to 0\)</span>时, Darboux 大和和 Darboux 小和的极限相等, 也就是</p>
 <ul>
 <li>
 <div class="arithmatex">\[\lim\limits_{\lambda\to 0}\overline{S}(P)=\lim\limits_{\lambda\to 0}\underline{S}(P)\]</div>
@@ -1965,16 +1965,16 @@
 </ul>
 </li>
 <li>
-<p><span class="arithmatex">\(\forall f\in B([a,b]):f\in \mathscr{R}([a,b]) \iff \forall P,\lim\limits_{\lambda\to 0}\overline{S}(P)=\lim\limits_{\lambda\to 0}\underline{S}(P)\)</span></p>
+<p><span class="arithmatex">\(\forall f\in B([a, b]):f\in \mathscr{R}([a, b]) \iff \forall P, \lim\limits_{\lambda\to 0}\overline{S}(P)=\lim\limits_{\lambda\to 0}\underline{S}(P)\)</span></p>
 <ul>
-<li>若令<span class="arithmatex">\(\omega_i = M_i-m_i\)</span>为区间<span class="arithmatex">\([x_{i-1},x_i]\)</span>上的振幅,则</li>
+<li>若令<span class="arithmatex">\(\omega_i = M_i-m_i\)</span>为区间<span class="arithmatex">\([x_{i-1}, x_i]\)</span>上的振幅, 则</li>
 </ul>
 </li>
 </ul>
 <h4 id="712_1">定理 7.1.2<a class="headerlink" href="#712_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a,b]\)</span>上Riemann可积的充要条件是,对任意划分<span class="arithmatex">\(P\)</span>,当<span class="arithmatex">\(\lambda\to 0\)</span>时,</p>
+<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积的充要条件是, 对任意划分<span class="arithmatex">\(P\)</span>, 当<span class="arithmatex">\(\lambda\to 0\)</span>时, </p>
 <ul>
 <li>
 <div class="arithmatex">\[\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^n\omega_i\Delta x_i=0\]</div>
@@ -1982,13 +1982,13 @@
 </ul>
 </li>
 <li>
-<p><span class="arithmatex">\(\forall f\in B([a,b]):f\in \mathscr{R}([a,b]) \iff \forall P,\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^n\omega_i\Delta x_i=0\)</span></p>
+<p><span class="arithmatex">\(\forall f\in B([a, b]):f\in \mathscr{R}([a, b]) \iff \forall P, \lim\limits_{\lambda\to 0}\sum\limits_{i=1}^n\omega_i\Delta x_i=0\)</span></p>
 </li>
 </ul>
 <h4 id="1">推论 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>闭区间上的连续函数是Riemann可积的</li>
-<li><span class="arithmatex">\(f\in C([a,b])\implies f\in \mathscr{R}([a,b])\)</span></li>
+<li><span class="arithmatex">\(f\in C([a, b])\implies f\in \mathscr{R}([a, b])\)</span></li>
 </ul>
 <h4 id="2">推论 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1997,7 +1997,7 @@
 <h4 id="713">定理 7.1.3<a class="headerlink" href="#713" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a,b]\)</span>上Riemann可积的充要条件是,对任意<span class="arithmatex">\(\varepsilon&gt;0\)</span>,<strong>存在一种划分</strong>,使得 对应的振幅满足</p>
+<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积的充要条件是, 对任意<span class="arithmatex">\(\varepsilon&gt;0\)</span>, <strong>存在一种划分</strong>, 使得 对应的振幅满足</p>
 <ul>
 <li>
 <div class="arithmatex">\[\sum\limits_{i=1}^n\omega_i\Delta x_i&lt;\varepsilon\]</div>
@@ -2005,9 +2005,9 @@
 </ul>
 </li>
 <li>
-<p><span class="arithmatex">\(\forall f\in B([a,b]):f\in \mathscr{R}([a,b]) \iff \forall \varepsilon&gt;0,\exists P,s.t.\sum\limits_{i=1}^n\omega_i\Delta x_i&lt;\varepsilon\)</span></p>
+<p><span class="arithmatex">\(\forall f\in B([a, b]):f\in \mathscr{R}([a, b]) \iff \forall \varepsilon&gt;0, \exists P, s.t.\sum\limits_{i=1}^n\omega_i\Delta x_i&lt;\varepsilon\)</span></p>
 <ul>
-<li>注意我们虽然在定积分的定义中说<span class="arithmatex">\(I\)</span>与划分<span class="arithmatex">\(P\)</span>无关,但是实际上我们对<span class="arithmatex">\(P\)</span>是有要求的,也就是它要足够"细",(<span class="arithmatex">\(\lambda\to 0\)</span>),其余的划分都来的比这个划分更细</li>
+<li>注意我们虽然在定积分的定义中说<span class="arithmatex">\(I\)</span>与划分<span class="arithmatex">\(P\)</span>无关, 但是实际上我们对<span class="arithmatex">\(P\)</span>是有要求的, 也就是它要足够"细", (<span class="arithmatex">\(\lambda\to 0\)</span>), 其余的划分都来的比这个划分更细</li>
 </ul>
 </li>
 </ul>
@@ -2016,16 +2016,16 @@
 <li>
 <p>闭区间上只有有限个不连续点的有界函数是Riemann可积的</p>
 <ul>
-<li>因为有界,所以当<span class="arithmatex">\(\lambda\to 0\)</span>时,<span class="arithmatex">\(\omega_i\Delta x_i\)</span>可以被控制住</li>
+<li>因为有界, 所以当<span class="arithmatex">\(\lambda\to 0\)</span>时, <span class="arithmatex">\(\omega_i\Delta x_i\)</span>可以被控制住</li>
 </ul>
 </li>
 </ul>
 <h2 id="_2">定积分基本性质<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h4 id="1_1">性质 1 线性性<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(f,g\in \mathscr{R}([a,b]),\alpha,\beta\in R\)</span>,则<ul>
+<li><span class="arithmatex">\(f, g\in \mathscr{R}([a, b]), \alpha, \beta\in R\)</span>, 则<ul>
 <li>
-<div class="arithmatex">\[\alpha f(x)+\beta g(x)\in \mathscr{R}([a,b])\]</div>
+<div class="arithmatex">\[\alpha f(x)+\beta g(x)\in \mathscr{R}([a, b])\]</div>
 </li>
 <li>
 <div class="arithmatex">\[\int_a^b(\alpha f(x)+\beta g(x))dx=\alpha\int_a^bf(x)dx+\beta\int_a^bg(x)dx\]</div>
@@ -2036,10 +2036,11 @@
 <h4 id="1_2">推论 1<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a,b]),g(x)\)</span>仅在有限个点上和<span class="arithmatex">\(f(x)\)</span>不同,则</p>
+<p>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a, b]), g(x)\)</span>仅在有限个点上和<span class="arithmatex">\(f(x)\)</span>不同
+        - 则</p>
 <ul>
 <li>
-<div class="arithmatex">\[g(x)\in \mathscr{R}([a,b])\]</div>
+<div class="arithmatex">\[g(x)\in \mathscr{R}([a, b])\]</div>
 <ul>
 <li>且</li>
 </ul>
@@ -2056,15 +2057,15 @@
 <h4 id="2_1">性质 2 乘积可积性<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><span class="arithmatex">\(f,g\in \mathscr{R}([a,b]) \implies f(x)g(x)\in \mathscr{R}([a,b])\)</span></p>
+<p><span class="arithmatex">\(f, g\in \mathscr{R}([a, b]) \implies f(x)g(x)\in \mathscr{R}([a, b])\)</span></p>
 <ul>
-<li>只需注意到<span class="arithmatex">\(\omega^{fg}_i\leq M(\omega^g_i+\omega^f_i),M=\max\{M_f,M_g\}\)</span>即可证明</li>
+<li>只需注意到<span class="arithmatex">\(\omega^{fg}_i\leq M(\omega^g_i+\omega^f_i), M=\max\{M_f, M_g\}\)</span>即可证明</li>
 </ul>
 </li>
 </ul>
 <h4 id="3_1">性质 3 保序性<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a,b]),f(x)\leq g(x)\)</span>,则<ul>
+<li>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a, b]), f(x)\leq g(x)\)</span>, 则<ul>
 <li>
 <div class="arithmatex">\[\int_a^bf(x)dx\leq \int_a^bg(x)dx\]</div>
 </li>
@@ -2074,10 +2075,10 @@
 <h4 id="4">性质 4 绝对可积性<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a,b])\)</span>,则</p>
+<p>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a, b])\)</span>, 则</p>
 <ul>
 <li>
-<div class="arithmatex">\[|f(x)|\in \mathscr{R}([a,b])\]</div>
+<div class="arithmatex">\[|f(x)|\in \mathscr{R}([a, b])\]</div>
 </li>
 <li>
 <div class="arithmatex">\[\left |\int_a^bf(x)dx\right |\leq \int_a^b|f(x)|dx\]</div>
@@ -2090,8 +2091,8 @@
 </ul>
 <h4 id="5">性质 5 区间可加性<a class="headerlink" href="#5" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(f\in\mathscr{R}([a,b])\implies \forall c\in (a,b),f\in \mathscr{R}([a,c]),f\in \mathscr{R}([c,b])\)</span></li>
-<li><span class="arithmatex">\(f\in \mathscr{R}([a,b]),f\in \mathscr{R}([b,c])\implies f\in \mathscr{R}([a,c])\)</span>,且<ul>
+<li><span class="arithmatex">\(f\in\mathscr{R}([a, b])\implies \forall c\in (a, b), f\in \mathscr{R}([a, c]), f\in \mathscr{R}([c, b])\)</span></li>
+<li><span class="arithmatex">\(f\in \mathscr{R}([a, b]), f\in \mathscr{R}([b, c])\implies f\in \mathscr{R}([a, c])\)</span>, 且<ul>
 <li>
 <div class="arithmatex">\[\int_a^bf(x)dx+\int_b^cf(x)dx=\int_a^cf(x)dx\]</div>
 </li>
@@ -2101,13 +2102,13 @@
 <h4 id="6">性质 6 <strong>积分第一中值定理</strong><a class="headerlink" href="#6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(f(x),g(x)\)</span>在区间<span class="arithmatex">\([a,b]\)</span>上可积,并且<span class="arithmatex">\(g(x)\)</span>不变号,那么存在<span class="arithmatex">\(\eta\in [m,M],s.t.\)</span></p>
+<p>设<span class="arithmatex">\(f(x), g(x)\)</span>在区间<span class="arithmatex">\([a, b]\)</span>上可积, 并且<span class="arithmatex">\(g(x)\)</span>不变号, 那么存在<span class="arithmatex">\(\eta\in [m, M], s.t.\)</span></p>
 <ul>
 <li>
 <div class="arithmatex">\[\int_a^bf(x)g(x)dx = \eta\int_a^bg(x)dx\]</div>
 </li>
-<li>其中<span class="arithmatex">\(m,M\)</span>为<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\([a,b]\)</span>上的下确界和上确界</li>
-<li>若<span class="arithmatex">\(f\)</span>连续,则<span class="arithmatex">\(\exists \xi\in [a,b],s.t.f(\xi)=\eta\)</span>,<ul>
+<li>其中<span class="arithmatex">\(m, M\)</span>为<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\([a, b]\)</span>上的下确界和上确界</li>
+<li>若<span class="arithmatex">\(f\)</span>连续, 则<span class="arithmatex">\(\exists \xi\in [a, b], s.t.f(\xi)=\eta\)</span>, <ul>
 <li>
 <div class="arithmatex">\[\int_a^bf(x)g(x)dx = f(\xi)\int_a^bg(x)dx\]</div>
 </li>
@@ -2116,7 +2117,7 @@
 </ul>
 </li>
 <li>
-<p><span class="arithmatex">\(f,g\in\mathscr{R}(I),I=[a,b],g|_I&gt;0(&lt;0)\implies \exists\eta\in [\inf\limits_{I} f,\sup\limits_{I} f],s.t.\)</span></p>
+<p><span class="arithmatex">\(f, g\in\mathscr{R}(I), I=[a, b], g|_I&gt;0(&lt;0)\implies \exists\eta\in [\inf\limits_{I} f, \sup\limits_{I} f], s.t.\)</span></p>
 <ul>
 <li>
 <div class="arithmatex">\[\int_Ifgdx=\eta\int_I gdx\]</div>
@@ -2127,7 +2128,7 @@
 <blockquote>
 <p>[!IMPORTANT]
 <span class="arithmatex">\(\text{Holder不等式}:\\\)</span>
-<span class="arithmatex">\(f,g\in C(I),I=[a,b],\forall p,q&gt;0,s.t.\frac{1}{p}+\frac{1}{q}=1:\\\)</span></p>
+<span class="arithmatex">\(f, g\in C(I), I=[a, b], \forall p, q&gt;0, s.t.\frac{1}{p}+\frac{1}{q}=1:\\\)</span></p>
 <blockquote>
 <div class="arithmatex">\[\int_I |fg|dx\leq \left (\int_I |f|^pdx\right )^{\frac{1}{p}}\left (\int_I |g|^qdx\right )^{\frac{1}{q}}\]</div>
 </blockquote>
@@ -2137,12 +2138,12 @@
 <h4 id="731">定理 7.3.1<a class="headerlink" href="#731" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上可积作函数</p>
+<p>设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上可积作函数</p>
 <ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(F(x)=\int_a^xf(t)dt,x\in [a,b]\)</span>\)</span>
+<li><span class="arithmatex">\(<span class="arithmatex">\(F(x)=\int_a^xf(t)dt, x\in [a, b]\)</span>\)</span>
 则</li>
-<li><span class="arithmatex">\(F(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上连续</li>
-<li>若<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上连续,则<span class="arithmatex">\(F(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上可微,且<ul>
+<li><span class="arithmatex">\(F(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上连续</li>
+<li>若<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上连续, 则<span class="arithmatex">\(F(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上可微, 且<ul>
 <li>
 <div class="arithmatex">\[F'(x)=f(x)\]</div>
 </li>
@@ -2151,12 +2152,12 @@
 </ul>
 </li>
 <li>
-<p>从而任一连续函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上都有原函数<span class="arithmatex">\(\int_a^xf(t)dt\)</span></p>
+<p>从而任一连续函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上都有原函数<span class="arithmatex">\(\int_a^xf(t)dt\)</span></p>
 </li>
 </ul>
 <h4 id="732">定理 7.3.2 微积分基本定理<a class="headerlink" href="#732" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上连续,<span class="arithmatex">\(F(x)\)</span>是<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上的一个原函数,则<ul>
+<li>设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上连续, <span class="arithmatex">\(F(x)\)</span>是<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上的一个原函数, 则<ul>
 <li>
 <div class="arithmatex">\[\int_a^bf(x)dx=F(b)-F(a)\]</div>
 </li>
@@ -2166,7 +2167,7 @@
 <h3 id="_4">分部积分和换元积分<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <h4 id="733">定理 7.3.3 分部积分公式<a class="headerlink" href="#733" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(u(x),v(x)\)</span>在<span class="arithmatex">\([a,b]\)</span>上有连续导数,则<ul>
+<li>设<span class="arithmatex">\(u(x), v(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上有连续导数, 则<ul>
 <li>
 <div class="arithmatex">\[\int_a^bu(x)v'(x)dx=u(x)v(x)\bigg|_a^b-\int_a^bu'(x)v(x)dx\]</div>
 </li>
@@ -2175,18 +2176,18 @@
 </ul>
 <h4 id="731_1">定义 7.3.1<a class="headerlink" href="#731_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(g_n(x)\)</span>是定义在<span class="arithmatex">\([a,b]\)</span>上的一列可积函数,且<span class="arithmatex">\(\forall m,n\)</span>:<ul>
+<li>设<span class="arithmatex">\(g_n(x)\)</span>是定义在<span class="arithmatex">\([a, b]\)</span>上的一列可积函数, 且<span class="arithmatex">\(\forall m, n\)</span>:<ul>
 <li>
 <div class="arithmatex">\[\int_a^b g_m(x)g_n(x)dx = \begin{cases} 0 &amp; m\neq n\\ \int_a^bg_n^2(x)dx &amp; m=n \end{cases}\]</div>
 </li>
-<li>则称<span class="arithmatex">\(\{g_n(x)\}\)</span>是<span class="arithmatex">\([a,b]\)</span>上的一个<strong>正交函数列</strong></li>
-<li>特别的当<span class="arithmatex">\(g_n\)</span>是<span class="arithmatex">\(n\)</span>次多项式时,称<span class="arithmatex">\(\{g_n\}\)</span>为<span class="arithmatex">\([a,b]\)</span>上的一个<strong>正交多项式列</strong></li>
+<li>则称<span class="arithmatex">\(\{g_n(x)\}\)</span>是<span class="arithmatex">\([a, b]\)</span>上的一个<strong>正交函数列</strong></li>
+<li>特别的当<span class="arithmatex">\(g_n\)</span>是<span class="arithmatex">\(n\)</span>次多项式时, 称<span class="arithmatex">\(\{g_n\}\)</span>为<span class="arithmatex">\([a, b]\)</span>上的一个<strong>正交多项式列</strong></li>
 </ul>
 </li>
 </ul>
 <h4 id="734">定理 7.3.4 换元积分法<a class="headerlink" href="#734" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(f(x)\)</span>在区间<span class="arithmatex">\([a,b]\)</span>上连续,<span class="arithmatex">\(x=\varphi(t)\)</span>在区间<span class="arithmatex">\([\alpha,\beta]\)</span>上具有连续导数,其值域包含于<span class="arithmatex">\([a,b]\)</span>,且满足<span class="arithmatex">\(\varphi(\alpha)=a,\varphi(\beta)=b,\)</span>则<ul>
+<li>设<span class="arithmatex">\(f(x)\)</span>在区间<span class="arithmatex">\([a, b]\)</span>上连续, <span class="arithmatex">\(x=\varphi(t)\)</span>在区间<span class="arithmatex">\([\alpha, \beta]\)</span>上具有连续导数, 其值域包含于<span class="arithmatex">\([a, b]\)</span>, 且满足$\varphi(\alpha)=a, \varphi(\beta)=b, $则<ul>
 <li>
 <div class="arithmatex">\[\int_a^bf(x)dx=\int_{\alpha}^{\beta}f(\varphi(t))\varphi'(t)dt\]</div>
 </li>
@@ -2195,14 +2196,14 @@
 </ul>
 <h4 id="735">定理 7.3.5<a class="headerlink" href="#735" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(f\in \mathscr{R}([-a,a])\)</span><ul>
-<li>若<span class="arithmatex">\(f(x)\)</span>是偶函数,则<ul>
+<li>设<span class="arithmatex">\(f\in \mathscr{R}([-a, a])\)</span><ul>
+<li>若<span class="arithmatex">\(f(x)\)</span>是偶函数, 则<ul>
 <li>
 <div class="arithmatex">\[\int_{-a}^{a}f(x)dx=2\int_0^af(x)dx\]</div>
 </li>
 </ul>
 </li>
-<li>若<span class="arithmatex">\(f(x)\)</span>是奇函数,则<ul>
+<li>若<span class="arithmatex">\(f(x)\)</span>是奇函数, 则<ul>
 <li>
 <div class="arithmatex">\[\int_{-a}^{a}f(x)dx=0\]</div>
 </li>
@@ -2213,7 +2214,7 @@
 </ul>
 <h4 id="736">定理 7.3.6<a class="headerlink" href="#736" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(f\)</span>是周期为<span class="arithmatex">\(T\)</span>的可积函数,则对任意<span class="arithmatex">\(a\)</span>,<ul>
+<li>设<span class="arithmatex">\(f\)</span>是周期为<span class="arithmatex">\(T\)</span>的可积函数, 则对任意<span class="arithmatex">\(a\)</span>, <ul>
 <li>
 <div class="arithmatex">\[\int_a^{a+T}f(x)dx=\int_0^Tf(x)dx\]</div>
 </li>
@@ -2229,8 +2230,8 @@
 <h4 id="741">定义 7.4.1 弧长公式<a class="headerlink" href="#741" title="Permanent link">&para;</a></h4>
 <ul>
 <li>若由参数方程<ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(\begin{cases} x=x(t)\\ &amp; t\in [T_1,T_2]\\ y=y(t) \end{cases}\)</span>\)</span>
-定义的曲线是光滑的,则它是可求长的,且其弧长为</li>
+<li><span class="arithmatex">\(<span class="arithmatex">\(\begin{cases} x=x(t)\\ &amp; t\in [T_1, T_2]\\ y=y(t) \end{cases}\)</span>\)</span>
+定义的曲线是光滑的, 则它是可求长的, 且其弧长为</li>
 <li>
 <div class="arithmatex">\[L=\int_{T_1}^{T_2}\sqrt{x'^2(t)+y'^2(t)}dt\]</div>
 </li>
@@ -2243,7 +2244,7 @@
 </blockquote>
 <ul>
 <li>
-<p>当曲线是由函数<span class="arithmatex">\(y=f(x),x\in [a,b]\)</span>定义时,弧长公式为</p>
+<p>当曲线是由函数<span class="arithmatex">\(y=f(x), x\in [a, b]\)</span>定义时, 弧长公式为</p>
 <ul>
 <li>
 <div class="arithmatex">\[L=\int_a^b\sqrt{1+f'^2(x)}dx\]</div>
@@ -2251,7 +2252,7 @@
 </ul>
 </li>
 <li>
-<p>当曲线是由极坐标方程<span class="arithmatex">\(r=r(\theta),\theta\in [\alpha,\beta]\)</span>定义时,弧长公式为</p>
+<p>当曲线是由极坐标方程<span class="arithmatex">\(r=r(\theta), \theta\in [\alpha, \beta]\)</span>定义时, 弧长公式为</p>
 <ul>
 <li>
 <div class="arithmatex">\[L=\int_{\alpha}^{\beta}\sqrt{r^2(\theta)+r'^2(\theta)}d\theta\]</div>
@@ -2259,7 +2260,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="_8">求某些特殊几何体的体积,旋转曲面的面积,曲线的曲率<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_8">求某些特殊几何体的体积, 旋转曲面的面积, 曲线的曲率<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <h2 id="_9">微积分实际应用<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <h2 id="_10">定积分数值计算<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <ul>

@@ -2771,9 +2771,8 @@
 <p>[!IMPORTANT]
 <strong>几何重数小于等于代数重数</strong></p>
 <p>[!NOTE]
-复数域上的矩阵也不一定能对角化, 比如
-<span class="arithmatex">\(<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\)</span>\)</span>
-有特征值<span class="arithmatex">\(\lambda = 1\)</span>, 但是只有一个特征向量<span class="arithmatex">\(\xi = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\)</span>, <span class="arithmatex">\(\lambda=1\)</span>的代数重数为2, 但是<span class="arithmatex">\(\dim \mathbb{C}_\lambda = \dim span(\xi) = 1\)</span></p>
+复数域上的矩阵也不一定能对角化, 比如<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\)</span>
+有特征值<span class="arithmatex">\(\lambda = 1\)</span>, 但是只有一个特征向量<span class="arithmatex">\(\xi = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\)</span>, <span class="arithmatex">\(\lambda=1\)</span>的代数重数为2, 但是<span class="arithmatex">\(\dim \mathbb{C}_\lambda = \dim \text{span}(\xi) = 1\)</span></p>
 </blockquote>
 <h4 id="2_11">定义 2<a class="headerlink" href="#2_11" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2796,18 +2795,18 @@
 <li>
 <p><span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V), W\in \text{subspace}(V)\)</span>, 若<span class="arithmatex">\(\forall \alpha\in W, \underline{A}(\alpha)\in W\)</span>, 则称<span class="arithmatex">\(W\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的<strong>不变子空间</strong></p>
 <ul>
-<li>显然特征子空间<span class="arithmatex">\(V_{\lambda}\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
-<li><span class="arithmatex">\(V\)</span>和<span class="arithmatex">\(\{\vec{0}\}\)</span>也是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间(平凡的)</li>
+<li>显然特征子空间<span class="arithmatex">\(V_{\lambda}\)</span>是<span class="arithmatex">\(\underline{A}\)</span>-不变子空间</li>
+<li><span class="arithmatex">\(V\)</span>和<span class="arithmatex">\(\{\vec{0}\}\)</span>也是<span class="arithmatex">\(\underline{A}\)</span>-不变子空间(平凡的)</li>
 </ul>
 </li>
 </ul>
 <h4 id="1_17">命题 1<a class="headerlink" href="#1_17" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\underline{A}\)</span>的不变子空间, <span class="arithmatex">\(\text{Ker}\underline{A}, \text{Im}\underline{A}\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
+<li><span class="arithmatex">\(\text{Ker}\underline{A}, \text{Im}\underline{A}\)</span>是<span class="arithmatex">\(\underline{A}\)</span>-不变子空间</li>
 </ul>
 <h4 id="2_12">命题 2<a class="headerlink" href="#2_12" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(\underline{A}, \underline{B}\in \text{Hom}(V, V)\)</span>, 若<span class="arithmatex">\(\underline{A}\underline{B}=\underline{B}\underline{A}\)</span>, 则<span class="arithmatex">\(\text{Ker}\underline{B}, \text{Im}\underline{B}, \underline{B}\)</span>的特征子空间 是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间</li>
+<li><span class="arithmatex">\(\underline{A}, \underline{B}\in \text{Hom}(V, V)\)</span>, 若<span class="arithmatex">\(\underline{A}\underline{B}=\underline{B}\underline{A}\)</span>, 则<span class="arithmatex">\(\text{Ker}\underline{B}, \text{Im}\underline{B}, \underline{B}\)</span>的特征子空间 是<span class="arithmatex">\(\underline{A}\)</span>-不变子空间</li>
 </ul>
 <h4 id="3_4">命题 3<a class="headerlink" href="#3_4" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2886,7 +2885,7 @@
 </blockquote>
 <h4 id="2_14">定义 2 零化多项式(线性变换)<a class="headerlink" href="#2_14" title="Permanent link">&para;</a></h4>
 <ul>
-<li>设<span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V), f(x)\in F[x], <span class="arithmatex">\(若\)</span>f(\underline{A})=\underline{0}\)</span>, 则称<span class="arithmatex">\(f(x)\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的一个<strong>零化多项式</strong></li>
+<li>设 <span class="arithmatex">\(\underline{A}\in \text{Hom}(V, V), f(x)\in F[x]\)</span> ,若 <span class="arithmatex">\(f(\underline{A})=\underline{0}\)</span>, 则称<span class="arithmatex">\(f(x)\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的一个<strong>零化多项式</strong></li>
 </ul>
 <h4 id="3_5">定义 3 零化多项式(矩阵)<a class="headerlink" href="#3_5" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2950,7 +2949,7 @@
 </ul>
 <h4 id="1_23">定理 1<a class="headerlink" href="#1_23" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若<span class="arithmatex">\(V = \oplus_{i=1}^s W_i\)</span>, 其中<span class="arithmatex">\(W_i\)</span>是<span class="arithmatex">\(\underline{A}\)</span>的不变子空间, 则<span class="arithmatex">\(\underline{A}\)</span>的最小多项式是<span class="arithmatex">\(W_i\)</span>的最小多项式的最小公倍式</li>
+<li>若<span class="arithmatex">\(V = \oplus_{i=1}^s W_i\)</span>, 其中<span class="arithmatex">\(W_i\)</span>是<span class="arithmatex">\(\underline{A}\)</span>-不变子空间, 则<span class="arithmatex">\(\underline{A}\)</span>的最小多项式是<span class="arithmatex">\(W_i\)</span>的最小多项式的最小公倍式</li>
 </ul>
 <h4 id="2_18">推论 2<a class="headerlink" href="#2_18" title="Permanent link">&para;</a></h4>
 <ul>

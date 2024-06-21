@@ -843,7 +843,7 @@
         
   
   <span class="md-ellipsis">
-    曲线积分,曲面积分和场论
+    曲线积分, 曲面积分和场论
   </span>
   
 
@@ -1859,8 +1859,12 @@
 <h4 id="1514">定理 15.1.4<a class="headerlink" href="#1514" title="Permanent link">&para;</a></h4>
 <ul>
 <li><span class="arithmatex">\(f, f_y\in C(D), a(y), b(y)\in C([c, d])\)</span>, 且 <span class="arithmatex">\(a\leq a(y)\leq b, a\leq b(y)\leq b\)</span>, 则 <ul>
-<li><span class="arithmatex">\(<span class="arithmatex">\(F(y) = \int_{a(y)}^{b(y)}f(x, y)dx\)</span>\)</span> 
-在 <span class="arithmatex">\([c, d]\)</span> 上可导, 且</li>
+<li>
+<div class="arithmatex">\[F(y) = \int_{a(y)}^{b(y)}f(x, y)dx\]</div>
+<ul>
+<li>在 <span class="arithmatex">\([c, d]\)</span> 上可导, 且</li>
+</ul>
+</li>
 <li>
 <div class="arithmatex">\[F'(y)=f(b(y), y)b'(y)-f(a(y), y)a'(y)+\int_{a(y)}^{b(y)}f_y(x, y)dx\]</div>
 </li>
@@ -2081,8 +2085,7 @@
 <h2 id="texteuler"><span class="arithmatex">\(\text{Euler}\)</span> 积分<a class="headerlink" href="#texteuler" title="Permanent link">&para;</a></h2>
 <h3 id="textbeta"><span class="arithmatex">\(\text{Beta}\)</span> 函数<a class="headerlink" href="#textbeta" title="Permanent link">&para;</a></h3>
 <ul>
-<li><span class="arithmatex">(<span class="arithmatex">\(B(p, q)=\int_0^1t^{p-1}(1-t)^{q-1}dt\)</span>\)</span>
-    称为 <span class="arithmatex">\(\text{Beta}\)</span> 函数, 或者第一类 <span class="arithmatex">\(\text{Euler}\)</span> 积分<ul>
+<li><span class="arithmatex">\(B(p, q)=\int_0^1t^{p-1}(1-t)^{q-1}dt\)</span> 称为 <span class="arithmatex">\(\text{Beta}\)</span> 函数, 或者第一类 <span class="arithmatex">\(\text{Euler}\)</span> 积分<ul>
 <li>定义域: <span class="arithmatex">\(p&gt;0, q&gt;0\)</span></li>
 <li>连续性: <span class="arithmatex">\(B(p, q)\in C(p&gt;0, q&gt;0)\)</span></li>
 <li>对称性: <span class="arithmatex">\(B(p, q)=B(q, p)\)</span></li>
@@ -2117,8 +2120,7 @@
 </ul>
 <h3 id="textgamma"><span class="arithmatex">\(\text{Gamma}\)</span> 函数<a class="headerlink" href="#textgamma" title="Permanent link">&para;</a></h3>
 <ul>
-<li><span class="arithmatex">(<span class="arithmatex">\(\Gamma(p)=\int_0^{+\infty}x^{p-1}e^{-t}dx\)</span>\)</span>
-    称为 <span class="arithmatex">\(\text{Gamma}\)</span> 函数, 或者第二类 <span class="arithmatex">\(\text{Euler}\)</span> 积分<ul>
+<li><span class="arithmatex">\(\Gamma(p)=\int_0^{+\infty}x^{p-1}e^{-t}dx\)</span> 称为 <span class="arithmatex">\(\text{Gamma}\)</span> 函数, 或者第二类 <span class="arithmatex">\(\text{Euler}\)</span> 积分<ul>
 <li>定义域: <span class="arithmatex">\(p&gt;0\)</span></li>
 <li>连续可导性: <span class="arithmatex">\(\Gamma(p)\in C(p&gt;0)\)</span>, 且 <span class="arithmatex">\(\Gamma^{(n)}(p)=\int_0^{+\infty}x^{p-1}e^{-x}(\ln x)^n dx\)</span></li>
 <li>递推公式: <span class="arithmatex">\(\Gamma(p+1)=p\Gamma(p)\)</span></li>

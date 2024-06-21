@@ -1248,7 +1248,7 @@
         
   
   <span class="md-ellipsis">
-    曲线积分,曲面积分和场论
+    曲线积分, 曲面积分和场论
   </span>
   
 
@@ -1871,7 +1871,7 @@
 <h4 id="311_1">定理 3.1.1<a class="headerlink" href="#311_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(A,B\)</span>是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(x_0\)</span>处的极限 </p>
+<p>设<span class="arithmatex">\(A,B\)</span>是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(x_0\)</span>处的极限,则 <span class="arithmatex">\(A=B\)</span></p>
 <p>极限唯一性</p>
 </li>
 </ul>
@@ -1879,11 +1879,11 @@
 <ul>
 <li>
 <p>若<span class="arithmatex">\(\lim\limits_{x\to x_0}f(x)=A,\lim\limits_{x\to x_0}g(x)=B\)</span>且<span class="arithmatex">\(A&gt;B\)</span>,则<span class="arithmatex">\(\exists\delta&gt;0,s.t.\forall x\in O(x_0,\delta):f(x)&gt;g(x)\)</span></p>
-<p>局部报序性</p>
+<p>局部保序性</p>
 <ul>
 <li>推论 1: 若<span class="arithmatex">\(\lim\limits_{x\to x_0}f(x)=A\neq 0\)</span>则<span class="arithmatex">\(\exists\delta&gt;0,s.t.\forall x\in O(x_0,\delta):|f(x)| &gt; \frac{|A|}{2}\)</span></li>
 <li>
-<p>推论 2: 若<span class="arithmatex">\(\lim\limits_{x\to x_0}f(x)=A,\lim\limits_{x\to x_0}g(x)=B,\)</span>且<span class="arithmatex">\(\exists r&gt;0,s.t.\forall x\in O(x_0,r):g(x)\leq f(x)\)</span>,则:<span class="arithmatex">\(<span class="arithmatex">\(B\leq A\)</span>\)</span></p>
+<p>推论 2: 若<span class="arithmatex">\(\lim\limits_{x\to x_0}f(x)=A,\lim\limits_{x\to x_0}g(x)=B,\)</span>且<span class="arithmatex">\(\exists r&gt;0,s.t.\forall x\in O(x_0,r):g(x)\leq f(x)\)</span>,则:<span class="arithmatex">\(B\leq A\)</span></p>
 <ul>
 <li>就算<span class="arithmatex">\(g(x)&lt;f(x)\)</span>,也不能推出<span class="arithmatex">\(B&lt;A\)</span>,例如<span class="arithmatex">\(f(x)=1,g(x)=1-x,x_0=0:A=B=1\)</span></li>
 </ul>
@@ -1967,7 +1967,7 @@
 <ul>
 <li>第一类间断点:函数的左右极限都存在但是不相等:<span class="arithmatex">\(f(x)=sign(x)\)</span></li>
 <li>第二类间断点:函数的左右极限至少有一个不存在:<span class="arithmatex">\(f(x)=\frac{1}{x}\)</span></li>
-<li>第三类间断点(可去间断点):函数的左右极限都存在且相等,但是函数值与极限值不相等:<span class="arithmatex">\(f(x)=\frac{\sin x}{x}\)</span></li>
+<li>第三类间断点(可去间断点):函数的左右极限都存在且相等, 但是函数值与极限值不相等:<span class="arithmatex">\(f(x)=\frac{\sin x}{x}\)</span></li>
 </ul>
 <h5 id="riemann">Riemann 函数<a class="headerlink" href="#riemann" title="Permanent link">&para;</a></h5>
 <div class="arithmatex">\[R(x)=\begin{cases} \frac{1}{p}, &amp; x=\frac{q}{p}\in Q \\ 0, &amp; x\notin Q \end{cases}\]</div>
@@ -1976,7 +1976,7 @@
 </ul>
 <h4 id="321_1">定理 3.2.1(反函数存在性定理)<a class="headerlink" href="#321_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>若函数<span class="arithmatex">\(yf(x),x\in D_f\)</span>是严格单调增加(减少)的,那么他的反函数<span class="arithmatex">\(y=f^{-1}(x)\)</span>存在而且也是严格单调增加(减少)的</li>
+<li>若函数<span class="arithmatex">\(y=f(x),x\in D_f\)</span>是严格单调增加(减少)的,那么他的反函数<span class="arithmatex">\(y=f^{-1}(x)\)</span>存在而且也是严格单调增加(减少)的</li>
 </ul>
 <h4 id="322_1">定理 3.2.2(反函数连续性定理)<a class="headerlink" href="#322_1" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2053,7 +2053,7 @@
 </ul>
 <h4 id="344">定理 3.4.4(介值定理)<a class="headerlink" href="#344" title="Permanent link">&para;</a></h4>
 <ul>
-<li><span class="arithmatex">\(f\in C([a,b])\Rightarrow\forall\mu\in[f(a),f(b)],\exists\xi\in(a,b),s.t.f(\xi)=\mu\)</span></li>
+<li><span class="arithmatex">\(f\in C([a,b])\Rightarrow\forall\mu\in[m,M],m,M=\min f(x),\max f(x),\exists\xi\in(a,b),s.t.f(\xi)=\mu\)</span></li>
 </ul>
 <h4 id="341_1"><strong>定义 3.4.1(一致连续性)</strong><a class="headerlink" href="#341_1" title="Permanent link">&para;</a></h4>
 <ul>
