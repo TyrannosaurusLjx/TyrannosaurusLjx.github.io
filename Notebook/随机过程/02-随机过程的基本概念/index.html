@@ -1496,21 +1496,9 @@
 <li>
 <p>计算有限维分布:</p>
 </li>
-<li>
-<ol>
 <li>直接计算</li>
-</ol>
-</li>
-<li>
-<ol>
 <li>计算 <span class="arithmatex">\((X(t_1),X(t_2)-X(t_1),\cdots,X(t_k)-X(t_{k-1}))\)</span> 的联合分布,再通过线性变换得到 <span class="arithmatex">\(X(t_1),X(t_2),\cdots,X(t_k)\)</span> 的联合分布</li>
-</ol>
-</li>
-<li>
-<ol>
 <li>若<span class="arithmatex">\(\forall t_1&lt;t_2&lt;\cdots&lt;t_k\)</span>,<span class="arithmatex">\(\forall x_1,x_2,\cdots,x_k\in R\)</span>,在给定<span class="arithmatex">\(X(t_1)=x_1,X(t_2)=x_2,\cdots,X(t_{k-1})=x_{k-1}\)</span>的条件下,可以计算出<span class="arithmatex">\(X(t_k)\)</span>的条件分布,则可以通过递推的方式计算出<span class="arithmatex">\(X(t_1),X(t_2),\cdots,X(t_k)\)</span>的联合分布</li>
-</ol>
-</li>
 </ul>
 <h2 id="_4">数字特征<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h3 id="_5">均值函数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
@@ -1523,7 +1511,7 @@
 <p>若<span class="arithmatex">\(\forall t\in T,E|X(t)|&lt;\infty\)</span>，则称<span class="arithmatex">\(\sigma_X^2(t)=Var(X(t)),t\in T\)</span>为随机过程<span class="arithmatex">\(X(t)\)</span>的方差函数</p>
 </li>
 <li>
-<p><span class="arithmatex">\(r_X(s,t)=E(X(t)X(s)),s,t\in T\)</span>为 X 的自相关函数</p>
+<p><span class="arithmatex">\(r_X(s,t)=E(X(t)X(s)),s,t\in T\)</span>为 <span class="arithmatex">\(X\)</span> 的自相关函数</p>
 </li>
 <li>
 <p><span class="arithmatex">\(Cov(X(t),X(s))=E(X(t)X(s))-EX(t)EX(s)=r_X(s,t)-\mu_X(s)\mu_X(t)\)</span>为自协方差函数</p>

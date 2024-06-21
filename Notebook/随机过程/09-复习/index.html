@@ -1066,9 +1066,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#chapter3-poisson" class="md-nav__link">
+  <a href="#poisson" class="md-nav__link">
     <span class="md-ellipsis">
-      Chapter3 Poisson 过程
+      Poisson 过程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markov" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(Markov\) 过程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      分枝过程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brown" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(Brown\) 运动
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      平稳过程随机遍历性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      杂项
     </span>
   </a>
   
@@ -1382,14 +1427,310 @@
 
 
 <h1 id="_1">复习部分<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="chapter3-poisson">Chapter3 Poisson 过程<a class="headerlink" href="#chapter3-poisson" title="Permanent link">&para;</a></h2>
+<h2 id="poisson">Poisson 过程<a class="headerlink" href="#poisson" title="Permanent link">&para;</a></h2>
 <ul>
-<li>到达时刻<span class="arithmatex">\(S_n\)</span>的概率密度函数为:<span class="arithmatex">\(p_{S_n}(t)=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t},t&gt;0\)</span></li>
 <li>
-<p>这里<span class="arithmatex">\(p_{S_n}(t)=\lambda p(N(t)=n-1)\)</span>纯属巧合吗?</p>
+<p>对 <span class="arithmatex">\(Poisson\)</span> 分布 <span class="arithmatex">\(X\sim \mathcal{P}(\lambda)\)</span> 有</p>
+<ul>
+<li><span class="arithmatex">\(EX=\lambda, Var(X)=\lambda, EX^2=\lambda+\lambda^2\)</span></li>
+</ul>
 </li>
 <li>
-<p><span class="arithmatex">\(p(S_1=t_1,S_2=t_2,\cdots,S_n=t_n|N(t)=n)=\frac{n!}{t^n},\forall 0&lt;t_1&lt;t_2&lt;\cdots&lt;t_n&lt;t\)</span></p>
+<p>对 <span class="arithmatex">\(Poisson\)</span> 过程 <span class="arithmatex">\(N(t)\sim \mathcal{P}(\lambda t)\)</span> 有</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(EN(t)=\lambda t, Var(N(t))=\lambda t\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(r_N(s,t)=E(N(s)N(t))=\lambda^2st+\lambda s, s&lt;t\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(Cov(s,t)=E(N(s)N(t))-E(N(s))E(N(t))=\lambda s\)</span></p>
+</li>
+<li>
+<p>对于第 <span class="arithmatex">\(n\)</span> 个到达的 <span class="arithmatex">\(S_n\)</span> 有</p>
+<ul>
+<li>
+<div class="arithmatex">\[P(S_n&gt;t)=P(N(t)\leq n-1)=\sum\limits_{k=0}^{n-1}\frac{(\lambda t)^k}{k!}e^{-\lambda t}\]</div>
+</li>
+<li>
+<p>由 <span class="arithmatex">\(S_1 \sim \mathcal{E}(\lambda)\)</span> 服从参数为 <span class="arithmatex">\(\lambda\)</span> 的指数分布, 并且<span class="arithmatex">\(Poisson\)</span> 过程的独立增量性质知道, <span class="arithmatex">\(S_n\)</span> 是 <span class="arithmatex">\(n\)</span> 个服从参数为 <span class="arithmatex">\(\lambda\)</span> 的指数分布的和, 从而服从 <span class="arithmatex">\(\Gamma(n,\lambda)\)</span> 从而</p>
+<ul>
+<li>
+<div class="arithmatex">\[P_{S_n}(t)=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t},t&gt;0\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(Poisson\)</span> 过程有可加性</p>
+<ul>
+<li><span class="arithmatex">\(N_1(t)\sim \mathcal{P}(\lambda t),N_2(t)\sim \mathcal{P}(\mu t)\)</span>,且<span class="arithmatex">\(N_1(t),N_2(t)\)</span>相互独立,则<span class="arithmatex">\(N_1(t)+N_2(t)\sim \mathcal{P}((\lambda+\mu)t)\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\((S_1,S_2,\cdots,S_n)\)</span> 的联合分布</p>
+<ul>
+<li>
+<p>在给定 <span class="arithmatex">\(N(t)=n\)</span> 的条件下, <span class="arithmatex">\((S_1,S_2,\cdots,S_n)\)</span> 的联合分布为与 <span class="arithmatex">\(n\)</span> 个独立同分布的随机变量的次序排列相同</p>
+<ul>
+<li>
+<div class="arithmatex">\[(S_1,S_2,\cdots,S_n|N(t)=n)\overset{d}{=}(U'_1,U'_2,\cdots,U'_n)\]</div>
+</li>
+<li>
+<div class="arithmatex">\[P_{S_1,S_2,\cdots,S_n|N(t)=n}(t_1,t_2,\cdots,t_n)=\frac{n!}{t^n},\forall 0\leq t_1\leq t_2\leq \cdots\leq t_n\leq t\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>根据抽样的性质, 我们有 <span class="arithmatex">\(E(\sum_{i=1}^n f(S_i)|N(t)=n) = n \int_0^t f(x)dx\)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>对复合 <span class="arithmatex">\(Poisson\)</span> 过程 <span class="arithmatex">\(Z(t)=\sum_{i=1}^{N(t)}\xi_i,E\xi_i=\mu,Var \xi_i=\sigma^2\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(EZ(t)=\mu\lambda t, Var(Z(t))=\sigma^2\lambda t+\mu^2\lambda^2t\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(Z(t)\)</span> 是独立平稳增量过程 </p>
+</li>
+</ul>
+</li>
+<li>
+<p>对非齐次 <span class="arithmatex">\(Poisson\)</span> 过程 <span class="arithmatex">\(N(t)\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(N(t)\sim \mathcal{P}(\int_0^t \lambda(s)ds)\)</span></p>
+<ul>
+<li>称其为强度为 <span class="arithmatex">\(\lambda(t)\)</span> 的非齐次 <span class="arithmatex">\(Poisson\)</span> 过程, 记 <span class="arithmatex">\(m(t)=\int_0^t \lambda(s)ds\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(N(t)\)</span> 是独立增量过程(显然不平稳)</p>
+</li>
+<li>
+<p><span class="arithmatex">\(E(N(t))=m(t), Var(N(t))=m(t)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(r_N(s,t)=m^2(s)+m(s)+m(s)m(t-s),s&lt;t\)</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]</p>
+<p><span class="arithmatex">\(Gamma\)</span> 分布的密度函数为 <span class="arithmatex">\(f(x;\alpha,\lambda) = \frac{\lambda^\alpha x^{\alpha-1}}{\Gamma(\alpha)}e^{-\lambda x},x&gt;0, \alpha&gt;0, \lambda &gt; 0\)</span></p>
+<p>次序统计量的均值 <span class="arithmatex">\(E(U_{(k)}) = \frac{k}{n+1}\)</span></p>
+<p><span class="arithmatex">\(E(\sum_{i=1}^n \xi_i)^2 = nE\xi^2 + n(n-1)E\xi_i\xi_j\)</span></p>
+</blockquote>
+<h2 id="markov"><span class="arithmatex">\(Markov\)</span> 过程<a class="headerlink" href="#markov" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>考察一个 <span class="arithmatex">\(Markov\)</span> 链的时候, 首先看它是不是不可约, 如果是那么所有状态都具有相同的特性, 如果不然对它做互通类的分解.</p>
+</li>
+<li>
+<p>周期 <span class="arithmatex">\(d_i = \gcd \{n\geq 1:p_{ii}^n&gt;0\}, d_i = 1\)</span> 非周期, 否则周期为 <span class="arithmatex">\(d_i\)</span>, 其中 <span class="arithmatex">\(\gcd \emptyset = +\infty\)</span></p>
+</li>
+<li>
+<p>平均返回时间 <span class="arithmatex">\(\tau_j = \sum\limits_{n=1}^\infty nf_{jj}^n\)</span>, 其中瞬时状态的平均返回时间定义为 <span class="arithmatex">\(\infty\)</span></p>
+</li>
+<li>
+<p>常返瞬时判断 </p>
+<ul>
+<li>
+<p><span class="arithmatex">\(j\)</span> 常返 <span class="arithmatex">\(\iff \sum\limits_{n=1}^\infty f_{jj}^{(n)}=1 \iff \sum\limits_{n=1}^\infty P_{jj}^n=\infty\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(j\)</span> 瞬时 <span class="arithmatex">\(\iff \sum\limits_{n=1}^\infty f_{jj}^n &lt;1 \iff \sum\limits_{n=1}^\infty P_{jj}^n &lt;\infty\)</span></p>
+<ul>
+<li>此时还有 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty} p_{jj}^n = \frac{1}{1-f_ii}\)</span></li>
+<li><span class="arithmatex">\(p_{jj}^0 := 1\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[\lim\limits_{n\to\infty} p_{jj}^{(n)}= \frac{d_j}{\tau_j}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\lim\limits_{n\to\infty} p_{ij}^{(n)} = \frac{f_{ij}}{\tau_j}\]</div>
+</li>
+<li>
+<p>任意两个状态互通的 <span class="arithmatex">\(Markov\)</span> 链称为不可约的</p>
+</li>
+<li>
+<p>非周期不可约 <span class="arithmatex">\(Markov\)</span> 链存在极限分布当且仅当存在平稳分布, 且二者相等</p>
+</li>
+<li>
+<p>若存在平稳分布, 选择其作为初始分布, 则 <span class="arithmatex">\(Markov\)</span> 链可逆</p>
+</li>
+<li>
+<p><span class="arithmatex">\(Markov\)</span> 链条可逆 <span class="arithmatex">\(\iff \pi_ip_{ij}=\pi_jp_{ji}\text{若平稳分布存在} \iff\)</span> 任意闭合路径正向方向概率一样</p>
+</li>
+</ul>
+<h2 id="_2">分枝过程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><span class="arithmatex">\(Z_{n+1}=\sum\limits_{j=1}^{Z_n} \xi_j,E\xi=\mu,Var\xi = \sigma^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(EZ_n = \mu^n, Var Z_n = \sigma^2 \mu^{n-1} (1+\mu+\cdots +\mu^{n-1})\)</span></p>
+</li>
+<li>
+<p>生成函数 <span class="arithmatex">\(\phi(s)=Es^\xi\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\phi'(1)=E\xi, \phi^{''}(1)=E\xi^2-E\xi\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(p_k=\frac{\phi^{(k)}(0)}{k!}\)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>灭绝概率<span class="arithmatex">\(\tau = \lim\limits_{n\to\infty} P(Z_n=0)\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\mu \leq 1\implies \tau = 1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mu &gt; 1\implies \tau = \min\{s:s=\phi(s)\}\)</span></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="brown"><span class="arithmatex">\(Brown\)</span> 运动<a class="headerlink" href="#brown" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><span class="arithmatex">\(B(t)\sim \mathcal{N}(0,t)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(E(B(t))=0, Var(B(t))=t\)</span></p>
+<ul>
+<li><span class="arithmatex">\(p_{B(t)}(x)=\frac{1}{\sqrt{2\pi t}}e^{-\frac{x^2}{2t}}\)</span></li>
+</ul>
+</li>
+<li>
+<p>积分过程 <span class="arithmatex">\(X(t)=\int_0^t B(s)ds\sim\mathcal{N}(0,\frac{t^3}{3})\)</span></p>
+<ul>
+<li><span class="arithmatex">\(EX(t)=0, r_X(s,t)=\frac{s^2t}{2}-\frac{s^3}{6},s\leq t\)</span></li>
+</ul>
+</li>
+<li>
+<p>最大值 <span class="arithmatex">\(M_t=\max\limits_{0\leq s\leq t}B(s) \overset{d}{=} |B(t)|\)</span></p>
+</li>
+<li>
+<p>首中时 <span class="arithmatex">\(T_a=\min\{t:B(t)=a\}\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(f_a(t)=\frac{|a|}{\sqrt{2\pi t^3}}e^{-\frac{a^2}{2t}},t&gt;0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(ET_a=\infty,P(T_a&lt;\infty)=1\)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(X(t)=B(t)-bt\)</span> 的首中时 <span class="arithmatex">\(T_{a,b}\)</span></p>
+<ul>
+<li>实际上就是 <span class="arithmatex">\(B(t)\)</span> 首次击中 <span class="arithmatex">\(bt+a\)</span> 的时刻</li>
+<li><span class="arithmatex">\(f_{a,b}(t)=\frac{1}{\sqrt{2\pi t^3}}e^{-\frac{(a+bt)^2}{2t}},t&gt;0\)</span></li>
+</ul>
+</li>
+<li>
+<p>Ito 积分</p>
+<ul>
+<li>若 <span class="arithmatex">\(f\)</span> 是非随机有界变差函数, 则 <span class="arithmatex">\(\int_0^t f(s)dB(s) = f(t)B(t)-\int_0^t B(s)df(s)\)</span></li>
+<li>
+<p>若 <span class="arithmatex">\(f\)</span> 是随机过程, 则 <span class="arithmatex">\(\int_0^t f(s)dB(s) = \lim\limits_{n\to\infty} \sum\limits_{i=0}^{n-1} f(t_i)(B(t_{i+1})-B(t_i))\)</span></p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_0^t F'(B(s))dB(s)=F(B(t))-F(B(0))-\frac{1}{2}\int_0^t F''(B(s))ds\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_3">平稳过程随机遍历性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>探究随机过程的时间平均 <span class="arithmatex">\(\tau = \frac{\sum X_n}{n}\)</span> 和样本平均 <span class="arithmatex">\(\mu = EX(t)\)</span> 的关系</p>
+</li>
+<li>
+<p>平稳随机过程 <span class="arithmatex">\(X\)</span> 具有均值遍历性就是 <span class="arithmatex">\(\tau=\mu,a.e.\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(r_x(t)=EX_0X_t\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(X\)</span> 满足均值遍历性 <span class="arithmatex">\(\iff \frac1{T^2}\int_0^T(T-t)(r_X(t)-\mu^2)dt\to0,T\to\infty\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\iff \frac1T\int_0^T(r_X(t)-\mu^2)dt\to0,T\to\infty\)</span></p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(r_X(t) \to \mu^2, t\to\infty\)</span>, 则 <span class="arithmatex">\(X\)</span> 满足均值遍历性</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_4">杂项<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><span class="arithmatex">\(Chebyshev\)</span> 不等式</p>
+<ul>
+<li><span class="arithmatex">\(P(|X-\mu|\geq \varepsilon)\leq \frac{\sigma^2}{\varepsilon^2}\)</span></li>
+</ul>
+</li>
+<li>
+<p>宽平稳 (弱平稳) 过程</p>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(\forall t\in T, E(X(t))^2&lt;\infty\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mu_X(t)=\mu, \forall t\in T\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(r_X(s,t)=\tau_X(s-t), \forall s,t\in T\)</span>, 其中 <span class="arithmatex">\(\tau_X:R\to R\)</span></p>
+<ul>
+<li>则称随机过程 <span class="arithmatex">\(X(t)\)</span> 为宽平稳过程</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>严平稳过程</p>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(\forall k\geq 1, t_1,t_2,\cdots,t_k\in T, t\in T\)</span></p>
+<ul>
+<li>
+<div class="arithmatex">\[(X(t_1+t),X(t_2+t),\cdots,X(t_k+t))\overset{d}{=}(X(t_1),X(t_2),\cdots,X(t_k))\]</div>
+</li>
+<li>
+<p>则称随机过程 <span class="arithmatex">\(X(t)\)</span> 为严平稳过程</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>独立增量过程</p>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(\forall t_1&lt;t_2&lt;\cdots&lt;t_n\)</span>, 随机变量 <span class="arithmatex">\(X(t_1),X(t_2)-X(t_1),\cdots,X(t_n)-X(t_{n-1})\)</span> 相互独立</p>
+<ul>
+<li>则称随机过程 <span class="arithmatex">\(X(t)\)</span> 为独立增量过程</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 

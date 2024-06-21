@@ -1464,7 +1464,7 @@
 
 <h1 id="poisson">Poisson 过程<a class="headerlink" href="#poisson" title="Permanent link">&para;</a></h1>
 <ul>
-<li>用<span class="arithmatex">\(N(t)\)</span>表示时间(0,t]中事件发生的次数,<span class="arithmatex">\(\lambda\)</span>是单位时间发生的事件数,<span class="arithmatex">\(S_i\)</span>表示第i次事件发生的时间</li>
+<li>用<span class="arithmatex">\(N(t)\)</span>表示时间 <span class="arithmatex">\((0,t]\)</span> 中事件发生的次数, <span class="arithmatex">\(\lambda\)</span> 是单位时间发生的事件数, <span class="arithmatex">\(S_i\)</span> 表示第 <span class="arithmatex">\(i\)</span> 次事件发生的时间</li>
 </ul>
 <h2 id="poisson_1">Poisson分布<a class="headerlink" href="#poisson_1" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1506,7 +1506,7 @@
 <h2 id="poisson_2">Poisson流<a class="headerlink" href="#poisson_2" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><span class="arithmatex">\(N(t)\sim \mathcal{P}(\lambda t)\)</span>,则<span class="arithmatex">\(N(t)\)</span>是一个Poisson流</p>
+<p><span class="arithmatex">\(N(t)\sim \mathcal{P}(\lambda t)\)</span>,则<span class="arithmatex">\(N(t)\)</span>是一个 <span class="arithmatex">\(Poisson\)</span> 流</p>
 </li>
 <li>
 <p>考察事件发生的时间的分布,也就是<span class="arithmatex">\(S_i\)</span>的分布</p>
@@ -1580,19 +1580,19 @@
 <h3 id="_4">次序统计量<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>设<span class="arithmatex">\(X_1,X_2,\cdots,X_n\)</span>独立同分布,分布函数为F,密度函数为f,且<span class="arithmatex">\(X_{(1)},X_{(2)},\cdots,X_{(n)}\)</span>是<span class="arithmatex">\(X_1,X_2,\cdots,X_n\)</span>的次序统计量,那么有</p>
+<p>设<span class="arithmatex">\(X_1,X_2,\cdots,X_n\)</span>独立同分布,分布函数为 <span class="arithmatex">\(F\)</span> ,密度函数为 <span class="arithmatex">\(f\)</span>, 且<span class="arithmatex">\(X_{(1)},X_{(2)},\cdots,X_{(n)}\)</span>是<span class="arithmatex">\(X_1,X_2,\cdots,X_n\)</span>的次序统计量,那么有</p>
 </li>
 <li>
 <div class="arithmatex">\[ P(X_{(k)}\leq x)=\sum\limits_{j=k}^nC_n^jF(x)^j[1-F(x)]^{n-j} \]</div>
 <ul>
-<li>也就是说大于 x 的随机变量个数至少有 k 个</li>
+<li>也就是说大于 <span class="arithmatex">\(x\)</span> 的随机变量个数至少有 <span class="arithmatex">\(k\)</span> 个</li>
 </ul>
 </li>
 <li>
 <div class="arithmatex">\[ p_k(x)=C_n^1p(x)C_{n-1}^{k-1}F(x)^{k-1}[1-F(x)]^{n-k}=\frac{n!}{(k-1)!(n-k)!}F(x)^{k-1}p(x)[1-F(x)]^{n-k} \]</div>
 </li>
 <li>
-<p>先选一个等于 x 的,然后 k-1 个小雨 x 的,剩下的大于 x</p>
+<p>先选一个等于 <span class="arithmatex">\(x\)</span> 的,然后 <span class="arithmatex">\(k-1\)</span> 个小于 <span class="arithmatex">\(x\)</span> 的,剩下的大于 <span class="arithmatex">\(x\)</span></p>
 </li>
 <li>
 <p>也就是说我们在考虑次序统计量的时候,要通过分析原始随机变量来间接考察</p>
