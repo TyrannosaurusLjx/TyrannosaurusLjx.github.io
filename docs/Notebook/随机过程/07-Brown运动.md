@@ -154,7 +154,7 @@
 #### 定理 7.7
 - $\text{Brown}$ 运动的曲线是无界变差函数
 
-    - $$\lim\limits_{n\to\infty}\sum\limits_{i=1}^{2^n} \left|B\left(\frac{i}{2^n}\right)-B\left(\frac{i-1}{2^n}\right)\right|^2 = \infty
+    - $$\lim\limits_{n\to\infty}\sum\limits_{i=1}^{2^n} \left|B\left(\frac{i}{2^n}\right)-B\left(\frac{i-1}{2^n}\right)\right|^2 = \infty$$
 
 #### Ito积分定义
 
