@@ -100,6 +100,9 @@
 
 - $i$是常返的,那么$C_i=\{j:i\leftrightarrow j\}$是闭集
 
+> [!NOTE]
+> 这里的关键在于 $i$ 一定要是常返的, 如果不是, 那么 $C_i$ 不一定是闭https://www.cc98.org/topic/5921064的
+
 #### 定理 4.4(状态空间的分解)
 
 - $\mathcal{E} = C_1+\cdots+C_m+\mathcal{N}$,其中$C_1,\cdots,C_m$是常返类,$\mathcal{N}$是瞬时状态全体,$m$可以取无穷
