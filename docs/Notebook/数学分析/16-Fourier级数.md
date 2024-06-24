@@ -148,12 +148,3 @@
 - $\frac{a_0}{2} + \sum\limits_{n=1}^{\infty}(a_n\cos nx+b_n\sin nx)$  是某个 $[-\pi,\pi]$ 上可积或者绝对可积函数的傅里叶级数的必要条件是级数 $\sum\limits_{n=1}^\infty \frac{b_n}{n}$ 收敛
 
 
-
-
-
-
-
-
-
-
-

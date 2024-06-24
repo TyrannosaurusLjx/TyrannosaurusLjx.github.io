@@ -237,17 +237,3 @@
     - $\lim\limits_{t\to 0}p_{ij}(t) = \begin{cases} 1 & i=j \\ 0 & i\neq j \end{cases}$
 - 称满足上述假设的的转移概率矩阵族$\{P(t),t\geq 0\}$称为是 **标准的**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
