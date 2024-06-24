@@ -831,8 +831,6 @@
       
         
       
-        
-      
     
     
       
@@ -1056,27 +1054,6 @@
   
   <span class="md-ellipsis">
     reference
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../text/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Text
   </span>
   
 
@@ -1539,21 +1516,31 @@
 </li>
 <li>综上<span class="arithmatex">\(Cov(V_n,V_{n+m})=\frac{1}{2^{m+1}}\)</span></li>
 <li>
-<div class="arithmatex">\[(\xi_{n_1+n},\xi_{n_2+n},\cdots,\xi_{n_s+n})\overset{d}{=}(\xi_{n_1},\xi_{n_2},\cdots,\xi_{n_s})$$从而$$(V_{n_1+n},V_{n_2+n},\cdots,V_{n_s+n})\overset{d}{=}(V_{n_1},V_{n_2},\cdots,V_{n_s})\]</div>
+<div class="arithmatex">\[(\xi_{n_1+n},\xi_{n_2+n},\cdots,\xi_{n_s+n})\overset{d}{=}(\xi_{n_1},\xi_{n_2},\cdots,\xi_{n_s})\]</div>
 </li>
 </ul>
+<p>从而</p>
+<div class="arithmatex">\[(V_{n_1+n},V_{n_2+n},\cdots,V_{n_s+n})\overset{d}{=}(V_{n_1},V_{n_2},\cdots,V_{n_s})\]</div>
 <h3 id="6">6.<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <div class="arithmatex">\[p(1_{\xi_k\leq t}=1)=t,p(1_{\xi_k\leq t}=0)=1-t\]</div>
 </li>
-<li><span class="arithmatex">\(<span class="arithmatex">\(EX(t)=E\frac{1}{n}\sum\limits_{k=1}^n1_{\xi_k\leq t}=\frac{1}{n}\sum\limits_{k=1}^nE1_{\xi_k\leq 1}=\frac{1}{n}nt=t\)</span>\)</span>,从而<span class="arithmatex">\(EX(t)=t\)</span>.</li>
-<li><span class="arithmatex">\(Cov(X(s),X(t))=EX(s)X(t)-EX(s)EX(t)\)</span>,其中</li>
+<li>
+<div class="arithmatex">\[EX(t)=E\frac{1}{n}\sum\limits_{k=1}^n1_{\xi_k\leq t}=\frac{1}{n}\sum\limits_{k=1}^nE1_{\xi_k\leq 1}=\frac{1}{n}nt=t \implies EX(t)=t\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(Cov(X(s),X(t))=EX(s)X(t)-EX(s)EX(t)\)</span></p>
+<ul>
+<li>其中</li>
+</ul>
+</li>
 <li>
 <div class="arithmatex">\[EX(s)X(t)=E\frac{1}{n^2}\sum\limits_{i=1}^n1_{\xi_i\leq s}\sum\limits_{j=1}^n1_{\xi_j\leq t}=\frac{1}{n}E( \sum\limits_{i=1}^n1_{\xi_i\leq s}1_{\xi_i\leq t} +\sum\limits_{i\neq j}1_{\xi_i\leq s}1_{\xi_j\leq t})=\frac{1}{n^2}( n\min\{s,t\} + (n^2-n)st )= \frac{\min\{s,t\}+(n-1)st}{n}\]</div>
 </li>
-<li>从而<span class="arithmatex">\(Cov(X(s),X(t))=\frac{\min\{s,t\}+(n-1)st}{n}-st=\frac{\min\{s,t\}-st}{n}\)</span></li>
+<li><span class="arithmatex">\(\implies Cov(X(s),X(t))=\frac{\min\{s,t\}+(n-1)st}{n}-st=\frac{\min\{s,t\}-st}{n}\)</span></li>
 </ul>
+<p><a href="知乎">https://zhuanlan.zhihu.com/p/705128196</a></p>
 
 
 

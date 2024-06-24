@@ -831,8 +831,6 @@
       
         
       
-        
-      
     
     
       
@@ -1056,27 +1054,6 @@
   
   <span class="md-ellipsis">
     reference
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../text/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Text
   </span>
   
 
@@ -1578,13 +1555,25 @@
 <div class="arithmatex">\[ET(t)=ET_0E(-1)^{N(t)}=0\]</div>
 </li>
 <li>
-<div class="arithmatex">\[Cov(T(s),T(t))=ET(s)T(t)=ET_0^2E(-1)^{N(s+t)}=\sum\limits_{n=0}^\infty(-1)^n\frac{[\lambda(s+t)]^n}{n!}e^{-\lambda(s+t)}=e^{-2\lambda(s+t)}\]</div>
+<div class="arithmatex">\[Cov(T(s),T(t))=ET_0^2E(-1)^{N(s)}(-1)^{N(t)}=E(-1)^{2N(s)} E(-1)^{N(t-s)}=e^{-2\lambda (t-s)}\]</div>
 </li>
-<li>同理易知</li>
 <li>
-<div class="arithmatex">\[EX(t)=0,Cov(X(u),X(v))=EX(u)X(v)=ET_0^2E\int_0^u(-1)^{N(t)}dt\int_0^v(-1)^{N(t)}dt= E(\int_0^u(-1)^{N(t)}dt)^2 + E\int_0^u(-1)^{N(t)}dtE\int_u^v(-1)^{N(t)}dt=u^2+(uv-u^2)e^{-2\lambda t}\]</div>
+<p>同理易知</p>
+</li>
+<li>
+<div class="arithmatex">\[EX(t)=0\]</div>
+</li>
+<li>
+<p>设 <span class="arithmatex">\(s&lt;t\)</span></p>
 </li>
 </ul>
+<div class="arithmatex">\[
+\begin{align*}
+Cov(X(s),X(t)) &amp;= ET_0^2\int_0^t\int_0^sE(-1)^{2N(\min \{u,v\})}E(-1)^{N(\max \{u,v\}-\min \{u,v\})}dudv\\
+&amp;= \int_0^s du\int_0^u e^{-2\lambda (u-v)}dv + \int_0^sdu\int_u^t e^{-2\lambda (v-u)}dv\\
+&amp;=\frac{-1+e^{-2\lambda s} + e^{-2\lambda t}+ 4\lambda s- e^{-2\lambda (t-s)}}{4\lambda^2}
+\end{align*}
+\]</div>
 <h3 id="2">2.<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -1612,7 +1601,7 @@
 <div class="arithmatex">\[p(N(1)=2|N(3)=6)=\frac{p(N(1)=2,N(3)=6)}{p(N(3)=6)}=\frac{\frac{64}{3}e^{-6}}{\frac{(2\cdot 3)^6}{6!}e^{-6}}=\frac{80}{243}\]</div>
 </li>
 <li>
-<div class="arithmatex">\[p(N(3)=6|N(1)=2)=\frac{p(N(1)=2,N(3)=6)p(N(3)=6)}{p(N(1)=2)}=\frac{32}{3e^4}\]</div>
+<div class="arithmatex">\[p(N(3)=6|N(1)=2)=p(N(2)=4)=\frac{32}{3e^4}\]</div>
 </li>
 </ul>
 <h3 id="4">4.<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>

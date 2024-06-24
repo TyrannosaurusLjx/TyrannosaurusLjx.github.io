@@ -831,8 +831,6 @@
       
         
       
-        
-      
     
     
       
@@ -1056,27 +1054,6 @@
   
   <span class="md-ellipsis">
     reference
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../text/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Text
   </span>
   
 
@@ -1431,6 +1408,69 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      21
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      22
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      24
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      26
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      27
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28" class="md-nav__link">
+    <span class="md-ellipsis">
+      28
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1725,10 +1765,10 @@ p\left(x_{n+1}=j \mid x_n=i\right)=p\left(\xi_{n+1}=1-j\right)
 <div class="arithmatex">\[
 p\left(x_{n+1}=j \mid x_n=i\right)=p\left(\xi_{n+1}=2-j\right)
 \]</div>
-<p>故 
-$$
-P = \begin{pmatrix} 0 &amp; \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2} \ 0 &amp; \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2} \ \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2} &amp; 0 \ 0 &amp; \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2}  \end{pmatrix}
-$$</p>
+<p>故 </p>
+<div class="arithmatex">\[
+P = \begin{pmatrix} 0 &amp; \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2} \\ 0 &amp; \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2} \\ \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2} &amp; 0 \\ 0 &amp; \frac{1}{10} &amp; \frac{2}{5} &amp; \frac{1}{2}  \end{pmatrix}
+\]</div>
 <h3 id="12">12<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <p><span class="arithmatex">\(\begin{cases} q_1 = 0.3q_1+0.2q_2 \\ q_2 = 0.5q_1+0.1q_2+0.4\end{cases}\)</span></p>
 <p><span class="arithmatex">\(\implies q_2 = \frac{28}{53}\)</span></p>
@@ -1745,19 +1785,19 @@ $$</p>
 <p>注意到 <span class="arithmatex">\(Q = \begin{pmatrix} \frac{p-\sqrt{p+q-1}}{1-\sqrt{p+q-1}} &amp; \frac{1-p}{1-\sqrt{p+q-1}} \\ \frac{q-\sqrt{p+q-1}}{1-\sqrt{p+q-1}} &amp; \frac{1-q}{1-\sqrt{p+q-1}}\end{pmatrix}\)</span> 是一个马尔科夫两步状态转移矩阵,且 <span class="arithmatex">\(P=Q^2\)</span></p>
 <h3 id="15">15<a class="headerlink" href="#15" title="Permanent link">&para;</a></h3>
 <p>(1) : <span class="arithmatex">\(1 \leftrightarrow 2 \leftrightarrow 3,4 \rightarrow 1\)</span>. 但 <span class="arithmatex">\(1 \rightarrow 4\)</span>.
-于是 <span class="arithmatex">\(d_1=d_2=d_3\)</span>.
-$$
+于是 <span class="arithmatex">\(d_1=d_2=d_3\)</span>.</p>
+<div class="arithmatex">\[
 \begin{aligned}
-&amp; p_{11}^{(2)}=p_{13} p_{31}=1 \times \frac{1}{2}=\frac{1}{2} \quad P_{11}^{(3)}=P_{13} p_{32} p_{21}=1 \times \frac{1}{2} \times 1=\frac{1}{2} . \
-&amp; \text { 于是 } d_1=d_2=d_3=\operatorname{ged}{2.3}=1 . \
+&amp; p_{11}^{(2)}=p_{13} p_{31}=1 \times \frac{1}{2}=\frac{1}{2} \quad P_{11}^{(3)}=P_{13} p_{32} p_{21}=1 \times \frac{1}{2} \times 1=\frac{1}{2} . \\
+&amp; \text { 于是 } d_1=d_2=d_3=\operatorname{ged}\{2.3\}=1 . \\
 &amp; d_4=1 .
 \end{aligned}
-$$</p>
+\]</div>
 <p>故 <span class="arithmatex">\(d_1=d_2=d_3=d_4=1\)</span>.</p>
-<p>(2) : <span class="arithmatex">\(1 \leftrightarrow 2 \leftrightarrow 3 \leftrightarrow 4\)</span>. F是 <span class="arithmatex">\(d_1=d_2=d_3=d_4\)</span>.
-$$
+<p>(2) : <span class="arithmatex">\(1 \leftrightarrow 2 \leftrightarrow 3 \leftrightarrow 4\)</span>. F是 <span class="arithmatex">\(d_1=d_2=d_3=d_4\)</span>.</p>
+<div class="arithmatex">\[
 p_{11}^{(3n)}=p_{12} p_{24} p_{41} \cdot\left(p_{24} p_{43} p_{32}\right)^{n-1}=\frac{1}{3} \times\left(\frac{2}{3}\right)^{n-1} \text {. }
-$$</p>
+\]</div>
 <p>于是 <span class="arithmatex">\(d_1=d_2=d_3=d_4=\operatorname{g}(d\{3 n: n \in \mathbb{Z}\}=3\)</span>.</p>
 <h3 id="16">16<a class="headerlink" href="#16" title="Permanent link">&para;</a></h3>
 <p><span class="arithmatex">\(i\leftrightarrow j,\forall i,j\)</span>, 于是存在 <span class="arithmatex">\(n,s.t.p_{ii}^{(n)}&gt;0\)</span>, 但 <span class="arithmatex">\(P^2=P\)</span>, 于是 <span class="arithmatex">\(n=1\)</span> 换句话说 <span class="arithmatex">\(p_{ii}&gt;0\)</span>, 从而 <span class="arithmatex">\(d_i=1,\forall i\)</span> 从而 Markov链是非周期的</p>
@@ -1800,6 +1840,95 @@ $$</p>
 从而1 为瞬时状态</p>
 <p>显然有 <span class="arithmatex">\(p_{22}^{(2 n)}=p_{33}^{(n)}=1\)</span>. 于是 <span class="arithmatex">\(\sum p_{22}^{(n)}=\sum p_{33}^{(n)}=\infty\)</span>
 从而 2,3 为常返状态</p>
+<h3 id="21">21<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<ol>
+<li>状态空间包含三个互达等价类 <span class="arithmatex">\(\{1,2\} ，\{3,4\} ，\{5,6\}\)</span>. 其中 <span class="arithmatex">\(\{1,2\}\)</span> 与 <span class="arithmatex">\(\{3,4\}\)</span> 是常返的,而 <span class="arithmatex">\(\{5,6\}\)</span> 是瞬时的. 且状态 <span class="arithmatex">\(\{1,2,3,4\}\)</span> 均是非周期的. 从而由推论 4.1 可知,</li>
+</ol>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} p_{6 j}^{(n)}=\frac{f_{6 j}}{\tau_j} .
+\]</div>
+<p>其中， <span class="arithmatex">\(f_{i j}\)</span> 为从 <span class="arithmatex">\(i\)</span> 出发可达到 <span class="arithmatex">\(j\)</span> 的概率， <span class="arithmatex">\(\tau_j\)</span> 为状态 <span class="arithmatex">\(j\)</span> 的平均返回时间.
+观察转移概率矩阵的最后两行, 不难发现 <span class="arithmatex">\(f_{61}=f_{62}=f_{63}=f_{64}=\frac{1}{2}\)</span>.
+对于状态 1 而言, <span class="arithmatex">\(\tau_1=E\left(T_1 \mid X_0=1\right)=1 \times \frac{1}{3}+\sum_{k=2}^{\infty} k \cdot \frac{2}{3} \cdot\left(\frac{1}{3}\right)^{k-2} \cdot \frac{2}{3}=2\)</span>, 从而</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} p_{61}^{(n)}=\frac{f_{61}}{\tau_1}=\frac{1}{4}
+\]</div>
+<p>同理于状态 <span class="arithmatex">\(\{2,3,4\}\)</span>, 经计算可得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; \lim _{n \rightarrow \infty} p_{62}^{(n)}=\frac{f_{62}}{\tau_2}=\frac{1}{4}, \\
+&amp; \lim _{n \rightarrow \infty} p_{63}^{(n)}=\frac{f_{63}}{\tau_3}=\frac{2}{19}, \\
+&amp; \lim _{n \rightarrow \infty} p_{64}^{(n)}=\frac{f_{64}}{\tau_4}=\frac{15}{38} .
+\end{aligned}
+\]</div>
+<p>另一方面，由于状态 <span class="arithmatex">\(\{5,6\}\)</span> 是瞬时的，显然有</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} p_{65}^{(n)}=\lim _{n \rightarrow \infty} p_{66}^{(n)}=0 .
+\]</div>
+<p>2.由于状态 6 是个吸收态, 从而显然有</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} p_{61}^{(n)}=\lim _{n \rightarrow \infty} p_{62}^{(n)}=\lim _{n \rightarrow \infty} p_{63}^{(n)}=\lim _{n \rightarrow \infty} p_{64}^{(n)}=\lim _{n \rightarrow \infty} p_{65}^{(n)}=0, \lim _{n \rightarrow \infty} p_{66}^{(n)}=1
+\]</div>
+<h3 id="22">22<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(p_0\neq 0\implies d_i=1,\forall i\)</span>, 又存在 <span class="arithmatex">\(j\neq 0,s.t.p_j\neq 0\)</span>, 于是 <span class="arithmatex">\(\forall i,j: i\leftrightarrow j\)</span>, 于是其非周期不可约</p>
+<p>注意到 <span class="arithmatex">\(\pi = (\frac{1}{m+1},\cdots,\frac{1}{m+1})\)</span> 是平稳分布, 于是 <span class="arithmatex">\(\lim\limits_{n\to\infty} p_{ij}^{(n)} =\frac{1}{1+m}\)</span></p>
+<h3 id="24">24<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<p>用有序对 <span class="arithmatex">\(X_n=(*, *)\)</span> 表示第 <span class="arithmatex">\(n\)</span> 天与第 <span class="arithmatex">\(n+1\)</span> 天的天气状况, 且其状态空间为 <span class="arithmatex">\(\{1,2,3,4\}\)</span>,其中, <span class="arithmatex">\(1=\)</span> (晴, 晴 <span class="arithmatex">\(), 2=(\)</span> 晴, 云 <span class="arithmatex">\(), 3=(\)</span> 云, 晴 <span class="arithmatex">\(), 4=(\)</span> 云, 云 <span class="arithmatex">\()\)</span>. 那么, 显然 <span class="arithmatex">\(X=\left\{X_n, n \geq 1\right\}\)</span> 是一个 Markov 链, 且其转移概率矩阵为</p>
+<div class="arithmatex">\[
+P=\left[\begin{array}{cccc}
+0.8 &amp; 0.2 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0.4 &amp; 0.6 \\
+0.6 &amp; 0.4 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0.1 &amp; 0.9
+\end{array}\right] .
+\]</div>
+<p>设 <span class="arithmatex">\(\pi\)</span> 是 <span class="arithmatex">\(X\)</span> 的平稳分布, 则满足下面方程组</p>
+<div class="arithmatex">\[
+\left\{\begin{array}{c}
+\pi_1=0.8 \pi_1+0.6 \pi_3 \\
+\pi_2=0.2 \pi_1+0.4 \pi_3 \\
+\pi_3=0.4 \pi_2+0.1 \pi_4 \\
+\pi_4=0.6 \pi_2+0.9 \pi_4 \\
+\pi_1+\pi_2+\pi_3+\pi_4=1
+\end{array}\right.
+\]</div>
+<p>求解可得， <span class="arithmatex">\(\pi=\left(\frac{3}{11}, \frac{1}{11}, \frac{1}{11}, \frac{6}{11}\right)\)</span>. 此外，从长远来看，晴天的概率为 <span class="arithmatex">\(\frac{3}{11}+\frac{1}{11}=\frac{4}{11}\)</span>.</p>
+<h3 id="25">25<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><span class="arithmatex">\(\pi = (\frac{9}{20},\frac{6}{20},\frac{5}{20})\)</span></p>
+</li>
+<li>
+<p>计算可得 <span class="arithmatex">\(P^*=P\)</span></p>
+</li>
+</ol>
+<h3 id="26">26<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><span class="arithmatex">\(P\left(X_2=2, X_1=2 \mid X_0=1\right)=p_{12} p_{22}=0.1\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(P\left(X_2=1 \mid X_0=3\right)=p_{31}^{(2)}=0.36\)</span>.</p>
+</li>
+<li>
+<p>记 <span class="arithmatex">\(T=\min \left\{n \geq 1: X_n \neq 3 \mid X_0=3\right\}\)</span> ，那么 <span class="arithmatex">\(T\)</span> 服从参数为 0.8 的几何分布, 从而 <span class="arithmatex">\(E(T)=\frac{5}{4}\)</span>.</p>
+</li>
+</ol>
+<h3 id="27">27<a class="headerlink" href="#27" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><span class="arithmatex">\(\pi = (\frac{6}{25},\frac{10}{25},\frac{9}{25})\)</span></p>
+</li>
+<li>
+<p>由定理 4.9 可知 <span class="arithmatex">\(\tau_j=\frac{1}{\pi_j}\)</span></p>
+</li>
+</ol>
+<h3 id="28">28<a class="headerlink" href="#28" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(P_1\)</span> 不是, 考察回路 <span class="arithmatex">\((1,2,3,1)\)</span> 即可</p>
+<p><span class="arithmatex">\(P_2\)</span> 是 (画图容易看出 只需要验证 <span class="arithmatex">\(\sigma_1 = (1,2,3,1),\sigma_2=(2,3,4,2)\)</span>)</p>
+<p><span class="arithmatex">\(P_3\)</span> 是 (画图容易看出)</p>
+<p><span class="arithmatex">\(P_4\)</span> 不是, 考察回路 <span class="arithmatex">\((1,2,3,1)\)</span> 即可</p>
+<p><a href="知乎">https://zhuanlan.zhihu.com/p/705129071</a></p>
 
 
 
