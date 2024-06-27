@@ -348,6 +348,8 @@
       
         
       
+        
+      
     
     
       
@@ -392,6 +394,53 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%A4%8D%E8%AF%95/%E7%82%B9%E9%9B%86%E6%8B%93%E6%89%91/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    复试
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
               
             
               
@@ -843,7 +892,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
         
           
           
@@ -859,14 +908,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
             <span class="md-nav__icon md-icon"></span>
             随机过程
           </label>
@@ -1746,7 +1795,7 @@
 </ul>
 </li>
 <li>
-<p>令<span class="arithmatex">\(p_{n;ij}=P(X_{n+1}=j|X_n=i)\)</span>,则<span class="arithmatex">\(p_{n;ij}\)</span>为Markov Chain在 n 时刻存状态 i 转化到状态 j 的概率,特别的如果<span class="arithmatex">\(p_{n;ij}\)</span>与 n 无关,那么称<span class="arithmatex">\(X\)</span>是(时间)齐次马尔科夫链</p>
+<p>令<span class="arithmatex">\(p_{n;ij}=P(X_{n+1}=j|X_n=i)\)</span>,则<span class="arithmatex">\(p_{n;ij}\)</span>为Markov Chain在 <span class="arithmatex">\(n\)</span> 时刻存状态 <span class="arithmatex">\(i\)</span> 转化到状态 <span class="arithmatex">\(j\)</span> 的概率,特别的如果<span class="arithmatex">\(p_{n;ij}\)</span>与 n 无关,那么称<span class="arithmatex">\(X\)</span>是(时间)齐次马尔科夫链</p>
 </li>
 <li>
 <p><span class="arithmatex">\(P=(p_{ij})_{n\times n}\)</span>为状态转移矩阵</p>
@@ -1849,9 +1898,11 @@
 </li>
 <li>
 <p>如果<span class="arithmatex">\(P(T_j&lt;\infty |X_0=j)=1\)</span>,也就是说在有限的时间内一定会回到状态 <span class="arithmatex">\(j\)</span> ,那么称 <span class="arithmatex">\(j\)</span> 是常返状态</p>
-</li>
+<ul>
 <li>如果<span class="arithmatex">\(E(T_j|X_0=j)&lt;\infty\)</span>,那么称<span class="arithmatex">\(j\)</span>是正常返状态</li>
 <li>如果<span class="arithmatex">\(E(T_j|X_0=j)=\infty\)</span>,那么称<span class="arithmatex">\(j\)</span>是零常返状态</li>
+</ul>
+</li>
 <li>如果<span class="arithmatex">\(P(T_j&lt;\infty |X_0=j)&lt;1\)</span>,那么称<span class="arithmatex">\(j\)</span>是瞬时状态</li>
 </ul>
 <blockquote>
@@ -1876,7 +1927,7 @@
 </ul>
 <blockquote>
 <p>[!NOTE]
-这里的关键在于 <span class="arithmatex">\(i\)</span> 一定要是常返的, 如果不是, 那么 <span class="arithmatex">\(C_i\)</span> 不一定是闭https://www.cc98.org/topic/5921064的</p>
+这里的关键在于 <span class="arithmatex">\(i\)</span> 一定要是常返的, 如果不是, 那么 <span class="arithmatex">\(C_i\)</span> 不一定是闭的</p>
 </blockquote>
 <h4 id="44">定理 4.4(状态空间的分解)<a class="headerlink" href="#44" title="Permanent link">&para;</a></h4>
 <ul>
