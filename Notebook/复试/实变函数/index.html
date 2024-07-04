@@ -1,0 +1,1932 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ljx's personal page">
+      
+      
+        <meta name="author" content="Ljx">
+      
+      
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/%E5%A4%8D%E8%AF%95/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/">
+      
+      
+        <link rel="prev" href="../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">
+      
+      
+        <link rel="next" href="../%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/">
+      
+      
+      <link rel="icon" href="../../../assets/image/Chivalrous.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>实变函数 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              实变函数
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Notebook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Tools/" class="md-tabs__link">
+          
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Notebook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    复试
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            复试
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    复变函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    实变函数
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    实变函数
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      序列极限
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="序列极限">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      上下极限的定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断点在不在上下极限中
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      序列极限计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      证明 \(n\) 元数列具有连续统势
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      证明可数集的子集全体有连续统势
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bernstein" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bernstein定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      证明连续函数全体有连续统势
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mu-2mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      证明不存在基数最大的集合, 即 \(\mu &lt; 2^\mu\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      开集
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      闭集
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      完备集
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      稠集
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      疏集
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cantor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cantor 完备集的构造及其性质
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lebesgue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lebesgue测度
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lebesgue测度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lebesgue_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lebesgue外测度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      外测度的性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      可测集
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      可测集的性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      不可测集的例子
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lebesgueborel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lebesgue可测但是不是Borel可测的例子
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borel" class="md-nav__link">
+    <span class="md-ellipsis">
+      事实上,在勒贝格可测集中, Borel 集合只占微不足道的一部分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      可测集用开集和闭集来逼近
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g_deltaf_sigma" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(G_\delta,F_\sigma\) 集
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma" class="md-nav__link">
+    <span class="md-ellipsis">
+      代数和 \(\sigma\) 代数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      包含集族的所有代数的交称为集族生成的代数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma-sigma" class="md-nav__link">
+    <span class="md-ellipsis">
+      包含集族的所有 \(\sigma\) 代数的交称为集族生成的 \(\sigma\) 代数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      可测函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="可测函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      可测函数的定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      简单函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#egoroff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Egoroff 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riesz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Riesz 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lusin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lusin 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      测度收敛
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    抽象代数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A6%82%E7%8E%87%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概率论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%82%B9%E9%9B%86%E6%8B%93%E6%89%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    点集拓扑
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    操作系统
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数学分析
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数学建模
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    数据结构与算法
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    机器学习
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    计算机组成原理
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    随机过程
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    高等代数
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">实变函数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">序列极限<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h4 id="_3">上下极限的定义<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(\{A_n\}\)</span> 是集合序列, 定义其上下极限为</p>
+<div class="arithmatex">\[\overline{\lim\limits_{n\to\infty}}A_n=\bigcap\limits_{n=1}^{\infty}\bigcup\limits_{k=n}^{\infty}A_k\]</div>
+<div class="arithmatex">\[\underline{\lim\limits_{n\to\infty}}A_n=\bigcup\limits_{n=1}^{\infty}\bigcap\limits_{k=n}^{\infty}A_k\]</div>
+<h4 id="_4">判断点在不在上下极限中<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><span class="arithmatex">\(x\in \overline{\lim} A_n \iff \forall N&gt;0, \exists n&gt;N, s.t. x\in A_n\)</span></p>
+<ul>
+<li>即 <span class="arithmatex">\(x\)</span> 在 <span class="arithmatex">\(A_n\)</span> 中出现无穷多次</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(x\in \underline{\lim} A_n \iff \exists N&gt;0, \forall n&gt;N, s.t. x\in A_n\)</span></p>
+<ul>
+<li>即集合序列中只有有限个集合不包含 <span class="arithmatex">\(x\)</span></li>
+</ul>
+</li>
+<li>
+<p>上面意味着下极限包含在上极限中</p>
+</li>
+</ul>
+<h4 id="_5">序列极限计算<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>若序列单调, 那么其上下极限就是序列的极限, 并且</p>
+<div class="arithmatex">\[\lim\limits_{n\to\infty}A_n=\begin{cases} \bigcup\limits_{n=1}^{\infty}A_n, &amp; \text{单调递增} \\ \bigcap\limits_{n=1}^{\infty}A_n, &amp; \text{单调递减} \end{cases}\]</div>
+<p><img alt="image_2024-07-03-14-08-17" src="../img/image_2024-07-03-14-08-17.png" /></p>
+<h4 id="n">证明 <span class="arithmatex">\(n\)</span> 元数列具有连续统势<a class="headerlink" href="#n" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(f:[0,1]\to \{n\text{元数列}\},s.t.f(x)=\{a_1,a_2,\cdots\}s.t.x=0.a_1a_2,\cdots\)</span> 为 <span class="arithmatex">\(n\)</span> 进制表示</li>
+</ul>
+<h4 id="_6">证明可数集的子集全体有连续统势<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>只需要对 <span class="arithmatex">\(\mathbb{N}\)</span> 的子集进行证明, </li>
+<li><span class="arithmatex">\(f:A\to \{2\text{元数列}\},s.t.f(x)=\{a_1,a_2,\cdots\},a_i = \begin{cases} 1 &amp; i\in A \\ 0 &amp; i\notin A \end{cases}\)</span></li>
+<li>
+<p>建立了 <span class="arithmatex">\(\mathbb{N}\)</span> 到 <span class="arithmatex">\(\{2\text{元数列}\}\)</span> 的映射,后者具有连续统势</p>
+</li>
+<li>
+<p>因此 <span class="arithmatex">\(\mathbb{R}^n\)</span> 有连续统势</p>
+</li>
+<li>全体实数列 <span class="arithmatex">\(\mathbb{R}^{\mathbb{N}}\)</span> 有连续统势</li>
+</ul>
+<h4 id="bernstein">Bernstein定理<a class="headerlink" href="#bernstein" title="Permanent link">&para;</a></h4>
+<ul>
+<li>就是说集合势之间的比较和实数之间通常的大小比较有相同的性质<ul>
+<li><span class="arithmatex">\(\overline{\overline{A}} \leq \overline{\overline{A}}\)</span></li>
+<li>若 <span class="arithmatex">\(\overline{\overline{A}}\leq \overline{\overline{B}} \leq \overline{\overline{C}}\)</span>, 那么 <span class="arithmatex">\(\overline{\overline{A}}\leq \overline{\overline{C}}\)</span></li>
+<li>若 <span class="arithmatex">\(\overline{\overline{A}}\leq \overline{\overline{B}},\overline{\overline{B}}\leq \overline{\overline{A}}\)</span>, 那么 <span class="arithmatex">\(\overline{\overline{A}}=\overline{\overline{B}}\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="_7">证明连续函数全体有连续统势<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>只需要证明 <span class="arithmatex">\([0,1]\)</span> 上连续函数有连续统势即可, 令 <span class="arithmatex">\(\mathcal{F}\)</span> 为 <span class="arithmatex">\([0,1]\)</span> 上连续函数全体</p>
+<ul>
+<li>首先对任意 <span class="arithmatex">\(\lambda \in\mathbb{R},f_\lambda (x)=\lambda\)</span> 是连续函数, 这说明 <span class="arithmatex">\(c\leq \overline{\overline{\mathcal{F}}}\)</span></li>
+<li>其次取 <span class="arithmatex">\([0,1]\)</span> 中有理数全体 <span class="arithmatex">\(\{r_n\}\)</span>, 对任意连续函数 <span class="arithmatex">\(f\in\mathcal{F},\{f(r_n)\}\)</span> 是实数列. 这建立了 <span class="arithmatex">\(\mathcal{F}\)</span> 到实数列全体的一个单射, 这说明 <span class="arithmatex">\(\overline{\overline{\mathcal{F}}}\leq c\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="mu-2mu">证明不存在基数最大的集合, 即 <span class="arithmatex">\(\mu &lt; 2^\mu\)</span><a class="headerlink" href="#mu-2mu" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>取集合 <span class="arithmatex">\(A\)</span>,其幂集记为 <span class="arithmatex">\(P(A)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(f:A\to P(A),s.t.f(x)=\{x\}\)</span> 是单射, 这说明 <span class="arithmatex">\(\mu \leq 2^\mu\)</span></li>
+<li>其次若存在满射 <span class="arithmatex">\(g:A\to P(A)\)</span>, 取 <span class="arithmatex">\(A^*=\{x\in A:x\notin g(x)\}\)</span>, 因为 <span class="arithmatex">\(g\)</span> 是双射,于是存在唯一的 <span class="arithmatex">\(x^*\in A,s.t.g(x^*)=A^*\)</span> 可以说明, 不管 <span class="arithmatex">\(x^*\)</span> 在不在 <span class="arithmatex">\(g(x^*)\)</span> 中,都有矛盾</li>
+</ul>
+</li>
+</ul>
+<h4 id="_8">开集<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定义:每一个点都是内点</li>
+<li>
+<p><span class="arithmatex">\(\mathbb{R}\)</span> 中的开集至多是可数个两两不交的开区间的并</p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{R}^n\)</span> 中的开集是可数个两两不相交的半开长方体的并 </li>
+</ul>
+</li>
+</ul>
+<h4 id="_9">闭集<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>补是开集的集合</li>
+<li>集中任何点列如果有极限,那么一定收敛到集合内</li>
+</ul>
+<h4 id="_10">完备集<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定义:没有孤立点的闭集<ul>
+<li><span class="arithmatex">\(F\)</span> 是 <span class="arithmatex">\(\mathbb{R}\)</span>  的完备集当且仅当 <span class="arithmatex">\(F^c\)</span> 至多是可数个两两不交且端点不重合的开区间的并<ul>
+<li>这里要求端点不重合是因为 <span class="arithmatex">\(F\)</span> 没有孤立点</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="_11">稠集<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定义:任意开子集都和其交非空<ul>
+<li>当且仅当其闭包是全季</li>
+</ul>
+</li>
+</ul>
+<h4 id="_12">疏集<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<ul>
+<li>任意开集都有非空子集和其交为空<ul>
+<li>当且仅当其闭包的内核是空集</li>
+</ul>
+</li>
+</ul>
+<h4 id="cantor">Cantor 完备集的构造及其性质<a class="headerlink" href="#cantor" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><span class="arithmatex">\(C=[0,1]-G,G=\bigcup \{I_{n,k}:1\leq k\leq 2^{n-1},n\geq 1\}\)</span> 是两两不交且端点不重合的开区间的并, 于是 <span class="arithmatex">\(C\)</span> 是完备集</p>
+<ul>
+<li><span class="arithmatex">\(C\)</span> 没有内点(显然任何领域和 <span class="arithmatex">\(G\)</span> 有交)</li>
+<li><span class="arithmatex">\(G\)</span> 是稠集, 任意开区间都和 <span class="arithmatex">\(G\)</span> 有交, 且 <span class="arithmatex">\(|G|=\sum\limits_{n=1}^{\infty}\frac{2^{n-1}}{3^n}=1\)</span></li>
+</ul>
+</li>
+<li>
+<p>上面说明 <span class="arithmatex">\(C\)</span> 的测度是 <span class="arithmatex">\(0\)</span>, 但是它却具有连续统势</p>
+<ul>
+<li>事实上对任意 <span class="arithmatex">\(x\in [0,1],x=\sum\limits_{n=1}^\infty\frac{a_n}{3^n}\)</span>, <span class="arithmatex">\(I_{1,k}\)</span> 中点 <span class="arithmatex">\(a_1=1\)</span>,  <span class="arithmatex">\(I_{n,k}\)</span> 中的点 <span class="arithmatex">\(a_n=1\)</span>, 于是所有由 <span class="arithmatex">\(0,2\)</span> 组成的三元数列全体的子集都在 <span class="arithmatex">\(C\)</span> 中,这相当于二元数列全体, 从而 <span class="arithmatex">\(C\)</span> 有连续统势</li>
+</ul>
+</li>
+<li>
+<p>开拓的 <span class="arithmatex">\(Cantor\)</span> 函数</p>
+<ul>
+<li><span class="arithmatex">\(f(x)=\frac{2k-1}{2^n},x\in I_{n,k},f(0)=0,f(1)=1\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="lebesgue">Lebesgue测度<a class="headerlink" href="#lebesgue" title="Permanent link">&para;</a></h2>
+<ul>
+<li>勒贝格积分和黎曼积分的区别在于:黎曼积分是通过分割区间,然后求和,而勒贝格积分是通过分割函数值,然后求和</li>
+</ul>
+<h4 id="lebesgue_1">Lebesgue外测度<a class="headerlink" href="#lebesgue_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>集合 <span class="arithmatex">\(E\)</span> 的外测度定义为</li>
+</ul>
+<div class="arithmatex">\[m^*(E)=\inf\left\{\sum\limits_{n=1}^\infty l(I_n):E\subset \bigcup\limits_{n=1}^\infty I_n,I_n\text{是开区间}\right\}\]</div>
+<blockquote>
+<p>[!NOTE]
+因为我们只对开区间(闭区间)定义了测度(长度)</p>
+</blockquote>
+<h4 id="_13">外测度的性质<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<ul>
+<li>可数集的外测度为 <span class="arithmatex">\(0\)</span></li>
+<li>单调性: <span class="arithmatex">\(E\subset F\Rightarrow m^*(E)\leq m^*(F)\)</span></li>
+<li>次可加性: <span class="arithmatex">\(m^*(\bigcup\limits_{n=1}^\infty E_n)\leq \sum\limits_{n=1}^\infty m^*(E_n)\)</span></li>
+</ul>
+<h4 id="_14">可测集<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>定义: <span class="arithmatex">\(E\)</span> 是可测集当且仅当对任意 <span class="arithmatex">\(A\subset \mathbb{R}\)</span>,有 <span class="arithmatex">\(m^*(A)\geq m^*(A\cap E)+m^*(A\cap E^c)\)</span></p>
+<ul>
+<li>事实上反过来的不等式是恒成立的(次可加), 于是</li>
+<li><span class="arithmatex">\(E\)</span> 可测当且仅当 <span class="arithmatex">\(m^*(A)=m^*(A\cap E)+m^*(A\cap E^c),\forall A\)</span></li>
+</ul>
+</li>
+<li>
+<p>可测集的外测度称为其测度</p>
+</li>
+</ul>
+<h4 id="_15">可测集的性质<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<ul>
+<li>可测集的补,交,并(至多可数)都是可测集</li>
+</ul>
+<h4 id="_16">不可测集的例子<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<p>利用等价关系 <span class="arithmatex">\(x\sim y \iff x-y\in \mathbb{Q}\)</span>, 和选择公理</p>
+<ul>
+<li>
+<p>首先 <span class="arithmatex">\(\sim\)</span> 把 <span class="arithmatex">\([0,1]\)</span> 划分成等价类的并, 在每一个等价类中选取一个代表元, 由选择公理可知存在这样的选择, 组成集合 <span class="arithmatex">\(F\)</span></p>
+</li>
+<li>
+<p>对 <span class="arithmatex">\(F\)</span> 做平移 <span class="arithmatex">\(F_n={x+r_n:x\in F},\{r_n\}\)</span> 是 <span class="arithmatex">\([-1,1]\)</span> 上的有理数全体, 可以证明 <span class="arithmatex">\(F_n\)</span> 两两不交, 且 <span class="arithmatex">\([0,1]\subset \bigcup\limits_{n=1}^\infty F_n\subset [-1,2]\)</span></p>
+<ul>
+<li>
+<p>假设 <span class="arithmatex">\(F\)</span> 可测, 由于 <span class="arithmatex">\(F_n\)</span> 两两不交并且由测度平移不变性可知 <span class="arithmatex">\(m(F_n)=m(F)\)</span>, 于是有</p>
+<ul>
+<li>
+<div class="arithmatex">\[1\leq m([0,1])\leq \sum\limits_{n=1}^\infty m(F_n)=\sum\limits_{n=1}^\infty m(F) \leq m([-1,2])=3\]</div>
+</li>
+<li>这使得无论 <span class="arithmatex">\(m(F)\)</span> 取什么值都会产生矛盾, 从而 <span class="arithmatex">\(F\)</span> 不可测</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="lebesgueborel">Lebesgue可测但是不是Borel可测的例子<a class="headerlink" href="#lebesgueborel" title="Permanent link">&para;</a></h4>
+<ul>
+<li>首先 Lebesgue测度是完备的, 所谓完备就是说零测集的任意子集都是可测集</li>
+<li>
+<p>其次我们知道 Cantor集是零测的, 并且具有连续统势</p>
+<ul>
+<li>已经知道 Cantor 函数是连续不减的, 令 <span class="arithmatex">\(g(x)=\frac{f(x)+x}{2}\)</span>, 那么 <span class="arithmatex">\(g\)</span> 是连续严格增的函数, 从而 <span class="arithmatex">\(g\)</span> 把 Borel 集映到 Borel 集合</li>
+<li>
+<p>考虑不可测集 <span class="arithmatex">\(F\)</span> 在 <span class="arithmatex">\(g\)</span> 下的原像, <span class="arithmatex">\(g^{-1}(F)\subset C\)</span>, 由勒贝格测度完备性可知 <span class="arithmatex">\(g^{-1}(F)\)</span> 是可测集, 但是 <span class="arithmatex">\(g^{-1}(F)\)</span> 不是 Borel 集</p>
+<ul>
+<li>因为如果是, 那么 <span class="arithmatex">\(F\)</span> 就是 Borel 集, 从而可测, 那就矛盾</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="borel">事实上,在勒贝格可测集中, Borel 集合只占微不足道的一部分<a class="headerlink" href="#borel" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\mathcal{L}=\mathcal{B} \cup \mathcal{N}
+\]</div>
+<p>(至少是包含的)</p>
+<p>其中, <span class="arithmatex">\(\mathcal{B}\)</span> 为Borel集, <span class="arithmatex">\(\mathcal{N}=\{N \subset \mathbb{R}: m(N)=0\}\)</span>. 我们将要证明 <span class="arithmatex">\(\operatorname{card}(\mathcal{B})=\aleph_1, \operatorname{card}(\mathcal{L}) \geq 2^{\aleph_1}\)</span>, 这意味着Borel集在Lebesgue可测集中的占比是可以“忽略不计“的.</p>
+<p><span class="arithmatex">\(\operatorname{card}(\mathcal{L}) \geq 2^{\aleph_1}\)</span></p>
+<p>proof. 不难证明 Cantor 集为可测集, <span class="arithmatex">\(\operatorname{card}(C)=\aleph_1\)</span>, 且 <span class="arithmatex">\(m(C)=0\)</span>, 又 Lebegue测度的完备性可知对任意 <span class="arithmatex">\(T \subset C, T \in \mathcal{L}\)</span>. 这意味着 <span class="arithmatex">\(\mathcal{P}(C) \rightarrow \mathcal{L}\)</span> 存在一个单射; 又 <span class="arithmatex">\(\operatorname{card}(C)=\operatorname{card}(\mathbb{R})\)</span>, 则 <span class="arithmatex">\(\mathcal{L} \geq \operatorname{card}(\mathcal{P}(\mathbb{R}))=2^{\aleph_1}\)</span>.</p>
+<p>并且</p>
+<p><span class="arithmatex">\(\operatorname{card}(\mathcal{B})=\aleph_1\)</span></p>
+<h4 id="_17">可测集用开集和闭集来逼近<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<p>以下等价
+--&gt;
+-  <span class="arithmatex">\(E\)</span> 可测</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\forall \varepsilon&gt;0\)</span> 存在包含 <span class="arithmatex">\(E\)</span> 的开集 <span class="arithmatex">\(G\)</span> 使得 <span class="arithmatex">\(m^*(G-E)&lt;\varepsilon\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\forall \varepsilon&gt;0\)</span> 存在包含于 <span class="arithmatex">\(E\)</span> 的闭集 <span class="arithmatex">\(F\)</span> 使得 <span class="arithmatex">\(m^*(E-F)&lt;\varepsilon\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\forall \varepsilon&gt;0,\exists F,G\)</span> 可测, 使得 <span class="arithmatex">\(F\subset E\subset G,m(G-F)&lt;\varepsilon\)</span></p>
+</li>
+<li>
+<p>存在 <span class="arithmatex">\(G_\delta,F_\sigma\)</span> 集 <span class="arithmatex">\(G,F\)</span> 使得 <span class="arithmatex">\(m^*(G-E)=m^*(F-E)=0\)</span></p>
+</li>
+</ul>
+<h4 id="g_deltaf_sigma"><span class="arithmatex">\(G_\delta,F_\sigma\)</span> 集<a class="headerlink" href="#g_deltaf_sigma" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(G_\delta\)</span> 集是可数个开集的交, <span class="arithmatex">\(F_\sigma\)</span> 集是可数个闭集的并</li>
+</ul>
+<h4 id="sigma">代数和 <span class="arithmatex">\(\sigma\)</span> 代数<a class="headerlink" href="#sigma" title="Permanent link">&para;</a></h4>
+<ul>
+<li>代数: 集族补封闭, 有限并封闭</li>
+<li><span class="arithmatex">\(\sigma\)</span> 代数: 集族补封闭, 可数并封闭</li>
+</ul>
+<h4 id="_18">包含集族的所有代数的交称为集族生成的代数<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<h4 id="sigma-sigma">包含集族的所有 <span class="arithmatex">\(\sigma\)</span> 代数的交称为集族生成的 <span class="arithmatex">\(\sigma\)</span> 代数<a class="headerlink" href="#sigma-sigma" title="Permanent link">&para;</a></h4>
+<h2 id="_19">可测函数<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<h4 id="_20">可测函数的定义<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(f\)</span> 称为可测函数当且仅当对任意 <span class="arithmatex">\(\alpha\in\mathbb{R},\{x:f(x)&gt;\alpha\}\)</span> 是可测集(这里各种不等号都是等价的)</p>
+<h4 id="_21">简单函数<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<p>值域只取有限个值的可测函数</p>
+<h4 id="egoroff">Egoroff 定理<a class="headerlink" href="#egoroff" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(f_n,f\)</span> 都是测度有限的集合 <span class="arithmatex">\(D\)</span> 上的几乎处处有限的可测函数, 若 <span class="arithmatex">\(f_n\to f\)</span> 几乎处处, 那么对任意 <span class="arithmatex">\(\varepsilon&gt;0\)</span>, 存在 <span class="arithmatex">\(D\)</span> 的闭子集 <span class="arithmatex">\(F\)</span> 使得 <span class="arithmatex">\(m(D-F)&lt;\varepsilon\)</span> 且 <span class="arithmatex">\(f_n\)</span> 在 <span class="arithmatex">\(F\)</span> 上一致收敛到 <span class="arithmatex">\(f\)</span></p>
+<h4 id="riesz">Riesz 定理<a class="headerlink" href="#riesz" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(f,f_n\)</span> 都是可测集 <span class="arithmatex">\(D\)</span> 上几乎处处有限的可测函数,那么</p>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(f_n\)</span> 测度收敛到 <span class="arithmatex">\(f\)</span>, 那么存在 <span class="arithmatex">\(f_n\)</span> 的一个子列 <span class="arithmatex">\(f_{n_k}\)</span> 使得 <span class="arithmatex">\(f_{n_k}\)</span> 几乎处处收敛到 <span class="arithmatex">\(f\)</span></p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(D\)</span> 测度有限, 且 <span class="arithmatex">\(f_n\)</span> 几乎处处收敛到 <span class="arithmatex">\(f\)</span>, 那么 <span class="arithmatex">\(f_n\)</span> 测度收敛到 <span class="arithmatex">\(f\)</span></p>
+</li>
+</ul>
+<h4 id="lusin">Lusin 定理<a class="headerlink" href="#lusin" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(f\)</span> 是可测集 <span class="arithmatex">\(E\)</span> 上的几乎处处有限的可测函数, 那么对任意 <span class="arithmatex">\(\varepsilon&gt;0\)</span>,  存在沿着 <span class="arithmatex">\(D\)</span> 连续的函数 <span class="arithmatex">\(g\)</span> 使得 <span class="arithmatex">\(m(\{f\neq g\})&lt;\varepsilon\)</span> 并且 <span class="arithmatex">\(\sup g\leq \sup f\)</span></p>
+<h4 id="_22">测度收敛<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<p>说 <span class="arithmatex">\(f_n\)</span> 在 <span class="arithmatex">\(D\)</span> 上测度收敛到 <span class="arithmatex">\(f\)</span> 是说  <span class="arithmatex">\(\forall \varepsilon&gt;0\)</span></p>
+<div class="arithmatex">\[\lim\limits_{n\to\infty}m(\{x:|f_n-f|&gt;\varepsilon\})=0\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -415,6 +415,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -447,6 +451,48 @@
             复试
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    复变函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实变函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -755,6 +801,15 @@
   <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
       依概率收敛但是不几乎必然收敛的例子
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      随机变量的相关性和独立性的区别
     </span>
   </a>
   
@@ -1459,6 +1514,7 @@
 <p><span class="arithmatex">\(f(t)=Ee^{it\xi}\)</span></p>
 <h4 id="_13">多元正态函数密度函数<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
 <div class="arithmatex">\[p(\vec{x})=\frac{1}{(2\pi)^{n/2}|B|^{1/2}} \exp \{ -\frac{1}{2}((\vec{x}-\vec{\mu})B^{-1}(\vec{x}-\vec{\mu}) \}\]</div>
+<div class="arithmatex">\[f(x,y)=\frac{1}{2\pi \sigma_1\sigma_2 \sqrt{1-\rho^2}}\exp\left\{-\frac{1}{2(1-\rho^2)}\left[\frac{(x-\mu_1)^2}{\sigma_1^2}-2\rho\frac{(x-\mu_1)(y-\mu_2)}{\sigma_1\sigma_2}+\frac{(y-\mu_2)^2}{\sigma_2^2}\right]\right\}\]</div>
 <h4 id="_14">依分布收敛<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
 <p>就是逐点收敛, 或者说弱收敛</p>
 <h4 id="_15">中心极限定理<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
@@ -1501,21 +1557,42 @@
 <div class="arithmatex">\[\frac{1}{n}\sum\limits_{i=1}^{n} \xi_i - \mu \to 0 \quad a.e.\]</div>
 <h4 id="_24">依概率收敛但是不几乎必然收敛的例子<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
 <p>令 <span class="arithmatex">\(\Omega=(0,1], \mathscr{F}=(0,1] \cap \mathscr{B}(\mathbb{R})\)</span> 是个Borel- <span class="arithmatex">\(\sigma\)</span> 代数. 把P取为 <span class="arithmatex">\(\mathscr{B}(\mathbb{R})\)</span> 上的
-Lebesgue测度. 令
-$$
-\eta_{k i}(\omega)= \begin{cases}1, &amp; \omega \in\left(\frac{i-1}{k}, \frac{i}{k}\right] \ 0, &amp; \omega \notin\left(\frac{i-1}{k}, \frac{i}{k}\right]\end{cases}
-$$</p>
+Lebesgue测度. 令</p>
+<div class="arithmatex">\[
+\eta_{k i}(\omega)= \begin{cases}1, &amp; \omega \in\left(\frac{i-1}{k}, \frac{i}{k}\right] \\ 0, &amp; \omega \notin\left(\frac{i-1}{k}, \frac{i}{k}\right]\end{cases}
+\]</div>
 <p>这里 <span class="arithmatex">\(k=1,2, \cdots ; i=1,2, \cdots, k\)</span>, 先取定 <span class="arithmatex">\(\mathrm{k}\)</span> 再取定i. 定义
 <span class="arithmatex">\(\xi_n \triangleq \eta_{k i}, n=i+\frac{k(k-1)}{2}\)</span>, 该定义合理（没重复的 <span class="arithmatex">\(\mathrm{n}\)</span> 对应不同的 <span class="arithmatex">\(\mathrm{k}, \mathrm{i}\)</span> ）.
 注意到 <span class="arithmatex">\(\forall \omega \in \Omega\)</span>, 必有无穷个n使得 <span class="arithmatex">\(\xi_n(\omega)=0\)</span>, 也有无穷多个m使得 <span class="arithmatex">\(\xi_m(\omega)=1\)</span>, 所以不可能几乎必然收敛为 0 , 即 <span class="arithmatex">\(\xi_n \overset{\text { a.s. }}{\not\rightarrow} 0(n \rightarrow \infty)\)</span>.</p>
-<p>另一方面，
-$$
+<p>另一方面，</p>
+<div class="arithmatex">\[
 \forall \varepsilon \in(0,1), P\left(\xi_n(\omega)&gt;\varepsilon\right)=P\left(\eta_{k i}(\omega)&gt;\varepsilon\right)=P\left(\frac{i-1}{k}&lt;\omega \leq \frac{i}{k}\right)=\frac{1}{k}
-$$</p>
-<p>让 <span class="arithmatex">\(n \rightarrow \infty\)</span>, 则根据 <span class="arithmatex">\(n=i+\frac{k(k-1)}{2} \leq \frac{k(k+1)}{2}\)</span> 可知 <span class="arithmatex">\(k \rightarrow \infty\)</span>. 则 <span class="arithmatex">\(\lim _{n \rightarrow \infty} P\left(\xi_n&gt;\varepsilon\right)=0\)</span>. 从而
-$$
+\]</div>
+<p>让 <span class="arithmatex">\(n \rightarrow \infty\)</span>, 则根据 <span class="arithmatex">\(n=i+\frac{k(k-1)}{2} \leq \frac{k(k+1)}{2}\)</span> 可知 <span class="arithmatex">\(k \rightarrow \infty\)</span>. 则 <span class="arithmatex">\(\lim _{n \rightarrow \infty} P\left(\xi_n&gt;\varepsilon\right)=0\)</span>. 从而</p>
+<div class="arithmatex">\[
 \xi_n \xrightarrow{P} 0(n \rightarrow \infty)
-$$</p>
+\]</div>
+<h4 id="_25">随机变量的相关性和独立性的区别<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>随机变量 <span class="arithmatex">\(\xi,\eta\)</span> 如果方差有限,那么以下等价</p>
+<ul>
+<li><span class="arithmatex">\(Cov(\xi,\eta)=0\)</span></li>
+<li><span class="arithmatex">\(\xi,\eta\)</span> 不相关</li>
+<li><span class="arithmatex">\(E(\xi\eta)=E\xi E\eta\)</span></li>
+<li><span class="arithmatex">\(Var(\xi+\eta)=Var\xi+Var\eta\)</span></li>
+</ul>
+</li>
+<li>
+<p>如果两者独立(并且方差有限), 那么 <span class="arithmatex">\(E(\xi\eta)=E\xi E\eta\)</span> 成立, 从而他们不相关(上面的各个等价条件成立)</p>
+</li>
+<li>
+<p>反过来如果两者不相关, 不一定独立</p>
+<ul>
+<li>取 <span class="arithmatex">\(\xi=\cos U,\eta=\sin U\)</span>, 其中 <span class="arithmatex">\(U\sim U(0,2\pi)\)</span>, 可以算出他们协方差为0,但是显然不独立</li>
+</ul>
+</li>
+</ul>
 
 
 
