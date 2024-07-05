@@ -18,7 +18,7 @@
         <link rel="prev" href="../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">
       
       
-        <link rel="next" href="../%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/">
+        <link rel="next" href="../%E5%B8%B8%E5%BE%AE%E5%88%86%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/">
       
       
       <link rel="icon" href="../../../assets/image/Chivalrous.ico">
@@ -406,6 +406,8 @@
   
     
     
+      
+        
       
         
       
@@ -855,6 +857,51 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lebegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lebegue积分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Levi 单调收敛定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fatou" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fatou 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fubini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fubini 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      有界变差函数
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -864,6 +911,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B8%B8%E5%BE%AE%E5%88%86%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常微分 &amp; 科学计算
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1814,10 +1882,11 @@
 <p>并且</p>
 <p><span class="arithmatex">\(\operatorname{card}(\mathcal{B})=\aleph_1\)</span></p>
 <h4 id="_17">可测集用开集和闭集来逼近<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
-<p>以下等价
---&gt;
--  <span class="arithmatex">\(E\)</span> 可测</p>
+<p>以下等价</p>
 <ul>
+<li>
+<p><span class="arithmatex">\(E\)</span> 可测</p>
+</li>
 <li>
 <p><span class="arithmatex">\(\forall \varepsilon&gt;0\)</span> 存在包含 <span class="arithmatex">\(E\)</span> 的开集 <span class="arithmatex">\(G\)</span> 使得 <span class="arithmatex">\(m^*(G-E)&lt;\varepsilon\)</span></p>
 </li>
@@ -1864,6 +1933,32 @@
 <h4 id="_22">测度收敛<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
 <p>说 <span class="arithmatex">\(f_n\)</span> 在 <span class="arithmatex">\(D\)</span> 上测度收敛到 <span class="arithmatex">\(f\)</span> 是说  <span class="arithmatex">\(\forall \varepsilon&gt;0\)</span></p>
 <div class="arithmatex">\[\lim\limits_{n\to\infty}m(\{x:|f_n-f|&gt;\varepsilon\})=0\]</div>
+<h4 id="lebegue">Lebegue积分<a class="headerlink" href="#lebegue" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定义: 对简单函数定义积分, 然后对一般函数定义积分</li>
+</ul>
+<p>简单函数的积分定义为 <span class="arithmatex">\(\int_D fdx=\sum\limits_{i=1}^n a_i m(A_i)\)</span></p>
+<p>非负可测函数的积分定义为 <span class="arithmatex">\(\int_D fdx=\lim\limits_{n\to\infty}\int_D f_ndx\)</span></p>
+<h4 id="levi">Levi 单调收敛定理<a class="headerlink" href="#levi" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(f_n,f\)</span> 都是 <span class="arithmatex">\(D\)</span> 上的非负可测函数, 并且几乎对所有 <span class="arithmatex">\(x\)</span> 有 <span class="arithmatex">\(f_n(x)\)</span> 单增收敛到 <span class="arithmatex">\(f(x)\)</span>, 那么积分和极限可交换</p>
+<h4 id="fatou">Fatou 定理<a class="headerlink" href="#fatou" title="Permanent link">&para;</a></h4>
+<p>下极限的积分小于等于积分的下极限</p>
+<h4 id="fubini">Fubini 定理<a class="headerlink" href="#fubini" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(\mathbb{R}^q\times \mathbb{R}^p\)</span> 上可积, 那么</p>
+<ul>
+<li>
+<p>对几乎任意 <span class="arithmatex">\(x\in \mathbb{R}^q\)</span>, <span class="arithmatex">\(f(x,y)\)</span> 在 <span class="arithmatex">\(\mathbb{R}^p\)</span> 上可积</p>
+</li>
+<li>
+<p><span class="arithmatex">\(F(x)=\int_{\mathbb{R}^p}f(x,y)dy\)</span> 在 <span class="arithmatex">\(\mathbb{R}^q\)</span> 上可积</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\int_{\mathbb{R}^q\times \mathbb{R}^p}f(x,y)dxdy=\int_{\mathbb{R}^q}dx\int_{\mathbb{R}^p}f(x,y)dy\)</span></p>
+</li>
+</ul>
+<h4 id="_23">有界变差函数<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(T_a^b = \sup \{ V(X):X \text{是} [a,b] \text{上的网} \}&lt;\infty\)</span> 就称 <span class="arithmatex">\(f\)</span> 有界变差</p>
+<p>其中 <span class="arithmatex">\(X: a=x_0&lt;x_1&lt;\cdots&lt;x_n=b\)</span>, <span class="arithmatex">\(V(X)=\sum\limits_{i=1}^n|f(x_i)-f(x_{i-1})|\)</span></p>
 
 
 
