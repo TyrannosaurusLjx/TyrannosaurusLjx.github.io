@@ -1,0 +1,2606 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ljx's personal page">
+      
+      
+        <meta name="author" content="Ljx">
+      
+      
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/Mathematical-Analysis/11-Euclid%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD/">
+      
+      
+        <link rel="prev" href="../10-%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/">
+      
+      
+        <link rel="next" href="../12-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/">
+      
+      
+      <link rel="icon" href="../../../assets/image/Chivalrous.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>\(\text{Euclid}\) 空间上的极限和连续 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#texteuclid" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              \(\text{Euclid}\) 空间上的极限和连续
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Notebook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Tools/" class="md-tabs__link">
+          
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Notebook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Algebra/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Computer-Composition/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Computer Composition
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../DSA/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    DSA
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../ML/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Mathematical Analysis
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mathematical Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E9%9B%86%E5%90%88%E4%B8%8E%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    集合与映射
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数列极限
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数极限和连续函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-%E5%BE%AE%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微分中值定理及其应用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    不定积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    定积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    反常积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数项级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数项级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    \(\text{Euclid}\) 空间上的极限和连续
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    \(\text{Euclid}\) 空间上的极限和连续
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#texteuclid_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\text{Euclid}\) 空间上的距离与极限
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\text{Euclid}\) 空间上的距离与极限">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1111" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.1.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1111_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1112" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.1.2 邻域
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1113" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.1.3 极限
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1112_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1114" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.1.4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      开集和闭集
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开集和闭集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1113_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1115" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.1.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1114_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1111-textde-morgan" class="md-nav__link">
+    <span class="md-ellipsis">
+      引理 11.1.1 \(\text{De Morgan}\) 定律}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1115_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texteuclid_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\text{Euclid}\) 空间上的基本定理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\text{Euclid}\) 空间上的基本定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1116" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.6 闭矩形套定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1116-textcantor" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.6 \(\text{Cantor}\) 闭区域套定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1117-textbolzano-weierstrass" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.7 \(\text{Bolzano-Weierstrass}\) 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1111_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 11.1.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1116-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.1.6 \(\text{Cauchy}\) 列
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1118-textcauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.8 \(\text{Cauchy}\) 收敛原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      紧集
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="紧集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1117" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.1.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1119-textheine-borel" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.9 \(\text{Heine-Borel}\) 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11110" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.1.10
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      多元连续函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多元连续函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      多元函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多元函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1121" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.2.1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      多元函数的极限
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多元函数的极限">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1122" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.2.2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      累次极限
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="累次极限">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1123" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.2.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1121_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.2.1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      多元函数的连续性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多元函数的连续性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1124" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.2.4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      向量值函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="向量值函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1125" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.2.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1122_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.2.2'
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1124_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.2.4'
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1122_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.2.2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      连续函数的性质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="连续函数的性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      紧集上的连续映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="紧集上的连续映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1131" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.3.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1132" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.3.2 有界性定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1133" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.3.3 最值定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1132_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.3.2 一致连续
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1134" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.3.4 一致连续性定理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      连通集上的连续映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="连通集上的连续映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1133_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.3.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1134_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 11.3.4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1135" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.3.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1131_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 11.3.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1136" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 11.3.6 介值定理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多元函数的微分学
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-%E9%87%8D%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    重积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%2C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E5%92%8C%E5%9C%BA%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    曲线积分, 曲面积分和场论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-%E5%90%AB%E5%8F%82%E5%8F%98%E9%87%8F%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    含参变量积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-Fourier%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-%E4%B9%A0%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    习题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-mix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    杂项
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用公式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-%E5%AE%9A%E7%90%86%E7%BB%93%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用定理结论习题方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Mathematical-Modeling/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Modeling
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../OS/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Random-Process/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Random Process
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../mlcourse/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mlcourse
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    复试
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="texteuclid"><span class="arithmatex">\(\text{Euclid}\)</span> 空间上的极限和连续<a class="headerlink" href="#texteuclid" title="Permanent link">&para;</a></h1>
+<h3 id="texteuclid_1"><span class="arithmatex">\(\text{Euclid}\)</span> 空间上的距离与极限<a class="headerlink" href="#texteuclid_1" title="Permanent link">&para;</a></h3>
+<h4 id="1111">定义 11.1.1<a class="headerlink" href="#1111" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\text{Euclid}\)</span> 空间 <span class="arithmatex">\(R^n\)</span> 中任意两点 <span class="arithmatex">\(\vec{x}, \vec{y}\)</span> 之间的距离定义为<ul>
+<li>
+<div class="arithmatex">\[|\vec{x}-\vec{y}| = \sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}\]</div>
+<ul>
+<li>并称 </li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[||\vec{x}|| = \sqrt{\sum_{i=1}^{n}x_i^2}\]</div>
+<ul>
+<li>为 <span class="arithmatex">\(\vec{x}\)</span> 的 <span class="arithmatex">\(\text{Euclid}\)</span> 范数 (模长)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1111_1">定理 11.1.1<a class="headerlink" href="#1111_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>距离满足以下性质<ul>
+<li>正定性: <span class="arithmatex">\(|\vec{x}-\vec{y}|\geq 0\)</span>, 且 <span class="arithmatex">\(|\vec{x}-\vec{y}|=0\iff \vec{x}=\vec{y}\)</span></li>
+<li>对称性: <span class="arithmatex">\(|\vec{x}-\vec{y}|=|\vec{y}-\vec{x}|\)</span></li>
+<li>三角不等式: <span class="arithmatex">\(|\vec{x}-\vec{y}|+|\vec{y}-\vec{z}|\geq |\vec{x}-\vec{z}|\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="1112">定义 11.1.2 邻域<a class="headerlink" href="#1112" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 $\vec{a} = (a_1, a_2, \cdots, a_n)\in R^n, \delta &gt;0, $, 则点集<ul>
+<li>
+<div class="arithmatex">\[O(\vec{a}, \delta) = \{\vec{x}\in R^n:|\vec{x}-\vec{a}|&lt;\delta\}\]</div>
+<ul>
+<li>称为点 <span class="arithmatex">\(\vec{a}\)</span> 的 <span class="arithmatex">\(\delta\)</span> 邻域</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1113">定义 11.1.3 极限<a class="headerlink" href="#1113" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(\{\vec{x}_n\}\)</span> 是 <span class="arithmatex">\(R^n\)</span> 中的一个点列, <span class="arithmatex">\(\vec{a}\in R^n\)</span>, 如果对任意 <span class="arithmatex">\(\varepsilon&gt;0\)</span>, 存在 <span class="arithmatex">\(N\in \mathbb{N}\)</span>, 使得当 <span class="arithmatex">\(n&gt;N\)</span> 时, 有<ul>
+<li>
+<div class="arithmatex">\[|\vec{x}_n-\vec{a}|&lt;\varepsilon\]</div>
+<ul>
+<li>则称 <span class="arithmatex">\(\vec{a}\)</span> 是点列 <span class="arithmatex">\(\{\vec{x}_n\}\)</span> 的极限, 记为</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[\lim_{n\to\infty}\vec{x}_n = \vec{a}\]</div>
+</li>
+</ul>
+</li>
+<li>点列不收敛就称为发散</li>
+</ul>
+<h4 id="1112_1">定理 11.1.2<a class="headerlink" href="#1112_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\lim\limits_{n\to\infty}\vec{x}_n = \vec{a} \iff \lim\limits_{n\to\infty}(x_k)_i=a_i\)</span></li>
+</ul>
+<h4 id="1114">定义 11.1.4<a class="headerlink" href="#1114" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(S\subset R^n\)</span>, 若存在正数 <span class="arithmatex">\(M\)</span>, 使得对任意 <span class="arithmatex">\(\vec{x}\in S\)</span> 有 <span class="arithmatex">\(||\vec{x}||\leq M\)</span>, 则称 <span class="arithmatex">\(S\)</span> 为有界集</li>
+</ul>
+<h3 id="_1">开集和闭集<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>对 <span class="arithmatex">\(\vec{x}\in R^n, S\subset R^n\)</span></p>
+<ul>
+<li>若存在 <span class="arithmatex">\(\delta&gt;0\)</span>, 使得 <span class="arithmatex">\(O(\vec{x}, \delta)\subset S\)</span>, 则称 <span class="arithmatex">\(\vec{x}\)</span> 为 <span class="arithmatex">\(S\)</span> 的内点</li>
+<li>若存在 <span class="arithmatex">\(\delta&gt;0\)</span>, 使得 <span class="arithmatex">\(O(\vec{x}, \delta)\cap S=\emptyset\)</span>, 则称 <span class="arithmatex">\(\vec{x}\)</span> 为 <span class="arithmatex">\(S\)</span> 的外点</li>
+</ul>
+</li>
+<li>
+<p>若任意 <span class="arithmatex">\(\vec{x}\)</span> 的邻域都既包含 <span class="arithmatex">\(S\)</span> 中的点又包含 <span class="arithmatex">\(S\)</span> 外的点, 则称 <span class="arithmatex">\(\vec{x}\)</span> 为 <span class="arithmatex">\(S\)</span> 的边界点</p>
+<ul>
+<li>
+<p>若存在 <span class="arithmatex">\(\vec{x}\)</span> 的邻域 <span class="arithmatex">\(O(\vec{x}, \delta)\)</span> 使得 <span class="arithmatex">\(O(\vec{x}, \delta)\cap S=\{\vec{x}\}\)</span>, 则称 <span class="arithmatex">\(\vec{x}\)</span> 是孤立点</p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(\vec{x}\)</span> 的任何邻域都包含 <span class="arithmatex">\(S\)</span> 中无穷多个点, 则称 <span class="arithmatex">\(\vec{x}\)</span> 为聚点</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1113_1">定理 11.1.3<a class="headerlink" href="#1113_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\vec{x}\)</span> 是 <span class="arithmatex">\(S\)</span> 聚点的充要条件是:存在 <span class="arithmatex">\(S\)</span> 中的点列, 收敛到 <span class="arithmatex">\(\vec{x}\)</span></li>
+</ul>
+<h4 id="1115">定义 11.1.5<a class="headerlink" href="#1115" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若 <span class="arithmatex">\(S\)</span> 中的点都是内点, 则称 <span class="arithmatex">\(S\)</span> 为开集</li>
+<li>若 <span class="arithmatex">\(S\)</span> 包含了其所有聚点, 则称 <span class="arithmatex">\(S\)</span> 为闭集<ul>
+<li><span class="arithmatex">\(S\)</span> 和其聚点全体 <span class="arithmatex">\(S'\)</span> 的并集称为 <span class="arithmatex">\(S\)</span> 的闭包, 记为 <span class="arithmatex">\(\bar{S}\)</span></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+以后记 <span class="arithmatex">\(S\underset{closed}{\subset}T\)</span> 表示 <span class="arithmatex">\(S\)</span> 是 <span class="arithmatex">\(T\)</span> 的闭子集, 
+<span class="arithmatex">\(S\underset{open}{\subset}T\)</span> 表示 <span class="arithmatex">\(S\)</span> 是 <span class="arithmatex">\(T\)</span> 的开子集</p>
+</blockquote>
+<h4 id="1114_1">定理 11.1.4<a class="headerlink" href="#1114_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(S\underset{closed}{\subset} R^n \iff S^c\underset{open}{\subset} R^n\)</span></li>
+</ul>
+<h4 id="1111-textde-morgan">引理 11.1.1 <span class="arithmatex">\(\text{De Morgan}\)</span> 定律}<a class="headerlink" href="#1111-textde-morgan" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(\{S_\alpha\}\)</span> 是 <span class="arithmatex">\(R^n\)</span> 的子集族, 则<ul>
+<li>
+<div class="arithmatex">\[\left(\bigcup_{\alpha}S_\alpha\right)^c = \bigcap_{\alpha}S_\alpha^c\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\left(\bigcap_{\alpha}S_\alpha\right)^c = \bigcup_{\alpha}S_\alpha^c\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1115_1">定理 11.1.5<a class="headerlink" href="#1115_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>开集对的任意并和有限交封闭</li>
+<li>闭集对的任意交和有限并封闭</li>
+</ul>
+<h3 id="texteuclid_2"><span class="arithmatex">\(\text{Euclid}\)</span> 空间上的基本定理<a class="headerlink" href="#texteuclid_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>推广, 以 <span class="arithmatex">\(n=2\)</span> 为例</li>
+</ul>
+<h4 id="1116">定理 11.1.6 闭矩形套定理<a class="headerlink" href="#1116" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(\Delta_k = [a_k, b_k]\times [c_k, d_k]\)</span> 是 <span class="arithmatex">\(R^2\)</span> 上的闭矩形, 如果<ul>
+<li>
+<div class="arithmatex">\[\Delta_1\supset \Delta_2\supset \cdots \supset \Delta_k\supset \cdots\]</div>
+</li>
+<li><span class="arithmatex">\(<span class="arithmatex">\(\lim_{k\to\infty}(b_k-a_k)=0, \lim_{k\to\infty}(d_k-c_k)=0\)</span>\)</span>
+则存在唯一一点 <span class="arithmatex">\(\vec{a}=(\xi, \eta)\)</span> 属于所有 <span class="arithmatex">\(\Delta_k\)</span> 且</li>
+<li>
+<div class="arithmatex">\[\lim_{k\to\infty}a_k=\lim_{k\to\infty}b_k=\xi\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\lim_{k\to\infty}c_k=\lim_{k\to\infty}d_k=\eta\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1116-textcantor">定理 11.1.6 <span class="arithmatex">\(\text{Cantor}\)</span> 闭区域套定理<a class="headerlink" href="#1116-textcantor" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设 <span class="arithmatex">\(\Delta_k\)</span> 是 <span class="arithmatex">\(R^n\)</span> 上的闭区域, 如果</p>
+<ul>
+<li>
+<div class="arithmatex">\[\Delta_1\supset \Delta_2\supset \cdots \supset \Delta_k\supset \cdots\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\lim_{k\to\infty}\text{diam}(\Delta_k)=0\)</span>\)</span>
+则存在唯一一点 <span class="arithmatex">\(\vec{a}\)</span> 属于所有 <span class="arithmatex">\(\Delta_k\)</span></p>
+</li>
+<li>
+<p>这里 <span class="arithmatex">\(\text{diam}(\Delta_k) = \sup\{|\vec{x}-\vec{y}|:\vec{x}, \vec{y}\in \Delta_k\}\)</span></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1117-textbolzano-weierstrass">定理 11.1.7 <span class="arithmatex">\(\text{Bolzano-Weierstrass}\)</span> 定理<a class="headerlink" href="#1117-textbolzano-weierstrass" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(R^n\)</span> 上有界点列必有收敛子列</li>
+</ul>
+<h4 id="1111_2">推论 11.1.1<a class="headerlink" href="#1111_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(R^n\)</span> 上有界无限点集必有聚点</li>
+</ul>
+<h4 id="1116-textcauchy">定义 11.1.6 <span class="arithmatex">\(\text{Cauchy}\)</span> 列<a class="headerlink" href="#1116-textcauchy" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(\{\vec{x}_n\}\)</span> 是 <span class="arithmatex">\(R^n\)</span> 中的点列, 如果对任意 <span class="arithmatex">\(\varepsilon&gt;0\)</span>, 存在 <span class="arithmatex">\(N\in \mathbb{N}\)</span>, 使得当 <span class="arithmatex">\(n, m&gt;N\)</span> 时, 有<ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(|\vec{x}_n-\vec{x}_m|&lt;\varepsilon\)</span>\)</span>
+则称 <span class="arithmatex">\(\{\vec{x}_n\}\)</span> 是 <span class="arithmatex">\(\text{Cauchy}\)</span> 列</li>
+</ul>
+</li>
+</ul>
+<h4 id="1118-textcauchy">定理 11.1.8 <span class="arithmatex">\(\text{Cauchy}\)</span> 收敛原理<a class="headerlink" href="#1118-textcauchy" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(R^n\)</span> 中的点列 <span class="arithmatex">\(\{\vec{x}_n\}\)</span> 收敛的充要条件是 <span class="arithmatex">\(\{\vec{x}_n\}\)</span> 是 <span class="arithmatex">\(\text{Cauchy}\)</span> 列</li>
+</ul>
+<h3 id="_2">紧集<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="1117">定义 11.1.7<a class="headerlink" href="#1117" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(S\subset R^n, U_\alpha\underset{open}{\subset} R^n, \alpha\in \Lambda, s.t.S\subset \bigcup_{\alpha}U\limits_\Lambda\)</span>, 则称 <span class="arithmatex">\(\{U_\alpha\}\)</span> 为 <span class="arithmatex">\(S\)</span> 的开覆盖 </li>
+<li>若 <span class="arithmatex">\(S\)</span> 的任意开覆盖都有有限子覆盖, 则称 <span class="arithmatex">\(S\)</span> 为紧集</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+<span class="arithmatex">\(K\)</span> 是 <span class="arithmatex">\(S\)</span> 中紧集记为 <span class="arithmatex">\(K\underset{compact}{\subset}S\)</span></p>
+</blockquote>
+<h4 id="1119-textheine-borel">定理 11.1.9 <span class="arithmatex">\(\text{Heine-Borel}\)</span> 定理<a class="headerlink" href="#1119-textheine-borel" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(R^n\)</span> 上的点集 <span class="arithmatex">\(S\)</span> 是紧集当且仅当 <span class="arithmatex">\(S\)</span> 是有界闭集</li>
+</ul>
+<h4 id="11110">定理 11.1.10<a class="headerlink" href="#11110" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若 <span class="arithmatex">\(S\)</span> 是 <span class="arithmatex">\(R^n\)</span> 中的点集, 那么以下命题等价<ul>
+<li><span class="arithmatex">\(S\)</span> 是紧集</li>
+<li><span class="arithmatex">\(S\)</span> 是有界闭集</li>
+<li><span class="arithmatex">\(S\)</span> 的任意无限子集在 <span class="arithmatex">\(S\)</span> 中有聚点</li>
+</ul>
+</li>
+</ul>
+<h2 id="_3">多元连续函数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">多元函数<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>[!NOTE]
+以下都设 <span class="arithmatex">\(D\)</span> 是 <span class="arithmatex">\(R^n\)</span> 上的点集</p>
+</blockquote>
+<h4 id="1121">定义 11.2.1<a class="headerlink" href="#1121" title="Permanent link">&para;</a></h4>
+<ul>
+<li>映射 <span class="arithmatex">\(f:D\to R^1\)</span> 称为 <span class="arithmatex">\(D\)</span> 上的多元函数<ul>
+<li>定义域, 值域, 陪域等同一元函数定义</li>
+</ul>
+</li>
+</ul>
+<h3 id="_5">多元函数的极限<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h4 id="1122">定义 11.2.2<a class="headerlink" href="#1122" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(D\underset{open}{\subset} R^n, \vec{x_0}\in D, f(x): D\setminus\{\vec{x}\}\to R^1\)</span>, 如果存在 <span class="arithmatex">\(A\in R, s.t.\forall \varepsilon&gt;0, \exists\delta&gt;0, s.t.\forall \vec{x}\in O(\vec{x_0}, \delta):\)</span><ul>
+<li>
+<div class="arithmatex">\[|f(\vec{x})-A|&lt;\varepsilon\]</div>
+</li>
+<li>则称 <span class="arithmatex">\(\vec{x}\)</span> 趋于 <span class="arithmatex">\(\vec{x_0}\)</span> 时 <span class="arithmatex">\(f\)</span> 收敛, 且称 <span class="arithmatex">\(A\)</span> 是 <span class="arithmatex">\(f\)</span> 当 <span class="arithmatex">\(\vec{x}\to\vec{x_0}\)</span> 时的 <span class="arithmatex">\(n\)</span> 重极限, 记为 <span class="arithmatex">\(\lim\limits_{\vec{x}\to\vec{x_0}}f(\vec{x})=A\)</span></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+为了方便.记 <span class="arithmatex">\(P(\vec{x}), P_0(\vec{x_0})\)</span> 为点的左标, 然后记 <span class="arithmatex">\(\lim\limits_{\vec{x}\to\vec{x_0}}f(\vec{x})\)</span> 为<span class="arithmatex">\(\lim\limits_{P\to P_0} f(p)=f(p_0)\)</span></p>
+</blockquote>
+<h3 id="_6">累次极限<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="1123">定义 11.2.3<a class="headerlink" href="#1123" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(D\underset{open}{\subset} R^2, (x_0, y_0)\in D, z=f(x, y):D\setminus\{(x_0, y_0)\}\to R\)</span>, 若 <span class="arithmatex">\(\forall y\neq y_0, \lim\limits_{x\to x_0}f(x, y)\exists\)</span> 且 <span class="arithmatex">\(\lim\limits_{y\to y_0}\lim\limits_{x\to x_0}f(x, y)\exists\)</span>, 那么称词极限值为函数在点 <span class="arithmatex">\((x_0, y_0)\)</span> 先对 <span class="arithmatex">\(x\)</span> 再对 <span class="arithmatex">\(y\)</span> 的二次极限</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+同理可以定义先对 <span class="arithmatex">\(y\)</span> 再对 <span class="arithmatex">\(x\)</span> 的二次极限, 注意重极限和累次极限之间的存在性并没有任何关系</p>
+<blockquote>
+<p>设 <span class="arithmatex">\(f(x, y) = \begin{cases} (x^2+y^2)\sin(1/x)\cos(1/y) &amp; x\neq 0, y\neq 0\\0 &amp; otherwise \end{cases}\)</span></p>
+<blockquote>
+<p>重极限存在为0, 累次极限不存在
+<img alt="image_2024-05-14-18-09-26" src="../img/image_2024-05-14-18-09-26.png" /></p>
+</blockquote>
+<p>设 <span class="arithmatex">\(f(x, y) = \begin{cases} y\sin(1/x) &amp; x\neq 0, y\neq 0 \\ 0 &amp; otherwise\end{cases}\)</span></p>
+<blockquote>
+<p>重极限存在为, 累次有一个不存在
+<img alt="image_2024-05-14-18-14-25" src="../img/image_2024-05-14-18-14-25.png" /> </p>
+</blockquote>
+</blockquote>
+<p>[!IMPORTANT]
+一个二次极限存在不代表另外一个二次极限也存在, 及时两者都存在也不一定相等(也就是不一定能交换求和次序), 但是当二重极限也存在的时候, 有结论</p>
+</blockquote>
+<h4 id="1121_1">定理 11.2.1<a class="headerlink" href="#1121_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若二重极限 <span class="arithmatex">\(\lim\limits_{(x, y)\to(x_0, y_0)}f(x, y)=A\)</span> 存在, 且当 <span class="arithmatex">\(x\neq x_0\)</span> 时, 存在极限 <span class="arithmatex">\(\lim\limits_{y\to y_0} f(x, y)=\varphi(x)\)</span>, 那么 <span class="arithmatex">\(f\)</span> 先对 <span class="arithmatex">\(y\)</span> 后对 <span class="arithmatex">\(x\)</span> 的二次极限存在且与二重极限相等, 即<ul>
+<li>
+<div class="arithmatex">\[\lim\limits_{x\to x_0}\lim\limits_{y\to y_0}f(x, y) =\lim\limits_{x\to x_o}\varphi(x)= \lim\limits_{(x, y)\to(x_0, y_0)}f(x, y)=A\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+这表明如果函数的两个二次极限都存在而且二重极限也存在, 那么三者相等, 也就是说, 此时极限之间可交换顺序</p>
+</blockquote>
+<h3 id="_7">多元函数的连续性<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="1124">定义 11.2.4<a class="headerlink" href="#1124" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(D\underset{open}{\subset} R^n, f:D\to R^1, \vec{x_0}\in D\)</span>, 若 <span class="arithmatex">\(\forall \varepsilon&gt;0, \exists\delta&gt;0, s.t.\forall \vec{x}\in O(\vec{x_0}, \delta):\)</span><ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(f(\vec{x})-f(\vec{x_0})&lt;\varepsilon\)</span>\)</span>
+则称 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(\vec{x_0}\)</span> 处连续</li>
+</ul>
+</li>
+<li>若 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(D\)</span> 上的每一点都连续, 则称 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(D\)</span> 上连续</li>
+</ul>
+<h3 id="_8">向量值函数<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h4 id="1125">定义 11.2.5<a class="headerlink" href="#1125" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(D\subset R^n, \vec{f}:D\to R^m\)</span>, 称 <span class="arithmatex">\(\vec{f}\)</span> 为 <span class="arithmatex">\(n\)</span> 元 <span class="arithmatex">\(m\)</span> 维向量值函数</li>
+</ul>
+<h4 id="1122_1">定义 11.2.2'<a class="headerlink" href="#1122_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(D\underset{open}{\subset} R^n, \vec{x_0}\in D, \vec{f}:D\setminus\{\vec{x_0}\}\to R^m\)</span>, 如果存在 <span class="arithmatex">\(\vec{A}\in R^m, s.t.\forall \varepsilon&gt;0, \exists\delta&gt;0, s.t.\forall \vec{x}\in O(\vec{x_0}, \delta):\)</span><ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(|\vec{f}(\vec{x})-\vec{A}|&lt;\varepsilon\)</span>\)</span>
+则称 <span class="arithmatex">\(\vec{x}\)</span> 趋于 <span class="arithmatex">\(\vec{x_0}\)</span> 时 <span class="arithmatex">\(\vec{f}\)</span> 收敛, 记为</li>
+<li>
+<div class="arithmatex">\[\lim\limits_{\vec{x}\to\vec{x_0}}\vec{f}(\vec{x})=\vec{A}\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1124_1">定义 11.2.4'<a class="headerlink" href="#1124_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(D\underset{open}{\subset} R^n, \vec{f}:D\to R^m, \vec{x_0}\in D\)</span>, 若 <span class="arithmatex">\(\forall \varepsilon&gt;0, \exists\delta&gt;0, s.t.\forall \vec{x}\in O(\vec{x_0}, \delta):\)</span><ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(|\vec{f}(\vec{x})-\vec{f}(\vec{x_0})|&lt;\varepsilon\)</span>\)</span>
+则称 <span class="arithmatex">\(\vec{f}\)</span> 在 <span class="arithmatex">\(\vec{x_0}\)</span> 处连续</li>
+</ul>
+</li>
+</ul>
+<h4 id="1122_2">定理 11.2.2<a class="headerlink" href="#1122_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>向量值函数在点 <span class="arithmatex">\(\vec{x_0}\)</span> 处连续的充要条件是其各个分量函数在 <span class="arithmatex">\(\vec{x_0}\)</span> 对应的分量处连续</li>
+</ul>
+<p>#### 定理 11.2.3
+- 连续向量值函数的复合还是连续的</p>
+<h2 id="_9">连续函数的性质<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_10">紧集上的连续映射<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>设点集 <span class="arithmatex">\(K\subset R^n, \vec{x_0}\in K, f:K\to R^m\)</span> 为一向量值函数, 若 <span class="arithmatex">\(\forall \varepsilon&gt;0, \exists\delta&gt;0, s.t.\forall \vec{x}\in O(\vec{x_0}, \delta)\cap K:\)</span><ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(|f(\vec{x})-f(\vec{x_0})|&lt;\varepsilon\)</span>\)</span>
+则称 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(\vec{x_0}\)</span> 处连续</li>
+</ul>
+</li>
+</ul>
+<h4 id="1131">定理 11.3.1<a class="headerlink" href="#1131" title="Permanent link">&para;</a></h4>
+<ul>
+<li>连续映射把紧集映为紧集</li>
+</ul>
+<h4 id="1132">定理 11.3.2 有界性定理<a class="headerlink" href="#1132" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(K\subset R^n\)</span> 是紧集, <span class="arithmatex">\(f:K\to R^m\)</span> 是连续映射, 则 <span class="arithmatex">\(f(K)\)</span> 是有界集</li>
+</ul>
+<h4 id="1133">定理 11.3.3 最值定理<a class="headerlink" href="#1133" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(K\subset R^n\)</span> 是紧集, <span class="arithmatex">\(f\)</span> 是连续映射, 则 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(K\)</span> 上有最大值和最小值</li>
+</ul>
+<h4 id="1132_1">定义 11.3.2 一致连续<a class="headerlink" href="#1132_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设 <span class="arithmatex">\(K\)</span> 是 <span class="arithmatex">\(R^n\)</span> 中点集, <span class="arithmatex">\(f:K\to R^m\)</span>, 为映射, 若 <span class="arithmatex">\(\forall \varepsilon&gt;0, \exists\delta&gt;0, s.t.\forall \vec{x}, \vec{y}\in K, |\vec{x}-\vec{y}|&lt;\delta:\)</span><ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(|f(\vec{x})-f(\vec{y})|&lt;\varepsilon\)</span>\)</span>
+则称 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(K\)</span> 上一致连续</li>
+</ul>
+</li>
+</ul>
+<h4 id="1134">定理 11.3.4 一致连续性定理<a class="headerlink" href="#1134" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(K\underset{compact}{\subset} R^n, C(K)\ni f:K\to R^m \implies f\)</span> 在 <span class="arithmatex">\(K\)</span> 上一致连续</li>
+</ul>
+<h3 id="_11">连通集上的连续映射<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h4 id="1133_1">定义 11.3.3<a class="headerlink" href="#1133_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设 <span class="arithmatex">\(S\)</span> 是 <span class="arithmatex">\(R^n\)</span> 中的点集, 若连续映射 <span class="arithmatex">\(\gamma:[0, 1]\to R^n\)</span> 的像全部落在 <span class="arithmatex">\(S\)</span> 中, 则称 <span class="arithmatex">\(\gamma\)</span> 为 <span class="arithmatex">\(S\)</span> 中的道路, <span class="arithmatex">\(\gamma(0), \gamma(1)\)</span> 称为道路的起点和终点</p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(S\)</span> 中任意两点都可以用一条道路连通, 则称 <span class="arithmatex">\(S\)</span> 为道路连通的, 或者称为连通集</p>
+</li>
+</ul>
+<h4 id="1134_1">定义 11.3.4<a class="headerlink" href="#1134_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>连通开集称为区域</li>
+<li>区域的闭包称为闭区域</li>
+</ul>
+<h4 id="1135">定理 11.3.5<a class="headerlink" href="#1135" title="Permanent link">&para;</a></h4>
+<ul>
+<li>连续映射把连通集映为连通集</li>
+</ul>
+<h4 id="1131_1">推论 11.3.1<a class="headerlink" href="#1131_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>连续函数把连通紧集映射为闭区间(陪域是 <span class="arithmatex">\(R\)</span> 时)</li>
+</ul>
+<h4 id="1136">定理 11.3.6 介值定理<a class="headerlink" href="#1136" title="Permanent link">&para;</a></h4>
+<ul>
+<li>连续函数在紧集上取到介于最大值和最小值之间的任意值(包括最大值和最小值)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

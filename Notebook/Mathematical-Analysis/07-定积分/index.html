@@ -1,0 +1,2459 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ljx's personal page">
+      
+      
+        <meta name="author" content="Ljx">
+      
+      
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/Mathematical-Analysis/07-%E5%AE%9A%E7%A7%AF%E5%88%86/">
+      
+      
+        <link rel="prev" href="../06-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">
+      
+      
+        <link rel="next" href="../08-%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/">
+      
+      
+      <link rel="icon" href="../../../assets/image/Chivalrous.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>定积分 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              定积分
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Notebook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Tools/" class="md-tabs__link">
+          
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Notebook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Algebra/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Computer-Composition/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Computer Composition
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../DSA/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    DSA
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../ML/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Mathematical Analysis
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mathematical Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E9%9B%86%E5%90%88%E4%B8%8E%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    集合与映射
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数列极限
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数极限和连续函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-%E5%BE%AE%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微分中值定理及其应用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    不定积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    定积分
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    定积分
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#711" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 7.1.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#darboux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Darboux和
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Darboux和">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引理 7.1.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712" class="md-nav__link">
+    <span class="md-ellipsis">
+      引理 7.1.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-darboux" class="md-nav__link">
+    <span class="md-ellipsis">
+      引理 7.1.3 Darboux 定理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#711_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.1.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.1.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.1.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      定积分基本性质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="定积分基本性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 1 线性性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      推论 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 2 乘积可积性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 3 保序性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 4 绝对可积性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 5 区间可加性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      性质 6 积分第一中值定理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      微积分基本定理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="微积分基本定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#textnewton-leibniz" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\text{Newton-Leibniz}\) 公式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\text{Newton-Leibniz}\) 公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#731" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.3.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.3.2 微积分基本定理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      分部积分和换元积分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="分部积分和换元积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#733" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.3.3 分部积分公式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#731_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 7.3.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#734" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.3.4 换元积分法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#735" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.3.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#736" class="md-nav__link">
+    <span class="md-ellipsis">
+      定理 7.3.6
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定积分在几何计算中的应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="定积分在几何计算中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      求平面图形的面积
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      求曲线的弧长
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="求曲线的弧长">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#741" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义 7.4.1 弧长公式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      求某些特殊几何体的体积, 旋转曲面的面积, 曲线的曲率
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      微积分实际应用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      定积分数值计算
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    反常积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数项级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数项级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-Euclid%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E8%BF%9E%E7%BB%AD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    \(\text{Euclid}\) 空间上的极限和连续
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多元函数的微分学
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-%E9%87%8D%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    重积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%2C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E5%92%8C%E5%9C%BA%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    曲线积分, 曲面积分和场论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-%E5%90%AB%E5%8F%82%E5%8F%98%E9%87%8F%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    含参变量积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-Fourier%E7%BA%A7%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-%E4%B9%A0%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    习题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-mix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    杂项
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用公式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-%E5%AE%9A%E7%90%86%E7%BB%93%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用定理结论习题方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Mathematical-Modeling/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Modeling
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../OS/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Random-Process/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Random Process
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../mlcourse/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mlcourse
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    复试
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">定积分<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>[!NOTE]
+定义定积分时, 要求函数在闭区间上有界</p>
+<p>[!NOTE]
+- 符号表示<span class="arithmatex">\(f\in\mathscr{R}(I)\)</span>, 表示<span class="arithmatex">\(f\)</span>在区间<span class="arithmatex">\(I\)</span>上Riemann可积</p>
+</blockquote>
+<h4 id="711">定义 7.1.1<a class="headerlink" href="#711" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设<span class="arithmatex">\(f(x)\)</span>是闭区间<span class="arithmatex">\([a, b]\)</span>上的有界函数, 在区间上任意取分点<span class="arithmatex">\(\{x_k\}_{k=0}^n\)</span>做成划分<span class="arithmatex">\(P\)</span>:</p>
+<ul>
+<li>
+<div class="arithmatex">\[P:a=x_0&lt;x_1&lt;\cdots &lt;x_n=b\]</div>
+</li>
+<li>并任意取<span class="arithmatex">\(\xi_i\in [x_{i-1}, x_i]\)</span>, 记<span class="arithmatex">\(\Delta x_i=x_i-x_{i-1}, \lambda = \max\{\Delta x_i\}\)</span>, 若极限<ul>
+<li>
+<div class="arithmatex">\[\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^nf(\xi_i)\Delta x_i\]</div>
+</li>
+</ul>
+</li>
+<li>存在, 且极限既与划分<span class="arithmatex">\(P\)</span>无关, 又与<span class="arithmatex">\(\xi_i\)</span>的选取无关, 则称<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积, 并称和式<ul>
+<li>
+<div class="arithmatex">\[S_n = \sum\limits_{i=1}^nf(\xi_i)\Delta x_i\]</div>
+</li>
+</ul>
+</li>
+<li>为 Riemann 和, 其极限值称为<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上的定积分, 记作<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)dx\]</div>
+</li>
+<li><span class="arithmatex">\(a, b\)</span>称为积分的上下限</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(f\in \mathscr{R}(I)  \iff \exists I\in R, s.t.\forall \varepsilon&gt;0, \exists \delta&gt;0, s.t.\forall P:x_0=a&lt;x_1&lt;\cdots&lt;x_n=b, \forall \xi_i\in [x_{i-1}, x_i], \forall \lambda=\max\{\Delta x_i\}&lt;\delta\)</span>:</p>
+<ul>
+<li>
+<div class="arithmatex">\[\left |\sum\limits_{i=1}^nf(\xi_i)\Delta x_i-I\right |&lt;\varepsilon\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="darboux">Darboux和<a class="headerlink" href="#darboux" title="Permanent link">&para;</a></h3>
+<ul>
+<li>考虑闭区间<span class="arithmatex">\(I=[a, b]\)</span><ul>
+<li>定义<span class="arithmatex">\(M=\sup\limits_I f(x), m=\inf\limits_I f(x), M_i=\sup\limits_{[x_{i-1}, x_i]}f(x), m_i=\inf\limits_{[x_{i-1}, x_i]}f(x)\)</span></li>
+<li>给定划分<span class="arithmatex">\(P:a=x_0&lt;x_1&lt;\cdots&lt;x_n=b\)</span><ul>
+<li>定义<span class="arithmatex">\(\overline{S}(P)=\sum\limits_{i=1}^nM_i\Delta x_i, \underline{S}(P)=\sum\limits_{i=1}^nm_i\Delta x_i\)</span></li>
+<li>称<span class="arithmatex">\(\overline{S}(P), \underline{S}(P)\)</span>为Darboux大和, 小和</li>
+</ul>
+</li>
+<li>则<span class="arithmatex">\(\forall S_n(P)\)</span>, 有<ul>
+<li>
+<div class="arithmatex">\[\underline{S}(P)\leq S_n(P)\leq \overline{S}(P)\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="711_1">引理 7.1.1<a class="headerlink" href="#711_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>在原有划分中添加分点形成新划分, 则大和不增, 小和不减</p>
+</li>
+<li>
+<p>定义<span class="arithmatex">\(\overline{S}\)</span>为一切划分得到的 Darboux 大和的集合, <span class="arithmatex">\(\underline{S}\)</span>为一切划分得到的 Darboux 小和的集合</p>
+</li>
+</ul>
+<h4 id="712">引理 7.1.2<a class="headerlink" href="#712" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\forall \overline{S}(P_1)\overline{S}, \underline{S}(P_2)\in\underline{S}\)</span>, 有<ul>
+<li>
+<div class="arithmatex">\[m(b-a)\leq \underline{S}(P_1)\leq \overline{S}(P_2)\leq M(b-a)\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="713-darboux">引理 7.1.3 Darboux 定理<a class="headerlink" href="#713-darboux" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(\forall f\in B([a, b])\)</span>:<ul>
+<li>
+<div class="arithmatex">\[\lim\limits_{\lambda\to 0}\overline{S}(P)=\inf \overline{S}, \lim\limits_{\lambda\to 0}\underline{S}(P)=\sup \underline{S}\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="711_2">定理 7.1.1<a class="headerlink" href="#711_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积的充要条件是, 对于任意的划分<span class="arithmatex">\(P\)</span>, 当<span class="arithmatex">\(\lambda\to 0\)</span>时, Darboux 大和和 Darboux 小和的极限相等, 也就是</p>
+<ul>
+<li>
+<div class="arithmatex">\[\lim\limits_{\lambda\to 0}\overline{S}(P)=\lim\limits_{\lambda\to 0}\underline{S}(P)\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\forall f\in B([a, b]):f\in \mathscr{R}([a, b]) \iff \forall P, \lim\limits_{\lambda\to 0}\overline{S}(P)=\lim\limits_{\lambda\to 0}\underline{S}(P)\)</span></p>
+<ul>
+<li>若令<span class="arithmatex">\(\omega_i = M_i-m_i\)</span>为区间<span class="arithmatex">\([x_{i-1}, x_i]\)</span>上的振幅, 则</li>
+</ul>
+</li>
+</ul>
+<h4 id="712_1">定理 7.1.2<a class="headerlink" href="#712_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积的充要条件是, 对任意划分<span class="arithmatex">\(P\)</span>, 当<span class="arithmatex">\(\lambda\to 0\)</span>时, </p>
+<ul>
+<li>
+<div class="arithmatex">\[\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^n\omega_i\Delta x_i=0\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\forall f\in B([a, b]):f\in \mathscr{R}([a, b]) \iff \forall P, \lim\limits_{\lambda\to 0}\sum\limits_{i=1}^n\omega_i\Delta x_i=0\)</span></p>
+</li>
+</ul>
+<h4 id="1">推论 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>闭区间上的连续函数是Riemann可积的</li>
+<li><span class="arithmatex">\(f\in C([a, b])\implies f\in \mathscr{R}([a, b])\)</span></li>
+</ul>
+<h4 id="2">推论 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>闭区间上的单调函数是Riemann可积的</li>
+</ul>
+<h4 id="713">定理 7.1.3<a class="headerlink" href="#713" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>有界函数<span class="arithmatex">\(f(x)\)</span>在闭区间<span class="arithmatex">\([a, b]\)</span>上Riemann可积的充要条件是, 对任意<span class="arithmatex">\(\varepsilon&gt;0\)</span>, <strong>存在一种划分</strong>, 使得 对应的振幅满足</p>
+<ul>
+<li>
+<div class="arithmatex">\[\sum\limits_{i=1}^n\omega_i\Delta x_i&lt;\varepsilon\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\forall f\in B([a, b]):f\in \mathscr{R}([a, b]) \iff \forall \varepsilon&gt;0, \exists P, s.t.\sum\limits_{i=1}^n\omega_i\Delta x_i&lt;\varepsilon\)</span></p>
+<ul>
+<li>注意我们虽然在定积分的定义中说<span class="arithmatex">\(I\)</span>与划分<span class="arithmatex">\(P\)</span>无关, 但是实际上我们对<span class="arithmatex">\(P\)</span>是有要求的, 也就是它要足够"细", (<span class="arithmatex">\(\lambda\to 0\)</span>), 其余的划分都来的比这个划分更细</li>
+</ul>
+</li>
+</ul>
+<h4 id="3">推论 3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>闭区间上只有有限个不连续点的有界函数是Riemann可积的</p>
+<ul>
+<li>因为有界, 所以当<span class="arithmatex">\(\lambda\to 0\)</span>时, <span class="arithmatex">\(\omega_i\Delta x_i\)</span>可以被控制住</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">定积分基本性质<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h4 id="1_1">性质 1 线性性<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(f, g\in \mathscr{R}([a, b]), \alpha, \beta\in R\)</span>, 则<ul>
+<li>
+<div class="arithmatex">\[\alpha f(x)+\beta g(x)\in \mathscr{R}([a, b])\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\int_a^b(\alpha f(x)+\beta g(x))dx=\alpha\int_a^bf(x)dx+\beta\int_a^bg(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1_2">推论 1<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a, b]), g(x)\)</span>仅在有限个点上和<span class="arithmatex">\(f(x)\)</span>不同
+        - 则</p>
+<ul>
+<li>
+<div class="arithmatex">\[g(x)\in \mathscr{R}([a, b])\]</div>
+<ul>
+<li>且</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[\int_a^bg(x)dx=\int_a^bf(x)dx\]</div>
+</li>
+<li>
+<p>这就是说改变有限个点的函数值不影响函数的可积性和积分值</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="2_1">性质 2 乘积可积性<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><span class="arithmatex">\(f, g\in \mathscr{R}([a, b]) \implies f(x)g(x)\in \mathscr{R}([a, b])\)</span></p>
+<ul>
+<li>只需注意到<span class="arithmatex">\(\omega^{fg}_i\leq M(\omega^g_i+\omega^f_i), M=\max\{M_f, M_g\}\)</span>即可证明</li>
+</ul>
+</li>
+</ul>
+<h4 id="3_1">性质 3 保序性<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a, b]), f(x)\leq g(x)\)</span>, 则<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)dx\leq \int_a^bg(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="4">性质 4 绝对可积性<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>若<span class="arithmatex">\(f(x)\in \mathscr{R}([a, b])\)</span>, 则</p>
+<ul>
+<li>
+<div class="arithmatex">\[|f(x)|\in \mathscr{R}([a, b])\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\left |\int_a^bf(x)dx\right |\leq \int_a^b|f(x)|dx\]</div>
+</li>
+<li>
+<p>只需注意到<span class="arithmatex">\(\omega^{|f|}_i\leq \omega^f_i\)</span>即可证明</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="5">性质 5 区间可加性<a class="headerlink" href="#5" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(f\in\mathscr{R}([a, b])\implies \forall c\in (a, b), f\in \mathscr{R}([a, c]), f\in \mathscr{R}([c, b])\)</span></li>
+<li><span class="arithmatex">\(f\in \mathscr{R}([a, b]), f\in \mathscr{R}([b, c])\implies f\in \mathscr{R}([a, c])\)</span>, 且<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)dx+\int_b^cf(x)dx=\int_a^cf(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="6">性质 6 <strong>积分第一中值定理</strong><a class="headerlink" href="#6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设<span class="arithmatex">\(f(x), g(x)\)</span>在区间<span class="arithmatex">\([a, b]\)</span>上可积, 并且<span class="arithmatex">\(g(x)\)</span>不变号, 那么存在<span class="arithmatex">\(\eta\in [m, M], s.t.\)</span></p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)g(x)dx = \eta\int_a^bg(x)dx\]</div>
+</li>
+<li>其中<span class="arithmatex">\(m, M\)</span>为<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\([a, b]\)</span>上的下确界和上确界</li>
+<li>若<span class="arithmatex">\(f\)</span>连续, 则<span class="arithmatex">\(\exists \xi\in [a, b], s.t.f(\xi)=\eta\)</span>, <ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)g(x)dx = f(\xi)\int_a^bg(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(f, g\in\mathscr{R}(I), I=[a, b], g|_I&gt;0(&lt;0)\implies \exists\eta\in [\inf\limits_{I} f, \sup\limits_{I} f], s.t.\)</span></p>
+<ul>
+<li>
+<div class="arithmatex">\[\int_Ifgdx=\eta\int_I gdx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!IMPORTANT]
+<span class="arithmatex">\(\text{Holder不等式}:\\\)</span>
+<span class="arithmatex">\(f, g\in C(I), I=[a, b], \forall p, q&gt;0, s.t.\frac{1}{p}+\frac{1}{q}=1:\\\)</span></p>
+<blockquote>
+<div class="arithmatex">\[\int_I |fg|dx\leq \left (\int_I |f|^pdx\right )^{\frac{1}{p}}\left (\int_I |g|^qdx\right )^{\frac{1}{q}}\]</div>
+</blockquote>
+</blockquote>
+<h2 id="_3">微积分基本定理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="textnewton-leibniz"><span class="arithmatex">\(\text{Newton-Leibniz}\)</span> 公式<a class="headerlink" href="#textnewton-leibniz" title="Permanent link">&para;</a></h3>
+<h4 id="731">定理 7.3.1<a class="headerlink" href="#731" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上可积作函数</p>
+<ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(F(x)=\int_a^xf(t)dt, x\in [a, b]\)</span>\)</span>
+则</li>
+<li><span class="arithmatex">\(F(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上连续</li>
+<li>若<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上连续, 则<span class="arithmatex">\(F(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上可微, 且<ul>
+<li>
+<div class="arithmatex">\[F'(x)=f(x)\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>从而任一连续函数<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上都有原函数<span class="arithmatex">\(\int_a^xf(t)dt\)</span></p>
+</li>
+</ul>
+<h4 id="732">定理 7.3.2 微积分基本定理<a class="headerlink" href="#732" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上连续, <span class="arithmatex">\(F(x)\)</span>是<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上的一个原函数, 则<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)dx=F(b)-F(a)\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="_4">分部积分和换元积分<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h4 id="733">定理 7.3.3 分部积分公式<a class="headerlink" href="#733" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(u(x), v(x)\)</span>在<span class="arithmatex">\([a, b]\)</span>上有连续导数, 则<ul>
+<li>
+<div class="arithmatex">\[\int_a^bu(x)v'(x)dx=u(x)v(x)\bigg|_a^b-\int_a^bu'(x)v(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="731_1">定义 7.3.1<a class="headerlink" href="#731_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(g_n(x)\)</span>是定义在<span class="arithmatex">\([a, b]\)</span>上的一列可积函数, 且<span class="arithmatex">\(\forall m, n\)</span>:<ul>
+<li>
+<div class="arithmatex">\[\int_a^b g_m(x)g_n(x)dx = \begin{cases} 0 &amp; m\neq n\\ \int_a^bg_n^2(x)dx &amp; m=n \end{cases}\]</div>
+</li>
+<li>则称<span class="arithmatex">\(\{g_n(x)\}\)</span>是<span class="arithmatex">\([a, b]\)</span>上的一个<strong>正交函数列</strong></li>
+<li>特别的当<span class="arithmatex">\(g_n\)</span>是<span class="arithmatex">\(n\)</span>次多项式时, 称<span class="arithmatex">\(\{g_n\}\)</span>为<span class="arithmatex">\([a, b]\)</span>上的一个<strong>正交多项式列</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="734">定理 7.3.4 换元积分法<a class="headerlink" href="#734" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(f(x)\)</span>在区间<span class="arithmatex">\([a, b]\)</span>上连续, <span class="arithmatex">\(x=\varphi(t)\)</span>在区间<span class="arithmatex">\([\alpha, \beta]\)</span>上具有连续导数, 其值域包含于<span class="arithmatex">\([a, b]\)</span>, 且满足$\varphi(\alpha)=a, \varphi(\beta)=b, $则<ul>
+<li>
+<div class="arithmatex">\[\int_a^bf(x)dx=\int_{\alpha}^{\beta}f(\varphi(t))\varphi'(t)dt\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="735">定理 7.3.5<a class="headerlink" href="#735" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(f\in \mathscr{R}([-a, a])\)</span><ul>
+<li>若<span class="arithmatex">\(f(x)\)</span>是偶函数, 则<ul>
+<li>
+<div class="arithmatex">\[\int_{-a}^{a}f(x)dx=2\int_0^af(x)dx\]</div>
+</li>
+</ul>
+</li>
+<li>若<span class="arithmatex">\(f(x)\)</span>是奇函数, 则<ul>
+<li>
+<div class="arithmatex">\[\int_{-a}^{a}f(x)dx=0\]</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="736">定理 7.3.6<a class="headerlink" href="#736" title="Permanent link">&para;</a></h4>
+<ul>
+<li>设<span class="arithmatex">\(f\)</span>是周期为<span class="arithmatex">\(T\)</span>的可积函数, 则对任意<span class="arithmatex">\(a\)</span>, <ul>
+<li>
+<div class="arithmatex">\[\int_a^{a+T}f(x)dx=\int_0^Tf(x)dx\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_5">定积分在几何计算中的应用<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">求平面图形的面积<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>容易理解</li>
+</ul>
+<h3 id="_7">求曲线的弧长<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="741">定义 7.4.1 弧长公式<a class="headerlink" href="#741" title="Permanent link">&para;</a></h4>
+<ul>
+<li>若由参数方程<ul>
+<li><span class="arithmatex">\(<span class="arithmatex">\(\begin{cases} x=x(t)\\ &amp; t\in [T_1, T_2]\\ y=y(t) \end{cases}\)</span>\)</span>
+定义的曲线是光滑的, 则它是可求长的, 且其弧长为</li>
+<li>
+<div class="arithmatex">\[L=\int_{T_1}^{T_2}\sqrt{x'^2(t)+y'^2(t)}dt\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+称<span class="arithmatex">\(dl = \sqrt{ x'^2 + y'^2 }dt\)</span>为弧微元(弧长的微分)</p>
+</blockquote>
+<ul>
+<li>
+<p>当曲线是由函数<span class="arithmatex">\(y=f(x), x\in [a, b]\)</span>定义时, 弧长公式为</p>
+<ul>
+<li>
+<div class="arithmatex">\[L=\int_a^b\sqrt{1+f'^2(x)}dx\]</div>
+</li>
+</ul>
+</li>
+<li>
+<p>当曲线是由极坐标方程<span class="arithmatex">\(r=r(\theta), \theta\in [\alpha, \beta]\)</span>定义时, 弧长公式为</p>
+<ul>
+<li>
+<div class="arithmatex">\[L=\int_{\alpha}^{\beta}\sqrt{r^2(\theta)+r'^2(\theta)}d\theta\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="_8">求某些特殊几何体的体积, 旋转曲面的面积, 曲线的曲率<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h2 id="_9">微积分实际应用<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h2 id="_10">定积分数值计算<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<ul>
+<li>参考数值分析(科学计算)</li>
+</ul>
+<p><a href="https://zhuanlan.zhihu.com/p/705134713">知乎</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

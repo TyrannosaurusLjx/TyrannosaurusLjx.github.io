@@ -1,0 +1,1839 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ljx's personal page">
+      
+      
+        <meta name="author" content="Ljx">
+      
+      
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/Algebra/10-%E4%B9%A0%E9%A2%98/">
+      
+      
+        <link rel="prev" href="../07-%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0/">
+      
+      
+        <link rel="next" href="../Cayley-Hamilton/">
+      
+      
+      <link rel="icon" href="../../../assets/image/Chivalrous.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>习题 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              习题
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Notebook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Tools/" class="md-tabs__link">
+          
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+      
+  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+
+    </a>
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TyrannosaurusLjx/TyrannosaurusLjx.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TyrannosaurusLjx's repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Notebook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E8%AE%B2%E4%B9%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    高等代数与解析几何
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性方程组
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E8%A1%8C%E5%88%97%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    行列式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性空间
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵的运算
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一元多项式环
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性映射
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    习题
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cayley-Hamilton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cayley-Hamilton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jordan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jordan 标准型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kronecker-product/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵的 Kroenecker 积
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二次型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    最小多项式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵性质
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%A9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    秩
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Computer-Composition/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Computer Composition
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../DSA/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    DSA
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../ML/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Mathematical-Analysis/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Analysis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Mathematical-Modeling/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Modeling
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../OS/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Random-Process/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Random Process
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../mlcourse/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mlcourse
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    复试
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">习题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<hr />
+<ul>
+<li>证明数域:</li>
+<li>有零元,幺元</li>
+<li>加减法,乘除法封闭</li>
+</ul>
+<hr />
+<ul>
+<li>反对角矩阵的行列式为:</li>
+<li><span class="arithmatex">\((-1)^{\frac{n(n-1)}{2}}a_{1n}a_{2,n-1}\cdots a_{1n}\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>矩阵的初等变换中的对一行乘<span class="arithmatex">\(k\)</span>会改变行列式的值,其他两个不会(交换行和把一行的倍数加到另外一行)</li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(\det \begin{pmatrix}
+  a_1+c_1 &amp; b_1+a_1 &amp;  c_1+b_1 \\
+  a_2+c_2 &amp; b_2+a_2 &amp;  c_2+b_2 \\
+  a_3+c_3 &amp; b_3+a_3 &amp;  c_3+b_3
+\end{pmatrix}:=\det(\alpha+\gamma,\beta+\alpha,\gamma+\beta)=2\det(\alpha,\beta,\gamma)\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>数学归纳法求行列式的值:</p>
+</li>
+<li>
+<div class="arithmatex">\[D_n=\det\begin{pmatrix}x &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_0 \\ -1 &amp; x &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_1 \\ 0 &amp; -1 &amp; x &amp; \cdots &amp; 0 &amp; 0 &amp; a_2 \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \vdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; x &amp; 0 &amp; a_{n-1} \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; x &amp; a_{n-2} \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; -1 &amp; x+ a_{n-1}\end{pmatrix}\]</div>
+</li>
+<li><span class="arithmatex">\(n=2\)</span>时<ul>
+<li>
+<div class="arithmatex">\[D_2=\det\begin{pmatrix} x &amp; a_0 \\ -1 &amp; x+a_1\end{pmatrix}=x(x+a_1)-(-1)a_0=xl^2+a_1x+a_0\]</div>
+</li>
+<li>于是假设<span class="arithmatex">\(n-1\)</span>时成立<span class="arithmatex">\(D_{n-1}=x^{n-1}+a_{n-2}x^{n-2}+\cdots+a_1x+a_0\)</span>,则对于<span class="arithmatex">\(n\)</span>时</li>
+<li>对第一行做展开得到:<ul>
+<li><span class="arithmatex">\(D_n=x(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_2x+a_1)+(-1)^{1+n}a_0(-1)^{n-1}=x^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>把<span class="arithmatex">\(A\)</span>的所有元素加上一个<span class="arithmatex">\(t\)</span>得到的行列式记为<span class="arithmatex">\(\det A(t)\)</span>,则<span class="arithmatex">\(\det A(t)=\det A+t\sum\limits_{i=1}^n\sum\limits_{j=1}^nA_{ij}\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>替换定理:<ul>
+<li>若<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_s\)</span>线性无关,令<span class="arithmatex">\(\beta = a_1\alpha_1+a_2\alpha_2+\cdots+a_s\alpha_s\)</span>,则</li>
+<li>若<span class="arithmatex">\(a_i\neq 0\)</span>,则向量组<span class="arithmatex">\((\alpha_1,\cdots,\alpha_{i-1},\beta,\alpha_{i+1},\cdots,\alpha_s)\)</span>线性无关</li>
+<li>若<span class="arithmatex">\(a_i=0\)</span>,则向量组<span class="arithmatex">\((\alpha_1,\cdots,\alpha_{i-1},\beta,\alpha_{i+1},\cdots,\alpha_s)\)</span>线性相关</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><a href="../03-%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/">线性空间:极大线性无关组,向量组的秩:命题1</a></p>
+<ul>
+<li>证明一个向量组线性相关可以通过证明它可以被向量个数小于它的向量组线性表示 </li>
+</ul>
+</li>
+<li>
+<p>判断几个向量是不是线性相关可以取它们的部分,看他们时候线性相关</p>
+<ul>
+<li>如判断<span class="arithmatex">\((1,1,1),(1,2,3),(1,3,6)\)</span>是否线性相关,可以看<span class="arithmatex">\((1,1),(1,2),(1,3)\)</span>是否线性相关</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>令<span class="arithmatex">\(d,n\in\mathbb{N}^*\)</span>,在<span class="arithmatex">\(K[x]\)</span>中,<span class="arithmatex">\(d\min n \iff x^d-1\mid x^n-1\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>设<span class="arithmatex">\(K[x]\)</span>中既约分式<span class="arithmatex">\(\frac{f}{g}\)</span>满足方程<span class="arithmatex">\(a_n(x)y^n+\cdots+a_1(x)y+a_0=0,a_n(x)\neq 0\)</span>,则<span class="arithmatex">\(f(x)\mid a_0(x),g(x)\mid a_n(x)\)</span><ul>
+<li>类似于多项式有有理根的情况</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>证明在<span class="arithmatex">\(\mathbb{Z}_m\)</span>中,<span class="arithmatex">\(a\)</span>的逆元存在当且仅当<span class="arithmatex">\(a\)</span>与<span class="arithmatex">\(m\)</span>互素<ul>
+<li>这推出如果<span class="arithmatex">\(m\)</span>是素数,那么<span class="arithmatex">\(\mathbb{Z}_m\)</span>中的每一个非零元都有逆元</li>
+<li>而且<span class="arithmatex">\(\mathbb{Z}_m\)</span>中的每一个非零元要么和<span class="arithmatex">\(m\)</span>互素,要么是<span class="arithmatex">\(m\)</span>的因子,从而要么是可逆元要么是零因子</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>在特征为<span class="arithmatex">\(p\)</span>的域中,有<span class="arithmatex">\((a+b)^p=a^p+b^p\)</span>,从而<span class="arithmatex">\((\sum a_i)^p=\sum a_i^p\)</span></li>
+</ul>
+<hr />
+<ul>
+<li><strong>费马小定理</strong>: <span class="arithmatex">\(p\)</span>是素数,<span class="arithmatex">\(\forall a\in \mathbb{Z}:a^p\equiv a\pmod p\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><span class="arithmatex">\(\mathbb{Z}_p\)</span>中的一元函数 <strong>都是多项式函数</strong></p>
+<ul>
+<li>首先可以证明一元函数只有<span class="arithmatex">\(p^p\)</span>个,(对应的映射只有<span class="arithmatex">\(p^p\)</span>个) 然后由插值理论可以构造次数小于<span class="arithmatex">\(p\)</span>的多项式,这些多项式组成的集合大小恰好为<span class="arithmatex">\(p^p\)</span>,再证明在<span class="arithmatex">\(\mathbb{Z}_p\)</span>中,不同多项式诱导的函数是不同的即可</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>矩阵 <span class="arithmatex">\(AB,BA\)</span> 有相同的非零特征值,并且重数也是相同的</p>
+<div class="highlight"><pre><span></span><code>特征多项式差的倍数就是零特征值的幂差的倍数
+</code></pre></div>
+<p><a href="https://www.zhihu.com/question/30711275">ref</a></p>
+<hr />
+<p>降阶公式: </p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\det \begin{pmatrix} A &amp; B \\ C &amp; D \end{pmatrix}\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\text{若 A 可逆} =  \det A \det(D-CA^{-1}B)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{若 D 可逆} =  \det D \det(A-BD^{-1}C)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{若 A,D 都可逆}  \det A \det(D-CA^{-1}B)=\det D \det(A-BD^{-1}C)\)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>特别的,如果 <span class="arithmatex">\(A=uv+B\)</span>, 其中 <span class="arithmatex">\(u_{n\times 1},v_{1\times n},B_{n\times n}\)</span>, 并且 <span class="arithmatex">\(B\)</span> 可逆,那么有 </p>
+<ul>
+<li>
+<div class="arithmatex">\[\det\begin{pmatrix} 1 &amp; -v \\ u &amp; B\end{pmatrix} \overset{\text{2行-1 行右乘u}}{=}\det \begin{pmatrix} 1 &amp; -v \\ O &amp; B+uv\end{pmatrix} = \det A\]</div>
+<ul>
+<li>也就是</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[\det A = 1\cdot \det |1 + vB^{-1}u|\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>计算 <span class="arithmatex">\(A^{-1}B\)</span>, 对 <span class="arithmatex">\((A|B)\to (E|A^{-1}B)\)</span> 做初等行变换</p>
+<hr />
+<p><span class="arithmatex">\(A_{m\times n},B_{n\times m}\text{,}f_{AB}(\lambda),f_{BA}(\lambda)\text{ 是 }AB,BA\text{ 的特征多项式,则}\\\lambda^nf_{AB}(\lambda)=\lambda^mf_{BA}(\lambda)\)</span></p>
+<p>也就是 <span class="arithmatex">\(\lambda^n |\lambda E_m - AB|= \lambda^m |\lambda E_n - BA|\)</span></p>
+<hr />
+<ul>
+<li>一个数的代数余子式怎么定义?</li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(A\)</span> 的特征是是 <span class="arithmatex">\(\lambda\)</span> , 那么 <span class="arithmatex">\(f(A)\)</span> 的特征值是 <span class="arithmatex">\(f( \lambda)\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>第一圆盘定理: <span class="arithmatex">\(A\)</span> 的特征值落在 <span class="arithmatex">\(|z-a_{ii}|&lt;R_i = \sum_{j\neq i} |a_{ij}|,i=1,2,\cdots,n\)</span> 内</li>
+</ul>
+<hr />
+<ul>
+<li>相似的矩阵有相同的特征值,从而有相同的迹</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>矩阵 <span class="arithmatex">\(A\)</span> 可对角化的一些充分条件有 </p>
+<ul>
+<li><span class="arithmatex">\(A\)</span> 有 <span class="arithmatex">\(n\)</span> 个线性无关的特征向量</li>
+<li><span class="arithmatex">\(A\)</span> 有 <span class="arithmatex">\(n\)</span> 个不同的特征值</li>
+<li><span class="arithmatex">\(\mathbb{C}^n\)</span> 是 <span class="arithmatex">\(A\)</span> 特征子空间的直和</li>
+<li><span class="arithmatex">\(A\)</span> 的任意特征值的代数重数等于几何重数</li>
+<li>
+<p><span class="arithmatex">\(A\)</span> 的最小多项式没有重根</p>
+<ul>
+<li>
+<p>实际上只要存在一个可以分解成不同的一次因式的乘积的零化多项式就可以,这样因为最小多项式一定整除零化多项式,这就使得最小多项式也能分解成不同的一次因式的乘积</p>
+<ul>
+<li>例如 <span class="arithmatex">\(A^A=A\)</span> 幂等矩阵可对角化</li>
+<li><span class="arithmatex">\(A^2=I\)</span> 对合矩阵可对角化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(A\)</span> 的特征多项式没有重根</p>
+</li>
+<li><span class="arithmatex">\(A\)</span> 的 <span class="arithmatex">\(\text{Jordan}\)</span>  块都是一阶的</li>
+<li><span class="arithmatex">\(A\)</span> 是实对称矩阵</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>一个特征值的几何重数等于 <span class="arithmatex">\(\text{Jordan}\)</span> 块的个数,代数重数等于 <span class="arithmatex">\(\text{Jordan}\)</span> 块的阶数和</li>
+</ul>
+<hr />
+<p><span class="arithmatex">\(\begin{aligned}&amp;\text{8.[ ZJU2308LA ]设 }A,B,C\in M_n(\mathbb{R}),\text{ 且 }AB-BA=CC^{\prime},\text{ 且 }A,B\text{ 均可对角化,证明:}\\&amp;A,B\text{ 可同时对角化}.\\&amp;\textbf{Proof. 注意到 }(CC^{\prime})^{\prime}=CC^{\prime}\text{ 且对任意的 }n\text{ 维列向量 }x\text{,由第四版复且高代白皮书例 2.9}\\&amp;\text{可知 }x\left(CC^{\prime}\right)x=\left(Cx\right)^{\prime}(Cx)\geq0,\text{ 故 }CC^{\prime}\text{ 是半正定实对称阵, 故其特征值均为非负数}.\\&amp;\text{再由}\operatorname{tr}(AB-BA)=0=\operatorname{tr}\left(CC^{\prime}\right),\text{得到 }CC^{\prime}\text{ 只有零特征值, 故 }CC^{\prime}=O.\text{ 即 }AB=BA,\\&amp;\text{再由第四版复旦高代白皮书例 6.41 可得 }A,B\text{ 可同时对角化。}\end{aligned}\)</span></p>
+<blockquote>
+<p>[!NOTE]
+可对角化的矩阵可同时对角化的充要条件是它们可交换</p>
+<blockquote>
+<p>证明用到了和块对角矩阵交换的矩阵一定也是块对角矩阵</p>
+<blockquote>
+<p>若是数量阵,则与之交换的一定也是数量阵</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr />
+<ul>
+<li>半正定矩阵的某个 <span class="arithmatex">\(a_{ii}=0\)</span> 的话,那么第 <span class="arithmatex">\(i\)</span> 行和第 <span class="arithmatex">\(i\)</span> 列都是 <span class="arithmatex">\(0\)</span></li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(\begin{aligned}&amp;\text{正定矩阵的对角元都不是零。这是显然的,因为}a_{ii}\text{ 代表 }v_i\text{ 的长度的平方,当然}\\&amp;\text{不能是零。}\\&amp;\text{正定矩阵中最大的元素必然出现在对角线上。这是因为内积满足 Schwatz 不等}\\&amp;\text{式 }(v_i,v_j)^2\leq(v_i,v_i)(v_j,v_j),\text{ 即 }a_{ij}^2\leq a_{ii}a_{ij},\text{ 从而 }a_{ij}\leq\max\{a_{ii},a_{jj}\}。\\&amp;\text{正定矩阵的行列式列值等于 }v_1,v_2,\ldots,v_n\text{ 张成的平行多面体的体积的平方。正定}\\&amp;\text{矩阵的主子式都大于零,这是因为主子式 }A_{i_1i_2\cdots i_m}\text{ 的值是 }v_{i_1},v_{i_2},\ldots,v_{i_m}\text{ 张成的}\\&amp;\text{平行多面体的体积的平方,所以大于零。}\end{aligned}\)</span></li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(\begin{aligned}&amp;\text{ 例 3.3 (北京大学2005). 设 }A\text{ 是数域 }F\text{ 上 }n\text{ 维向量空间上的线性变换,求证}\\&amp;A^3=I\Leftrightarrow\mathrm{r}(I-A)+\mathrm{r}(I+A+A^2)=n.\\&amp;\text{证明,注意到存在 }u(x),v(x)\text{ 使得 }u(x)(1-x)+v(x)(1+x^2+x)=1\text{。考虑大的 }2n\\&amp;\text{阶的方阵}\\&amp;\begin{pmatrix}I-A&amp;0\\0&amp;I+A+A^2\end{pmatrix}\xrightarrow{\text{第一列乘以 }u(A)\text{ 加到第二列}}\begin{pmatrix}I-A&amp;u(A)(I-A)\\0&amp;I+A+A^2\end{pmatrix}\\&amp;\xrightarrow{\text{第二方乘以 }u(A)\text{ 加到第一项}}\begin{pmatrix}I-A&amp;I\\0&amp;I+A+A^2\end{pmatrix}\\&amp;\text{用 }I\text{ 打调干持两边的矩阵}\\&amp;\begin{pmatrix}0&amp;I\\A^3-I&amp;0\end{pmatrix}.\\&amp;\text{所以这个矩阵的秩是 }n\text{ 当且仅当 }A^3-I=0\text{,这就得到了证明。}\end{aligned}\)</span></li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(\det\begin{pmatrix} A &amp; B \\ B &amp; A\end{pmatrix} = \det(A-B)\det(A+B)\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>摄动法:  </p>
+<ul>
+<li>验证矩阵问题对非奇异阵成立</li>
+<li>若把题中的 <span class="arithmatex">\(A,B\)</span> 换成 <span class="arithmatex">\(t_kI+A,t_kI+B\)</span> 任然满足条件</li>
+<li>
+<p>且矩阵问题关于 <span class="arithmatex">\(t_k\)</span> 连续</p>
+<ul>
+<li>那么对一般的矩阵,矩阵问题都成立</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><span class="arithmatex">\(A,B\)</span> 乘法可交换.那么 <span class="arithmatex">\(A\)</span> 的特征子空间是 <span class="arithmatex">\(B\)</span> 的不变子空间 </li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>如果矩阵问题在同时变换下成立,那么它在一般情况下也成立</p>
+<ul>
+<li>
+<p>例如 <span class="arithmatex">\(AB=BA\)</span> 且 <span class="arithmatex">\(A\)</span> 有 <span class="arithmatex">\(n\)</span> 个不同特征值,往证 <span class="arithmatex">\(B\)</span> 可对角化</p>
+<ul>
+<li>对 <span class="arithmatex">\(A,B\)</span> 同时做相似变换有 <span class="arithmatex">\(C=P^{-1}AP, D=P^{-1}BP\)</span> 则 <span class="arithmatex">\(AB=BA \iff CD=DC\)</span>, 从而不妨设 <span class="arithmatex">\(A\)</span> 就是对角矩阵,由和对角矩阵可交换的矩阵只能是对角矩阵完成证明</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>行列式递推, 若 <span class="arithmatex">\(D_n = \alpha D_{n-1} + \beta D_{n-2}\)</span>, 则 <span class="arithmatex">\(D_n = \frac{x_1^{n+1}-x_2^{n+1}}{x_1-x_2}\)</span>, 其中 <span class="arithmatex">\(x_1,x_2\)</span> 是方程 <span class="arithmatex">\(x^2-\alpha x+\beta = 0\)</span>  的两个根</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
