@@ -108,7 +108,7 @@
 ### 紧集
 
 #### 定义 11.1.7
-- $S\subset R^n, U_\alpha\underset{open}{\subset} R^n, \alpha\in \Lambda, s.t.S\subset \bigcup_{\alpha}U\limits_\Lambda$, 则称 $\{U_\alpha\}$ 为 $S$ 的开覆盖 
+- $S\subset R^n, U_\alpha\underset{open}{\subset} R^n, \alpha\in \Lambda, s.t.S\subset \bigcup_{\alpha}U_\Lambda$, 则称 $\{U_\alpha\}$ 为 $S$ 的开覆盖 
 - 若 $S$ 的任意开覆盖都有有限子覆盖, 则称 $S$ 为紧集
 
 > [!NOTE]
