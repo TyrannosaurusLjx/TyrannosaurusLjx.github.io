@@ -72,32 +72,38 @@
 
 - 次序统计量 $(\text{order statistic})$ 
 
+    - $X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(n)}$
+
+    - 中位数: $m_{\frac{1}{2}} = \begin{cases} X_{(n/2+1)} & if \; n \; \text{is even} \\ \frac{1}{2}(X_{(n/2)} + X_{(n/2+1)}) & if \; n \; \text{is odd} \end{cases}$
+    - 极值($\text{extremum of sample}$): 极小值:$X_{(1)},极大值:X_{(n)}$ 
+
+    - 样本$p$分位数($\text{sample p-fractile}$): $X_{\left([p(n+1)]\right)}$
+
+    - 样本极差($\text{sample range}$): $R = X_{(n)} - X_{(1)}$
 
 
+### 经验分布函数 $(\text{empirical distribution function})$
 
+$$
+F_n(x) = \begin{cases} 0 & x \leq X_{(1)} \\ \frac{k}{n} & X_{(k)} < x \leq X_{(k+1)} \\ 1 & x > X_{(n)} \end{cases}
+$$
 
+单调,不减,左连续函数
 
+若记示性函数
 
+$$
+I_A(x) = \begin{cases} 1 & x \in A \\ 0 & x \notin A \end{cases}
+$$
 
+则 $F_n(x)=\frac{1}{n}\sum I_{(-\infty,x)}(X_i)$
 
+$$
+F_n(x)\xrightarrow{P} F(x)
+$$
 
+并且有
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$$
+P\left(\lim\limits_{n\to\infty}\sup\limits_x |F_n(x) - F(x)| =0 \right) = 1
+$$
