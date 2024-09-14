@@ -12,28 +12,28 @@
         <meta name="author" content="Ljx">
       
       
-        <link rel="canonical" href="https://ljxpage.github.io/Notebook/ML/03-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9B%9E%E9%A1%BE/">
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/ML/ML-of-Andrew/06-Overfitting/">
       
       
-        <link rel="prev" href="../02-%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">
+        <link rel="prev" href="../05-Logistic-Regression/">
       
       
-        <link rel="next" href="../04-%E5%A4%9A%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">
+        <link rel="next" href="../07-TensorFlow/">
       
       
-      <link rel="icon" href="../../../assets/image/Chivalrous.ico">
+      <link rel="icon" href="../../../../assets/image/Chivalrous.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
     
     
       
-        <title>线性代数回顾 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+        <title>过拟合 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -90,9 +90,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+    <a href="../../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
       
-  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+  <img src="../../../../assets/image/Chivalrous.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              线性代数回顾
+              过拟合
             
           </span>
         </div>
@@ -197,7 +197,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -218,7 +218,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -238,7 +238,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../Tools/" class="md-tabs__link">
+        <a href="../../../../Tools/" class="md-tabs__link">
           
   
     
@@ -275,9 +275,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+    <a href="../../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
       
-  <img src="../../../assets/image/Chivalrous.jpg" alt="logo">
+  <img src="../../../../assets/image/Chivalrous.jpg" alt="logo">
 
     </a>
     𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
@@ -304,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -352,6 +352,8 @@
       
         
       
+        
+      
     
     
       
@@ -372,7 +374,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -459,7 +461,7 @@
         
   
   
-    <a href="../../Algebra/" class="md-nav__link">
+    <a href="../../../Algebra/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -510,7 +512,7 @@
         
   
   
-    <a href="../../Computer-Composition/" class="md-nav__link">
+    <a href="../../../Computer-Composition/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -561,11 +563,62 @@
         
   
   
-    <a href="../../DSA/" class="md-nav__link">
+    <a href="../../../DSA/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
     DSA
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Frontiers_of_mathmatics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Frontiers of mathmatics
   </span>
   
 
@@ -593,7 +646,61 @@
     
       
         
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        
           
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            ML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
         
@@ -616,7 +723,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" checked>
         
           
           
@@ -625,23 +732,23 @@
               
   
   <span class="md-ellipsis">
-    ML
+    ML of Andrew
   </span>
   
 
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6_1">
             <span class="md-nav__icon md-icon"></span>
-            ML
+            ML of Andrew
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -654,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-%E5%BC%95%E8%A8%80/" class="md-nav__link">
+      <a href="../01-Intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,11 +782,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" class="md-nav__link">
+      <a href="../02-LR/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     单变量线性回归
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-LinearAlgebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性代数回顾
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-LRS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多变量线性回归
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-Logistic-Regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    逻辑回归
   </span>
   
 
@@ -709,7 +879,7 @@
         
   
   <span class="md-ellipsis">
-    线性代数回顾
+    过拟合
   </span>
   
 
@@ -727,15 +897,72 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-%E5%A4%9A%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" class="md-nav__link">
+      <a href="../07-TensorFlow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    多变量线性回归
+    TensorFlow
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../mlcourse/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mlcourse
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -818,7 +1045,7 @@
         
   
   
-    <a href="../../Mathematical-Analysis/" class="md-nav__link">
+    <a href="../../../Mathematical-Analysis/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -895,11 +1122,64 @@
         
   
   
-    <a href="../../Mathematical-Modeling/" class="md-nav__link">
+    <a href="../../../Mathematical-Modeling/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
     Mathematical Modeling
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Mathematical-Statistics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Statistics
   </span>
   
 
@@ -962,7 +1242,7 @@
         
   
   
-    <a href="../../OS/" class="md-nav__link">
+    <a href="../../../OS/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1041,7 +1321,7 @@
         
   
   
-    <a href="../../Random-Process/" class="md-nav__link">
+    <a href="../../../Random-Process/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1071,55 +1351,6 @@
     
       
         
-          
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../mlcourse/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    Mlcourse
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
       
         
       
@@ -1151,7 +1382,7 @@
         
   
   
-    <a href="../../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+    <a href="../../../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1217,7 +1448,7 @@
         
   
   
-    <a href="../../../Tools/" class="md-nav__link">
+    <a href="../../../../Tools/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1254,13 +1485,71 @@
   
 
 
-<h1 id="_1">线性代数回顾<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">过拟合<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <ul>
 <li>
-<p><a href="../高等代数/01-线性方程组.md">线性方程组</a></p>
+<p>过拟合现象</p>
+<ul>
+<li>
+<p><img alt="overfitting example 1" src="../img/image_2024-08-23-13-41-55.png" /></p>
 </li>
 <li>
-<p><a href="../高等代数/02-行列式.md">行列式</a></p>
+<p><img alt="overfitting example 2" src="../img/image_2024-08-23-13-47-42.png" /> </p>
+</li>
+<li>
+<p>在训练集上表现很好, 但是在测试集上表现很差, 这种现象称为过拟合(Overfitting)</p>
+<ul>
+<li>过度追求训练集上的准确度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>解决方法<ul>
+<li>获得更多的训练数据</li>
+<li>减少特征的数量</li>
+<li>正则化(Regularization)<ul>
+<li><img alt="Regularization" src="../img/image_2024-08-23-14-03-01.png" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>正则化成本函数(coss function)</p>
+<ul>
+<li>如果对可能导致过拟合的特征的参数添加惩罚项, 可以减少过拟合现象</li>
+<li>
+<p><img alt="image_2024-08-23-14-13-11" src="../img/image_2024-08-23-14-13-11.png" /> </p>
+</li>
+<li>
+<p>但是事实上如果特征非常多, 我们很难判断出到底哪些特征导致了过拟合</p>
+<ul>
+<li>于是我们对所有的特征都添加惩罚项</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="arithmatex">\[J(\omega,b) = \frac{1}{m} \sum\limits_{i=1}^{m} L(\hat{y}^{(i)},y^{(i)}) + \frac{\lambda}{2m} \sum\limits_{j=1}^{n} \omega_j^2\]</div>
+<ul>
+<li>
+<p><img alt="example" src="../img/image_2024-08-23-14-21-08.png" /> </p>
+<ul>
+<li><span class="arithmatex">\(\lambda\)</span> 是正则化参数, 控制正则化的程度</li>
+<li>如果 <span class="arithmatex">\(\lambda\)</span> 过大, 那么模型倾向于让每个 <span class="arithmatex">\(\omega\)</span> 都很小, 从而导致欠拟合</li>
+<li>如果 <span class="arithmatex">\(\lambda\)</span> 过小, 那么相当于没做什么改变, 可能导致过拟合</li>
+</ul>
+</li>
+<li>
+<p><img alt="梯度下降" src="../img/image_2024-08-23-14-48-49.png" /> </p>
+<ul>
+<li><span class="arithmatex">\(\omega_j := \omega_j - \alpha \left[ \frac{1}{m}\sum\limits_{{i}=1}^m [(f_{\omega,b}(x^{(i)}) -y^{(i)})x^{(i)} ] +\frac{\lambda}{m}\omega_j\right]\)</span></li>
+</ul>
 </li>
 </ul>
 
@@ -1315,12 +1604,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

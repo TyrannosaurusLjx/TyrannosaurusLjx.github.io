@@ -12,28 +12,28 @@
         <meta name="author" content="Ljx">
       
       
-        <link rel="canonical" href="https://ljxpage.github.io/Notebook/mlcourse/">
+        <link rel="canonical" href="https://ljxpage.github.io/Notebook/ML/ML-of-Andrew/05-Logistic-Regression/">
       
       
-        <link rel="prev" href="../Random-Process/%E4%B9%A0%E9%A2%98%E5%9B%9B/">
+        <link rel="prev" href="../04-LRS/">
       
       
-        <link rel="next" href="../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/">
+        <link rel="next" href="../06-Overfitting/">
       
       
-      <link rel="icon" href="../../assets/image/Chivalrous.ico">
+      <link rel="icon" href="../../../../assets/image/Chivalrous.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
     
     
       
-        <title>mlcourse - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
+        <title>逻辑回归 - 𝓛𝓳𝔁'𝓟𝓪𝓰𝓮</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mlcourse" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+    <a href="../../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-header__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
       
-  <img src="../../assets/image/Chivalrous.jpg" alt="logo">
+  <img src="../../../../assets/image/Chivalrous.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              mlcourse
+              逻辑回归
             
           </span>
         </div>
@@ -197,7 +197,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -218,7 +218,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -238,7 +238,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Tools/" class="md-tabs__link">
+        <a href="../../../../Tools/" class="md-tabs__link">
           
   
     
@@ -275,9 +275,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
+    <a href="../../../.." title="𝓛𝓳𝔁&#39;𝓟𝓪𝓰𝓮" class="md-nav__button md-logo" aria-label="𝓛𝓳𝔁'𝓟𝓪𝓰𝓮" data-md-component="logo">
       
-  <img src="../../assets/image/Chivalrous.jpg" alt="logo">
+  <img src="../../../../assets/image/Chivalrous.jpg" alt="logo">
 
     </a>
     𝓛𝓳𝔁'𝓟𝓪𝓰𝓮
@@ -304,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -352,6 +352,8 @@
       
         
       
+        
+      
     
     
       
@@ -372,7 +374,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -459,7 +461,7 @@
         
   
   
-    <a href="../Algebra/" class="md-nav__link">
+    <a href="../../../Algebra/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -510,7 +512,7 @@
         
   
   
-    <a href="../Computer-Composition/" class="md-nav__link">
+    <a href="../../../Computer-Composition/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -561,7 +563,7 @@
         
   
   
-    <a href="../DSA/" class="md-nav__link">
+    <a href="../../../DSA/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -596,10 +598,338 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Frontiers_of_mathmatics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Frontiers of mathmatics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            ML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
         
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ML of Andrew
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            ML of Andrew
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    引言(introduction)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-LR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    单变量线性回归
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-LinearAlgebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性代数回顾
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-LRS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多变量线性回归
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    逻辑回归
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-Overfitting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    过拟合
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-TensorFlow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TensorFlow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
         
       
     
@@ -618,11 +948,11 @@
         
   
   
-    <a href="../ML/" class="md-nav__link">
+    <a href="../../mlcourse/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    ML
+    Mlcourse
   </span>
   
 
@@ -632,6 +962,14 @@
     </a>
   
 
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -707,7 +1045,7 @@
         
   
   
-    <a href="../Mathematical-Analysis/" class="md-nav__link">
+    <a href="../../../Mathematical-Analysis/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -784,11 +1122,64 @@
         
   
   
-    <a href="../Mathematical-Modeling/" class="md-nav__link">
+    <a href="../../../Mathematical-Modeling/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
     Mathematical Modeling
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Mathematical-Statistics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Statistics
   </span>
   
 
@@ -851,7 +1242,7 @@
         
   
   
-    <a href="../OS/" class="md-nav__link">
+    <a href="../../../OS/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -930,7 +1321,7 @@
         
   
   
-    <a href="../Random-Process/" class="md-nav__link">
+    <a href="../../../Random-Process/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -944,67 +1335,6 @@
     </a>
   
 
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-      
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
-              
-  
-  <span class="md-ellipsis">
-    Mlcourse
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_10">
-            <span class="md-nav__icon md-icon"></span>
-            Mlcourse
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1052,7 +1382,7 @@
         
   
   
-    <a href="../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+    <a href="../../../%E5%A4%8D%E8%AF%95/%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1118,7 +1448,7 @@
         
   
   
-    <a href="../../Tools/" class="md-nav__link">
+    <a href="../../../../Tools/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1155,113 +1485,45 @@
   
 
 
-<h1 id="mlcourse">mlcourse<a class="headerlink" href="#mlcourse" title="Permanent link">&para;</a></h1>
-<hr />
-<h2 id="chapter-1">Chapter 1<a class="headerlink" href="#chapter-1" title="Permanent link">&para;</a></h2>
-<p>一个 <span class="arithmatex">\(\text{dataframe}\)</span> 可以看成一个 <span class="arithmatex">\(m\times n\)</span> 的矩阵, 包含 <span class="arithmatex">\(m\)</span> 个元素, 每个元素有 <span class="arithmatex">\(n\)</span> 个特征</p>
-<p><code>pandas,numpy</code> : 库</p>
+<h1 id="_1">逻辑回归<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <ul>
 <li>
-<p><code>df = pd.read_csv()</code> 读数据</p>
+<p>如果直接把线性回归应用到分类问题上, 很容易使得模型受到极端值的影响, 从而影响模型的准确度 </p>
 </li>
 <li>
-<p><code>df.head()</code> 查看数据前几行</p>
-</li>
-<li>
-<p><code>df.shape</code> 返回数据行列(<code>df.shap[0]</code> 可获得数据长度)</p>
-</li>
-<li>
-<p><code>df.columns</code> 返回列名称</p>
-</li>
-<li>
-<p><code>df["column-name"]</code> 可以访问列名为 <code>column-name</code> 的 <span class="arithmatex">\(m\times 1\)</span> 列向量</p>
-</li>
-<li>
-<p><code>df["column-name].value_counts()</code> 返回列 <code>column-name</code> 的各个值的出现次数</p>
+<p><span class="arithmatex">\(h_\theta(x) = g(\theta^T X)\)</span>, 其中 <span class="arithmatex">\(X\)</span> 是特征向量，<span class="arithmatex">\(g\)</span> 是逻辑函数，常用 <span class="arithmatex">\(g(z) = \frac{1}{1+e^{-z}}\)</span> </p>
 <ul>
-<li><code>df["column-name].value_counts(normalsize=True)</code> 则对统计量做单位化(百分比)</li>
-<li><code>df.sort_values(by="column-name",ascending=False)</code> 以列 'column-name' 为依据做降序排列</li>
-<li><code>df["column-name].mean()</code> 列平均值 </li>
-<li><code>df["column-name].median()</code> 列中位数</li>
-<li><code>df["column-name].std()</code> 列标准差</li>
-<li><code>df["column-name].min()</code> 列最小值</li>
-<li><code>df["column-name].max()</code> 列最大值</li>
+<li>这里 <span class="arithmatex">\(g\)</span> 关于 <span class="arithmatex">\((0,0.5)\)</span> 中心对称</li>
+<li><span class="arithmatex">\(h\)</span> 用来评估在自变量取 <span class="arithmatex">\(x\)</span> 时，因变量取 1 的概率，即 <span class="arithmatex">\(P(y=1|x)\)</span></li>
 </ul>
 </li>
 <li>
-<p><code>df[df["column-name_1"] == value_1 &amp; df["column-name_2"] == value_2]</code> 筛选满足 <code>column-name_1</code> 为 <code>value_1</code> 且 <code>column-name_2</code> 为 <code>value_2</code> 的行 (还有 <code>|</code> 运算符)</p>
-</li>
-<li>
-<p><code>df.loc[i:j, k:l]</code> 可以访问数据的子矩阵 </p>
-<ul>
-<li><code>df.loc[0:5, "State":"Area code"]</code>, 这里列会包含 Area code 列</li>
-<li><code>df.iloc[0:5, 0:3]</code>, 这里列不会包含第 4 列</li>
-</ul>
-</li>
-<li>
-<p><code>df.apply(function)</code> 把 function 应用到每一列</p>
-</li>
-<li>
-<p><code>df["column-name"].map({old_value_1: new_value_1, old_value_2: new_value_2})</code> 可以把列中的 <code>old_value_1</code> 替换为 <code>new_value_1</code>, <code>old_value_2</code> 替换为 <code>new_value_2</code> </p>
-<ul>
-<li>例如要实现 <span class="arithmatex">\(0\to False,1\to True\)</span></li>
-</ul>
-</li>
-<li>
-<p><code>df.groupby(by=["cloumn-name_1", "column-name_2"])</code> 返回一个按 <span class="arithmatex">\(column-name_1,column-name_2\)</span> 的值的笛卡尔积坐标和对应的数据集做成的元组</p>
+<p>Decision Boundary 就是使得决策值发生变化的自变量满足的方程绘制的图像</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">for</span> <span class="p">(</span><span class="n">sex</span><span class="p">,</span> <span class="n">race</span><span class="p">),</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;sex&quot;</span><span class="p">,</span> <span class="s2">&quot;race&quot;</span><span class="p">]):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sex:</span><span class="si">{}</span><span class="s2">, race:</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sex</span><span class="p">,</span><span class="n">race</span><span class="p">))</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></code></pre></div>
+<p><img alt="Decision-Boundary" src="../img/Decision-Boundary.png" /></p>
 <ul>
 <li>
-<p><code>df.insert(index, column_name, value)</code> 在 <code>index</code> 位置插入一列 <code>column_name</code> 值为 <code>value</code></p>
+<p>代价函数 <span class="arithmatex">\(cost(h_\theta(x),y) = \begin{cases} -\log(h_\theta(x)) &amp; if\;y=1 \\ -\log(1-h_\theta(x)) &amp; if\;y=0 \end{cases}\)</span></p>
 <ul>
-<li>类似 python 字典,可以直接使用 <code>df["column_name"] = value</code> 添加列</li>
+<li>
+<p><span class="arithmatex">\(cost(h_\theta(x),y) = -y\log(h_\theta(x))-(1-y)\log(1-h_\theta(x))\)</span></p>
+</li>
+<li>
+<p><img alt="cost function" src="../img/image_2024-08-23-13-22-23.png" /> </p>
+</li>
+<li>
+<p>如果采用线性回归常用的平方误差函数，会导致代价函数非凸，从而使得梯度下降算法可能陷入局部最优解. 而采用逻辑回归的代价函数，可以保证代价函数是凸函数，从而可以保证梯度下降算法可以找到全局最优解</p>
+</li>
+<li>
+<p>如果采用平方误差函数,或许可以使用一些跳出局部最优解的方法,但是这些方法的效果有待验检 </p>
+</li>
+<li>
+<p><span class="arithmatex">\(\theta_j = \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\theta_j = \theta_j - \alpha \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)}\)</span></li>
+<li>事实上这和线性回归的梯度下降算法是一样的(形式上 )</li>
 </ul>
-</li>
-<li>
-<p><code>df.drop(["column_name"], axis=1)</code> 删除列</p>
-</li>
-<li>
-<p><code>df.drop([i,j,k], axis=0)</code> 删除行 <code>i,j,k</code></p>
-</li>
-</ul>
-<hr />
-<h2 id="chapter-2">Chapter 2<a class="headerlink" href="#chapter-2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><code>df[features].hist(figsize=(10, 4))</code> 画出 <code>features</code> 列的直方<D-R>图</p>
-</li>
-<li>
-<p><code>df[features].plot(kind="density", figsize=(10, 4))</code> 画出 <code>features</code> 列的密度图</p>
-</li>
-<li>
-<p><code>plt.scatter(df["column_1"], df["column_2"])</code> 画出散点图</p>
-</li>
-</ul>
-<hr />
-<h2 id="chapter-3">Chapter 3<a class="headerlink" href="#chapter-3" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>熵</p>
-<ul>
-<li>
-<div class="arithmatex">\[S = -\sum\limits_{i\in\mathcal{E}}p_i\log_2 p_i\]</div>
-</li>
-</ul>
-</li>
-<li>
-<p>信息增益</p>
-<ul>
-<li>
-<div class="arithmatex">\[\text{IG} = S_O - \sum\limits_{i=1}^{n}\frac{N_i}{N}S_i\]</div>
-</li>
-<li>
-<p>其中，<span class="arithmatex">\(q\)</span> 是分割的组数，<span class="arithmatex">\(N_i\)</span> 是第 <span class="arithmatex">\(i\)</span> 项时的样本数目。</p>
 </li>
 </ul>
 </li>
@@ -1318,12 +1580,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant.prefetch", "navigation.tabs", "navigation.prune", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "navigation.tracking", "navigation.indexes", "navigation.path"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
