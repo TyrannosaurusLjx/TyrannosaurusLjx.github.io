@@ -956,6 +956,120 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="三、遗传算法的高级实现技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      倒位算子
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      多倍体和显性操作算子
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      变长编码技术
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、并行遗传算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、并行遗传算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      标准并行遗传算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      分解并行遗传算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、遗传算法的数学理论
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、遗传算法的数学理论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式定理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      积木块假设与遗传算法欺骗问题
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1721,6 +1835,123 @@ $$</p>
 </li>
 </ul>
 <h2 id="_26">三、遗传算法的高级实现技术<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
+<h3 id="_27">倒位算子<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>倒位操作 <span class="arithmatex">\((\text{inverse operation})\)</span> 是指颠倒个体编码串中随机指定的二个基因座之间的基因排列顺序，从而形成一个新的染色体</p>
+<h3 id="_28">多倍体和显性操作算子<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<p>二倍体的记忆能力使得生物能够记忆以前所经历过的环境及变化，使得生物的遗传进化过程能够快速地适应环境的变化。这个特点在遗传算法中的应用意义就在于，使用二倍体结构的遗传算法能够解决动态环境下的复杂系统优化问题，而常规的遗传算法却不能很好地应用于动态环境，它难于跟踪环境的动态变化过程</p>
+<h3 id="_29">变长编码技术<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<h2 id="_30">四、并行遗传算法<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\text{Parallel Genetic Algorithm}, \text{PGA}\)</span></p>
+<p>主要目的是为了提高遗传算法的运行速度(传统遗传算法实质上是串行的)</p>
+<h3 id="_31">标准并行遗传算法<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\text{Standard Parallel Genetic Algorithm}, \text{SPGA}\)</span></p>
+<h3 id="_32">分解并行遗传算法<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\text{Decomposition Parallel Genetic Algorithm}, \text{DPGA}\)</span></p>
+<h2 id="_33">五、遗传算法的数学理论<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h2>
+<h3 id="_34">模式<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<p>模式表示一些相似的模块，它描述了在某些位置上具有相似结构特征的个体编码串的一个子集</p>
+<p><span class="arithmatex">\(H=10*1*0=\{ 1001000,100110,101100,101110\}\)</span></p>
+<ul>
+<li>
+<p>定义在长度为 <span class="arithmatex">\(l\)</span> 的二进制编码串上的模式有 <span class="arithmatex">\(3^l\)</span> 个</p>
+<ul>
+<li>一般来说,在含有 <span class="arithmatex">\(k\)</span> 个字母表,长为 <span class="arithmatex">\(l\)</span> 的编码串上,模式有 <span class="arithmatex">\((k+1)^l\)</span> 个</li>
+</ul>
+</li>
+<li>
+<p>模式阶</p>
+<ul>
+<li>
+<p>在模式 <span class="arithmatex">\(H\)</span> 中具有确定基因值的位置数目称为该模式的模式阶 <span class="arithmatex">\((\text{Schema order})\)</span>, 记为 <span class="arithmatex">\(o(H)\)</span></p>
+</li>
+<li>
+<p>如 <span class="arithmatex">\(o(1*23*)=3\)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>模式长度</p>
+<ul>
+<li>模式 <span class="arithmatex">\(H\)</span> 中第一个确定基因值和最后一个确定基因值之间的距离称为该模式的模式长度 <span class="arithmatex">\((\text{Schema length})\)</span>, 记为 <span class="arithmatex">\(\delta(H)\)</span></li>
+<li>如 <span class="arithmatex">\(\delta(1*23*)=3\)</span></li>
+<li>只有一个确定基因值的模式的模式长度为 <span class="arithmatex">\(1\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="_35">模式定理<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h4>
+<p>在 <span class="arithmatex">\(\text{SGA}\)</span> 的情形下讨论</p>
+<p>假设第 <span class="arithmatex">\(t\)</span> 代群体 <span class="arithmatex">\(P(t)\)</span> 中的个体为 <span class="arithmatex">\(A_i,i=1,2,\cdots,M\)</span>, 其中能与模式 <span class="arithmatex">\(H\)</span> 匹配(基因型里有 <span class="arithmatex">\(H\)</span>) 的个体个数为 <span class="arithmatex">\(m(H,t)\)</span>, 设每个个体的适应度为 <span class="arithmatex">\(F(A_i)\)</span>, 第<span class="arithmatex">\(t\)</span> 代群体的平均适应度为 <span class="arithmatex">\(\bar{F}(t)\)</span>, 模式 <span class="arithmatex">\(H\)</span> 在第 <span class="arithmatex">\(t\)</span> 代个体的平均适应度为 </p>
+<div class="arithmatex">\[
+f(H,t) =\frac{ \sum\limits_{A_i\in H\cap P(t)}F(A_i) }{\#H\cap P(t)}
+\]</div>
+<ul>
+<li>选择算子</li>
+</ul>
+<div class="arithmatex">\[
+\begin{align*}
+m(H,t+1) &amp;= \sum\limits_{A_i\in H\cap P(t)} \frac{M\times F(A_i)}{F(t)}\\
+         &amp;= \sum\limits_{A_i\in H\cap P(t)} \frac{M\times f(H,t)}{F(t)}\\
+         &amp;= \frac{M\times f(H,t)}{F(t)} \sum\limits_{A_i\in H\cap P(t)} 1\\
+         &amp;= \frac{M\times f(H,t)}{F(t)}m(H,t)\\
+         &amp;= \frac{f(H,t)}{\bar{F}(t)}\times m(H,t)
+\end{align*}
+\]</div>
+<p>若模式 <span class="arithmatex">\(H\)</span> 的平均适应度 <span class="arithmatex">\(f(H,t)\)</span> 总是高出群体平均适应度 <span class="arithmatex">\(C\)</span> 倍, 即 <span class="arithmatex">\(f(H,t)=(1+C)\bar{F}(t)\)</span>, 那么有</p>
+<div class="arithmatex">\[
+m(H,t+1)=(1+C)\times m(H,t)
+\]</div>
+<p>这表明如果 <span class="arithmatex">\(H\)</span> 的平均适应度高于群体平均适应度, 那么其样本数呈指数级增长;否则指数级衰减</p>
+<ul>
+<li>交叉算子</li>
+</ul>
+<div class="arithmatex">\[
+p_{survive}(H) \geq 1-p_c \cdot \frac{\delta(H)}{l-1}
+\]</div>
+<p>于是经过选择和交叉</p>
+<div class="arithmatex">\[
+m(H,t+1) \geq (1-p_c \cdot \frac{\delta(H)}{l-1})\times (1+C)\times m(H,t)
+\]</div>
+<p>在 <span class="arithmatex">\(H\)</span> 平均适应度大于群体平均适应度的情况下, 其模式定义长度越小,其样本数增长越快</p>
+<ul>
+<li>变异算子</li>
+</ul>
+<p>模式 <span class="arithmatex">\(H\)</span> 被破坏只能是其确定基因值被变异, 其概率为</p>
+<div class="arithmatex">\[
+1-(1-p_m)^{o(H)}
+\]</div>
+<p>因为 <span class="arithmatex">\(p_m\)</span> 通常设置的很小, 所以有</p>
+<div class="arithmatex">\[
+1-(1-p_m)^{o(H)} \approx p_m \cdot o(H)
+\]</div>
+<p>从而模式生存的概率为</p>
+<div class="arithmatex">\[
+1-p_m \cdot o(H)
+\]</div>
+<p>这表明模式的模式阶越大,其生存概率越小</p>
+<ul>
+<li>总的来说我们有</li>
+</ul>
+<div class="arithmatex">\[
+m(H,t+1) \geq \frac{f(H,t)}{\bar{F}(t)} \left[ 1-p_c\cdot \frac{\delta(H)}{l-1} - p_m\cdots o(H) \right]\times m(H,t)
+\]</div>
+<blockquote>
+<p>[!NOTE]
+这里选择和变异的概率应该是乘起来的, 但是 <span class="arithmatex">\((1-x)(1-y)\approx 1-x-y\)</span> 当 <span class="arithmatex">\(x=o(1)\)</span></p>
+</blockquote>
+<p>模式定理: 在遗传算法中,经过选择,交叉和变异算子的作用,具有低阶短定义长度并且平均适应度高于群体适应度的模式按指数级增长.</p>
+<h3 id="_36">积木块假设与遗传算法欺骗问题<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<p>模式定理说明了具有某种结构特征的模式在遗传进化过程中其样本数将按指数级增长，这种模式就是具有低阶、短的定义长度，且平均适应度高于群体平均适应度的模式。这种类型的模式被称为基因块或积木块( <span class="arithmatex">\(\text{building block}\)</span>)</p>
+<ul>
+<li>
+<p>积木块假设: 个体基因块通过选择、交叉和变异等算子的作用能拼接在一起形成适应度更高的个体编码串</p>
+</li>
+<li>
+<p>遗传算法欺骗问题(<span class="arithmatex">\(\text{GA deception problem}\)</span>): 存在不满足积木块假设的问题</p>
+<ul>
+<li>例如求 <span class="arithmatex">\(f(x,y) = \begin{cases} x^2+y^2 &amp; (x,y)\in [-2,2]\times [-2,2]\setminus\{(0,1)\} \\ 1000 &amp; x=y=0 \end{cases}\)</span> 的最大值</li>
+</ul>
+</li>
+</ul>
 
 
 
