@@ -1,35 +1,27 @@
 ---
 title: "Learning record"
 author: ljx
-date: 2024-03-23
+date: 2024-10-14
 categories:
   - essays
 tags:
   - Diary
 ---
 
-# 学习记录
+# Neovide 渲染数学公式
 
-- 2024-03-26:
+在使用 [render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) 渲染 markdown 的时候,只有数学公式不能渲染
 
-    -  操作系统内存管理:3-1-10 到 3-2-5 完成
+在 shell 中打开 nvim可以调用 latex2text,但是在 neovide 中使用 `!latex2text` 没法调用
 
-- 2024-03-27:
-    
-    - 谁懂,突然发了个中科院的推免活动,等快点学数分高代了,我恨寒假去玩了
-    - 数学分析 2-3 到 3-1
-        
-        - 剩下 3-1课后作业 11 开始的证明题
+解决方案在 [issue](https://github.com/neovide/neovide/issues/2670) ,原来 zsh 的环境变量不能放在 ~/.zshrc中, 在zshenv中加入
 
-- 2024-03-28:
+```shell
+# anaconde3
+export PATH="/opt/anaconda3/bin:$PATH"
+```
 
-    - 数分第三章完成(习题)
+解决了这个问题
 
-- 2024-03-29:
 
-    - 数分第四站开始,做了点习题,操作系统 
-- 2024-03-30:
-
-  - 弄了好久 vscode 我真是
-  - 数学学到微分中值定理,明天开始要好好做了
 

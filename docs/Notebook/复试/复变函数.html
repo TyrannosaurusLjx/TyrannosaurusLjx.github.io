@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>复变函数.html</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css"  />
+<link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css"  /><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'><style> body { box-sizing: border-box; max-width: 740px; width: 100%; margin: 40px auto; padding: 0 10px; } </style><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script><script src='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js'></script><script>document.addEventListener('DOMContentLoaded', () => { document.body.classList.add('markdown-body'); document.querySelectorAll('pre[lang] > code').forEach((code) => { code.classList.add(code.parentElement.lang); }); document.querySelectorAll('pre > code').forEach((code) => { hljs.highlightBlock(code); }); });</script>
+</head>
+
+<body>
+
+<h1 id="复变函数">复变函数</h1>
+<h4 id="解析函数定义">解析函数定义</h4>
+<p><span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\in \Omega\)</span>
+处解析，如果下列极限收敛</p>
+<p><span class="math display">\[\lim\limits_{h\to 0}
+\frac{f(z_0+h)-f(z_0)}{h}\]</span></p>
+<p>也就是解析等价于复可微</p>
+<h4 id="整函数">整函数</h4>
+<p>整函数是定义在整个复平面上的解析函数</p>
+<h4 id="柯西黎曼方程">柯西黎曼方程</h4>
+<p>函数 <span class="math inline">\(F(x,y)=u(x,y)+iv(x,y)\)</span> 在
+<span class="math inline">\(P_0\)</span> 处可微当且仅当 存在线性变换
+<span class="math inline">\(J:\mathbb{R}^2\to \mathbb{R}^2\)</span>
+使得</p>
+<p><span
+class="math display">\[\frac{F(P_0+H))-F(P_0)}{H}=J(H)+o(|H|)\]</span></p>
+<p>那么 <span class="math inline">\(J\)</span> 就是 <span
+class="math inline">\(F\)</span> 在 <span
+class="math inline">\(P_0\)</span> 处的导数</p>
+<p>事实上如果 <span class="math inline">\(F\)</span> 在 <span
+class="math inline">\(P_0\)</span> 处可微，那么有以下条件成立</p>
+<ul>
+<li><p><span class="math inline">\(f&#39;=\frac{\partial f}{\partial
+x}\)</span></p></li>
+<li><p><span class="math inline">\(f&#39;=\frac{1}{i}\frac{\partial
+f}{\partial y}\)</span></p>
+<ul>
+<li>那么 <span class="math inline">\(\frac{\partial f}{\partial
+x}=\frac{1}{i}\frac{\partial f}{\partial y}\)</span></li>
+</ul></li>
+</ul>
+<p>柯西黎曼方程:</p>
+<p><span class="math display">\[\frac{\partial u}{\partial
+x}=\frac{\partial v}{\partial y}\]</span></p>
+<p><span class="math display">\[\frac{\partial u}{\partial
+y}=-\frac{\partial v}{\partial x}\]</span></p>
+<h4 id="fuiv-全纯的充分条件"><span class="math inline">\(f=u+iv\)</span>
+全纯的充分条件</h4>
+<ul>
+<li>如果<span class="math inline">\(u,v\)</span>
+连续可微并且满足柯西黎曼方程，那么 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\)</span> 处全纯</li>
+</ul>
+<h4 id="幂级数收敛半径">幂级数收敛半径</h4>
+<p><span class="math display">\[\frac{1}{R}=\limsup
+|a_n|^{1/n}\]</span></p>
+<h4 id="古萨定理">古萨定理</h4>
+<p>全纯函数在闭合三角形上的积分是0</p>
+<ul>
+<li>证明: 分割三角形, 然后用全纯定义放缩
+<ul>
+<li><figure>
+<img src="img/image_2024-07-03-09-45-30.png"
+alt="image_2024-07-03-09-45-30" />
+<figcaption aria-hidden="true">image_2024-07-03-09-45-30</figcaption>
+</figure></li>
+<li><figure>
+<img src="img/image_2024-07-03-09-45-49.png"
+alt="image_2024-07-03-09-45-49" />
+<figcaption aria-hidden="true">image_2024-07-03-09-45-49</figcaption>
+</figure></li>
+</ul></li>
+</ul>
+<h4 id="morera定理">Morera定理</h4>
+<p>如果 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上连续并且对于 <span
+class="math inline">\(\Omega\)</span> 上的任意三角形有 <span
+class="math inline">\(\oint_{\gamma} f(z)dz=0\)</span>, 那么 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上全纯</p>
+<h4 id="柯西定理">柯西定理</h4>
+<p><span class="math display">\[\oint_{\gamma} f(z)dz=0\]</span></p>
+<h4 id="柯西积分公式">柯西积分公式</h4>
+<p>若 <span class="math inline">\(f\)</span> 在一个包含圆 <span
+class="math inline">\(C\)</span> (取正向方向) 的区域上全纯, 那么对于任意
+<span class="math inline">\(z\in C\)</span>, 有</p>
+<p><span class="math display">\[f(z)=\frac{1}{2\pi i}\oint_{C}
+\frac{f(\zeta)}{\zeta-z}d\zeta\]</span></p>
+<ul>
+<li><p>证明: 考虑 <span
+class="math inline">\(F(\zeta)=\frac{f(\zeta)}{\zeta-z}\)</span>,
+在下面玩具曲线上的积分</p>
+<ul>
+<li><figure>
+<img src="img/image_2024-07-03-09-47-08.png"
+alt="image_2024-07-03-09-47-08" />
+<figcaption aria-hidden="true">image_2024-07-03-09-47-08</figcaption>
+</figure></li>
+</ul></li>
+</ul>
+<blockquote>
+<p>[!NOTE] 在复变函数中, 解析函数沿着闭曲线的积分是0,
+实际上如果让虚部恒等于0, 那么积分退化成实数轴上的往返积分,
+结果也是0.</p>
+</blockquote>
+<h4 id="在复变中-全纯意味着无穷次可微">在复变中,
+全纯意味着无穷次可微</h4>
+<p><span class="math display">\[f^{(n)}(z)=\frac{n!}{2\pi i}\oint_{C}
+\frac{f(\zeta)}{(\zeta-z)^{n+1}}d\zeta\]</span></p>
+<h4 id="柯西不等式">柯西不等式</h4>
+<p><span class="math display">\[|f^{(n)}(z)|\leq \frac{n!}{R^n}\sup
+|f|\]</span></p>
+<h5 id="幂级数展开推导">幂级数展开推导</h5>
+<p><span
+class="math display">\[\frac1{\zeta-z}=\frac1{\zeta-z_0-(z-z_0)}=\frac1{\zeta-z_0}\frac1{1-\left(\frac{z-z_0}{\zeta-z_0}\right)}\]</span></p>
+<p>后者是一个几何级数, 再利用柯西积分公式</p>
+<p><span class="math display">\[f(z)=\sum_{n=0}^\infty\left(\frac1{2\pi
+i}\int_C\frac{f(\zeta)}{(\zeta-z_0)^{n+1}}\:d\zeta\right)\cdot(z-z_0)^n\]</span></p>
+<h4 id="刘维尔定理">刘维尔定理</h4>
+<p>有界整函数是常值函数</p>
+<ul>
+<li>证明: 由柯西不等式立即得到</li>
+</ul>
+<p><span class="math display">\[|f&#39;(z)|\leq \frac{B}{R}\]</span></p>
+<h4 id="代数基本定理">代数基本定理</h4>
+<p>每一个 <span class="math inline">\(n\)</span> 次复数系数多项式都有
+<span class="math inline">\(n\)</span> 个根</p>
+<ul>
+<li><p>证明: 先证明有一个根, 然后用多项式除法, 递归证明</p>
+<ul>
+<li>若 <span class="math inline">\(P(z)\)</span> 没有根, 那么 <span
+class="math inline">\(1/P(z)\)</span> 有界并且是整函数, 由刘维尔定理,
+<span class="math inline">\(1/P(z)\)</span> 是常数, 矛盾</li>
+</ul></li>
+</ul>
+<h4 id="获得全纯函数的方法">获得全纯函数的方法</h4>
+<ul>
+<li><p>一致收敛的全纯函数列的极限是全纯函数(导函数也对应收敛)</p></li>
+<li><p>通过积分得到全纯函数</p></li>
+</ul>
+<h4 id="对称原理">对称原理</h4>
+<p>若 <span class="math inline">\(f^+,f^-\)</span>
+分别在上半平面和下半平面上全纯, 且在实轴上连续, 并且 <span
+class="math inline">\(f^+(x)=f^-(x),x\in \mathbb{R}\)</span>,
+那么可以得到一个新的全纯函数在 <span
+class="math inline">\(\mathbb{C}\)</span> 上全纯</p>
+<p><span class="math display">\[f=\begin{cases}f^+(z),Im
+z\geq0\\f^-(z),Im z&lt;0\end{cases}\]</span></p>
+<h2 id="奇点">奇点</h2>
+<h4 id="孤立奇点">孤立奇点</h4>
+<p>若 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\)</span> 的某个邻域上全纯, 但在 <span
+class="math inline">\(z_0\)</span> 处不全纯, 那么称 <span
+class="math inline">\(z_0\)</span> 是 <span
+class="math inline">\(f\)</span> 的孤立奇点</p>
+<p>例如 <span class="math inline">\(f(z)=\frac{1}{z}\)</span>, <span
+class="math inline">\(z=0\)</span> 是孤立奇点</p>
+<h4 id="本性奇点">本性奇点</h4>
+<p>若 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\)</span> 的任意邻域上都有无穷多个奇点, 那么称
+<span class="math inline">\(z_0\)</span> 是 <span
+class="math inline">\(f\)</span> 的本性奇点</p>
+<p>例如 <span class="math inline">\(f(z)=e^{1/z}\)</span>, <span
+class="math inline">\(z=0\)</span> 是本性奇点</p>
+<p>或者 <span
+class="math inline">\(f(z)=\frac{1}{\sin\frac{1}{z}}\)</span>, <span
+class="math inline">\(z=0\)</span> 是本性奇点</p>
+<h4 id="极点">极点</h4>
+<p>若 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\)</span> 的某个邻域上全纯, 且在 <span
+class="math inline">\(z_0\)</span> 处有有限阶的极点, 那么称 <span
+class="math inline">\(z_0\)</span> 是 <span
+class="math inline">\(f\)</span> 的极点</p>
+<ul>
+<li><p>一个充要条件是 <span class="math inline">\(z_0\)</span> 是 <span
+class="math inline">\(f\)</span> 的极点 <span class="math inline">\(\iff
+|f|\to \infty, z\to z_0\)</span></p></li>
+<li><p>并且 <span class="math inline">\(f=\sum_{n=-m}^\infty
+a_n(z-z_0)^n\)</span>, <span class="math inline">\(a_{-m}\neq 0\)</span>
+其中 <span class="math inline">\(m\)</span> 称为极点的阶数</p>
+<ul>
+<li>这里 <span class="math inline">\(\sum\limits_{n=-m}^{-1}
+a_n(z-z_0)^n\)</span> 称为主部, <span
+class="math inline">\(a_{-1}\)</span> 称为留数, 记为 <span
+class="math inline">\(res f= a_{-1}\)</span></li>
+</ul></li>
+</ul>
+<p>我们有</p>
+<p><span class="math display">\[\oint_{C} f(z)dz=2\pi i\cdot \text{res}
+f\]</span></p>
+<ul>
+<li><p>计算留数的方法</p>
+<ul>
+<li>单极点: <span class="math inline">\(\text{res} f=\lim_{z\to
+z_0}(z-z_0)f(z)\)</span></li>
+<li><span class="math inline">\(n\)</span> 阶极点:<span
+class="math inline">\(\text{res} f=\lim\limits_{z\to
+z_0}\frac{1}{(n-1)!}(\frac{d}{dz})^{n-1}[(z-z_0)^nf(z)]\)</span>, 这里
+<span class="math inline">\(n\)</span> 是极点的阶</li>
+</ul></li>
+</ul>
+<h4 id="留数定理">留数定理</h4>
+<p>设 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\)</span> 的某个邻域上除了有限个极点外全纯,
+那么</p>
+<p><span class="math display">\[\oint_{\gamma} f(z)dz=2\pi i\sum_{k=1}^n
+\text{res} f(z_k)\]</span></p>
+<blockquote>
+<p>[!NOTE] 于是判断函数在某个点的性质, 只需要计算极限 <span
+class="math inline">\(\lim_{z\to z_0}f(z)\)</span>, 如果是有限值,
+那么就是全纯的, 如果没有定义但是在领域上有界, 那么就是可去奇点,
+如果无界就是极点, 都不是那么就是本性奇点</p>
+</blockquote>
+<h4 id="casorati-weierstrass-定理">Casorati-Weierstrass 定理</h4>
+<p>若 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\)</span> 的某个邻域上全纯, 且 <span
+class="math inline">\(z_0\)</span> 是 <span
+class="math inline">\(f\)</span> 的本性奇点, 那么 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(z_0\)</span>
+的任意邻域中的像集是稠密的(可以取到全体复值)</p>
+<h4 id="亚纯函数">亚纯函数</h4>
+<p>除去可列个极点外全纯的函数称为亚纯函数</p>
+<ul>
+<li>我们称 <span class="math inline">\(f\)</span> 在无穷处有极点, 如果
+<span class="math inline">\(f(1/z)\)</span> 在 <span
+class="math inline">\(z=0\)</span> 处有极点</li>
+<li>在扩展复平面上(包括无穷点)亚纯函数是有理函数</li>
+</ul>
+<h4 id="幅角原理">幅角原理</h4>
+<p>设 <span class="math inline">\(f\)</span> 亚纯, 在 <span
+class="math inline">\(C\)</span> 上没有零点和极点, 那么</p>
+<p><span class="math display">\[\frac{1}{2\pi i}\oint_{C}
+\frac{f&#39;(z)}{f(z)}dz=N-P\]</span></p>
+<p>其中 <span class="math inline">\(N\)</span> 是 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(C\)</span> 内部的零点个数(按重数计), <span
+class="math inline">\(P\)</span> 是 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(C\)</span> 内部的极点个数(按重数计)</p>
+<blockquote>
+<p>[!NOTE] 极点的重数就是他的阶数</p>
+</blockquote>
+<h4 id="rouché定理">Rouché定理</h4>
+<p>设 <span class="math inline">\(f,g\)</span> 在 <span
+class="math inline">\(C\)</span> 及其内部全纯, 且 <span
+class="math inline">\(|f(z)|&gt;|g(z)|,z\in C\)</span>, 那么 <span
+class="math inline">\(f\)</span> 和 <span
+class="math inline">\(f+g\)</span> 在 <span
+class="math inline">\(C\)</span> 内部有相同个数的零点</p>
+<h4 id="开映射定理">开映射定理</h4>
+<p>若 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上全纯, 且 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上非常值, 那么 <span
+class="math inline">\(f\)</span> 将开集映射为开集</p>
+<h4 id="最大模原理">最大模原理</h4>
+<p>若非常值函数 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上全纯, 那么 <span
+class="math inline">\(|f(z)|\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上没有最大值</p>
+<blockquote>
+<p>[!NOTE] 也就是在开集上取不到最值</p>
+</blockquote>
+<h4 id="对数函数">对数函数</h4>
+<p>主支对数函数是 <span class="math inline">\(f(z)=\log|z|+i\arg
+z\)</span>, 其中 <span class="math inline">\(\arg z\)</span> 是 <span
+class="math inline">\(z\)</span> 的辐角并且满足 <span
+class="math inline">\(-\pi&lt;\arg z\leq \pi\)</span></p>
+<h4 id="平均值定理">平均值定理</h4>
+<p><span
+class="math display">\[f(z_0)=\frac{1}{2\pi}\int_0^{2\pi}f(z_0+re^{i\theta})d\theta\]</span></p>
+<h2 id="傅里叶变换">傅里叶变换</h2>
+<p><span class="math display">\[\hat{f}(\xi)=\int_{-\infty}^\infty
+f(x)e^{-2\pi i x\xi}dx\]</span></p>
+<p><span class="math display">\[f(x)=\int_{-\infty}^\infty
+\hat{f}(\xi)e^{2\pi i x\xi}d\xi\]</span></p>
+<p>复数形式的傅里叶展开</p>
+<p><span class="math display">\[f(x)=\sum_{n=-\infty}^\infty
+c_ne^{inx}\]</span></p>
+<p>其中 <span class="math inline">\(c_n=\frac{1}{2\pi}\int_{-\pi}^\pi
+f(x)e^{-inx}dx\)</span></p>
+<p><span class="math display">\[C_n=\begin{cases}\frac{a_n-ib_n}{2}
+&amp; n\geq 1\\ \frac{a_0}{2} &amp; n=0\\ \frac{a_{-n}+ib_{-n}}{2} &amp;
+n\leq -1\end{cases}\]</span></p>
+<h2 id="整函数-1">整函数</h2>
+<h4 id="jensen-公式">Jensen 公式</h4>
+<p>设 <span class="math inline">\(f\)</span>
+在包含圆盘的闭包上的一个区域上全纯, 并且 <span
+class="math inline">\(f\)</span> 在圆盘边界上没有零点, 且 <span
+class="math inline">\(f(0)\neq 0\)</span>, 若 <span
+class="math inline">\(z_1,z_2,\cdots,z_n\)</span> 是 <span
+class="math inline">\(f\)</span> 在圆盘内的零点, 那么</p>
+<p><span class="math display">\[\log|f(0)|=\sum_{k=1}^n
+\log\frac{|z_k|}{R} +
+\frac{1}{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|d\theta\]</span></p>
+<h4 id="函数的阶">函数的阶</h4>
+<p>整函数 <span class="math inline">\(f\)</span> 的阶: <span
+class="math inline">\(\rho_f=\inf\{\rho:\exists A,B,s.t. |f(z)|\leq
+Ae^{B|z|^\rho}\}\)</span></p>
+<h4 id="hadamard-定理">Hadamard 定理</h4>
+<p>设整函数 <span class="math inline">\(f\)</span> 的阶为 <span
+class="math inline">\(\rho\)</span>, 且 <span
+class="math inline">\(k\)</span> 满足 <span class="math inline">\(k\leq
+\rho&lt; k+1\)</span>, 用 <span
+class="math inline">\(a_1,a_2,\cdots\)</span> 表示 <span
+class="math inline">\(f\)</span> 的非零零点,那么有</p>
+<p><span class="math display">\[f(z)=e^{P(z)}z^m\prod_{n=1}^\infty
+E_k\left(\frac{z}{a_n}\right)\]</span></p>
+<p>其中 <span class="math inline">\(P(z)\)</span> 是次数不超过 <span
+class="math inline">\(k\)</span> 的多项式, <span
+class="math inline">\(m\)</span> 是 <span
+class="math inline">\(z=0\)</span> 作为零点的重数, <span
+class="math inline">\(E_k(z)=(1-z)e^{z+\cdots+z^k/k},E_0(z)=(1-z)\)</span></p>
+<h2 id="伽马函数-黎曼-zeta-函数">伽马函数, 黎曼 <span
+class="math inline">\(\zeta\)</span> 函数</h2>
+<h4 id="伽马函数">伽马函数</h4>
+<p><span class="math display">\[\Gamma(s)=\int_0^\infty
+e^{-t}t^{s-1}dt\]</span></p>
+<p>可以用 <span
+class="math inline">\(\Gamma(s)=\frac{\Gamma(s+1)}{s}\)</span> 递归定义
+<span class="math inline">\(\{-\infty,\cdots,-3,-2,-1\}\)</span>
+的函数值</p>
+<p><span
+class="math display">\[\Gamma(-n)=\frac{(-1)^n}{n!}\]</span></p>
+<h4 id="zeta-函数"><span class="math inline">\(\zeta\)</span> 函数</h4>
+<p><span class="math display">\[\zeta(s)=\sum_{n=1}^\infty
+\frac{1}{n^s}=\prod_{p\text{ prime}}\frac{1}{1-p^{-s}}\]</span></p>
+
+</body>
+</html>

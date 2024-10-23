@@ -66,8 +66,7 @@ $\text{Simple genetic algorithm}, \text{SGA}$
     - 变异概率 $p_m$
 
 $$SGA(C,E,P_0,M,T,\Phi,\Gamma,\Psi,T)$$
-
-$$
+ $$
 \begin{cases}
 C : \text{个体编码方式} \\ 
 E : \text{个体适应度评价标准} \\ 
@@ -337,20 +336,6 @@ $$
 - 遗传算法欺骗问题($\text{GA deception problem}$): 存在不满足积木块假设的问题
 
     - 例如求 $f(x,y) = \begin{cases} x^2+y^2 & (x,y)\in [-2,2]\times [-2,2]\setminus\{(0,1)\} \\ 1000 & x=y=0 \end{cases}$ 的最大值
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
